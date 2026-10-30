@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "phase": "completed",
+  "jobs_submitted": true,
+  "training_completed": true,
+  "evaluation_scheduled": false,
+  "data_preparation_complete": true,
+  "dataset_audit": "passed",
+  "last_checked_utc": "2026-10-30T15:12:20.193001+00:00",
+  "note": "All training records and updates completed. Final checkpoint verified. The separate 100-case TSP20 evaluation at 256 model calls is complete and audited.",
+  "training_job_id": "1468567",
+  "scheduler_state": "COMPLETED",
+  "scheduler_reason": "Completed successfully",
+  "observed_training_updates": 18750,
+  "scheduler_exit_code": "0:0",
+  "completed_utc": "2026-10-30T13:21:41+00:00",
+  "scheduler_wall_seconds": 47521,
+  "checkpoint_path": "[cluster-home]/llada-tsp20-300k-mask5to8-4l40s-20261030-508fc3/results/checkpoint-018750",
+  "evaluation_completed": true,
+  "evaluation_job_id": "1469253",
+  "evaluation_run_dir": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141"
+}

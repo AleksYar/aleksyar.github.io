@@ -1,0 +1,29 @@
+{
+  "job_id": "1463107",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "06:16:03",
+  "start": "2026-10-26T22:36:20+02:00",
+  "end": "2026-10-27T04:52:23+02:00",
+  "node": "nlp-l40-1",
+  "gpu_count": 4,
+  "allocated_resources": "billing=56,cpu=16,gres/gpu=4,node=1",
+  "collected_at": "2026-10-27T10:06:07Z",
+  "source": "SSH sacct",
+  "training_status": {
+    "job_id": "1463107",
+    "updated_at_utc": "2026-10-27T02:52:21Z",
+    "status": "complete",
+    "phase": "complete",
+    "step": 12500,
+    "epoch": 10.0
+  },
+  "comparison_job_id": "1463120",
+  "comparison_status": "CANCELLED",
+  "comparison_elapsed": "00:00:00",
+  "comparison_end": "2026-10-26T23:04:10+02:00",
+  "raw_scheduler_rows": [
+    "1463107|COMPLETED|0:0|06:16:03|2026-10-26T22:36:20|2026-10-27T04:52:23|nlp-l40-1|billing=56,cpu=16,gres/gpu=4,node=1",
+    "1463120|CANCELLED by 243326586|0:0|00:00:00|None|2026-10-26T23:04:10|None assigned|"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "job_id": "1462587",
+  "node": "nlp-l40-1",
+  "gpus": 4,
+  "remote_root": "[cluster-home]/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba",
+  "submitted_at_utc": "2026-10-26T13:48:36.600041+00:00",
+  "supersedes_failed_job": "1462555",
+  "diagnostic_job": "1462568"
+}

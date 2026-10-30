@@ -1,0 +1,12 @@
+{
+  "job_id": "1469253",
+  "job_name": "tsp-mask5-eval-5ce141",
+  "remote_path": "[cluster-home]/llada-tsp20-mask5to8-remask256-20261030-5ce141",
+  "node": "nlp-l40-2",
+  "gpu_count": 4,
+  "evaluation_cases": 100,
+  "conditions": 1,
+  "model_call_cap_per_case": 256,
+  "archive_sha256": "725671500a9fe579fc9ab23ecd4359ae2b54c1e8087075d71367421ff9384534",
+  "submitted_utc": "2026-10-30T15:25:23.392515+00:00"
+}

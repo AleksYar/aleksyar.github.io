@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410",
+  "run_dir": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410",
+  "title": "TSP20 · unfiltered remasking · 256 calls",
+  "status": "completed",
+  "created_at": "2026-10-29T19:51:44.728494+00:00",
+  "updated_at": "2026-10-29T20:10:33.200649+00:00",
+  "job_id": "1468418",
+  "scheduler": {
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:12:48"
+  },
+  "description": "TSP-specific head and decoder; general questions are unsupported in this mode. 100 TSP20 cases · final 500k checkpoint · learned remasking · 256 total model-call cap · latest route always retained; no objective acceptance filter.",
+  "note": "Final: 95 valid / 46 optimal; initial: 94 / 44. Latest-route evaluation without an acceptance filter. 83 cases never changed route. Completed in 12m48s on four L40S GPUs; independent trajectory audit passed.",
+  "requested": 100,
+  "answers_saved": 100,
+  "metrics": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 95,
+    "optimal": 46,
+    "within_1pct": 75,
+    "valid_pct_generated": 95.0,
+    "valid_pct_requested": 95.0,
+    "mean_gap_pct_valid": 0.6989635149547624,
+    "median_gap_pct_valid": 0.017321700733541334,
+    "within_1pct_pct_requested": 75.0
+  },
+  "dataset_sha256": "7f84fd1e661b85cbfd596c1eb5d793de0de1ef5b9fb0f3918ae027b62228c176",
+  "config_sha256": "19510752f69bd6ca21a5e43dc5d7f9c72388606fcbc64e41f04d94eaf0002f4c",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "All saved answers",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/raw-answers.txt",
+      "kind": "Answers"
+    },
+    {
+      "label": "Answers as JSONL",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/answers.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Scored summary",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/summary.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Per-instance scores",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/scores.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Run provenance",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/run.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Slurm accounting",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/slurm-accounting.txt",
+      "kind": "Log"
+    },
+    {
+      "label": "Job script",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/run.sbatch",
+      "kind": "Code"
+    },
+    {
+      "label": "Submission record",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/submission.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "tsp-raw256-839410-1468418.out",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/logs/tsp-raw256-839410-1468418.out",
+      "kind": "Log"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

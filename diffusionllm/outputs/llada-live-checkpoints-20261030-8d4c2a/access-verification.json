@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "observed_utc": "2026-10-30T18:45:59.823337+00:00",
+  "job_id": "1469393",
+  "node": "nlp-l40-1",
+  "gpu": "NVIDIA L40S",
+  "gpu_count": 1,
+  "expires_local": "2026-10-30T21:41:26+02:00",
+  "ordinary_generation": true,
+  "selector_head_used": false,
+  "steps": 256,
+  "checkpoint_reload_verified": {
+    "previous": true,
+    "latest": true
+  },
+  "verification_requests": 2,
+  "terminal_client_verified": true,
+  "terminal_open_requested": true,
+  "unauthenticated_api_refused": true,
+  "maximum_allocated_gpu_hours": 1
+}

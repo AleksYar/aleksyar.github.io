@@ -1,0 +1,77 @@
+{
+  "task": "TSP20",
+  "status": {
+    "status": "complete",
+    "phase": "complete",
+    "step": 10000,
+    "task": "tsp20",
+    "job_id": "1460664",
+    "updated_at_utc": "2026-10-25T04:44:17Z",
+    "examples_seen": 160000,
+    "seconds_per_update_recent": 4.5019441763404755,
+    "peak_allocated_gib": 33.66094255447388
+  },
+  "phases": {
+    "before": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 3,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": 159.50826157604007,
+      "median_gap_pct_complete": 158.88537576390047,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 505.74,
+      "mean_seconds": 18.11238172391895,
+      "distinct_city_sequences": 36
+    },
+    "update-005000": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 89,
+      "strict_valid": 89,
+      "strict_format": 99,
+      "optimal": 19,
+      "within_1pct": 37,
+      "mean_gap_pct_complete": 3.078891801980315,
+      "median_gap_pct_complete": 1.6367095776399943,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 22.141223901198245,
+      "distinct_city_sequences": 99
+    },
+    "after": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 91,
+      "strict_valid": 91,
+      "strict_format": 100,
+      "optimal": 36,
+      "within_1pct": 57,
+      "mean_gap_pct_complete": 1.747319957442576,
+      "median_gap_pct_complete": 0.25995695520659723,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 22.2054802788049,
+      "distinct_city_sequences": 100
+    }
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 0,
+      "within_1pct": 2,
+      "mean_gap_pct_complete": 15.944217726336932
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 43,
+      "within_1pct": 61,
+      "mean_gap_pct_complete": 1.3525760156768927
+    }
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-25T11:54:31.406525+00:00",
+  "checks": [
+    "34 frozen source hashes unchanged",
+    "runtime data and configuration hashes match local files",
+    "300 raw answers rescored; complete-route distances independently recalculated",
+    "same 100 cases and prompts at each stage and in the prior run",
+    "exactly 10000 updates and 160000 distinct training IDs, each used once",
+    "microbatch 2 and effective batch 16 throughout; finite loss and gradients",
+    "permanent midpoint and final adapters verified remotely; resume state files present"
+  ],
+  "job": {
+    "job_id": "1460664",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "14:39:50",
+    "seconds": 52790,
+    "gpu_hours": 14.66388888888889,
+    "start_cluster_local": "2026-10-24T17:42:30",
+    "end_cluster_local": "2026-10-25T07:22:20",
+    "node": "nlp-l40-1"
+  },
+  "compute": {
+    "training_update_seconds": 45364.64202090679,
+    "training_update_hours": 12.601289450251885,
+    "mean_seconds_per_update": 4.536464202090679,
+    "median_seconds_per_update": 4.517066802596673,
+    "evaluation_generation_seconds": 6245.90859039221,
+    "evaluation_generation_hours": 1.7349746084422804,
+    "other_job_seconds": 1179.449388701003,
+    "peak_allocated_gib": 33.66094255447388,
+    "training_only_500k_one_epoch_hours_at_observed_speed": 39.379029532037144
+  },
+  "loss": {
+    "first_250_mean": 0.4534943257205971,
+    "last_250_mean": 0.19622356929473522
+  },
+  "phases": {
+    "before": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 3,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": 159.50826157604007,
+      "median_gap_pct_complete": 158.88537576390047,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 505.74,
+      "mean_seconds": 18.11238172391895,
+      "distinct_city_sequences": 36
+    },
+    "update-005000": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 89,
+      "strict_valid": 89,
+      "strict_format": 99,
+      "optimal": 19,
+      "within_1pct": 37,
+      "mean_gap_pct_complete": 3.078891801980315,
+      "median_gap_pct_complete": 1.6367095776399943,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 22.141223901198245,
+      "distinct_city_sequences": 99
+    },
+    "after": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 91,
+      "strict_valid": 91,
+      "strict_format": 100,
+      "optimal": 36,
+      "within_1pct": 57,
+      "mean_gap_pct_complete": 1.747319957442576,
+      "median_gap_pct_complete": 0.25995695520659723,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 22.2054802788049,
+      "distinct_city_sequences": 100
+    }
+  },
+  "prior_100k_rank16": {
+    "requested": 100,
+    "answers_saved": 100,
+    "complete": 90,
+    "strict_valid": 90,
+    "strict_format": 100,
+    "optimal": 20,
+    "within_1pct": 41,
+    "mean_gap_pct_complete": 2.3501562757481946,
+    "median_gap_pct_complete": 1.4645266219647235,
+    "objective_consistent": 0,
+    "mean_visible_tokens": 86,
+    "mean_seconds": 22.835343797453678,
+    "distinct_city_sequences": 100
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 0,
+      "within_1pct": 2,
+      "mean_gap_pct_complete": 15.944217726336932
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 43,
+      "within_1pct": 61,
+      "mean_gap_pct_complete": 1.3525760156768927
+    }
+  },
+  "paired_midpoint_to_final": {
+    "common_valid_cases": 83,
+    "improved": 44,
+    "unchanged": 20,
+    "worsened": 19,
+    "mean_gap_change_percentage_points_common_valid": -1.4334488313547002,
+    "became_valid": 8,
+    "became_invalid": 6
+  },
+  "paired_prior_to_final": {
+    "common_valid_cases": 84,
+    "improved": 37,
+    "unchanged": 31,
+    "worsened": 16,
+    "mean_gap_change_percentage_points_common_valid": -0.6379816547258771,
+    "became_valid": 7,
+    "became_invalid": 6
+  },
+  "final_invalid_reasons": {
+    "duplicate_or_missing_city": 9
+  },
+  "final_objective_mean_absolute_error": 121.86560693292162,
+  "checkpoint_audit": "remote-checkpoint-audit.json",
+  "limitations": [
+    "Validation set, not an untouched final test.",
+    "Gaps exclude invalid tours; validity is reported separately.",
+    "Rank, alpha/r scaling, data volume, and schedule all differ from the prior run; this is not an isolated rank comparison.",
+    "Printed objective values are not reliable; all quality metrics use recomputed coordinate distances."
+  ]
+}

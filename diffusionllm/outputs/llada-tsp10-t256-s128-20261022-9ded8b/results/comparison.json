@@ -1,0 +1,1250 @@
+{
+  "baseline_run": "llada-tsp10-baseline-20261022-2d3ebe",
+  "current_run": "llada-tsp10-t256-s128-20261022-9ded8b",
+  "dataset_sha256": "5062b897e05d17a56c702ebb3408924e5819e4648c5c23d3a96b126a3468a742",
+  "identical_answers": 13,
+  "generation_time_ratio": 2.3279893017795934,
+  "baseline": {
+    "mean_seconds": 5.632769094893592,
+    "mean_visible_tokens": 23.8,
+    "peak_gpu_gib": 15.154752254486084,
+    "format_ok": 0,
+    "semantic_valid": 0,
+    "reasons": {
+      "unparseable_or_ambiguous_route": 20
+    },
+    "diagnostics": [
+      {
+        "id": "tsp10-0000",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0001",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0002",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0003",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0004",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0005",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0006",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0007",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          5
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 5."
+      },
+      {
+        "id": "tsp10-0008",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          8
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 8."
+      },
+      {
+        "id": "tsp10-0009",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          9
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 9."
+      },
+      {
+        "id": "tsp10-0010",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0011",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0012",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0013",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          7
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 7."
+      },
+      {
+        "id": "tsp10-0014",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0015",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0016",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0017",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0018",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0019",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      }
+    ],
+    "config": {
+      "python": "[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python",
+      "cache_dir": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache",
+      "dataset": "data/dataset.json",
+      "references": "data/references.json",
+      "output": "results",
+      "dtype": "bf16",
+      "max_tokens": 128,
+      "steps": 64,
+      "block_length": 128,
+      "temperature": 0.0,
+      "seed": 42,
+      "max_seconds": 780
+    },
+    "job_id": "1458324",
+    "elapsed": "00:02:03",
+    "metrics": {
+      "requested": 20,
+      "generated": 20,
+      "missing": 0,
+      "valid": 0,
+      "valid_pct_generated": 0.0,
+      "valid_pct_requested": 0.0,
+      "mean_gap_pct_valid": null,
+      "median_gap_pct_valid": null,
+      "within_1pct": 0,
+      "within_1pct_pct_requested": 0.0
+    }
+  },
+  "current": {
+    "mean_seconds": 13.113026192307007,
+    "mean_visible_tokens": 22,
+    "peak_gpu_gib": 15.245425701141357,
+    "format_ok": 0,
+    "semantic_valid": 0,
+    "reasons": {
+      "unparseable_or_ambiguous_route": 20
+    },
+    "diagnostics": [
+      {
+        "id": "tsp10-0000",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0001",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0002",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0003",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0004",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          9
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 9."
+      },
+      {
+        "id": "tsp10-0005",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0006",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0007",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          5
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 5."
+      },
+      {
+        "id": "tsp10-0008",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          8
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 8."
+      },
+      {
+        "id": "tsp10-0009",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          9
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 9."
+      },
+      {
+        "id": "tsp10-0010",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0011",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0012",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0013",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          7
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 7."
+      },
+      {
+        "id": "tsp10-0014",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0015",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0016",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          7,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6,
+          8
+        ],
+        "repeated_cities": [
+          7
+        ],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 8,
+        "ascending_city_order": true,
+        "description": "8/10 cities visited; closed; missing: 6, 8; repeated: 7."
+      },
+      {
+        "id": "tsp10-0017",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      },
+      {
+        "id": "tsp10-0018",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          9
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 9."
+      },
+      {
+        "id": "tsp10-0019",
+        "primary_valid": false,
+        "primary_reason": "unparseable_or_ambiguous_route",
+        "diagnostic_route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          0
+        ],
+        "diagnostic_source": "unambiguous bare comma list; diagnostic only",
+        "missing_cities": [
+          6
+        ],
+        "repeated_cities": [],
+        "out_of_range": [],
+        "closed": true,
+        "semantic_valid": false,
+        "route_id_count": 10,
+        "unique_cities_visited": 9,
+        "ascending_city_order": true,
+        "description": "9/10 cities visited; closed; missing: 6."
+      }
+    ],
+    "config": {
+      "python": "[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python",
+      "cache_dir": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache",
+      "dataset": "data/dataset.json",
+      "references": "data/references.json",
+      "output": "results",
+      "dtype": "bf16",
+      "max_tokens": 256,
+      "steps": 128,
+      "block_length": 256,
+      "temperature": 0.0,
+      "seed": 42,
+      "max_seconds": 780
+    },
+    "job_id": "1458351",
+    "elapsed": "00:04:32",
+    "metrics": {
+      "requested": 20,
+      "generated": 20,
+      "missing": 0,
+      "valid": 0,
+      "valid_pct_generated": 0.0,
+      "valid_pct_requested": 0.0,
+      "mean_gap_pct_valid": null,
+      "median_gap_pct_valid": null,
+      "within_1pct": 0,
+      "within_1pct_pct_requested": 0.0
+    }
+  }
+}

@@ -1,0 +1,497 @@
+{
+  "note": "Secondary route diagnostic: accepts only an unambiguous bare comma-separated list when the strict parser fails; never adds, removes or reorders city IDs. Primary scores remain unchanged.",
+  "strict_primary": {
+    "requested": 20,
+    "generated": 20,
+    "missing": 0,
+    "valid": 0,
+    "valid_pct_generated": 0.0,
+    "valid_pct_requested": 0.0,
+    "mean_gap_pct_valid": null,
+    "median_gap_pct_valid": null,
+    "within_1pct": 0,
+    "within_1pct_pct_requested": 0.0
+  },
+  "semantic_diagnostic": {
+    "requested": 20,
+    "generated": 20,
+    "missing": 0,
+    "valid": 11,
+    "valid_pct_generated": 55.0,
+    "valid_pct_requested": 55.0,
+    "mean_gap_pct_valid": 11.552549608017003,
+    "median_gap_pct_valid": 7.616078909703594,
+    "within_1pct": 3,
+    "within_1pct_pct_requested": 15.0
+  },
+  "optimal_tours": 1,
+  "exact_prompt_format": 0,
+  "answers_in_ascending_city_order": 20,
+  "unique_readable_answers": 2,
+  "mean_generation_seconds": 12.50304370658996,
+  "peak_allocated_gpu_gib": 15.250006675720215,
+  "slurm_elapsed": "00:04:20",
+  "job_id": "1458378",
+  "diagnostics": [
+    {
+      "id": "tsp5-0000",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2218.850156060774,
+      "gap_pct": 0.9712391066416082,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0001",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0002",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2322.6053468830114,
+      "gap_pct": 32.94552309807379,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0003",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0004",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2516.841173439995,
+      "gap_pct": 7.616078909703594,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0005",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0006",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0007",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0008",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0009",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0010",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2440.355203598532,
+      "gap_pct": 8.759016087212302,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0011",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2995.1470352912174,
+      "gap_pct": 38.70105253209661,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0012",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0013",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        3,
+        0
+      ],
+      "valid": false,
+      "reason": "duplicate_or_missing_city",
+      "length": null,
+      "gap_pct": null,
+      "missing_cities": [
+        4
+      ],
+      "repeated_cities": [
+        3
+      ],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0014",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2522.3700607042488,
+      "gap_pct": 17.806711155097467,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0015",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2273.7763915447085,
+      "gap_pct": 0.0,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0016",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2298.918141094077,
+      "gap_pct": 6.95033447451483,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0017",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2242.622772504684,
+      "gap_pct": 0.5051129464469506,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0018",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 1683.7274295410164,
+      "gap_pct": 3.5127016243299947,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    },
+    {
+      "id": "tsp5-0019",
+      "strict_valid": false,
+      "bare_list_read_without_repair": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "valid": true,
+      "reason": "valid",
+      "length": 2969.1348705535083,
+      "gap_pct": 9.310275754069885,
+      "missing_cities": [],
+      "repeated_cities": [],
+      "ascending_city_order": true,
+      "route_id_count": 6
+    }
+  ],
+  "answer_frequencies": {
+    "Route: 0,1,2,3,4,0": 11,
+    "Route: 0,1,2,3,3,0": 9
+  }
+}

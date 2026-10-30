@@ -1,0 +1,27 @@
+{
+  "status": "ok",
+  "world_size": 2,
+  "results": [
+    {
+      "microbatch": 1,
+      "max_parameter_error": 7.450580596923828e-09,
+      "status": "ok"
+    },
+    {
+      "microbatch": 2,
+      "max_parameter_error": 7.450580596923828e-09,
+      "status": "ok"
+    },
+    {
+      "microbatch": 4,
+      "max_parameter_error": 9.313225746154785e-10,
+      "status": "ok"
+    },
+    {
+      "microbatch": 8,
+      "max_parameter_error": 0.0,
+      "status": "ok"
+    }
+  ],
+  "scope": "Three updates on deterministic CPU toy adapters; checks local weighting, gradient averaging before clipping, accumulation, and frozen parameters."
+}

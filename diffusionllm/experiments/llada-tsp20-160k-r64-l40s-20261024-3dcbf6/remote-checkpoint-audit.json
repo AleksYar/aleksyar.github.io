@@ -1,0 +1,110 @@
+{
+  "checked_at_utc": "2026-10-25T11:51:17.878567+00:00",
+  "remote_root": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6",
+  "milestones": {
+    "5000": {
+      "pointer": {
+        "path": "checkpoints/update-005000-96a49f9e",
+        "step": 5000,
+        "fingerprint": "2583c107504851911d267bf8a1d8d2b361da8654fc13105f3572e0d087b78388",
+        "adapter": "checkpoints/update-005000-96a49f9e/adapter",
+        "training_state": "checkpoints/update-005000-96a49f9e/training-state.pt"
+      },
+      "metadata": {
+        "step": 5000,
+        "fingerprint": "2583c107504851911d267bf8a1d8d2b361da8654fc13105f3572e0d087b78388",
+        "permanent": true,
+        "adapter_sha256": "edfbff2a2edd61b2bf74335c99ddfdf90b8a77c922d566b77b2b9eb8e931a90a"
+      },
+      "adapter_path": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/checkpoints/update-005000-96a49f9e/adapter/adapter_model.safetensors",
+      "adapter_bytes": 671151016,
+      "adapter_sha256_verified": "edfbff2a2edd61b2bf74335c99ddfdf90b8a77c922d566b77b2b9eb8e931a90a",
+      "training_state_path": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/checkpoints/update-005000-96a49f9e/training-state.pt",
+      "training_state_bytes": 1343231304,
+      "adapter_config": {
+        "alpha_pattern": {},
+        "auto_mapping": {
+          "base_model_class": "LLaDAModelLM",
+          "parent_library": "transformers_modules.08b83a6feb34df1a6011b80c3c00c7563e963b07.modeling_llada"
+        },
+        "base_model_name_or_path": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+        "bias": "none",
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 64,
+        "lora_dropout": 0.05,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "peft_type": "LORA",
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": ".*transformer\\.blocks\\.\\d+\\.(q_proj|k_proj|v_proj|attn_out|ff_proj|up_proj|ff_out)",
+        "task_type": null,
+        "use_dora": false,
+        "use_rslora": false
+      }
+    },
+    "10000": {
+      "pointer": {
+        "path": "checkpoints/update-010000-4453e4e8",
+        "step": 10000,
+        "fingerprint": "2583c107504851911d267bf8a1d8d2b361da8654fc13105f3572e0d087b78388",
+        "adapter": "checkpoints/update-010000-4453e4e8/adapter",
+        "training_state": "checkpoints/update-010000-4453e4e8/training-state.pt"
+      },
+      "metadata": {
+        "step": 10000,
+        "fingerprint": "2583c107504851911d267bf8a1d8d2b361da8654fc13105f3572e0d087b78388",
+        "permanent": true,
+        "adapter_sha256": "492f619746b03d4bffa1f85e23471131566b70b853f3edda83b4f8e772a18224"
+      },
+      "adapter_path": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/checkpoints/update-010000-4453e4e8/adapter/adapter_model.safetensors",
+      "adapter_bytes": 671151016,
+      "adapter_sha256_verified": "492f619746b03d4bffa1f85e23471131566b70b853f3edda83b4f8e772a18224",
+      "training_state_path": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/checkpoints/update-010000-4453e4e8/training-state.pt",
+      "training_state_bytes": 1343231304,
+      "adapter_config": {
+        "alpha_pattern": {},
+        "auto_mapping": {
+          "base_model_class": "LLaDAModelLM",
+          "parent_library": "transformers_modules.08b83a6feb34df1a6011b80c3c00c7563e963b07.modeling_llada"
+        },
+        "base_model_name_or_path": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache/hub/models--GSAI-ML--LLaDA-8B-Instruct/snapshots/08b83a6feb34df1a6011b80c3c00c7563e963b07",
+        "bias": "none",
+        "fan_in_fan_out": false,
+        "inference_mode": true,
+        "init_lora_weights": true,
+        "layer_replication": null,
+        "layers_pattern": null,
+        "layers_to_transform": null,
+        "loftq_config": {},
+        "lora_alpha": 64,
+        "lora_dropout": 0.05,
+        "megatron_config": null,
+        "megatron_core": "megatron.core",
+        "modules_to_save": null,
+        "peft_type": "LORA",
+        "r": 64,
+        "rank_pattern": {},
+        "revision": null,
+        "target_modules": ".*transformer\\.blocks\\.\\d+\\.(q_proj|k_proj|v_proj|attn_out|ff_proj|up_proj|ff_out)",
+        "task_type": null,
+        "use_dora": false,
+        "use_rslora": false
+      }
+    }
+  },
+  "final_adapter": {
+    "sha256": "492f619746b03d4bffa1f85e23471131566b70b853f3edda83b4f8e772a18224",
+    "path": "[cluster-home]/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/adapter",
+    "saved_adapter_reload_exact": true
+  },
+  "status": "passed"
+}

@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TSP10 LoRA results</title><style>body{font:16px/1.55 system-ui;background:#f3f6fa;color:#182b43;margin:0}main{max-width:1150px;margin:auto;padding:32px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:12px;text-align:left;border-bottom:1px solid #d9e1e9}h1{font-size:32px}details,.card{background:white;padding:16px;margin:14px 0;border-radius:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}a{color:#125cb0}.scroll{overflow:auto}summary{cursor:pointer}small{color:#4d617a}</style><style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style><nav class="public-nav" aria-label="Experiment library"><a href="../../../../index.html">← All experiments</a><a href="../../../../about.html">About these results</a></nav><main><small>LLADA-8B-INSTRUCT · ONE L40S · INDEPENDENT ADAPTER</small><h1>TSP10 LoRA experiment</h1><p><b>Status: complete</b> · phase profile · update 4/6250</p><p>100,000 training examples; 100 fixed validation cases. One epoch, LoRA rank 16, learning rate 0.0001. Identical before/after decoding: 512 output positions, 128 steps, temperature 0.</p><div class="card">Complete tours count every city exactly once and close the cycle. Gap is computed only for complete tours, using coordinate distances. Invalid answers have no gap. Strict validity also requires the requested bracketed format and start at zero. These are validation results, not an untouched final test.</div><div class="scroll"><table><thead><tr><th>Condition</th><th>Answers</th><th>Complete</th><th>Optimal</th><th>Within 1%</th><th>Mean valid gap %</th><th>Strict valid</th></tr></thead><tbody><tr><td>profile</td><td>1/1</td><td>0</td><td>0</td><td>0</td><td>—</td><td>0</td></tr><tr><td>nearest_neighbor</td><td>100</td><td>100</td><td>14</td><td>18</td><td>9.74</td><td>—</td></tr><tr><td>nearest_neighbor_2opt</td><td>100</td><td>100</td><td>84</td><td>91</td><td>0.31</td><td>—</td></tr></tbody></table></div><p><a href="all-answers.txt">All prompts and answers</a> · <a href="answers.jsonl">Answers and full token arrays</a> · <a href="summary.json">Metrics</a> · <span class="local-artifact" title="Retained in the research workspace; not included in this public export">Training history <small>(local file)</small></span> · <a href="runtime.json">Provenance</a></p><div class="card"><h2>Training loss</h2><p>Stochastic masked-token loss; route quality is measured separately above.</p><svg viewBox="0 0 980 210" role="img" aria-label="Training loss by optimizer update"><path d="M40 20V175H950" fill="none" stroke="#8091a2"/><polyline points="40.14,56.27 40.29,36.56 40.43,30.00 40.58,41.51" fill="none" stroke="#216eb0" stroke-width="2"/><text x="40" y="202">0</text><text x="900" y="202">6250 updates</text><text x="4" y="25">0.7</text></svg></div><h2>Every saved answer</h2><details><summary>profile · tsp10-validation-00000 · non_integer_route · gap —%</summary><p><b>Prompt</b></p><pre>### Instruction
+Find a minimum-distance closed tour through the 10 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [594, 137], neighbors: [6: 82.2, 7: 222.3];
+Node 1, coordinates: [812, 972], neighbors: [2: 136.0, 3: 378.0];
+Node 2, coordinates: [813, 836], neighbors: [1: 136.0, 3: 264.9];
+Node 3, coordinates: [989, 638], neighbors: [2: 264.9, 9: 285.8];
+Node 4, coordinates: [266, 300], neighbors: [5: 122.3, 8: 146.2];
+Node 5, coordinates: [352, 213], neighbors: [4: 122.3, 7: 175.8];
+Node 6, coordinates: [648, 75], neighbors: [0: 82.2, 7: 257.1];
+Node 7, coordinates: [393, 42], neighbors: [5: 175.8, 0: 222.3];
+Node 8, coordinates: [333, 430], neighbors: [4: 146.2, 5: 217.8];
+Node 9, coordinates: [780, 443], neighbors: [3: 285.8, 0: 358.1];</pre><p><b>Model answer</b></p><pre>To find the minimum-distance closed tour through the 10 cities, we can use a Traveling algorithm algorithm, the the Traveling Ne Neighbor algorithm. This algorithm starts at an initial city and repeatedly visits the nearest unvisited city until all cities are visited.
+
+Starting at city 0,
+
+1. City 0: [594, 137]
+2. Nearest city to city 0 is city 6: [648, 75]
+3. Nearest city to city 6 is city 7: [393, 42]
+
+Next, process until we get:
+
+1. City 0: [594, 137]
+2. Nearest city to city 0 is city 1: [812, 972]
+3. Nearest city to city 1 is city 2: [813, 836]
+4. Nearest city to city 2 is city 3: [989, 638]
+5. Nearest city to city 3 is city 8: [333, 430]
+6. Nearest city to city 8 is city 4: [266, 300]
+7. Nearest city to city 4 is city 5: [352, 213]
+8. Nearest city to city 5 is city 7: [393, 42]
+9. Nearest city to city 7 is city 6: [648, 75]
+10. Return to city 0: [594, 137]
+
+, the total output is:
+
+plain```
+Route: [[594, 137], [812, 972], [813, 836], [989, 638], [333, 430], [266, 300], [352, 213], [393, 42], [648, 75], [594, 137],],: 1222.00
+```
+
+This output represents the minimum-distance closed tour based on the given data.</pre><p><b>Exact reference</b></p><pre>Route: [0, 6, 9, 3, 2, 1, 8, 4, 5, 7, 0], Objective: 2550.015</pre><pre>{
+  &quot;route&quot;: null,
+  &quot;complete&quot;: false,
+  &quot;reason&quot;: &quot;non_integer_route&quot;,
+  &quot;bracketed_route&quot;: false,
+  &quot;strict_format&quot;: false,
+  &quot;strict_valid&quot;: false,
+  &quot;missing_cities&quot;: [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  &quot;repeated_cities&quot;: [],
+  &quot;starts_at_zero&quot;: false,
+  &quot;computed_length&quot;: null,
+  &quot;gap_pct&quot;: null,
+  &quot;optimal&quot;: false,
+  &quot;within_1pct&quot;: false,
+  &quot;reported_objective&quot;: null,
+  &quot;objective_consistent&quot;: null
+}</pre></details></main></html>

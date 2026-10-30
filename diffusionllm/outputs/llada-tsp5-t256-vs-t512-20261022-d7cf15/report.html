@@ -1,0 +1,194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LLaDA TSP5 — 256 vs 512 tokens</title><style>
+*{box-sizing:border-box}body{margin:0;background:#eef3f7;color:#183147;font:16px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1180px;margin:40px auto;padding:0 24px 64px}header{padding:24px 0}h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:12px 0 20px}h2{margin-top:36px}h3,h4{margin-top:0}.eyebrow{font-size:13px;letter-spacing:1.5px;text-transform:uppercase;color:#386477}.muted{color:#526b80;font-size:14px}.card{padding:24px;background:#fff;border:1px solid #dbe3ea;border-radius:14px;margin:16px 0}.finding{border-left:6px solid #148076;background:#f1fbf7}.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:12px;text-align:left;border-bottom:1px solid #dbe3ea;vertical-align:top}thead th{background:#eaf0f5}tbody th{font-weight:500}.scroll{overflow:auto}pre,code{font:14px/1.6 ui-monospace,SFMono-Regular,monospace;overflow-wrap:anywhere;white-space:pre-wrap}pre{padding:16px;background:#f2f6f9;border-radius:8px}a{color:#086b86}summary{cursor:pointer;font-weight:600}.barrow{display:grid;grid-template-columns:110px 1fr 65px;gap:16px;align-items:center;margin:14px 0}.bartrack{background:#e1e9ef;border-radius:8px;height:24px}.barfill{background:#168779;height:24px;border-radius:8px}.note{padding:0 4px}@media(max-width:720px){.twocol{grid-template-columns:1fr}main{padding:0 14px 40px}.card{padding:16px}.barrow{grid-template-columns:85px 1fr 45px;gap:8px}}
+</style><style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style></head><body><nav class="public-nav" aria-label="Experiment library"><a href="../../index.html">← All experiments</a><a href="../../about.html">About these results</a></nav><main><header><div class="eyebrow">Untuned LLaDA-8B-Instruct · paired TSP5 pilot · 22 October 2026</div><h1>Does a larger output budget help?</h1><p>The same 20 five-city problems and unchanged coordinates-only prompts, run in parallel on two A40 GPUs. Each job uses one GPU, 128 diffusion steps, and a 15-minute limit.</p></header>
+<section class="card finding"><h2 style="margin-top:0">More output space improved tour completeness in this pilot.</h2><p>Complete tours, ignoring missing brackets: <strong>11/20 at 256 tokens</strong> and <strong>16/20 at 512 tokens</strong>. 6/20 readable answers are identical between the two settings.</p><div class="barrow"><strong>256 tokens</strong><div class="bartrack"><div class="barfill" style="width:55.0%"></div></div><span>11/20</span></div><div class="barrow"><strong>512 tokens</strong><div class="bartrack"><div class="barfill" style="width:80.0%"></div></div><span>16/20</span></div></section>
+<p class="note"><strong>What changed:</strong> output length is 256 versus 512 positions. Each setting keeps one diffusion block covering the entire output, so block length changes with output length. With 128 steps, the sampler reveals 2 versus 4 positions per step. This is a comparison of output budgets at fixed step count, not a test with more diffusion steps or a request for a longer explanation.</p>
+<h2>Results side by side</h2><div class="card scroll"><table><thead><tr><th>Measure</th><th>256 output positions</th><th>512 output positions</th></tr></thead><tbody><tr><th>Answers saved</th><td>20 / 20</td><td>20 / 20</td></tr><tr><th>Complete tours · brackets ignored</th><td>11 / 20</td><td>16 / 20</td></tr><tr><th>Optimal tours · brackets ignored</th><td>1 / 20</td><td>1 / 20</td></tr><tr><th>Within 1% of optimum · brackets ignored</th><td>3 / 20</td><td>4 / 20</td></tr><tr><th>Mean distance above optimum · complete tours only</th><td>11.55%</td><td>11.29%</td></tr><tr><th>Strict primary valid tours · bracket parser</th><td>0 / 20</td><td>0 / 20</td></tr><tr><th>Exact requested format</th><td>0 / 20</td><td>0 / 20</td></tr><tr><th>Mean visible answer tokens</th><td>14.0</td><td>16.8</td></tr><tr><th>Visible answer token range</th><td>14–14</td><td>14–19</td></tr><tr><th>Distinct readable answers</th><td>2</td><td>4</td></tr><tr><th>Distinct city sequences · spacing ignored</th><td>2</td><td>2</td></tr><tr><th>Mean generation time / instance</th><td>12.51 seconds</td><td>19.67 seconds</td></tr><tr><th>Whole job runtime</th><td>00:04:20</td><td>00:06:44</td></tr><tr><th>Peak allocated GPU memory</th><td>15.25 GiB</td><td>15.43 GiB</td></tr><tr><th>Slurm job</th><td>1458386</td><td>1458387</td></tr></tbody></table></div>
+<p><strong>Scoring:</strong> the primary benchmark retains the original bracket parser. A separate diagnostic accepts an unambiguous bare comma-separated route without adding, removing, or reordering city IDs. A complete TSP5 tour must contain every city once and return to its start. Gap is undefined for incomplete tours. The average gaps above use each arm’s complete subset, which may differ.</p>
+<p>On the 11 instances complete under both settings, mean gaps are 11.55% (256) and 11.55% (512). Comparing the same cases: 11 stayed complete; 5 became complete; 4 stayed invalid; 0 became invalid.</p>
+<h2>Did the answers actually get longer?</h2><p>Visible token counts measure the readable answer before the first end token. The full 256- or 512-position canvas is saved separately, including end tokens and any content after them. A larger canvas does not require the model to use more readable tokens. The prompt still requests one route and no explanation.</p><p><strong>Every complete answer in both settings uses the same city order:</strong> <code>[0, 1, 2, 3, 4, 0]</code>. Improved completeness therefore does not demonstrate that route order adapts to the coordinates.</p><p>The additional visible tokens at 512 come from spaces after commas. All answers contain the same number of city IDs and no explanation. Two numerical route patterns account for every answer; the four readable variants at 512 reflect spacing differences.</p><div class="twocol"><section class="card"><h3>256 output tokens</h3><table><thead><tr><th>Count</th><th>Exact readable response</th></tr></thead><tbody><tr><td>11/20</td><td><code>Route: 0,1,2,3,4,0</code></td></tr><tr><td>9/20</td><td><code>Route: 0,1,2,3,3,0</code></td></tr></tbody></table></section><section class="card"><h3>512 output tokens</h3><table><thead><tr><th>Count</th><th>Exact readable response</th></tr></thead><tbody><tr><td>9/20</td><td><code>Route: 0, 1, 2, 3, 4, 0</code></td></tr><tr><td>7/20</td><td><code>Route: 0,1,2,3,4,0</code></td></tr><tr><td>2/20</td><td><code>Route: 0, 1, 2, 3, 3, 0</code></td></tr><tr><td>2/20</td><td><code>Route: 0,1,2,3,3,0</code></td></tr></tbody></table></section></div>
+<h2>All 20 paired answers</h2><p>Expand a case to see both exact answers, correctness, runtime, the exact optimum, and the unchanged full prompt. <a href="all-answers.txt">Read all prompts and answers as text</a>.</p><details class="card"><summary>tsp5-0000 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.97% above optimum</p><p class="muted">14 visible tokens · 13.14s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.97% above optimum</p><p class="muted">14 visible tokens · 20.12s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 3, 2, 1, 4, 0] · length 2197.507108</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)</pre></details></details><details class="card"><summary>tsp5-0001 · 256: invalid · 512: invalid</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.36s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 3, 0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">19 visible tokens · 19.42s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 3, 4, 2, 0] · length 2552.498281</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (692, 758)
+City 1: (913, 558)
+City 2: (89, 604)
+City 3: (432, 32)
+City 4: (30, 95)</pre></details></details><details class="card"><summary>tsp5-0002 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 32.95% above optimum</p><p class="muted">14 visible tokens · 12.44s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 32.95% above optimum</p><p class="muted">14 visible tokens · 19.45s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 4, 3, 2, 0] · length 1747.035397</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (223, 238)
+City 1: (517, 616)
+City 2: (27, 574)
+City 3: (203, 733)
+City 4: (665, 718)</pre></details></details><details class="card"><summary>tsp5-0003 · 256: invalid · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.38s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 24.20% above optimum</p><p class="muted">14 visible tokens · 19.51s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 1, 4, 3, 0] · length 2318.460396</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (558, 429)
+City 1: (225, 459)
+City 2: (603, 284)
+City 3: (828, 890)
+City 4: (6, 777)</pre></details></details><details class="card"><summary>tsp5-0004 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 7.62% above optimum</p><p class="muted">14 visible tokens · 12.40s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 7.62% above optimum</p><p class="muted">19 visible tokens · 19.57s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 3, 2, 1, 4, 0] · length 2338.722242</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (825, 163)
+City 1: (714, 432)
+City 2: (348, 284)
+City 3: (159, 220)
+City 4: (980, 781)</pre></details></details><details class="card"><summary>tsp5-0005 · 256: invalid · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.41s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.80% above optimum</p><p class="muted">14 visible tokens · 19.57s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 1, 3, 4, 0] · length 1738.398531</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (344, 104)
+City 1: (94, 389)
+City 2: (99, 367)
+City 3: (867, 352)
+City 4: (618, 270)</pre></details></details><details class="card"><summary>tsp5-0006 · 256: invalid · 512: invalid</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.45s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 19.57s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 4, 1, 3, 0] · length 2439.939229</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 44)
+City 1: (747, 470)
+City 2: (549, 127)
+City 3: (996, 944)
+City 4: (387, 80)</pre></details></details><details class="card"><summary>tsp5-0007 · 256: invalid · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.48s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 9.07% above optimum</p><p class="muted">19 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 1, 3, 4, 0] · length 1671.375080</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (565, 300)
+City 1: (849, 643)
+City 2: (633, 906)
+City 3: (882, 370)
+City 4: (591, 196)</pre></details></details><details class="card"><summary>tsp5-0008 · 256: invalid · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.48s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 12.73% above optimum</p><p class="muted">19 visible tokens · 19.59s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 3, 1, 2, 4, 0] · length 2364.936500</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (721, 71)
+City 1: (46, 677)
+City 2: (233, 791)
+City 3: (296, 81)
+City 4: (875, 238)</pre></details></details><details class="card"><summary>tsp5-0009 · 256: invalid · 512: invalid</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.50s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 3, 0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">19 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 4, 2, 3, 0] · length 1925.431279</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (887, 103)
+City 1: (389, 284)
+City 2: (464, 650)
+City 3: (854, 373)
+City 4: (166, 379)</pre></details></details><details class="card"><summary>tsp5-0010 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 8.76% above optimum</p><p class="muted">14 visible tokens · 12.51s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 8.76% above optimum</p><p class="muted">14 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 3, 2, 4, 0] · length 2243.818758</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (363, 214)
+City 1: (686, 273)
+City 2: (718, 959)
+City 3: (699, 663)
+City 4: (73, 623)</pre></details></details><details class="card"><summary>tsp5-0011 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 38.70% above optimum</p><p class="muted">14 visible tokens · 12.51s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 38.70% above optimum</p><p class="muted">19 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 4, 1, 3, 0] · length 2159.426321</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (650, 175)
+City 1: (546, 746)
+City 2: (250, 167)
+City 3: (473, 388)
+City 4: (276, 947)</pre></details></details><details class="card"><summary>tsp5-0012 · 256: invalid · 512: invalid</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.52s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 4, 2, 3, 0] · length 1762.786244</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (655, 704)
+City 1: (570, 224)
+City 2: (701, 332)
+City 3: (863, 786)
+City 4: (794, 57)</pre></details></details><details class="card"><summary>tsp5-0013 · 256: invalid · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,3,0</pre><p>Invalid · duplicate or missing city; missing [4], repeated [3]</p><p class="muted">14 visible tokens · 12.51s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 6.82% above optimum</p><p class="muted">14 visible tokens · 19.62s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 3, 1, 4, 0] · length 1891.912565</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (234, 841)
+City 1: (32, 824)
+City 2: (323, 410)
+City 3: (274, 67)
+City 4: (216, 935)</pre></details></details><details class="card"><summary>tsp5-0014 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 17.81% above optimum</p><p class="muted">14 visible tokens · 12.53s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 17.81% above optimum</p><p class="muted">19 visible tokens · 19.68s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 4, 2, 3, 0] · length 2141.108971</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (965, 580)
+City 1: (897, 735)
+City 2: (322, 217)
+City 3: (671, 511)
+City 4: (405, 905)</pre></details></details><details class="card"><summary>tsp5-0015 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.00% above optimum</p><p class="muted">14 visible tokens · 12.53s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 0.00% above optimum</p><p class="muted">19 visible tokens · 19.77s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 2, 3, 4, 0] · length 2273.776392</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (936, 658)
+City 1: (469, 146)
+City 2: (271, 142)
+City 3: (252, 762)
+City 4: (574, 551)</pre></details></details><details class="card"><summary>tsp5-0016 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 6.95% above optimum</p><p class="muted">14 visible tokens · 12.53s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 6.95% above optimum</p><p class="muted">19 visible tokens · 19.81s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 1, 3, 4, 0] · length 2149.519356</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (269, 764)
+City 1: (598, 438)
+City 2: (919, 597)
+City 3: (408, 370)
+City 4: (224, 141)</pre></details></details><details class="card"><summary>tsp5-0017 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.51% above optimum</p><p class="muted">14 visible tokens · 12.51s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 0.51% above optimum</p><p class="muted">14 visible tokens · 19.83s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 2, 1, 3, 4, 0] · length 2231.351925</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (521, 505)
+City 1: (93, 773)
+City 2: (48, 881)
+City 3: (112, 156)
+City 4: (642, 163)</pre></details></details><details class="card"><summary>tsp5-0018 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 3.51% above optimum</p><p class="muted">14 visible tokens · 12.53s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 3.51% above optimum</p><p class="muted">19 visible tokens · 19.87s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 3, 2, 4, 0] · length 1626.590170</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (811, 696)
+City 1: (432, 610)
+City 2: (65, 394)
+City 3: (390, 610)
+City 4: (479, 541)</pre></details></details><details class="card"><summary>tsp5-0019 · 256: complete · 512: complete</summary><div class="twocol"><section><h4>256 tokens</h4><pre>Route: 0,1,2,3,4,0</pre><p>Complete · 9.31% above optimum</p><p class="muted">14 visible tokens · 12.53s · 128 diffusion steps</p></section><section><h4>512 tokens</h4><pre>Route: 0, 1, 2, 3, 4, 0</pre><p>Complete · 9.31% above optimum</p><p class="muted">19 visible tokens · 19.88s · 128 diffusion steps</p></section></div><p><strong>Exact optimal route:</strong> [0, 1, 3, 2, 4, 0] · length 2716.244973</p><details><summary>Full unchanged prompt</summary><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (257, 994)
+City 1: (566, 881)
+City 2: (965, 11)
+City 3: (696, 738)
+City 4: (117, 698)</pre></details></details>
+<h2>Simple CPU reference methods</h2><div class="card scroll"><table><thead><tr><th>Method</th><th>Complete tours</th><th>Mean gap</th><th>Within 1%</th></tr></thead><tbody><tr><th>Nearest neighbor</th><td>20/20</td><td>4.14%</td><td>8/20</td></tr><tr><th>Nearest neighbor + 2-opt</th><td>20/20</td><td>0.00%</td><td>20/20</td></tr></tbody></table></div><p>Both heuristics use all 20 instances. Exact optima were independently verified by enumerating every tour. Reference tours were never provided to the model.</p>
+<h2>Reproducibility and limits</h2><p>The 256-token control reproduces 20/20 prior readable answers and 20/20 full token arrays. Model, dataset, source, and configuration hashes were verified. Slurm confirms both jobs completed successfully, with 260 seconds of overlapping execution. The elapsed interval from the first job start to the last finish is 404 seconds; this excludes preparation and queue time.</p><p>This is a small development pilot, reused to explore decoding choices. It does not establish an unbiased final benchmark or show how performance generalizes to larger TSP instances. Neither model was fine-tuned. Both use BF16, temperature 0, seed 42, no adapter, and the pinned official sampler.</p>
+<p>Model revision: <code>08b83a6feb34df1a6011b80c3c00c7563e963b07</code><br>Official sampler revision: <code>9182493720ed723ef8031210d85959364e51cbe0</code><br>Dataset SHA-256: <code>2f2a1392e216d334ba0aa3dd85a49c34da24e916162e1a9c17dca2655eb15646</code></p>
+<h2>Saved evidence</h2><ul><li>256 tokens: <a href="t256/results/raw-answers.txt">prompts and answers</a> · <a href="t256/results/answers.jsonl">full token arrays</a> · <a href="t256/results/report.html">original strict report</a> · <a href="t256/results/diagnostics.json">route diagnostics</a> · <a href="t256/slurm-accounting.txt">completion record</a> · <span class="local-artifact" title="Retained in the research workspace; not included in this public export">job log <small>(local file)</small></span></li><li>512 tokens: <a href="t512/results/raw-answers.txt">prompts and answers</a> · <a href="t512/results/answers.jsonl">full token arrays</a> · <a href="t512/results/report.html">original strict report</a> · <a href="t512/results/diagnostics.json">route diagnostics</a> · <a href="t512/slurm-accounting.txt">completion record</a> · <span class="local-artifact" title="Retained in the research workspace; not included in this public export">job log <small>(local file)</small></span></li><li><a href="comparison-results.json">Complete comparison metrics</a> · <a href="comparison.json">Frozen experiment design</a> · <a href="local-validation.json">Local validation</a></li></ul><p class="muted">Cluster policy checked before submission: <a href="https://hpc.cs.technion.ac.il/clusters/newton/how-to-launch-jobs/">job instructions</a> and <a href="https://hpc.cs.technion.ac.il/clusters/newton/partitions-accounts-and-qos/">accounts and partitions</a>.</p></main></body></html>

@@ -1,0 +1,92 @@
+{
+  "task": "TSP10",
+  "status": {
+    "status": "complete",
+    "phase": "complete",
+    "step": 6250,
+    "task": "tsp10",
+    "job_id": "1459422",
+    "updated_at_utc": "2026-10-24T00:31:06Z",
+    "examples_seen": 100000,
+    "seconds_per_update_recent": 3.692335142893717,
+    "peak_allocated_gib": 17.138232707977295
+  },
+  "phases": {
+    "before": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 6,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": 17.37038398008043,
+      "median_gap_pct_complete": 19.05479575432435,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 510,
+      "mean_seconds": 11.765245132455602,
+      "distinct_city_sequences": 35
+    },
+    "update-001250": {
+      "requested": 20,
+      "answers_saved": 20,
+      "complete": 18,
+      "strict_valid": 18,
+      "strict_format": 20,
+      "optimal": 10,
+      "within_1pct": 13,
+      "mean_gap_pct_complete": 2.0308713417351916,
+      "median_gap_pct_complete": 1.1102230246251565e-14,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 46,
+      "mean_seconds": 14.067910082568414,
+      "distinct_city_sequences": 20
+    },
+    "update-003750": {
+      "requested": 20,
+      "answers_saved": 20,
+      "complete": 17,
+      "strict_valid": 17,
+      "strict_format": 20,
+      "optimal": 12,
+      "within_1pct": 13,
+      "mean_gap_pct_complete": 2.875312565724413,
+      "median_gap_pct_complete": 0.0,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 46,
+      "mean_seconds": 14.082755886414088,
+      "distinct_city_sequences": 20
+    },
+    "after": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 90,
+      "strict_valid": 90,
+      "strict_format": 100,
+      "optimal": 69,
+      "within_1pct": 79,
+      "mean_gap_pct_complete": 0.7156009048830995,
+      "median_gap_pct_complete": 0.0,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 46,
+      "mean_seconds": 14.216569276521914,
+      "distinct_city_sequences": 100
+    }
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 14,
+      "within_1pct": 18,
+      "mean_gap_pct_complete": 9.74205625008104
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 84,
+      "within_1pct": 91,
+      "mean_gap_pct_complete": 0.3057317171119158
+    }
+  }
+}

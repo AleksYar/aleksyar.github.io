@@ -1,0 +1,102 @@
+{
+  "created_on": "2026-10-26",
+  "task": "One versus two L40S LoRA throughput on nlp-l40-1",
+  "user_selected_recipe": "Earlier rank64 standard masked loss; no city uniqueness loss",
+  "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+  "model_revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "rank": 64,
+  "alpha": 64,
+  "dropout": 0.05,
+  "effective_batch": 16,
+  "world_sizes": [
+    1,
+    2
+  ],
+  "screen_pairs": [
+    [
+      2,
+      "none"
+    ],
+    [
+      1,
+      "none"
+    ],
+    [
+      2,
+      "quarter"
+    ],
+    [
+      4,
+      "half"
+    ],
+    [
+      8,
+      "all"
+    ],
+    [
+      4,
+      "none"
+    ]
+  ],
+  "additional_screen": {
+    "world_size": 1,
+    "microbatch": 16,
+    "checkpointing": "all"
+  },
+  "screen": {
+    "warmup": 3,
+    "timed_updates": 7
+  },
+  "confirm": {
+    "warmup": 3,
+    "timed_updates": 24,
+    "independent_repeats": 2,
+    "top_candidates_per_world_size": 2
+  },
+  "stress": {
+    "warmup": 2,
+    "timed_updates": 8,
+    "sample": "16 longest examples from the same 512-row training-only sample"
+  },
+  "hard_limit_minutes": 45,
+  "soft_limit_minutes": 40,
+  "per_trial_seconds": 360,
+  "minimum_reserved_headroom_gib": 3.0,
+  "measurement": "CUDA synchronized complete forward/loss/backward/clip/AdamW/scheduler update; max elapsed across ranks; excludes loading, metric collectives and JSON writes",
+  "timing_order": "Alternate 1GPU/2GPU screening. Reverse confirmation order on second repeat; second 1GPU repeat uses the other allocated card.",
+  "ddp": {
+    "backend": "nccl",
+    "broadcast_buffers": false,
+    "find_unused_parameters": false,
+    "gradient_as_bucket_view": true,
+    "no_sync": "all but final microbatch",
+    "local_loss_normalization": "mean over each equal-sized local batch; DDP averages gradients once"
+  },
+  "unchanged": [
+    "BF16 frozen base",
+    "FP32 adapters",
+    "224 block projections",
+    "AdamW lr1e-4 weight_decay0.01",
+    "cosine schedule 10000 updates 5% warmup",
+    "dynamic EOS padding",
+    "no truncation",
+    "original masked diffusion objective"
+  ],
+  "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+  "screen_selection_notes": [
+    "Previous exhaustive L40S grid informs pruning but does not replace current paired baseline measurements.",
+    "mb4/no-checkpoint rechecked for feasibility; larger no-checkpoint trials omitted because a single replica keeps its own activations on each GPU.",
+    "mb4/quarter historically left under 1 GiB reserved headroom; mb4/half tests a safer larger microbatch.",
+    "mb8/all tests the largest per-GPU batch possible with 2GPU and global batch16; mb16/all covers the largest 1GPU batch.",
+    "No larger global-batch cohort: preserve training recipe for user-requested hardware scaling."
+  ],
+  "limitations": [
+    "Different GPU counts/microbatches change RNG draws and padding; no claim of bitwise equivalent training between layouts.",
+    "Short profile checks speed and execution, not convergence or solution quality.",
+    "No full fine-tuning or checkpoint resume is launched."
+  ],
+  "sources": [
+    "https://docs.pytorch.org/docs/2.6/checkpoint.html",
+    "https://github.com/pytorch/pytorch/blob/v2.6.0/torch/nn/parallel/distributed.py"
+  ]
+}

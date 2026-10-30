@@ -1,0 +1,40 @@
+{
+  "status": "verified",
+  "files": {
+    "data/validation.jsonl": "8af1439fdcdc5e03f772b2ec66f4af7bbfb0117ee7a42ea0d0f1b6df2eb9c9f8",
+    "data/prompt-tokens.json": "364e2f0f843dbe33cc223b8c4646faeb88bfe728afe9e1517d3fed41b337cecc",
+    "config.json": "aaf1b691c84646de5ead14dc3e1e012ee273df6f1a95f4b8e638ffffc9306deb"
+  },
+  "count": 1000,
+  "seed": 2610202601,
+  "excluded_sources": [
+    {
+      "path": "[workspace]/experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/train.jsonl",
+      "sha256": "bbd55e742fcb319839a126c1d3ff3c99da5461d9a5b60da9080004bf57c50641",
+      "examples": 20000
+    },
+    {
+      "path": "[workspace]/experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/train.jsonl",
+      "sha256": "6ac525908cff04e9b71313ed7c180ae2788a6c3dc54ba364e74e01127cf46172",
+      "examples": 200000
+    },
+    {
+      "path": "[workspace]/experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/train.jsonl",
+      "sha256": "684ae2c02d5c577167991adb2fc7473c5b7142f5d469ce1066396d714cbb1652",
+      "examples": 160000
+    },
+    {
+      "path": "[workspace]/experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/validation.jsonl",
+      "sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "examples": 100
+    }
+  ],
+  "excluded_unique_geometries": 380100,
+  "overlap_with_excluded": 0,
+  "duplicate_geometries": 0,
+  "max_prompt_tokens": 904,
+  "min_prompt_tokens": 872,
+  "references": "HiGHS MILP status=0; connected tour; verified dual bound and gap",
+  "maximum_reference_mip_gap": 0.0,
+  "preparation_seconds": 11.302771208022023
+}

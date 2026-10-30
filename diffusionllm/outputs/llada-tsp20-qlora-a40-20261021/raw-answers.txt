@@ -1,0 +1,159 @@
+INSTANCE heldout-000
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 20 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances. Nearest-neighbor hints are provided below.
+Output only one line in this format: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (910, 467); nearest neighbors (city: distance): 18: 114.1, 8: 142.4.
+City 1: (764, 270); nearest neighbors (city: distance): 17: 93.9, 2: 120.1.
+City 2: (644, 275); nearest neighbors (city: distance): 1: 120.1, 10: 155.6.
+City 3: (884, 186); nearest neighbors (city: distance): 17: 54.5, 9: 110.5.
+City 4: (211, 126); nearest neighbors (city: distance): 14: 124.8, 7: 145.0.
+City 5: (384, 891); nearest neighbors (city: distance): 6: 114.3, 19: 350.2.
+City 6: (271, 874); nearest neighbors (city: distance): 5: 114.3, 15: 381.3.
+City 7: (111, 21); nearest neighbors (city: distance): 4: 145.0, 16: 204.6.
+City 8: (773, 506); nearest neighbors (city: distance): 13: 19.0, 0: 142.4.
+City 9: (982, 237); nearest neighbors (city: distance): 3: 110.5, 17: 135.4.
+City 10: (630, 120); nearest neighbors (city: distance): 2: 155.6, 1: 201.1.
+City 11: (531, 498); nearest neighbors (city: distance): 19: 132.6, 12: 208.3.
+City 12: (415, 325); nearest neighbors (city: distance): 15: 198.3, 11: 208.3.
+City 13: (755, 512); nearest neighbors (city: distance): 8: 19.0, 0: 161.4.
+City 14: (142, 230); nearest neighbors (city: distance): 16: 47.3, 4: 124.8.
+City 15: (313, 495); nearest neighbors (city: distance): 12: 198.3, 11: 218.0.
+City 16: (95, 225); nearest neighbors (city: distance): 14: 47.3, 4: 152.5.
+City 17: (847, 226); nearest neighbors (city: distance): 3: 54.5, 1: 93.9.
+City 18: (855, 367); nearest neighbors (city: distance): 0: 114.1, 1: 133.0.
+City 19: (597, 613); nearest neighbors (city: distance): 11: 132.6, 13: 187.5.
+EXACT TARGET
+Route: [0, 8, 13, 11, 19, 5, 6, 15, 14, 16, 7, 4, 12, 10, 2, 1, 17, 3, 9, 18, 0]
+
+BEFORE
+Route: 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 0, 8, 2, 1, 2, 1, 2, 1, 17, 18, 0
+Invalid: unparseable_or_ambiguous_route
+
+
+AFTER
+Route: 0,
+Invalid: unparseable_or_ambiguous_route
+
+
+INSTANCE heldout-001
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 20 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances. Nearest-neighbor hints are provided below.
+Output only one line in this format: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (591, 40); nearest neighbors (city: distance): 3: 41.2, 12: 273.4.
+City 1: (431, 617); nearest neighbors (city: distance): 16: 158.5, 7: 190.2.
+City 2: (11, 428); nearest neighbors (city: distance): 18: 123.5, 13: 277.0.
+City 3: (559, 66); nearest neighbors (city: distance): 0: 41.2, 12: 247.7.
+City 4: (374, 845); nearest neighbors (city: distance): 5: 141.4, 15: 179.5.
+City 5: (245, 787); nearest neighbors (city: distance): 4: 141.4, 13: 159.4.
+City 6: (724, 858); nearest neighbors (city: distance): 17: 206.3, 11: 248.7.
+City 7: (544, 464); nearest neighbors (city: distance): 16: 91.1, 12: 154.6.
+City 8: (792, 561); nearest neighbors (city: distance): 14: 138.2, 17: 180.4.
+City 9: (282, 272); nearest neighbors (city: distance): 10: 131.0, 18: 223.1.
+City 10: (279, 141); nearest neighbors (city: distance): 9: 131.0, 3: 289.9.
+City 11: (939, 983); nearest neighbors (city: distance): 6: 248.7, 14: 342.8.
+City 12: (577, 313); nearest neighbors (city: distance): 7: 154.6, 19: 191.5.
+City 13: (194, 636); nearest neighbors (city: distance): 5: 159.4, 18: 205.9.
+City 14: (904, 642); nearest neighbors (city: distance): 8: 138.2, 17: 259.2.
+City 15: (277, 996); nearest neighbors (city: distance): 4: 179.5, 5: 211.4.
+City 16: (453, 460); nearest neighbors (city: distance): 7: 91.1, 1: 158.5.
+City 17: (646, 667); nearest neighbors (city: distance): 8: 180.4, 6: 206.3.
+City 18: (134, 439); nearest neighbors (city: distance): 2: 123.5, 13: 205.9.
+City 19: (768, 299); nearest neighbors (city: distance): 12: 191.5, 8: 263.1.
+EXACT TARGET
+Route: [0, 3, 10, 9, 18, 2, 13, 5, 15, 4, 1, 16, 7, 17, 6, 11, 14, 8, 19, 12, 0]
+
+BEFORE
+Route: 0, 3, 12, 4, 5, 13, 6, 17, 11, 8, 14, 17, 9, 10, 3, 18, 2, 13, 5, 18, 6, 11, 12, 7, 19, 14, 17, 4, 15, 16, 1, 12, 19, 12, 0
+Invalid: unparseable_or_ambiguous_route
+
+
+AFTER
+Route: 0,3,12,0
+Invalid: unparseable_or_ambiguous_route
+
+
+INSTANCE heldout-002
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 20 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances. Nearest-neighbor hints are provided below.
+Output only one line in this format: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (624, 837); nearest neighbors (city: distance): 19: 70.2, 6: 286.7.
+City 1: (595, 311); nearest neighbors (city: distance): 7: 92.7, 13: 104.8.
+City 2: (295, 635); nearest neighbors (city: distance): 8: 25.1, 9: 323.1.
+City 3: (338, 281); nearest neighbors (city: distance): 9: 129.7, 7: 196.5.
+City 4: (237, 45); nearest neighbors (city: distance): 17: 215.8, 15: 217.1.
+City 5: (992, 746); nearest neighbors (city: distance): 18: 219.2, 19: 309.0.
+City 6: (370, 970); nearest neighbors (city: distance): 11: 15.8, 0: 286.7.
+City 7: (531, 244); nearest neighbors (city: distance): 1: 92.7, 13: 158.5.
+City 8: (320, 637); nearest neighbors (city: distance): 2: 25.1, 10: 317.4.
+City 9: (215, 322); nearest neighbors (city: distance): 3: 129.7, 17: 154.2.
+City 10: (610, 508); nearest neighbors (city: distance): 13: 125.4, 1: 197.6.
+City 11: (365, 985); nearest neighbors (city: distance): 6: 15.8, 0: 298.3.
+City 12: (725, 7); nearest neighbors (city: distance): 14: 240.9, 7: 306.3.
+City 13: (543, 402); nearest neighbors (city: distance): 1: 104.8, 10: 125.4.
+City 14: (816, 230); nearest neighbors (city: distance): 16: 161.3, 1: 235.4.
+City 15: (20, 51); nearest neighbors (city: distance): 17: 184.3, 4: 217.1.
+City 16: (926, 348); nearest neighbors (city: distance): 14: 161.3, 18: 261.4.
+City 17: (104, 215); nearest neighbors (city: distance): 9: 154.2, 15: 184.3.
+City 18: (835, 593); nearest neighbors (city: distance): 5: 219.2, 10: 240.5.
+City 19: (691, 816); nearest neighbors (city: distance): 0: 70.2, 18: 265.5.
+EXACT TARGET
+Route: [0, 11, 6, 2, 8, 10, 13, 1, 7, 3, 9, 17, 15, 4, 12, 14, 16, 18, 5, 19, 0]
+
+BEFORE
+Route: 0, 6, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 11, 0
+Invalid: unparseable_or_ambiguous_route
+
+
+AFTER
+Route: 0, 0
+Invalid: unparseable_or_ambiguous_route
+
+
+INSTANCE heldout-003
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 20 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances. Nearest-neighbor hints are provided below.
+Output only one line in this format: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (461, 897); nearest neighbors (city: distance): 9: 47.8, 18: 124.3.
+City 1: (859, 790); nearest neighbors (city: distance): 11: 82.2, 4: 83.6.
+City 2: (646, 531); nearest neighbors (city: distance): 5: 91.6, 17: 155.5.
+City 3: (567, 989); nearest neighbors (city: distance): 18: 27.3, 0: 140.4.
+City 4: (869, 707); nearest neighbors (city: distance): 19: 63.5, 1: 83.6.
+City 5: (598, 453); nearest neighbors (city: distance): 2: 91.6, 17: 112.0.
+City 6: (6, 64); nearest neighbors (city: distance): 13: 237.0, 10: 275.7.
+City 7: (41, 570); nearest neighbors (city: distance): 16: 68.8, 14: 124.7.
+City 8: (304, 29); nearest neighbors (city: distance): 10: 24.3, 6: 300.0.
+City 9: (445, 852); nearest neighbors (city: distance): 0: 47.8, 18: 170.0.
+City 10: (280, 33); nearest neighbors (city: distance): 8: 24.3, 6: 275.7.
+City 11: (925, 839); nearest neighbors (city: distance): 1: 82.2, 4: 143.4.
+City 12: (272, 824); nearest neighbors (city: distance): 9: 175.3, 0: 202.6.
+City 13: (67, 293); nearest neighbors (city: distance): 14: 156.1, 16: 233.5.
+City 14: (71, 449); nearest neighbors (city: distance): 16: 79.1, 7: 124.7.
+City 15: (635, 727); nearest neighbors (city: distance): 19: 171.4, 2: 196.3.
+City 16: (93, 525); nearest neighbors (city: distance): 7: 68.8, 14: 79.1.
+City 17: (683, 380); nearest neighbors (city: distance): 5: 112.0, 2: 155.5.
+City 18: (540, 993); nearest neighbors (city: distance): 3: 27.3, 0: 124.3.
+City 19: (806, 715); nearest neighbors (city: distance): 4: 63.5, 1: 91.8.
+EXACT TARGET
+Route: [0, 9, 12, 7, 16, 14, 13, 6, 10, 8, 17, 5, 2, 15, 19, 4, 1, 11, 3, 18, 0]
+
+BEFORE
+Route: 0, 9, 18, 3, 11, 1, 4, 19, 5, 17, 6, 13, 10, 8, 10, 6, 14, 16, 7, 16, 7, 14, 2, 15, 2, 15, 18, 3, 18, 9, 12, 0, 9, 18, 3, 0
+Invalid: unparseable_or_ambiguous_route
+
+
+AFTER
+Route: 0,
+Invalid: unparseable_or_ambiguous_route
+

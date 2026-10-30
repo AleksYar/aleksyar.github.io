@@ -1,0 +1,93 @@
+{
+  "job_id": "1458371",
+  "elapsed": "00:05:54",
+  "generated": 28,
+  "official_same_settings": {
+    "cases": 20,
+    "strict_valid": 0,
+    "semantic_valid_without_format_requirement": 0,
+    "same_readable_answers_as_previous": 20,
+    "same_full_token_arrays_as_previous": 20
+  },
+  "replays": {
+    "cases": 2,
+    "same_full_token_arrays_as_previous": 2
+  },
+  "official_chat_settings": {
+    "cases": 3,
+    "strict_valid": 0,
+    "semantic_valid_without_format_requirement": 0
+  },
+  "trace": {
+    "traced_case": "tsp10-0000",
+    "passes_compared": 128,
+    "identical_input_passes": 128,
+    "first_different_input_pass": null,
+    "same_first_forward_choices": true,
+    "same_first_forward_confidences": true
+  },
+  "controls": [
+    {
+      "id": "control-copy-route",
+      "answer": "Route: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]",
+      "diagnostic": {
+        "route_read_without_repair": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        "bare_list_diagnostic": false,
+        "semantic_valid": true,
+        "reason": "valid",
+        "missing_cities": [],
+        "repeated_cities": [],
+        "note": "Complete tour."
+      }
+    },
+    {
+      "id": "control-arithmetic",
+      "answer": "Lily can run 12 kilometers per hour for 4 hours, so she runs a total of 12 * 4 = 48 kilometers.\nAfter that, she runs 6 kilometers per hour for the remaining 4 hours, so she runs a total of 6 * 4 = 24 kilometers.\nTherefore, Lily can run a total of 48 + 24 = 72 kilometers in 8 hours.\nThe final result is 72",
+      "diagnostic": {
+        "semantic_valid": null,
+        "note": "Arithmetic control; inspect answer against 72 km."
+      }
+    },
+    {
+      "id": "control-square-tsp4",
+      "answer": "Route: 0,1,2,3,0",
+      "diagnostic": {
+        "route_read_without_repair": [
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "bare_list_diagnostic": true,
+        "semantic_valid": true,
+        "reason": "valid",
+        "missing_cities": [],
+        "repeated_cities": [],
+        "note": "Complete tour.",
+        "length": 4.0,
+        "optimal_length": 4,
+        "gap_pct": 0.0
+      }
+    }
+  ],
+  "official_tsp10_pattern": {
+    "route_entry_counts": {
+      "10": 20
+    },
+    "answers_with_missing_cities": 20,
+    "answers_with_repeated_cities": 1
+  }
+}

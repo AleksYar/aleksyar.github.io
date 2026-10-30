@@ -1,0 +1,9 @@
+Job: 1455428
+Compute node: nlp-a40-1
+GPU allocation: 0
+name, memory.total [MiB], driver_version
+NVIDIA A40, 49140 MiB, 595.58.03
+Sum of squares, 1 through 1,000,000: 333333833333500000
+CPU computation time: 0.069 seconds
+PASS: scheduled CPU computation and NVIDIA GPU query succeeded.
+A CUDA framework/kernel test is a separate next step.

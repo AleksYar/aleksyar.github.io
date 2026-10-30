@@ -1,0 +1,684 @@
+{
+  "date": "2026-10-28",
+  "scope": "Independent CPU audit of the 500 saved final answers from five completed fine-tuning runs on the same 100 validation geometries. No new model inference. Original artifacts unchanged.",
+  "distance_definition": "Sum unrounded Euclidean edge lengths, including the final return edge; round only for display.",
+  "printed_objective_tolerance": 0.000501,
+  "runs": [
+    {
+      "run": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20",
+      "label": "100,000 examples \u00b7 rank 16",
+      "learning_rate": 0.0001,
+      "validation_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "answers": 100,
+      "complete": 90,
+      "optimal": 20,
+      "within_1pct": 41,
+      "reported_objective_evaluable": 90,
+      "reported_objective_consistent": 0,
+      "invalid_reasons": {
+        "duplicate_or_missing_city": 10
+      },
+      "parse_or_score_disagreements": [],
+      "reference_length_disagreements": [],
+      "routes_below_reference": [],
+      "invalid_cases": [
+        {
+          "id": "tsp20-validation-00003",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00003.json",
+          "raw_answer": "Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 19, 19, 11, 15, 0], Objective: 4304.434",
+          "missing": [
+            13
+          ],
+          "repeated": [
+            19
+          ]
+        },
+        {
+          "id": "tsp20-validation-00009",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00009.json",
+          "raw_answer": "Route: [0, 7, 19, 2, 12, 14, 1, 8, 4, 4, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4000.404",
+          "missing": [
+            5
+          ],
+          "repeated": [
+            4
+          ]
+        },
+        {
+          "id": "tsp20-validation-00013",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00013.json",
+          "raw_answer": "Route: [0, 7, 17, 16, 4, 1, 9, 2, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4104.447",
+          "missing": [
+            8
+          ],
+          "repeated": [
+            2
+          ]
+        },
+        {
+          "id": "tsp20-validation-00024",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00024.json",
+          "raw_answer": "Route: [0, 8, 9, 13, 7, 19, 18, 15, 17, 16, 5, 2, 12, 11, 6, 4, 14, 3, 7, 10, 0], Objective: 4104.432",
+          "missing": [
+            1
+          ],
+          "repeated": [
+            7
+          ]
+        },
+        {
+          "id": "tsp20-validation-00052",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00052.json",
+          "raw_answer": "Route: [0, 2, 10, 4, 18, 12, 19, 5, 1, 9, 3, 3, 8, 14, 17, 15, 6, 16, 11, 13, 0], Objective: 3750.404",
+          "missing": [
+            7
+          ],
+          "repeated": [
+            3
+          ]
+        },
+        {
+          "id": "tsp20-validation-00054",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00054.json",
+          "raw_answer": "Route: [0, 10, 15, 5, 17, 16, 2, 3, 12, 18, 14, 8, 13, 6, 7, 7, 9, 11, 4, 19, 0], Objective: 3683.440",
+          "missing": [
+            1
+          ],
+          "repeated": [
+            7
+          ]
+        },
+        {
+          "id": "tsp20-validation-00063",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00063.json",
+          "raw_answer": "Route: [0, 5, 14, 6, 7, 13, 15, 19, 3, 13, 1, 11, 16, 12, 2, 17, 4, 10, 8, 9, 0], Objective: 3887.407",
+          "missing": [
+            18
+          ],
+          "repeated": [
+            13
+          ]
+        },
+        {
+          "id": "tsp20-validation-00065",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00065.json",
+          "raw_answer": "Route: [0, 12, 9, 17, 13, 1, 10, 11, 3, 14, 7, 19, 2, 2, 4, 6, 16, 5, 15, 18, 0], Objective: 3100.440",
+          "missing": [
+            8
+          ],
+          "repeated": [
+            2
+          ]
+        },
+        {
+          "id": "tsp20-validation-00085",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00085.json",
+          "raw_answer": "Route: [0, 18, 11, 1, 10, 19, 4, 8, 9, 16, 6, 7, 3, 13, 13, 5, 12, 15, 2, 14, 0], Objective: 3784.439",
+          "missing": [
+            17
+          ],
+          "repeated": [
+            13
+          ]
+        },
+        {
+          "id": "tsp20-validation-00089",
+          "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00089.json",
+          "raw_answer": "Route: [0, 8, 18, 7, 13, 15, 14, 3, 2, 6, 11, 5, 17, 1, 10, 4, 19, 12, 12, 9, 0], Objective: 3764.434",
+          "missing": [
+            16
+          ],
+          "repeated": [
+            12
+          ]
+        }
+      ],
+      "mean_gap_pct_complete": 2.3501562757481955,
+      "printed_objective_mean_absolute_error": 185.4516299721791,
+      "example": {
+        "source": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/answers/after/tsp20-validation-00000.json",
+        "id": "tsp20-validation-00000",
+        "raw_answer": "Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3400.440",
+        "recomputed_length": 3379.293100190239,
+        "reference_optimal_length": 3318.7010371688066
+      }
+    },
+    {
+      "run": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20",
+      "label": "160,000 examples \u00b7 rank 64",
+      "learning_rate": 0.0001,
+      "validation_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "answers": 100,
+      "complete": 91,
+      "optimal": 36,
+      "within_1pct": 57,
+      "reported_objective_evaluable": 91,
+      "reported_objective_consistent": 0,
+      "invalid_reasons": {
+        "duplicate_or_missing_city": 9
+      },
+      "parse_or_score_disagreements": [],
+      "reference_length_disagreements": [],
+      "routes_below_reference": [],
+      "invalid_cases": [
+        {
+          "id": "tsp20-validation-00003",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00003.json",
+          "raw_answer": "Route: [0, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 11, 16, 13, 11, 15, 18, 0], Objective: 4491.011",
+          "missing": [
+            19
+          ],
+          "repeated": [
+            11
+          ]
+        },
+        {
+          "id": "tsp20-validation-00009",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00009.json",
+          "raw_answer": "Route: [0, 19, 9, 2, 12, 14, 1, 8, 5, 4, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4173.510",
+          "missing": [
+            7
+          ],
+          "repeated": [
+            9
+          ]
+        },
+        {
+          "id": "tsp20-validation-00011",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00011.json",
+          "raw_answer": "Route: [0, 13, 16, 9, 16, 18, 15, 11, 4, 2, 8, 1, 12, 7, 6, 5, 3, 17, 19, 13, 0], Objective: 3991.015",
+          "missing": [
+            10,
+            14
+          ],
+          "repeated": [
+            13,
+            16
+          ]
+        },
+        {
+          "id": "tsp20-validation-00013",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00013.json",
+          "raw_answer": "Route: [0, 7, 17, 16, 4, 1, 9, 2, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4101.510",
+          "missing": [
+            8
+          ],
+          "repeated": [
+            2
+          ]
+        },
+        {
+          "id": "tsp20-validation-00027",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00027.json",
+          "raw_answer": "Route: [0, 9, 14, 8, 11, 8, 12, 13, 6, 7, 19, 4, 15, 1, 5, 16, 17, 18, 3, 10, 0], Objective: 3551.510",
+          "missing": [
+            2
+          ],
+          "repeated": [
+            8
+          ]
+        },
+        {
+          "id": "tsp20-validation-00028",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00028.json",
+          "raw_answer": "Route: [0, 10, 2, 13, 15, 1, 19, 4, 18, 3, 6, 9, 5, 16, 5, 14, 17, 12, 8, 11, 0], Objective: 3891.510",
+          "missing": [
+            7
+          ],
+          "repeated": [
+            5
+          ]
+        },
+        {
+          "id": "tsp20-validation-00042",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00042.json",
+          "raw_answer": "Route: [0, 2, 15, 4, 6, 19, 9, 1, 7, 16, 16, 10, 17, 14, 8, 12, 3, 5, 11, 13, 0], Objective: 3611.010",
+          "missing": [
+            18
+          ],
+          "repeated": [
+            16
+          ]
+        },
+        {
+          "id": "tsp20-validation-00061",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00061.json",
+          "raw_answer": "Route: [0, 1, 4, 10, 7, 2, 17, 12, 8, 11, 3, 14, 16, 6, 15, 18, 18, 13, 9, 5, 0], Objective: 4471.510",
+          "missing": [
+            19
+          ],
+          "repeated": [
+            18
+          ]
+        },
+        {
+          "id": "tsp20-validation-00076",
+          "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00076.json",
+          "raw_answer": "Route: [0, 14, 4, 1, 15, 9, 1, 3, 8, 7, 10, 17, 6, 16, 11, 12, 13, 19, 2, 15, 0], Objective: 3631.510",
+          "missing": [
+            5,
+            18
+          ],
+          "repeated": [
+            1,
+            15
+          ]
+        }
+      ],
+      "mean_gap_pct_complete": 1.7473199574425768,
+      "printed_objective_mean_absolute_error": 121.86560693292164,
+      "example": {
+        "source": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/answers/after/tsp20-validation-00000.json",
+        "id": "tsp20-validation-00000",
+        "raw_answer": "Route: [0, 9, 15, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 0], Objective: 3451.510",
+        "recomputed_length": 3343.5646595507314,
+        "reference_optimal_length": 3318.7010371688066
+      }
+    },
+    {
+      "run": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20",
+      "label": "200,000 examples \u00b7 rank 64",
+      "learning_rate": 0.0001,
+      "validation_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "answers": 100,
+      "complete": 95,
+      "optimal": 39,
+      "within_1pct": 65,
+      "reported_objective_evaluable": 95,
+      "reported_objective_consistent": 0,
+      "invalid_reasons": {
+        "duplicate_or_missing_city": 5
+      },
+      "parse_or_score_disagreements": [],
+      "reference_length_disagreements": [],
+      "routes_below_reference": [],
+      "invalid_cases": [
+        {
+          "id": "tsp20-validation-00008",
+          "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00008.json",
+          "raw_answer": "Route: [0, 5, 18, 15, 8, 6, 10, 17, 14, 4, 16, 2, 2, 9, 12, 19, 11, 3, 1, 13, 0], Objective: 3876.006",
+          "missing": [
+            7
+          ],
+          "repeated": [
+            2
+          ]
+        },
+        {
+          "id": "tsp20-validation-00027",
+          "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00027.json",
+          "raw_answer": "Route: [0, 9, 16, 5, 15, 4, 19, 7, 6, 13, 12, 9, 14, 2, 11, 8, 10, 3, 18, 17, 0], Objective: 3625.206",
+          "missing": [
+            1
+          ],
+          "repeated": [
+            9
+          ]
+        },
+        {
+          "id": "tsp20-validation-00043",
+          "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00043.json",
+          "raw_answer": "Route: [0, 6, 15, 7, 18, 8, 19, 14, 10, 11, 5, 13, 13, 2, 1, 9, 3, 16, 4, 12, 0], Objective: 3876.122",
+          "missing": [
+            17
+          ],
+          "repeated": [
+            13
+          ]
+        },
+        {
+          "id": "tsp20-validation-00073",
+          "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00073.json",
+          "raw_answer": "Route: [0, 3, 10, 18, 17, 8, 11, 8, 12, 13, 1, 15, 19, 7, 16, 2, 9, 5, 4, 14, 0], Objective: 3522.006",
+          "missing": [
+            6
+          ],
+          "repeated": [
+            8
+          ]
+        },
+        {
+          "id": "tsp20-validation-00093",
+          "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00093.json",
+          "raw_answer": "Route: [0, 14, 10, 6, 1, 11, 16, 12, 3, 13, 9, 4, 15, 7, 11, 19, 2, 5, 8, 17, 0], Objective: 3947.202",
+          "missing": [
+            18
+          ],
+          "repeated": [
+            11
+          ]
+        }
+      ],
+      "mean_gap_pct_complete": 1.3449765015634352,
+      "printed_objective_mean_absolute_error": 106.1015689290606,
+      "example": {
+        "source": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/answers/after/tsp20-validation-00000.json",
+        "id": "tsp20-validation-00000",
+        "raw_answer": "Route: [0, 9, 15, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 0], Objective: 3365.526",
+        "recomputed_length": 3343.5646595507314,
+        "reference_optimal_length": 3318.7010371688066
+      }
+    },
+    {
+      "run": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20",
+      "label": "20,000 training examples \u00d7 10 epochs \u00b7 rank 64",
+      "learning_rate": 0.0001,
+      "validation_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "answers": 100,
+      "complete": 96,
+      "optimal": 38,
+      "within_1pct": 70,
+      "reported_objective_evaluable": 96,
+      "reported_objective_consistent": 0,
+      "invalid_reasons": {
+        "duplicate_or_missing_city": 4
+      },
+      "parse_or_score_disagreements": [],
+      "reference_length_disagreements": [],
+      "routes_below_reference": [],
+      "invalid_cases": [
+        {
+          "id": "tsp20-validation-00011",
+          "source": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/answers/after/tsp20-validation-00011.json",
+          "raw_answer": "Route: [0, 3, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 14, 18, 16, 9, 13, 19, 0], Objective: 3890.002",
+          "missing": [
+            17
+          ],
+          "repeated": [
+            14
+          ]
+        },
+        {
+          "id": "tsp20-validation-00043",
+          "source": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/answers/after/tsp20-validation-00043.json",
+          "raw_answer": "Route: [0, 6, 15, 7, 18, 8, 19, 14, 10, 11, 5, 17, 13, 2, 1, 3, 3, 16, 4, 12, 0], Objective: 3789.000",
+          "missing": [
+            9
+          ],
+          "repeated": [
+            3
+          ]
+        },
+        {
+          "id": "tsp20-validation-00048",
+          "source": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/answers/after/tsp20-validation-00048.json",
+          "raw_answer": "Route: [0, 2, 17, 15, 3, 10, 3, 5, 19, 16, 11, 18, 8, 12, 1, 13, 9, 7, 14, 6, 0], Objective: 4229.122",
+          "missing": [
+            4
+          ],
+          "repeated": [
+            3
+          ]
+        },
+        {
+          "id": "tsp20-validation-00065",
+          "source": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/answers/after/tsp20-validation-00065.json",
+          "raw_answer": "Route: [0, 9, 17, 13, 1, 10, 11, 3, 14, 7, 19, 2, 2, 4, 6, 16, 5, 15, 18, 12, 0], Objective: 3209.005",
+          "missing": [
+            8
+          ],
+          "repeated": [
+            2
+          ]
+        }
+      ],
+      "mean_gap_pct_complete": 1.2865407566683367,
+      "printed_objective_mean_absolute_error": 88.58629901060716,
+      "example": {
+        "source": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/answers/after/tsp20-validation-00000.json",
+        "id": "tsp20-validation-00000",
+        "raw_answer": "Route: [0, 4, 11, 2, 6, 10, 5, 1, 14, 18, 8, 13, 17, 12, 7, 3, 19, 16, 9, 15, 0], Objective: 3339.000",
+        "recomputed_length": 3329.8999724522205,
+        "reference_optimal_length": 3318.7010371688066
+      }
+    },
+    {
+      "run": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20",
+      "label": "20,000 training examples \u00d7 10 epochs \u00b7 rank 64",
+      "learning_rate": 1e-05,
+      "validation_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+      "answers": 100,
+      "complete": 95,
+      "optimal": 43,
+      "within_1pct": 70,
+      "reported_objective_evaluable": 95,
+      "reported_objective_consistent": 0,
+      "invalid_reasons": {
+        "duplicate_or_missing_city": 5
+      },
+      "parse_or_score_disagreements": [],
+      "reference_length_disagreements": [],
+      "routes_below_reference": [],
+      "invalid_cases": [
+        {
+          "id": "tsp20-validation-00023",
+          "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00023.json",
+          "raw_answer": "Route: [0, 7, 11, 1, 15, 15, 16, 12, 5, 10, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3388.126",
+          "missing": [
+            18
+          ],
+          "repeated": [
+            15
+          ]
+        },
+        {
+          "id": "tsp20-validation-00026",
+          "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00026.json",
+          "raw_answer": "Route: [0, 6, 8, 19, 7, 10, 2, 15, 4, 11, 1, 16, 14, 17, 3, 5, 13, 9, 10, 18, 0], Objective: 3390.025",
+          "missing": [
+            12
+          ],
+          "repeated": [
+            10
+          ]
+        },
+        {
+          "id": "tsp20-validation-00049",
+          "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00049.json",
+          "raw_answer": "Route: [0, 2, 11, 6, 10, 16, 19, 16, 18, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3486.122",
+          "missing": [
+            17
+          ],
+          "repeated": [
+            16
+          ]
+        },
+        {
+          "id": "tsp20-validation-00067",
+          "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00067.json",
+          "raw_answer": "Route: [0, 5, 8, 19, 13, 15, 16, 6, 12, 9, 18, 17, 3, 4, 7, 1, 10, 10, 2, 11, 0], Objective: 3819.106",
+          "missing": [
+            14
+          ],
+          "repeated": [
+            10
+          ]
+        },
+        {
+          "id": "tsp20-validation-00068",
+          "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00068.json",
+          "raw_answer": "Route: [0, 15, 11, 2, 8, 7, 10, 4, 14, 9, 5, 6, 1, 3, 16, 13, 17, 18, 12, 12, 0], Objective: 4109.126",
+          "missing": [
+            19
+          ],
+          "repeated": [
+            12
+          ]
+        }
+      ],
+      "mean_gap_pct_complete": 1.0750409364357998,
+      "printed_objective_mean_absolute_error": 93.48105315993392,
+      "example": {
+        "source": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/answers/after/tsp20-validation-00000.json",
+        "id": "tsp20-validation-00000",
+        "raw_answer": "Route: [0, 9, 15, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 1, 5, 10, 6, 2, 11, 4, 0], Objective: 3316.102",
+        "recomputed_length": 3354.763594834146,
+        "reference_optimal_length": 3318.7010371688066
+      },
+      "offline_repair_diagnostic": {
+        "method": "For each single-duplicate single-missing tour, replace either duplicated occurrence by the missing city and select the shorter valid tour using coordinates alone. Valid raw tours unchanged. No optimum used to select a repair.",
+        "not_model_performance": true,
+        "complete": 100,
+        "optimal": 45,
+        "within_1pct": 72,
+        "mean_gap_pct_all_complete": 1.3635557210177265,
+        "changed_cases": [
+          {
+            "id": "tsp20-validation-00023",
+            "changed": true,
+            "route": [
+              0,
+              7,
+              11,
+              1,
+              18,
+              15,
+              16,
+              12,
+              5,
+              10,
+              8,
+              2,
+              9,
+              6,
+              4,
+              14,
+              3,
+              19,
+              17,
+              13,
+              0
+            ],
+            "computed_length": 3456.440819175353,
+            "optimal": true,
+            "gap_pct": 2.220446049250313e-14
+          },
+          {
+            "id": "tsp20-validation-00026",
+            "changed": true,
+            "route": [
+              0,
+              6,
+              8,
+              19,
+              7,
+              12,
+              2,
+              15,
+              4,
+              11,
+              1,
+              16,
+              14,
+              17,
+              3,
+              5,
+              13,
+              9,
+              10,
+              18,
+              0
+            ],
+            "computed_length": 3880.4525894559542,
+            "optimal": false,
+            "gap_pct": 15.56097451770826
+          },
+          {
+            "id": "tsp20-validation-00049",
+            "changed": true,
+            "route": [
+              0,
+              2,
+              11,
+              6,
+              10,
+              17,
+              19,
+              16,
+              18,
+              1,
+              14,
+              3,
+              5,
+              12,
+              4,
+              9,
+              13,
+              8,
+              7,
+              15,
+              0
+            ],
+            "computed_length": 3705.3211261516212,
+            "optimal": false,
+            "gap_pct": 6.777537115171639
+          },
+          {
+            "id": "tsp20-validation-00067",
+            "changed": true,
+            "route": [
+              0,
+              5,
+              8,
+              19,
+              13,
+              15,
+              16,
+              6,
+              12,
+              9,
+              18,
+              17,
+              3,
+              4,
+              7,
+              1,
+              10,
+              14,
+              2,
+              11,
+              0
+            ],
+            "computed_length": 4272.6366156822705,
+            "optimal": false,
+            "gap_pct": 11.888171507491773
+          },
+          {
+            "id": "tsp20-validation-00068",
+            "changed": true,
+            "route": [
+              0,
+              15,
+              11,
+              2,
+              8,
+              7,
+              10,
+              4,
+              14,
+              9,
+              5,
+              6,
+              1,
+              3,
+              16,
+              13,
+              17,
+              18,
+              19,
+              12,
+              0
+            ],
+            "computed_length": 4125.064106617254,
+            "optimal": true,
+            "gap_pct": -2.220446049250313e-14
+          }
+        ],
+        "mean_gap_caveat": "Original mean excludes five invalid cases; repaired mean includes all 100, so denominators differ."
+      }
+    }
+  ],
+  "total_saved_final_answers": 500,
+  "total_complete_tours": 467,
+  "total_printed_objectives_consistent": 0
+}

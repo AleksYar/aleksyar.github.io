@@ -1,0 +1,248 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TSP5 benchmark</title><style>
+body{font:16px/1.55 system-ui,sans-serif;color:#172437;background:#f4f7fa;margin:0}main{max-width:1080px;margin:auto;padding:36px 24px}
+h1{font-size:34px;margin:4px 0}h2{margin-top:32px}.eyebrow{color:#476179;font-weight:650}.card,details{background:white;border:1px solid #dbe3ea;border-radius:12px;padding:18px;margin:14px 0}
+table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:12px 10px;border-bottom:1px solid #dbe3ea}th{font-size:13px;color:#476179}.scroll{overflow:auto}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;font:13px/1.6 ui-monospace,monospace;background:#f4f7fa;padding:14px;border-radius:8px}summary{cursor:pointer;font-weight:650}a{color:#1259a7}
+</style><style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style><nav class="public-nav" aria-label="Experiment library"><a href="../../../../index.html">← All experiments</a><a href="../../../../about.html">About these results</a></nav><main><div class="eyebrow">REPRODUCIBLE INFERENCE PILOT</div><h1>TSP5 benchmark</h1>
+<p>Run status: <strong>completed</strong>. 20 of 20 answers recorded; 0 valid tours.</p>
+<div class="card"><strong>Read the metrics together.</strong> Gap is calculated only for valid tours. Missing answers are shown separately. A low gap with low validity is not reliable solving performance. This small development pilot is not a final estimate of generalization.</div>
+<div class="card scroll"><table><thead><tr><th>Method</th><th>Generated / requested</th><th>Valid</th><th>Valid / generated</th><th>Mean gap on valid tours</th><th>Within 1% / requested</th></tr></thead><tbody><tr><td>model</td><td>20/20</td><td>0</td><td>0.00%</td><td>undefined</td><td>0/20</td></tr><tr><td>nearest_neighbor</td><td>20/20</td><td>20</td><td>100.00%</td><td>4.14%</td><td>8/20</td></tr><tr><td>nearest_neighbor_2opt</td><td>20/20</td><td>20</td><td>100.00%</td><td>0.00%</td><td>20/20</td></tr></tbody></table></div>
+<p>Unrounded Euclidean distances; Held–Karp exact references. Prompt: coordinates-only-v1. Seed: 42.</p>
+<p><a href="raw-answers.txt">Raw answers</a> · <a href="summary.json">Summary JSON</a> · <a href="scores.json">Per-instance scores</a></p>
+<h2>Every prompt and answer</h2><details><summary>tsp5-0000 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2197.5071. Reference tour: [0, 3, 2, 1, 4, 0]</p></details><details><summary>tsp5-0001 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (692, 758)
+City 1: (913, 558)
+City 2: (89, 604)
+City 3: (432, 32)
+City 4: (30, 95)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 2552.4983. Reference tour: [0, 1, 3, 4, 2, 0]</p></details><details><summary>tsp5-0002 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (223, 238)
+City 1: (517, 616)
+City 2: (27, 574)
+City 3: (203, 733)
+City 4: (665, 718)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 1747.0354. Reference tour: [0, 1, 4, 3, 2, 0]</p></details><details><summary>tsp5-0003 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (558, 429)
+City 1: (225, 459)
+City 2: (603, 284)
+City 3: (828, 890)
+City 4: (6, 777)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 2318.4604. Reference tour: [0, 2, 1, 4, 3, 0]</p></details><details><summary>tsp5-0004 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (825, 163)
+City 1: (714, 432)
+City 2: (348, 284)
+City 3: (159, 220)
+City 4: (980, 781)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2338.7222. Reference tour: [0, 3, 2, 1, 4, 0]</p></details><details><summary>tsp5-0005 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (344, 104)
+City 1: (94, 389)
+City 2: (99, 367)
+City 3: (867, 352)
+City 4: (618, 270)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 1738.3985. Reference tour: [0, 2, 1, 3, 4, 0]</p></details><details><summary>tsp5-0006 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 44)
+City 1: (747, 470)
+City 2: (549, 127)
+City 3: (996, 944)
+City 4: (387, 80)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 2439.9392. Reference tour: [0, 2, 4, 1, 3, 0]</p></details><details><summary>tsp5-0007 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (565, 300)
+City 1: (849, 643)
+City 2: (633, 906)
+City 3: (882, 370)
+City 4: (591, 196)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 1671.3751. Reference tour: [0, 2, 1, 3, 4, 0]</p></details><details><summary>tsp5-0008 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (721, 71)
+City 1: (46, 677)
+City 2: (233, 791)
+City 3: (296, 81)
+City 4: (875, 238)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 2364.9365. Reference tour: [0, 3, 1, 2, 4, 0]</p></details><details><summary>tsp5-0009 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (887, 103)
+City 1: (389, 284)
+City 2: (464, 650)
+City 3: (854, 373)
+City 4: (166, 379)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 1925.4313. Reference tour: [0, 1, 4, 2, 3, 0]</p></details><details><summary>tsp5-0010 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (363, 214)
+City 1: (686, 273)
+City 2: (718, 959)
+City 3: (699, 663)
+City 4: (73, 623)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2243.8188. Reference tour: [0, 1, 3, 2, 4, 0]</p></details><details><summary>tsp5-0011 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (650, 175)
+City 1: (546, 746)
+City 2: (250, 167)
+City 3: (473, 388)
+City 4: (276, 947)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2159.4263. Reference tour: [0, 2, 4, 1, 3, 0]</p></details><details><summary>tsp5-0012 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (655, 704)
+City 1: (570, 224)
+City 2: (701, 332)
+City 3: (863, 786)
+City 4: (794, 57)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 1762.7862. Reference tour: [0, 1, 4, 2, 3, 0]</p></details><details><summary>tsp5-0013 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (234, 841)
+City 1: (32, 824)
+City 2: (323, 410)
+City 3: (274, 67)
+City 4: (216, 935)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,3,0</pre><p>Requested format: no. Optimal length: 1891.9126. Reference tour: [0, 2, 3, 1, 4, 0]</p></details><details><summary>tsp5-0014 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (965, 580)
+City 1: (897, 735)
+City 2: (322, 217)
+City 3: (671, 511)
+City 4: (405, 905)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2141.1090. Reference tour: [0, 1, 4, 2, 3, 0]</p></details><details><summary>tsp5-0015 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (936, 658)
+City 1: (469, 146)
+City 2: (271, 142)
+City 3: (252, 762)
+City 4: (574, 551)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2273.7764. Reference tour: [0, 1, 2, 3, 4, 0]</p></details><details><summary>tsp5-0016 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (269, 764)
+City 1: (598, 438)
+City 2: (919, 597)
+City 3: (408, 370)
+City 4: (224, 141)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2149.5194. Reference tour: [0, 2, 1, 3, 4, 0]</p></details><details><summary>tsp5-0017 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (521, 505)
+City 1: (93, 773)
+City 2: (48, 881)
+City 3: (112, 156)
+City 4: (642, 163)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2231.3519. Reference tour: [0, 2, 1, 3, 4, 0]</p></details><details><summary>tsp5-0018 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (811, 696)
+City 1: (432, 610)
+City 2: (65, 394)
+City 3: (390, 610)
+City 4: (479, 541)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 1626.5902. Reference tour: [0, 1, 3, 2, 4, 0]</p></details><details><summary>tsp5-0019 — unparseable_or_ambiguous_route; gap undefined</summary><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 5 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (257, 994)
+City 1: (566, 881)
+City 2: (965, 11)
+City 3: (696, 738)
+City 4: (117, 698)</pre><h3>Raw answer</h3><pre>Route: 0,1,2,3,4,0</pre><p>Requested format: no. Optimal length: 2716.2450. Reference tour: [0, 1, 3, 2, 4, 0]</p></details><h2>Provenance</h2><pre>{
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;model_id&quot;: &quot;GSAI-ML/LLaDA-8B-Instruct&quot;,
+  &quot;revision&quot;: &quot;08b83a6feb34df1a6011b80c3c00c7563e963b07&quot;,
+  &quot;adapter&quot;: null,
+  &quot;quantization&quot;: null,
+  &quot;config&quot;: {
+    &quot;python&quot;: &quot;[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python&quot;,
+    &quot;cache_dir&quot;: &quot;[cluster-home]/llada-tsp20-baseline-20261021/model-cache&quot;,
+    &quot;dataset&quot;: &quot;data/dataset.json&quot;,
+    &quot;references&quot;: &quot;data/references.json&quot;,
+    &quot;output&quot;: &quot;results&quot;,
+    &quot;dtype&quot;: &quot;bf16&quot;,
+    &quot;max_tokens&quot;: 256,
+    &quot;steps&quot;: 128,
+    &quot;block_length&quot;: 256,
+    &quot;temperature&quot;: 0.0,
+    &quot;seed&quot;: 42,
+    &quot;max_seconds&quot;: 780
+  },
+  &quot;dataset_sha256&quot;: &quot;2f2a1392e216d334ba0aa3dd85a49c34da24e916162e1a9c17dca2655eb15646&quot;,
+  &quot;references_sha256&quot;: &quot;a6f90fc2c58766f8f2c5a5798808af7f2355c5bbd380aa5b66adb654d6c55daa&quot;,
+  &quot;job_id&quot;: &quot;1458386&quot;,
+  &quot;hostname&quot;: &quot;newton4&quot;,
+  &quot;requested&quot;: 20,
+  &quot;generated&quot;: 20,
+  &quot;sampler&quot;: {
+    &quot;implementation&quot;: &quot;unmodified official LLaDA generate.py&quot;,
+    &quot;revision&quot;: &quot;9182493720ed723ef8031210d85959364e51cbe0&quot;
+  },
+  &quot;source_sha256&quot;: {
+    &quot;check_cache.py&quot;: &quot;4df2a8b8246f3cf5fd81d29f64d8bca323cd7a3ff6539fa05066eb0b96b81cc8&quot;,
+    &quot;llada_backend.py&quot;: &quot;54cc6bc5561bf5e5d1c09559c8c91a70387835d92dc177f9e5116c944c12ac69&quot;,
+    &quot;official_backend.py&quot;: &quot;4d9acea2f76685f8d679ba0954ad0c6076c224ff5d4e8da59fa3689734e3f987&quot;,
+    &quot;run_llada.py&quot;: &quot;8420fc01a19b467d003cbb7a63160796eafb9a37e11c7929e1a3fd16adf6f988&quot;,
+    &quot;tsp_benchmark.py&quot;: &quot;818abe582c7bf9b3c1a7db64ed4f40474f84fdb37ea503b223dc21218744778c&quot;,
+    &quot;official/chat.py&quot;: &quot;c4c3fc23c636c5ad165a7a1bc4c2977b482ed66e6c23033927229034ff7d0dee&quot;,
+    &quot;official/configuration_llada.py&quot;: &quot;c947a64d8b735affa69d5adeb416c83ce607c8925270884e4471ae11068e2bfe&quot;,
+    &quot;official/generate.py&quot;: &quot;d4d2d3c015511e63fe9237cd3197346148fb0c795b6c89e0b5ef4846be25252e&quot;,
+    &quot;official/modeling_llada.py&quot;: &quot;98bac7e53fef0bb7ca01e3716c11a7f710d183e10dbb9783b88db9dbba2e3766&quot;
+  },
+  &quot;config_sha256&quot;: &quot;17a4fac1a96e4e37ab0f6ead12cb2d33b0671cab9d43f4895b7ae9d2608700e6&quot;,
+  &quot;job_script_sha256&quot;: &quot;5c0644f4bad5a343633368b669b5f206484e70ad5ceb08234e81bf8aee3c51ec&quot;,
+  &quot;versions&quot;: {
+    &quot;torch&quot;: &quot;2.6.0+cu124&quot;,
+    &quot;transformers&quot;: &quot;4.38.2&quot;,
+    &quot;accelerate&quot;: &quot;1.3.0&quot;,
+    &quot;huggingface-hub&quot;: &quot;0.28.1&quot;,
+    &quot;safetensors&quot;: &quot;0.5.3&quot;
+  },
+  &quot;gpu&quot;: &quot;NVIDIA A40&quot;,
+  &quot;python_version&quot;: &quot;3.10.12 (main, Jun 22 2026, 18:55:27) [GCC 11.4.0]&quot;,
+  &quot;python_executable&quot;: &quot;[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python&quot;,
+  &quot;cuda_version&quot;: &quot;12.4&quot;,
+  &quot;elapsed_seconds&quot;: 259.1515077499789
+}</pre></main></html>

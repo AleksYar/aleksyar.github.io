@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66",
+  "run_dir": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66",
+  "title": "TSP20 · best of 8 · 50 cases · 4 L40S GPUs",
+  "status": "completed",
+  "created_at": "2026-10-24T11:49:11.999465+00:00",
+  "updated_at": "2026-10-24T12:45:42.653730+00:00",
+  "job_id": "1460477",
+  "scheduler": {
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:49:34"
+  },
+  "description": "50 fixed TSP20 validation cases · final 100k-example SFT adapter · best of 8 · four L40S GPUs · temperature 0.7 · 512 output positions / 128 diffusion steps · BF16",
+  "note": "Completed in 49m34s on four L40S GPUs. All 400 candidates collected and rescored locally: 50/50 valid selected tours, mean gap 1.574%, 13 optimal, 26 within 1%. Same first 50 validation cases for every baseline.",
+  "requested": 50,
+  "answers_saved": 50,
+  "metrics": {
+    "requested": 50,
+    "generated": 50,
+    "missing": 0,
+    "valid": 50,
+    "valid_pct_generated": 100.0,
+    "valid_pct_requested": 100.0,
+    "optimal": 13,
+    "within_1pct": 26,
+    "mean_gap_pct_valid": 1.5742334444498955,
+    "median_gap_pct_valid": 0.9530768372073894,
+    "strict_format": 50,
+    "strict_valid": 50,
+    "reported_objective_consistent": 0
+  },
+  "dataset_sha256": "3a715823965818803d1b1f2a273fd67ad763bd26d6cf8f8eec36b9076bbb30b0",
+  "config_sha256": "4b72365516033ea3939e3b7c3ba50ba28addd7c84f2b252c4259789c823663f8",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "All saved answers",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/raw-answers.txt",
+      "kind": "Answers"
+    },
+    {
+      "label": "Answers as JSONL",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/answers.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Scored summary",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/summary.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Per-instance scores",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/scores.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Run provenance",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/run.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "All eight candidates per instance",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/candidates.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Execution notes",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/README.txt",
+      "kind": "Notes"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Slurm accounting",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/slurm-accounting.txt",
+      "kind": "Log"
+    },
+    {
+      "label": "Job script",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/run.sbatch",
+      "kind": "Code"
+    },
+    {
+      "label": "Submission record",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/submission.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "tsp20-b8-4gpu-eb5c66-1460477.out",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/tsp20-b8-4gpu-eb5c66-1460477.out",
+      "kind": "Log"
+    },
+    {
+      "label": "worker-0-1460477.out",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-0-1460477.out",
+      "kind": "Log"
+    },
+    {
+      "label": "worker-1-1460477.out",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-1-1460477.out",
+      "kind": "Log"
+    },
+    {
+      "label": "worker-2-1460477.out",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-2-1460477.out",
+      "kind": "Log"
+    },
+    {
+      "label": "worker-3-1460477.out",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-3-1460477.out",
+      "kind": "Log"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

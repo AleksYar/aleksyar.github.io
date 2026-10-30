@@ -1,0 +1,10 @@
+{
+  "checked_at": "2026-10-26T20:32:59.144542+00:00",
+  "status": "passed",
+  "tests": 14,
+  "command": "python -m unittest test_objective test_city_loss test_continuation test_resume_validation",
+  "training_data_and_tokenization_byte_identical": true,
+  "peak_learning_rate": 1e-05,
+  "frozen_parent_checkpoint_unchanged": true,
+  "fresh_validation_protocol_predeclared": true
+}

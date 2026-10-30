@@ -1,0 +1,40 @@
+{
+  "task": "tsp20",
+  "files": {
+    "train.jsonl": "2890e002fb0b67a141c6e27e16dc2a5c9db922062a8b0ea5596269b0bc7d007f",
+    "validation.jsonl": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+    "tokenized.json": "be9c1f782e6984e45351e96ef6cc1fa1deee63acb540b3ec2ba37d859d1070ab",
+    "config.json": "e4d6c8e6af0eb3f35ec4fc5212094e41201b69ba8e629b37d0dee53c44b64538"
+  },
+  "token_statistics": {
+    "train": {
+      "count": 100000,
+      "min_tokens": 950,
+      "max_tokens": 995,
+      "mean_tokens": 975.94334,
+      "max_prompt_tokens": 908,
+      "truncated": 0
+    },
+    "validation": {
+      "count": 100,
+      "min_tokens": 966,
+      "max_tokens": 985,
+      "mean_tokens": 976.2,
+      "max_prompt_tokens": 898,
+      "truncated": 0
+    }
+  },
+  "duplicate_geometries": 0,
+  "validation_origin": "New seed-fixed validation",
+  "source_fingerprint": "4df9e0c77cd96cb8326300e20570f49e4dcaa6d5b3cefc23d461bfeba6d0c519",
+  "host": "Mac.cs.technion.ac.il",
+  "job_id": null,
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "4.38.2",
+    "peft": "0.10.0",
+    "scipy": "1.15.3",
+    "tokenizers": "0.15.2"
+  },
+  "preparation_this_attempt_seconds": 217.38227529199503
+}

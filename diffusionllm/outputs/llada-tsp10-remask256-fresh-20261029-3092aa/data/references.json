@@ -1,0 +1,5405 @@
+{
+  "dataset_sha256": "16e97c005b62761a4fdffef7d6ca89cf82d08bfacc5c0a775f2fff2f9f9daedd",
+  "instances": [
+    {
+      "id": "fresh-tsp10-00000",
+      "geometry_sha256": "bdc903a4724f30eb774a1f87bd4b8266e3587a47ac3bf88a706ac53c3b20bdd4",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          6,
+          8,
+          4,
+          1,
+          7,
+          3,
+          5,
+          0
+        ],
+        "length": 3434.78652642636,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          3,
+          2,
+          9,
+          6,
+          8,
+          7,
+          1,
+          4,
+          0
+        ],
+        "length": 3585.979014555793
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          3,
+          7,
+          1,
+          4,
+          8,
+          6,
+          9,
+          2,
+          0
+        ],
+        "length": 3434.78652642636
+      }
+    },
+    {
+      "id": "fresh-tsp10-00001",
+      "geometry_sha256": "541655043c87ca2269b3ce3dde5405026709723a5272c4dd4e447defc9d4aed2",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          3,
+          4,
+          8,
+          1,
+          9,
+          5,
+          6,
+          7,
+          0
+        ],
+        "length": 3245.3107428938592,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          7,
+          6,
+          5,
+          9,
+          1,
+          8,
+          4,
+          3,
+          0
+        ],
+        "length": 3318.5415140137898
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          3,
+          4,
+          8,
+          1,
+          9,
+          5,
+          6,
+          7,
+          0
+        ],
+        "length": 3245.3107428938592
+      }
+    },
+    {
+      "id": "fresh-tsp10-00002",
+      "geometry_sha256": "93464f3319920ed674b1974d31a225fa0227f347a8ccb888dfeaa960871b8885",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          5,
+          9,
+          4,
+          6,
+          8,
+          7,
+          0
+        ],
+        "length": 2836.4067034911236,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          2,
+          1,
+          5,
+          9,
+          4,
+          6,
+          0
+        ],
+        "length": 3011.7950557041327
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          8,
+          6,
+          4,
+          9,
+          5,
+          1,
+          2,
+          3,
+          0
+        ],
+        "length": 2836.4067034911236
+      }
+    },
+    {
+      "id": "fresh-tsp10-00003",
+      "geometry_sha256": "8d8b22f16d627119769150fa9f6d962f010f57028ddefe95bfd01bbefb1fedae",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          9,
+          2,
+          7,
+          8,
+          3,
+          5,
+          6,
+          0
+        ],
+        "length": 2955.9998085565044,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          5,
+          3,
+          8,
+          7,
+          2,
+          9,
+          4,
+          1,
+          0
+        ],
+        "length": 2955.9998085565044
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          5,
+          3,
+          8,
+          7,
+          2,
+          9,
+          4,
+          1,
+          0
+        ],
+        "length": 2955.9998085565044
+      }
+    },
+    {
+      "id": "fresh-tsp10-00004",
+      "geometry_sha256": "ba9a8787e6bf98ee634e7fa8d91f88df27344623be257f380d31a88f0668f348",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          7,
+          4,
+          5,
+          3,
+          8,
+          2,
+          9,
+          6,
+          0
+        ],
+        "length": 2720.411821370986,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          7,
+          4,
+          5,
+          3,
+          8,
+          2,
+          9,
+          1,
+          0
+        ],
+        "length": 2969.725305946609
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          9,
+          2,
+          8,
+          3,
+          5,
+          4,
+          7,
+          1,
+          0
+        ],
+        "length": 2720.411821370986
+      }
+    },
+    {
+      "id": "fresh-tsp10-00005",
+      "geometry_sha256": "fe318036daa5e2c7d39ee6ab3bb8c83f70df2b2531c0635493e56f2234e58b4d",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          6,
+          2,
+          4,
+          7,
+          9,
+          8,
+          5,
+          0
+        ],
+        "length": 3152.851061889274,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          3,
+          6,
+          2,
+          4,
+          7,
+          9,
+          8,
+          5,
+          0
+        ],
+        "length": 3152.851061889274
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          3,
+          6,
+          2,
+          4,
+          7,
+          9,
+          8,
+          5,
+          0
+        ],
+        "length": 3152.851061889274
+      }
+    },
+    {
+      "id": "fresh-tsp10-00006",
+      "geometry_sha256": "273fa84b733f87a9768f96e62aa6e5a6cf11552582979f610cdca8a7f1256e8b",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          3,
+          2,
+          9,
+          4,
+          7,
+          6,
+          1,
+          8,
+          0
+        ],
+        "length": 2868.200076736822,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          5,
+          8,
+          1,
+          6,
+          7,
+          4,
+          9,
+          2,
+          0
+        ],
+        "length": 2877.4416289336505
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          5,
+          8,
+          1,
+          6,
+          7,
+          4,
+          9,
+          2,
+          0
+        ],
+        "length": 2877.4416289336505
+      }
+    },
+    {
+      "id": "fresh-tsp10-00007",
+      "geometry_sha256": "7594f560919683df9970feda539b150327b82e73866acffda3a1e51f88ecfbe4",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          5,
+          7,
+          1,
+          3,
+          4,
+          8,
+          9,
+          6,
+          0
+        ],
+        "length": 2652.4854091852317,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          9,
+          7,
+          5,
+          2,
+          1,
+          3,
+          4,
+          8,
+          0
+        ],
+        "length": 3322.616936364897
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          5,
+          7,
+          9,
+          8,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 2826.1838824374545
+      }
+    },
+    {
+      "id": "fresh-tsp10-00008",
+      "geometry_sha256": "6d4f6a54e9e551da4fbe0bd6a1d8f2d9b2ba828c514fc7612dcb56adf118e6f9",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          7,
+          5,
+          2,
+          1,
+          9,
+          6,
+          3,
+          8,
+          0
+        ],
+        "length": 2682.694214845607,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          3,
+          6,
+          9,
+          1,
+          2,
+          4,
+          5,
+          7,
+          0
+        ],
+        "length": 3048.90331584964
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          3,
+          6,
+          9,
+          1,
+          2,
+          5,
+          7,
+          4,
+          0
+        ],
+        "length": 2682.694214845607
+      }
+    },
+    {
+      "id": "fresh-tsp10-00009",
+      "geometry_sha256": "0900811deefadccf9b4470d68226b890bd838cef0f14638eb71d0751a92e51e6",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          8,
+          5,
+          3,
+          9,
+          6,
+          4,
+          7,
+          2,
+          0
+        ],
+        "length": 2824.9819611646385,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          4,
+          7,
+          8,
+          5,
+          3,
+          9,
+          6,
+          1,
+          0
+        ],
+        "length": 3361.1012625219714
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          7,
+          4,
+          6,
+          9,
+          3,
+          5,
+          8,
+          1,
+          0
+        ],
+        "length": 2824.9819611646385
+      }
+    },
+    {
+      "id": "fresh-tsp10-00010",
+      "geometry_sha256": "d9b4d0ece2d28ef98fe4a218dce4244f66cd629596c1a6ab54550977daa4542b",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          3,
+          8,
+          1,
+          2,
+          9,
+          5,
+          6,
+          7,
+          0
+        ],
+        "length": 2855.6324505573157,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          8,
+          1,
+          9,
+          2,
+          5,
+          6,
+          7,
+          3,
+          0
+        ],
+        "length": 3109.0152873932243
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          3,
+          8,
+          1,
+          2,
+          9,
+          5,
+          6,
+          7,
+          0
+        ],
+        "length": 2855.6324505573157
+      }
+    },
+    {
+      "id": "fresh-tsp10-00011",
+      "geometry_sha256": "7ce65b0ab01309399c44930df1cba05daa51dc030c201424dc3ca9257a59dbe7",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          6,
+          4,
+          9,
+          8,
+          7,
+          1,
+          3,
+          5,
+          0
+        ],
+        "length": 2935.276226863006,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          3,
+          1,
+          7,
+          8,
+          9,
+          4,
+          6,
+          2,
+          0
+        ],
+        "length": 2935.276226863006
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          3,
+          1,
+          7,
+          8,
+          9,
+          4,
+          6,
+          2,
+          0
+        ],
+        "length": 2935.276226863006
+      }
+    },
+    {
+      "id": "fresh-tsp10-00012",
+      "geometry_sha256": "b1074c13245aab95bd48ae1bcc849d4447815b6b2e72528b90980d9b83eedb7b",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          7,
+          8,
+          2,
+          4,
+          5,
+          9,
+          3,
+          6,
+          0
+        ],
+        "length": 2522.597713247796,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          6,
+          3,
+          9,
+          5,
+          4,
+          2,
+          8,
+          7,
+          0
+        ],
+        "length": 2565.7658465117524
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          7,
+          8,
+          2,
+          4,
+          5,
+          9,
+          3,
+          6,
+          0
+        ],
+        "length": 2522.597713247796
+      }
+    },
+    {
+      "id": "fresh-tsp10-00013",
+      "geometry_sha256": "e34ea92af6ac0cd5b18001fc7bbd9be899cb04e42d601b38c3dff8a63272c598",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          8,
+          3,
+          5,
+          1,
+          7,
+          4,
+          6,
+          0
+        ],
+        "length": 2840.859985606324,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          4,
+          7,
+          1,
+          3,
+          5,
+          8,
+          9,
+          2,
+          0
+        ],
+        "length": 2847.2965580835803
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          4,
+          7,
+          1,
+          5,
+          3,
+          8,
+          9,
+          2,
+          0
+        ],
+        "length": 2840.859985606324
+      }
+    },
+    {
+      "id": "fresh-tsp10-00014",
+      "geometry_sha256": "6e65d128c58acfece971b65813dcce916ae7b4b897dda6f88499e5cd3df2fad7",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          8,
+          1,
+          5,
+          4,
+          7,
+          9,
+          0
+        ],
+        "length": 2659.926384470146,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          1,
+          5,
+          8,
+          4,
+          7,
+          9,
+          0
+        ],
+        "length": 2945.478674851671
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          8,
+          1,
+          5,
+          4,
+          7,
+          9,
+          0
+        ],
+        "length": 2659.926384470146
+      }
+    },
+    {
+      "id": "fresh-tsp10-00015",
+      "geometry_sha256": "fc85c48ca0fda5b45664be19e6251c7dd3d1c730a4e199326e54e7aab9b24f75",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          7,
+          2,
+          9,
+          8,
+          1,
+          5,
+          6,
+          4,
+          0
+        ],
+        "length": 3277.854616712152,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          6,
+          5,
+          1,
+          8,
+          9,
+          2,
+          7,
+          3,
+          0
+        ],
+        "length": 3277.854616712152
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          6,
+          5,
+          1,
+          8,
+          9,
+          2,
+          7,
+          3,
+          0
+        ],
+        "length": 3277.854616712152
+      }
+    },
+    {
+      "id": "fresh-tsp10-00016",
+      "geometry_sha256": "6f1c29334bcb18027fb8f90eed092fb311909f23f5223d0068b603461d6a1916",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          2,
+          9,
+          3,
+          7,
+          5,
+          1,
+          4,
+          8,
+          0
+        ],
+        "length": 2978.735507292216,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          2,
+          9,
+          3,
+          7,
+          8,
+          4,
+          1,
+          5,
+          0
+        ],
+        "length": 3261.4184270737824
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          2,
+          9,
+          3,
+          7,
+          5,
+          1,
+          4,
+          8,
+          0
+        ],
+        "length": 2978.735507292216
+      }
+    },
+    {
+      "id": "fresh-tsp10-00017",
+      "geometry_sha256": "d7fc0969a491a5dc2f27f00bab32eeace2e0e8291d9ffbd6b7b6398730d1c44d",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          7,
+          1,
+          5,
+          9,
+          4,
+          8,
+          2,
+          6,
+          0
+        ],
+        "length": 2387.0915078848075,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          2,
+          8,
+          4,
+          5,
+          9,
+          1,
+          7,
+          3,
+          0
+        ],
+        "length": 2431.514230482557
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          2,
+          8,
+          4,
+          9,
+          5,
+          1,
+          7,
+          3,
+          0
+        ],
+        "length": 2387.0915078848075
+      }
+    },
+    {
+      "id": "fresh-tsp10-00018",
+      "geometry_sha256": "8506a23fe9cee32651acde6b393bac3b5627dc1abb08f936d0434df9cae68f70",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          7,
+          5,
+          8,
+          4,
+          3,
+          1,
+          6,
+          9,
+          0
+        ],
+        "length": 3177.099847736878,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          6,
+          1,
+          3,
+          2,
+          7,
+          4,
+          8,
+          5,
+          0
+        ],
+        "length": 3301.185405299908
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          6,
+          1,
+          3,
+          2,
+          7,
+          4,
+          8,
+          5,
+          0
+        ],
+        "length": 3301.185405299908
+      }
+    },
+    {
+      "id": "fresh-tsp10-00019",
+      "geometry_sha256": "acc12f262e074cd2386e3ae8b2cb4323dd99f418003cf41f958f814d0ea17e35",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          2,
+          3,
+          7,
+          9,
+          4,
+          8,
+          0
+        ],
+        "length": 2942.331687537301,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          8,
+          4,
+          7,
+          9,
+          2,
+          3,
+          0
+        ],
+        "length": 3302.728490549241
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          8,
+          4,
+          7,
+          2,
+          3,
+          9,
+          0
+        ],
+        "length": 3059.794996790269
+      }
+    },
+    {
+      "id": "fresh-tsp10-00020",
+      "geometry_sha256": "058e13281b58d779ae13c7a172d72e7d14b281bb413849e059f549f7a3633c7f",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          1,
+          4,
+          9,
+          5,
+          2,
+          3,
+          8,
+          7,
+          0
+        ],
+        "length": 2561.60633912826,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          2,
+          5,
+          4,
+          9,
+          1,
+          6,
+          0
+        ],
+        "length": 2663.0602712200202
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          2,
+          5,
+          9,
+          4,
+          1,
+          6,
+          0
+        ],
+        "length": 2561.60633912826
+      }
+    },
+    {
+      "id": "fresh-tsp10-00021",
+      "geometry_sha256": "7dcb8f0fff03c19c80fb12a17d925ed5fd7c271595e7601e7456947db28b5f00",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          9,
+          2,
+          6,
+          5,
+          8,
+          7,
+          4,
+          3,
+          0
+        ],
+        "length": 2800.202029522479,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          5,
+          6,
+          2,
+          1,
+          9,
+          4,
+          7,
+          8,
+          0
+        ],
+        "length": 3203.8930541655045
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          4,
+          7,
+          8,
+          2,
+          9,
+          1,
+          6,
+          5,
+          0
+        ],
+        "length": 2853.631598492
+      }
+    },
+    {
+      "id": "fresh-tsp10-00022",
+      "geometry_sha256": "361f63fe3bab9c260d1e3241c1dcb83bbc7163139331b46929f70e1036c6eec9",
+      "optimal": {
+        "route": [
+          0,
+          7,
+          3,
+          4,
+          1,
+          5,
+          8,
+          2,
+          6,
+          9,
+          0
+        ],
+        "length": 3099.126802889974,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          6,
+          7,
+          3,
+          4,
+          1,
+          2,
+          8,
+          5,
+          0
+        ],
+        "length": 3594.1661738071666
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          6,
+          2,
+          8,
+          5,
+          1,
+          4,
+          3,
+          7,
+          0
+        ],
+        "length": 3099.126802889974
+      }
+    },
+    {
+      "id": "fresh-tsp10-00023",
+      "geometry_sha256": "4ed779cd3ff2df2d448a249b91d69319c3155843fc6249f19383b2dd66302538",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          5,
+          2,
+          1,
+          7,
+          6,
+          8,
+          3,
+          9,
+          0
+        ],
+        "length": 3016.7908137728027,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          3,
+          8,
+          6,
+          1,
+          7,
+          5,
+          4,
+          2,
+          0
+        ],
+        "length": 3440.360229519728
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          3,
+          8,
+          6,
+          7,
+          1,
+          2,
+          5,
+          4,
+          0
+        ],
+        "length": 3016.7908137728027
+      }
+    },
+    {
+      "id": "fresh-tsp10-00024",
+      "geometry_sha256": "7593d34f3928fbbc5629789c3dec9c1459bbfd8ebef76fe88107aa4d39bd5b3c",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          8,
+          7,
+          6,
+          4,
+          1,
+          3,
+          5,
+          0
+        ],
+        "length": 3141.2981573616526,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          9,
+          8,
+          7,
+          1,
+          3,
+          5,
+          4,
+          6,
+          0
+        ],
+        "length": 4052.690295180654
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          9,
+          8,
+          7,
+          6,
+          4,
+          1,
+          3,
+          5,
+          0
+        ],
+        "length": 3141.2981573616526
+      }
+    },
+    {
+      "id": "fresh-tsp10-00025",
+      "geometry_sha256": "02841594912222e9ff58e3ddb0912e73205da8974f74ab1232b4dba68587fd8d",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          6,
+          8,
+          2,
+          9,
+          4,
+          5,
+          3,
+          7,
+          0
+        ],
+        "length": 2659.4475125297354,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          6,
+          7,
+          3,
+          5,
+          4,
+          9,
+          2,
+          8,
+          0
+        ],
+        "length": 2962.728883833431
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          6,
+          8,
+          2,
+          9,
+          4,
+          5,
+          3,
+          7,
+          0
+        ],
+        "length": 2659.4475125297354
+      }
+    },
+    {
+      "id": "fresh-tsp10-00026",
+      "geometry_sha256": "eb6b08f362c4c777aebc23b71950875a944231adaa8424715cd7be180262505a",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          6,
+          3,
+          7,
+          4,
+          8,
+          1,
+          2,
+          9,
+          0
+        ],
+        "length": 3135.771714254997,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          5,
+          6,
+          7,
+          3,
+          4,
+          8,
+          1,
+          2,
+          0
+        ],
+        "length": 3355.9730430463374
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          2,
+          1,
+          8,
+          4,
+          7,
+          3,
+          6,
+          5,
+          0
+        ],
+        "length": 3135.771714254997
+      }
+    },
+    {
+      "id": "fresh-tsp10-00027",
+      "geometry_sha256": "80bb926f9c8c9175366bc02b75126427abaa9bc4e7d127ce84ecf41d0236a8e7",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          1,
+          9,
+          4,
+          0
+        ],
+        "length": 2788.7811444802983,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          9,
+          1,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          0
+        ],
+        "length": 2788.7811444802983
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          9,
+          1,
+          8,
+          7,
+          6,
+          5,
+          3,
+          2,
+          0
+        ],
+        "length": 2788.7811444802983
+      }
+    },
+    {
+      "id": "fresh-tsp10-00028",
+      "geometry_sha256": "5e95981cfe0bc42b8463e6209c36d8fa16e99f4b4bb9eafb1f48f882853f839f",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          4,
+          8,
+          5,
+          1,
+          9,
+          2,
+          3,
+          7,
+          0
+        ],
+        "length": 2835.346735909832,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          3,
+          2,
+          1,
+          5,
+          9,
+          4,
+          8,
+          6,
+          0
+        ],
+        "length": 2920.302122316977
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          3,
+          2,
+          9,
+          1,
+          5,
+          8,
+          4,
+          6,
+          0
+        ],
+        "length": 2835.346735909832
+      }
+    },
+    {
+      "id": "fresh-tsp10-00029",
+      "geometry_sha256": "4900f1f9a5d5dfcc20d7af7abe27f825f7cfb817eba3983d403c1c8a26e5a975",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          9,
+          7,
+          8,
+          0
+        ],
+        "length": 3465.814363163972,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          9,
+          6,
+          5,
+          1,
+          4,
+          2,
+          3,
+          8,
+          0
+        ],
+        "length": 3531.9001838348277
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          3,
+          4,
+          1,
+          5,
+          6,
+          9,
+          7,
+          8,
+          0
+        ],
+        "length": 3465.814363163972
+      }
+    },
+    {
+      "id": "fresh-tsp10-00030",
+      "geometry_sha256": "a0b73b43aa117f2070cfbe37c9c4734f89f5cf9fd1d281ff52836eafe1fb7c59",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          8,
+          3,
+          5,
+          7,
+          6,
+          2,
+          9,
+          4,
+          0
+        ],
+        "length": 2627.5016750601358,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          9,
+          2,
+          5,
+          3,
+          8,
+          7,
+          6,
+          1,
+          0
+        ],
+        "length": 2912.066388372348
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          9,
+          2,
+          6,
+          7,
+          5,
+          3,
+          8,
+          1,
+          0
+        ],
+        "length": 2627.5016750601358
+      }
+    },
+    {
+      "id": "fresh-tsp10-00031",
+      "geometry_sha256": "e05b26c6665a8d8fca5c80602fbdc16e733465af85e72f7cb515c37a42384347",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          9,
+          4,
+          8,
+          6,
+          2,
+          5,
+          7,
+          3,
+          0
+        ],
+        "length": 3104.1227248833197,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          9,
+          8,
+          4,
+          6,
+          2,
+          5,
+          7,
+          3,
+          0
+        ],
+        "length": 3186.076988685622
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          9,
+          4,
+          8,
+          6,
+          2,
+          5,
+          7,
+          3,
+          0
+        ],
+        "length": 3104.1227248833197
+      }
+    },
+    {
+      "id": "fresh-tsp10-00032",
+      "geometry_sha256": "00dcda5e6cbe5c106140ce622b99cebd696e50359f4253d2c1ae6e6b1feecbd1",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          7,
+          4,
+          5,
+          6,
+          8,
+          9,
+          0
+        ],
+        "length": 3095.287158329817,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          6,
+          9,
+          5,
+          4,
+          7,
+          2,
+          3,
+          1,
+          0
+        ],
+        "length": 3526.097792338717
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          8,
+          6,
+          5,
+          4,
+          7,
+          2,
+          3,
+          1,
+          0
+        ],
+        "length": 3155.2061267662616
+      }
+    },
+    {
+      "id": "fresh-tsp10-00033",
+      "geometry_sha256": "4aea1be64e64ce5e6559c5a5ec2bcd7cce49b3f512870500dac40c9cec9ef410",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          5,
+          1,
+          2,
+          6,
+          4,
+          7,
+          9,
+          8,
+          0
+        ],
+        "length": 3181.107238121808,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          8,
+          7,
+          9,
+          4,
+          6,
+          2,
+          1,
+          5,
+          0
+        ],
+        "length": 3297.535801422512
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          5,
+          1,
+          2,
+          6,
+          4,
+          7,
+          9,
+          8,
+          0
+        ],
+        "length": 3181.107238121808
+      }
+    },
+    {
+      "id": "fresh-tsp10-00034",
+      "geometry_sha256": "155a518c33088b4886f3df3c75db6286aeb3d5a8046314517efa0c3fb6733f0e",
+      "optimal": {
+        "route": [
+          0,
+          8,
+          7,
+          4,
+          2,
+          5,
+          6,
+          1,
+          3,
+          9,
+          0
+        ],
+        "length": 3047.0442408028484,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          7,
+          4,
+          6,
+          1,
+          2,
+          5,
+          9,
+          3,
+          0
+        ],
+        "length": 3158.087135004321
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          7,
+          1,
+          6,
+          4,
+          2,
+          5,
+          3,
+          9,
+          0
+        ],
+        "length": 3068.919850514385
+      }
+    },
+    {
+      "id": "fresh-tsp10-00035",
+      "geometry_sha256": "c320171b7f696d9cc9d8b0482458296cbeb64939153d434cd3724fe5329985d6",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          4,
+          9,
+          2,
+          7,
+          1,
+          5,
+          6,
+          8,
+          0
+        ],
+        "length": 2483.68781793323,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          5,
+          6,
+          4,
+          3,
+          9,
+          1,
+          7,
+          2,
+          0
+        ],
+        "length": 2861.969918545919
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          6,
+          5,
+          1,
+          7,
+          2,
+          9,
+          4,
+          3,
+          0
+        ],
+        "length": 2483.68781793323
+      }
+    },
+    {
+      "id": "fresh-tsp10-00036",
+      "geometry_sha256": "9f069cf911b19133cc49511c8c47fa9ac037e40b6e5b2a03772cc153e8847c5d",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          9,
+          7,
+          3,
+          5,
+          8,
+          6,
+          0
+        ],
+        "length": 2840.7954266674687,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          5,
+          7,
+          9,
+          1,
+          4,
+          8,
+          0
+        ],
+        "length": 3398.2664561425627
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          9,
+          7,
+          3,
+          5,
+          8,
+          6,
+          0
+        ],
+        "length": 2840.7954266674687
+      }
+    },
+    {
+      "id": "fresh-tsp10-00037",
+      "geometry_sha256": "fa73bdaabd73ee74f762e4656ffd4c2060307cce1fef2b44beaf7441f41ee68e",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          6,
+          1,
+          5,
+          7,
+          2,
+          8,
+          3,
+          9,
+          0
+        ],
+        "length": 2888.2781905004445,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          2,
+          7,
+          5,
+          1,
+          6,
+          4,
+          9,
+          3,
+          0
+        ],
+        "length": 2988.9110040431938
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          2,
+          7,
+          5,
+          1,
+          6,
+          4,
+          9,
+          3,
+          0
+        ],
+        "length": 2988.9110040431938
+      }
+    },
+    {
+      "id": "fresh-tsp10-00038",
+      "geometry_sha256": "bead44e505ce1c2f2f9d687658b3195f358e2bd626c76303db1c32b6dbbc08ff",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          8,
+          3,
+          2,
+          4,
+          9,
+          7,
+          0
+        ],
+        "length": 2765.7469286983037,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          7,
+          9,
+          2,
+          3,
+          4,
+          8,
+          0
+        ],
+        "length": 3105.7517582679893
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          1,
+          6,
+          8,
+          3,
+          2,
+          4,
+          9,
+          7,
+          0
+        ],
+        "length": 2765.7469286983037
+      }
+    },
+    {
+      "id": "fresh-tsp10-00039",
+      "geometry_sha256": "0c7eb291839021679dcb01581038800baeefa8a8df5e152341e9ec945cdd745c",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          7,
+          1,
+          4,
+          5,
+          3,
+          6,
+          9,
+          8,
+          0
+        ],
+        "length": 2697.92187218659,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          9,
+          6,
+          3,
+          5,
+          4,
+          1,
+          2,
+          7,
+          0
+        ],
+        "length": 2839.987613793373
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          9,
+          6,
+          3,
+          5,
+          4,
+          1,
+          7,
+          2,
+          0
+        ],
+        "length": 2697.92187218659
+      }
+    },
+    {
+      "id": "fresh-tsp10-00040",
+      "geometry_sha256": "68f9d3fcb5d2eabd024f35ce38acaa0f4f2b790ef2f8a6e78b760483a8d6ca54",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          7,
+          5,
+          6,
+          1,
+          8,
+          3,
+          9,
+          4,
+          0
+        ],
+        "length": 3227.612959194165,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          7,
+          5,
+          6,
+          1,
+          8,
+          3,
+          9,
+          4,
+          0
+        ],
+        "length": 3227.612959194165
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          7,
+          5,
+          6,
+          1,
+          8,
+          3,
+          9,
+          4,
+          0
+        ],
+        "length": 3227.612959194165
+      }
+    },
+    {
+      "id": "fresh-tsp10-00041",
+      "geometry_sha256": "8180322c622a715127722e75f7654e8a64af36576bf7dfed7d881bc4df49b85b",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          6,
+          8,
+          2,
+          1,
+          4,
+          3,
+          7,
+          9,
+          0
+        ],
+        "length": 2529.6191826093395,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          3,
+          4,
+          1,
+          2,
+          8,
+          6,
+          7,
+          9,
+          0
+        ],
+        "length": 2748.767500879958
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          6,
+          8,
+          2,
+          1,
+          4,
+          3,
+          7,
+          9,
+          0
+        ],
+        "length": 2529.6191826093395
+      }
+    },
+    {
+      "id": "fresh-tsp10-00042",
+      "geometry_sha256": "6eb2a53efc1ef884c0d5998e5098f09bd415ac2a8771ff1730120d548613cd86",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          9,
+          5,
+          1,
+          2,
+          8,
+          3,
+          4,
+          7,
+          0
+        ],
+        "length": 3117.3603054089667,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          9,
+          6,
+          1,
+          4,
+          3,
+          8,
+          2,
+          7,
+          0
+        ],
+        "length": 3351.2956006169675
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          9,
+          5,
+          1,
+          2,
+          8,
+          3,
+          4,
+          7,
+          0
+        ],
+        "length": 3117.3603054089667
+      }
+    },
+    {
+      "id": "fresh-tsp10-00043",
+      "geometry_sha256": "f5b572886b4753d04a4b6fb44030ffc108b24de3ac4cf67100eca1a731dda7db",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          4,
+          6,
+          2,
+          7,
+          8,
+          5,
+          9,
+          0
+        ],
+        "length": 2955.1617787239084,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          5,
+          8,
+          7,
+          2,
+          6,
+          4,
+          3,
+          1,
+          0
+        ],
+        "length": 2955.1617787239084
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          5,
+          8,
+          7,
+          2,
+          6,
+          4,
+          3,
+          1,
+          0
+        ],
+        "length": 2955.1617787239084
+      }
+    },
+    {
+      "id": "fresh-tsp10-00044",
+      "geometry_sha256": "5148f429e3d416d81c0067ab25864f5d8acc5c261d3ebd84a259baaa78221ae2",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          7,
+          4,
+          8,
+          1,
+          5,
+          3,
+          6,
+          0
+        ],
+        "length": 3216.592055511875,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          5,
+          1,
+          8,
+          4,
+          7,
+          9,
+          0
+        ],
+        "length": 3285.004975113992
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          9,
+          7,
+          4,
+          8,
+          1,
+          5,
+          3,
+          6,
+          0
+        ],
+        "length": 3216.592055511875
+      }
+    },
+    {
+      "id": "fresh-tsp10-00045",
+      "geometry_sha256": "9c79fccb4f1ab6b8ad71cb48dc61a7ddfa46f97e47995a8133f74b53bcfe9767",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          5,
+          6,
+          7,
+          9,
+          4,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 2787.8939662080084,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          8,
+          1,
+          2,
+          4,
+          9,
+          6,
+          7,
+          5,
+          0
+        ],
+        "length": 3031.002042920878
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          5,
+          6,
+          7,
+          9,
+          4,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 2787.8939662080084
+      }
+    },
+    {
+      "id": "fresh-tsp10-00046",
+      "geometry_sha256": "ffc61453290d0eb0a75568d4aa0db63460a26b21e62be155117cea57dbb81b16",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          7,
+          1,
+          4,
+          2,
+          8,
+          3,
+          9,
+          6,
+          0
+        ],
+        "length": 3157.4780836071486,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          6,
+          9,
+          3,
+          8,
+          2,
+          4,
+          1,
+          7,
+          0
+        ],
+        "length": 3207.60314961437
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          7,
+          1,
+          4,
+          2,
+          8,
+          3,
+          9,
+          6,
+          0
+        ],
+        "length": 3157.4780836071486
+      }
+    },
+    {
+      "id": "fresh-tsp10-00047",
+      "geometry_sha256": "a83faed941b498d138e90c32cd3d1a4edc55123b7834fbb9d5d80c8ec12f7fb5",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          6,
+          3,
+          4,
+          2,
+          7,
+          0
+        ],
+        "length": 3066.7546674680907,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          8,
+          9,
+          6,
+          3,
+          7,
+          2,
+          4,
+          5,
+          0
+        ],
+        "length": 3650.889910087446
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          5,
+          8,
+          9,
+          6,
+          3,
+          4,
+          2,
+          7,
+          0
+        ],
+        "length": 3066.7546674680907
+      }
+    },
+    {
+      "id": "fresh-tsp10-00048",
+      "geometry_sha256": "fdcc063df8e2e71c2ed24b8cc92af84599da7005c5164f7d4396bc5d93a49c38",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          7,
+          9,
+          3,
+          4,
+          6,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 3045.362154632504,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          7,
+          9,
+          3,
+          4,
+          6,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 3045.362154632504
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          7,
+          9,
+          3,
+          4,
+          6,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 3045.362154632504
+      }
+    },
+    {
+      "id": "fresh-tsp10-00049",
+      "geometry_sha256": "2ee493f21090b1f1deef7c5c5dbe4ba4f345b995f924f7aa7ffb990a972f90fd",
+      "optimal": {
+        "route": [
+          0,
+          7,
+          5,
+          3,
+          6,
+          9,
+          4,
+          2,
+          1,
+          8,
+          0
+        ],
+        "length": 2765.6576367532566,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          1,
+          2,
+          4,
+          9,
+          6,
+          3,
+          5,
+          7,
+          0
+        ],
+        "length": 2765.6576367532566
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          1,
+          2,
+          4,
+          9,
+          6,
+          3,
+          5,
+          7,
+          0
+        ],
+        "length": 2765.6576367532566
+      }
+    },
+    {
+      "id": "fresh-tsp10-00050",
+      "geometry_sha256": "9a97c6818ffcadb7c9943f944a7656ba44e5e5a1a5007fd36d46e660349d5660",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          2,
+          7,
+          6,
+          4,
+          9,
+          3,
+          1,
+          8,
+          0
+        ],
+        "length": 3283.247460521812,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          5,
+          2,
+          7,
+          6,
+          4,
+          9,
+          1,
+          3,
+          0
+        ],
+        "length": 3630.3389360819833
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          1,
+          3,
+          9,
+          4,
+          6,
+          7,
+          2,
+          5,
+          0
+        ],
+        "length": 3283.247460521812
+      }
+    },
+    {
+      "id": "fresh-tsp10-00051",
+      "geometry_sha256": "a20bae872fd47c5ff4f359a7fc0a0ac41db922c306162e31bdb842b463ad2879",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          4,
+          8,
+          6,
+          3,
+          7,
+          1,
+          5,
+          0
+        ],
+        "length": 2865.7147334123574,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          9,
+          4,
+          5,
+          1,
+          3,
+          8,
+          6,
+          7,
+          0
+        ],
+        "length": 3249.6819179563568
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          9,
+          4,
+          8,
+          6,
+          3,
+          7,
+          1,
+          5,
+          0
+        ],
+        "length": 2865.7147334123574
+      }
+    },
+    {
+      "id": "fresh-tsp10-00052",
+      "geometry_sha256": "efe304b0a9978a00b9b5c299c9d18dead8f68ec0359e3fef024599c10639aec7",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          7,
+          3,
+          2,
+          4,
+          9,
+          8,
+          6,
+          5,
+          0
+        ],
+        "length": 3088.056692443813,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          3,
+          9,
+          4,
+          2,
+          8,
+          0
+        ],
+        "length": 3686.5249484370015
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          7,
+          3,
+          2,
+          4,
+          9,
+          8,
+          6,
+          5,
+          0
+        ],
+        "length": 3088.056692443813
+      }
+    },
+    {
+      "id": "fresh-tsp10-00053",
+      "geometry_sha256": "6c3094840b74f215b1fee4865a6b6150cc5a048b3345253ebc18440d450b9046",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          7,
+          1,
+          9,
+          3,
+          2,
+          6,
+          5,
+          8,
+          0
+        ],
+        "length": 2124.2353833813413,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          1,
+          7,
+          3,
+          2,
+          6,
+          5,
+          8,
+          4,
+          0
+        ],
+        "length": 2261.644085278205
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          8,
+          5,
+          6,
+          2,
+          3,
+          1,
+          7,
+          4,
+          0
+        ],
+        "length": 2202.4530298648333
+      }
+    },
+    {
+      "id": "fresh-tsp10-00054",
+      "geometry_sha256": "186d0d43331647f0958e87c4f926286a9907980d734ddfc9b4a37475cb97eb5c",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          8,
+          2,
+          6,
+          9,
+          7,
+          3,
+          5,
+          0
+        ],
+        "length": 2365.3004145132113,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          3,
+          4,
+          8,
+          9,
+          7,
+          6,
+          2,
+          1,
+          0
+        ],
+        "length": 2471.577104982188
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          3,
+          4,
+          8,
+          9,
+          7,
+          6,
+          2,
+          1,
+          0
+        ],
+        "length": 2471.577104982188
+      }
+    },
+    {
+      "id": "fresh-tsp10-00055",
+      "geometry_sha256": "5e650178526b50cfd80516340d4a2a96ae9f678761314751c4e1f550c2f7bef9",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          5,
+          7,
+          2,
+          3,
+          9,
+          1,
+          8,
+          6,
+          0
+        ],
+        "length": 2848.898120611391,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          6,
+          8,
+          1,
+          9,
+          3,
+          2,
+          7,
+          5,
+          0
+        ],
+        "length": 2950.98757870523
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          5,
+          7,
+          2,
+          3,
+          9,
+          1,
+          8,
+          6,
+          0
+        ],
+        "length": 2848.898120611391
+      }
+    },
+    {
+      "id": "fresh-tsp10-00056",
+      "geometry_sha256": "c3a2e8a9944ec1efe4ed28676e630ff8e29c6c184c29743aa0b51df2359a37ed",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          6,
+          2,
+          5,
+          4,
+          8,
+          7,
+          9,
+          3,
+          0
+        ],
+        "length": 2511.37406715665,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          1,
+          3,
+          9,
+          7,
+          8,
+          4,
+          5,
+          2,
+          0
+        ],
+        "length": 2639.270312700231
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          9,
+          7,
+          8,
+          4,
+          5,
+          2,
+          6,
+          1,
+          0
+        ],
+        "length": 2511.37406715665
+      }
+    },
+    {
+      "id": "fresh-tsp10-00057",
+      "geometry_sha256": "d23afd40f58b77040728b22ad124d984efc94b0ebbb73f79a13c366b46a139f2",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          1,
+          5,
+          7,
+          8,
+          2,
+          6,
+          3,
+          9,
+          0
+        ],
+        "length": 3006.327246799854,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          4,
+          1,
+          5,
+          2,
+          8,
+          7,
+          6,
+          3,
+          0
+        ],
+        "length": 3337.0115254099583
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          3,
+          6,
+          2,
+          8,
+          7,
+          5,
+          1,
+          4,
+          0
+        ],
+        "length": 3006.327246799854
+      }
+    },
+    {
+      "id": "fresh-tsp10-00058",
+      "geometry_sha256": "3e546a7744f2a5eae786b782c99a4563a76bb3053d525c68fab67f44595bb411",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          9,
+          6,
+          2,
+          1,
+          8,
+          5,
+          3,
+          7,
+          0
+        ],
+        "length": 2904.2903808691485,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          4,
+          3,
+          5,
+          2,
+          8,
+          1,
+          6,
+          9,
+          0
+        ],
+        "length": 3268.2962186375003
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          3,
+          5,
+          2,
+          8,
+          1,
+          6,
+          9,
+          4,
+          0
+        ],
+        "length": 2979.6615832367957
+      }
+    },
+    {
+      "id": "fresh-tsp10-00059",
+      "geometry_sha256": "aab24a1165fbd46df56243daf791c1eb78c5ab504147823366f757eb1889f052",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          6,
+          9,
+          2,
+          4,
+          7,
+          3,
+          1,
+          8,
+          0
+        ],
+        "length": 3292.340364512384,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          9,
+          2,
+          7,
+          4,
+          3,
+          8,
+          1,
+          5,
+          0
+        ],
+        "length": 3622.1970620662846
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          1,
+          3,
+          7,
+          4,
+          2,
+          9,
+          6,
+          5,
+          0
+        ],
+        "length": 3292.340364512384
+      }
+    },
+    {
+      "id": "fresh-tsp10-00060",
+      "geometry_sha256": "5c7a35057ff5f0e21f481e37a75b32b24818589673835fc8286b1d598cb8ab64",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          3,
+          8,
+          1,
+          4,
+          6,
+          7,
+          5,
+          9,
+          0
+        ],
+        "length": 2721.0440747138755,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          3,
+          5,
+          9,
+          7,
+          6,
+          4,
+          1,
+          8,
+          0
+        ],
+        "length": 3217.711342447551
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          3,
+          8,
+          1,
+          4,
+          6,
+          7,
+          5,
+          9,
+          0
+        ],
+        "length": 2721.0440747138755
+      }
+    },
+    {
+      "id": "fresh-tsp10-00061",
+      "geometry_sha256": "bff07e8b17819d50cc323823d6dbc953b3ae85556e06f684ed3311ae3db1849e",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          5,
+          8,
+          6,
+          7,
+          1,
+          3,
+          2,
+          9,
+          0
+        ],
+        "length": 3196.8962343582994,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          1,
+          3,
+          7,
+          6,
+          8,
+          5,
+          4,
+          2,
+          0
+        ],
+        "length": 3432.3479214010235
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          5,
+          8,
+          6,
+          7,
+          1,
+          3,
+          2,
+          9,
+          0
+        ],
+        "length": 3196.8962343582994
+      }
+    },
+    {
+      "id": "fresh-tsp10-00062",
+      "geometry_sha256": "be0da3913e08f36bd3cc876144dca7cc9511770d5a7cdfd2a90efa87506439ff",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          2,
+          3,
+          7,
+          5,
+          1,
+          4,
+          9,
+          8,
+          0
+        ],
+        "length": 2721.4210631967744,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          9,
+          4,
+          1,
+          5,
+          7,
+          3,
+          2,
+          6,
+          0
+        ],
+        "length": 2721.4210631967744
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          9,
+          4,
+          1,
+          5,
+          7,
+          3,
+          2,
+          6,
+          0
+        ],
+        "length": 2721.4210631967744
+      }
+    },
+    {
+      "id": "fresh-tsp10-00063",
+      "geometry_sha256": "35492a806f3f07b731055a8e0f93fe3f041ab42b4bba88883995521724b8a57f",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          6,
+          9,
+          5,
+          2,
+          3,
+          1,
+          7,
+          8,
+          0
+        ],
+        "length": 2790.9392362536382,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          6,
+          9,
+          5,
+          2,
+          3,
+          7,
+          1,
+          8,
+          0
+        ],
+        "length": 2885.042852290347
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          6,
+          9,
+          5,
+          2,
+          3,
+          1,
+          7,
+          8,
+          0
+        ],
+        "length": 2790.9392362536382
+      }
+    },
+    {
+      "id": "fresh-tsp10-00064",
+      "geometry_sha256": "07501ab83b1a408dfe12cfcd5c21bbf645dfebdee7c9aa327cf117b1015674fe",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          2,
+          9,
+          7,
+          8,
+          3,
+          4,
+          1,
+          6,
+          0
+        ],
+        "length": 2511.846137645317,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          2,
+          9,
+          7,
+          1,
+          4,
+          6,
+          3,
+          8,
+          0
+        ],
+        "length": 3171.8432640681144
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          2,
+          9,
+          7,
+          8,
+          3,
+          4,
+          1,
+          6,
+          0
+        ],
+        "length": 2511.846137645317
+      }
+    },
+    {
+      "id": "fresh-tsp10-00065",
+      "geometry_sha256": "8d9d20ebf4e953a893fa01e1b17d59a280f631447a3b1cac0afefabac4e9a7f2",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          4,
+          1,
+          2,
+          3,
+          6,
+          9,
+          7,
+          8,
+          0
+        ],
+        "length": 2797.1123532189354,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          4,
+          7,
+          8,
+          9,
+          6,
+          3,
+          2,
+          1,
+          0
+        ],
+        "length": 3409.84652746454
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          4,
+          1,
+          2,
+          3,
+          6,
+          9,
+          7,
+          8,
+          0
+        ],
+        "length": 2797.1123532189354
+      }
+    },
+    {
+      "id": "fresh-tsp10-00066",
+      "geometry_sha256": "4de94cf7d8e988b9aac622651d1ad5bdbda0ea626604cb70fb15d55368d46a9d",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          8,
+          1,
+          2,
+          7,
+          9,
+          3,
+          6,
+          5,
+          0
+        ],
+        "length": 3292.7758603516177,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          4,
+          1,
+          2,
+          7,
+          9,
+          3,
+          6,
+          5,
+          0
+        ],
+        "length": 3480.315748738432
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          8,
+          1,
+          2,
+          7,
+          9,
+          3,
+          6,
+          5,
+          0
+        ],
+        "length": 3292.7758603516177
+      }
+    },
+    {
+      "id": "fresh-tsp10-00067",
+      "geometry_sha256": "577ba0b6cd6e1cfc0c35f2907c33b403d20956db45d565e919888c9979d14682",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          7,
+          5,
+          3,
+          6,
+          4,
+          2,
+          8,
+          9,
+          0
+        ],
+        "length": 2504.90364575399,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          8,
+          2,
+          4,
+          6,
+          3,
+          5,
+          7,
+          1,
+          0
+        ],
+        "length": 2504.90364575399
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          8,
+          2,
+          4,
+          6,
+          3,
+          5,
+          7,
+          1,
+          0
+        ],
+        "length": 2504.90364575399
+      }
+    },
+    {
+      "id": "fresh-tsp10-00068",
+      "geometry_sha256": "49e8eb8efdb0e3d6a59c8bcee9d6a780f739cf78b1c0d12e8da5145d16874e5c",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          7,
+          9,
+          3,
+          1,
+          6,
+          4,
+          2,
+          8,
+          0
+        ],
+        "length": 2643.739125879243,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          2,
+          4,
+          5,
+          3,
+          9,
+          7,
+          6,
+          1,
+          0
+        ],
+        "length": 2816.8404673600758
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          2,
+          6,
+          1,
+          3,
+          9,
+          7,
+          5,
+          4,
+          0
+        ],
+        "length": 2652.6056308598095
+      }
+    },
+    {
+      "id": "fresh-tsp10-00069",
+      "geometry_sha256": "d8e92850017a3dc4eece919c15e3e092dfccf25bd3f933ee1520f10c2fa6960e",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          9,
+          3,
+          8,
+          4,
+          1,
+          2,
+          7,
+          6,
+          0
+        ],
+        "length": 2981.1396314991007,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          7,
+          2,
+          1,
+          5,
+          3,
+          9,
+          8,
+          4,
+          0
+        ],
+        "length": 3672.0524247238095
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          7,
+          2,
+          1,
+          4,
+          8,
+          3,
+          9,
+          5,
+          0
+        ],
+        "length": 2981.1396314991007
+      }
+    },
+    {
+      "id": "fresh-tsp10-00070",
+      "geometry_sha256": "496a946495f84b13752df7d96fdaf82336ae018515010c471f349631166b8a2a",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          7,
+          3,
+          8,
+          4,
+          9,
+          5,
+          6,
+          2,
+          0
+        ],
+        "length": 3384.408997131134,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          7,
+          4,
+          8,
+          3,
+          9,
+          5,
+          6,
+          2,
+          0
+        ],
+        "length": 3566.2626038273997
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          7,
+          3,
+          8,
+          4,
+          9,
+          5,
+          6,
+          2,
+          0
+        ],
+        "length": 3384.408997131134
+      }
+    },
+    {
+      "id": "fresh-tsp10-00071",
+      "geometry_sha256": "a11380065502326c700b7d902e322de7abda5c7f371690f2badf571f967ab5e8",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          7,
+          9,
+          6,
+          8,
+          5,
+          0
+        ],
+        "length": 2619.8313204840983,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          8,
+          6,
+          9,
+          7,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 2619.8313204840983
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          8,
+          6,
+          9,
+          7,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 2619.8313204840983
+      }
+    },
+    {
+      "id": "fresh-tsp10-00072",
+      "geometry_sha256": "7dd5a081a4886807f162f57727167303bb4366dcd43a893c4b55a0c1c19d319e",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          2,
+          7,
+          9,
+          5,
+          4,
+          6,
+          8,
+          3,
+          0
+        ],
+        "length": 2968.6000908968363,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          8,
+          4,
+          5,
+          9,
+          6,
+          1,
+          2,
+          7,
+          0
+        ],
+        "length": 3440.578622885219
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          8,
+          4,
+          5,
+          9,
+          7,
+          2,
+          6,
+          1,
+          0
+        ],
+        "length": 3060.8212910916554
+      }
+    },
+    {
+      "id": "fresh-tsp10-00073",
+      "geometry_sha256": "99221aaf7b0aa561c0c98258b4272ffee7558d9e76d5ac26fc33c6729357d117",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          8,
+          6,
+          9,
+          1,
+          3,
+          4,
+          5,
+          7,
+          0
+        ],
+        "length": 2605.692949941505,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          5,
+          4,
+          3,
+          9,
+          6,
+          8,
+          2,
+          1,
+          0
+        ],
+        "length": 3421.2924214422756
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          5,
+          4,
+          3,
+          1,
+          9,
+          6,
+          8,
+          2,
+          0
+        ],
+        "length": 2605.692949941505
+      }
+    },
+    {
+      "id": "fresh-tsp10-00074",
+      "geometry_sha256": "b2f90aed2b5437c75fc089c8f77d29268b445fe0cea2a117457632e5ce5a6d67",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          4,
+          7,
+          9,
+          3,
+          5,
+          8,
+          6,
+          0
+        ],
+        "length": 2462.784851003174,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          8,
+          2,
+          1,
+          4,
+          7,
+          9,
+          3,
+          5,
+          0
+        ],
+        "length": 2919.353684465826
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          8,
+          5,
+          3,
+          9,
+          7,
+          4,
+          1,
+          2,
+          0
+        ],
+        "length": 2462.784851003174
+      }
+    },
+    {
+      "id": "fresh-tsp10-00075",
+      "geometry_sha256": "224ba84180a3203af422e44d158dc6a766fbfdd51b21fd757713a10d76178270",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          7,
+          8,
+          5,
+          9,
+          1,
+          4,
+          0
+        ],
+        "length": 3069.5679688940577,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          8,
+          7,
+          3,
+          6,
+          5,
+          9,
+          1,
+          2,
+          0
+        ],
+        "length": 3334.1784268135466
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          8,
+          6,
+          3,
+          7,
+          5,
+          9,
+          1,
+          2,
+          0
+        ],
+        "length": 3163.8789630349092
+      }
+    },
+    {
+      "id": "fresh-tsp10-00076",
+      "geometry_sha256": "70dd0d62b7c45056d3df8fd1836ae3c34af85fd68c09c6d1cb8bfae470d9eb4c",
+      "optimal": {
+        "route": [
+          0,
+          7,
+          4,
+          5,
+          6,
+          3,
+          8,
+          2,
+          1,
+          9,
+          0
+        ],
+        "length": 2703.1011507978824,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          3,
+          2,
+          8,
+          1,
+          9,
+          6,
+          5,
+          4,
+          0
+        ],
+        "length": 3320.2022987345454
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          4,
+          5,
+          6,
+          3,
+          8,
+          2,
+          1,
+          9,
+          0
+        ],
+        "length": 2703.1011507978824
+      }
+    },
+    {
+      "id": "fresh-tsp10-00077",
+      "geometry_sha256": "6d0c6f733f93c8272cf02d66d963c9c0ee978a919c0803f5d68008f01c7ab0f5",
+      "optimal": {
+        "route": [
+          0,
+          7,
+          5,
+          4,
+          6,
+          1,
+          2,
+          9,
+          3,
+          8,
+          0
+        ],
+        "length": 3244.442306940648,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          9,
+          2,
+          1,
+          6,
+          4,
+          5,
+          0
+        ],
+        "length": 3438.612306568373
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          5,
+          4,
+          6,
+          1,
+          2,
+          9,
+          3,
+          8,
+          0
+        ],
+        "length": 3244.442306940648
+      }
+    },
+    {
+      "id": "fresh-tsp10-00078",
+      "geometry_sha256": "ad8856e13edeea54b8f5163f6f7318ccb1ee7d14b415ea075c27a5b13ae234c0",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          6,
+          2,
+          3,
+          7,
+          5,
+          8,
+          1,
+          9,
+          0
+        ],
+        "length": 2844.3597907912417,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          9,
+          1,
+          8,
+          5,
+          7,
+          3,
+          4,
+          6,
+          2,
+          0
+        ],
+        "length": 3184.3122116905415
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          9,
+          1,
+          8,
+          5,
+          7,
+          3,
+          2,
+          6,
+          4,
+          0
+        ],
+        "length": 2844.3597907912417
+      }
+    },
+    {
+      "id": "fresh-tsp10-00079",
+      "geometry_sha256": "dcf14e9ae71670945509eb4b68c67a7291cf9ae6f01509c9ccfb052b6b31ce4f",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          9,
+          2,
+          4,
+          7,
+          6,
+          8,
+          5,
+          0
+        ],
+        "length": 3248.328640720921,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          8,
+          6,
+          7,
+          4,
+          9,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 3351.7765642251466
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          8,
+          6,
+          7,
+          4,
+          2,
+          9,
+          3,
+          1,
+          0
+        ],
+        "length": 3248.328640720921
+      }
+    },
+    {
+      "id": "fresh-tsp10-00080",
+      "geometry_sha256": "57df14e6bec170d92dcd6402db45f2d499cb2ff4ee4226d11a10ae4271b4d611",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          2,
+          5,
+          1,
+          3,
+          4,
+          9,
+          7,
+          8,
+          0
+        ],
+        "length": 3426.217766772264,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          2,
+          6,
+          7,
+          5,
+          3,
+          4,
+          1,
+          9,
+          0
+        ],
+        "length": 4236.469665150966
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          7,
+          9,
+          4,
+          3,
+          1,
+          5,
+          2,
+          6,
+          0
+        ],
+        "length": 3426.217766772264
+      }
+    },
+    {
+      "id": "fresh-tsp10-00081",
+      "geometry_sha256": "08ac46cfd933954f09a1440dda65056e027c551599ed40833cbf6a2cee2cd108",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          7,
+          8,
+          9,
+          6,
+          2,
+          5,
+          4,
+          0
+        ],
+        "length": 3147.2432739020937,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          4,
+          5,
+          6,
+          2,
+          9,
+          8,
+          3,
+          7,
+          0
+        ],
+        "length": 3217.9222045659944
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          3,
+          7,
+          8,
+          9,
+          6,
+          2,
+          5,
+          4,
+          0
+        ],
+        "length": 3147.2432739020937
+      }
+    },
+    {
+      "id": "fresh-tsp10-00082",
+      "geometry_sha256": "6a557e9b4eef7e15bd4114bcb93c5b172d932294955c063b08f51c0cc50ee373",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          2,
+          5,
+          6,
+          4,
+          7,
+          8,
+          3,
+          9,
+          0
+        ],
+        "length": 2785.133797132702,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          9,
+          1,
+          2,
+          5,
+          6,
+          4,
+          0
+        ],
+        "length": 2960.900487940288
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          8,
+          3,
+          9,
+          1,
+          2,
+          5,
+          6,
+          4,
+          0
+        ],
+        "length": 2960.900487940288
+      }
+    },
+    {
+      "id": "fresh-tsp10-00083",
+      "geometry_sha256": "52f5ab9e94984ef0d814ddff0a26e7b587bebefe3e1ba03ce7815470fef18ad4",
+      "optimal": {
+        "route": [
+          0,
+          7,
+          9,
+          5,
+          4,
+          2,
+          3,
+          6,
+          1,
+          8,
+          0
+        ],
+        "length": 2832.5978262718377,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          8,
+          1,
+          6,
+          3,
+          2,
+          4,
+          5,
+          9,
+          0
+        ],
+        "length": 2845.0400834497723
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          9,
+          5,
+          4,
+          2,
+          3,
+          6,
+          1,
+          8,
+          0
+        ],
+        "length": 2832.5978262718377
+      }
+    },
+    {
+      "id": "fresh-tsp10-00084",
+      "geometry_sha256": "30b5c882b29635639fd405de53383463ec83bed17c982555cea9f2056c61bc09",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          5,
+          8,
+          6,
+          9,
+          1,
+          7,
+          4,
+          3,
+          0
+        ],
+        "length": 2074.865970236839,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          9,
+          6,
+          8,
+          5,
+          2,
+          4,
+          7,
+          3,
+          0
+        ],
+        "length": 2314.4893519820093
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          5,
+          8,
+          6,
+          9,
+          1,
+          7,
+          4,
+          3,
+          0
+        ],
+        "length": 2074.865970236839
+      }
+    },
+    {
+      "id": "fresh-tsp10-00085",
+      "geometry_sha256": "0cf7ef181e690631782b8071ebbd5ddb4c6f0da66e1c0ac0a44369adcdda5f6c",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          9,
+          6,
+          7,
+          3,
+          5,
+          8,
+          0
+        ],
+        "length": 2473.470234834778,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          9,
+          7,
+          3,
+          5,
+          8,
+          6,
+          0
+        ],
+        "length": 3750.1006813670992
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          9,
+          6,
+          7,
+          3,
+          5,
+          8,
+          0
+        ],
+        "length": 2473.470234834778
+      }
+    },
+    {
+      "id": "fresh-tsp10-00086",
+      "geometry_sha256": "ddf19d6051d8f80895e4943d4182bbc0778f48bab3caccf96e29aad7f594017e",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          9,
+          2,
+          3,
+          5,
+          7,
+          4,
+          1,
+          8,
+          0
+        ],
+        "length": 2727.209601007307,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          9,
+          4,
+          7,
+          2,
+          3,
+          5,
+          1,
+          8,
+          0
+        ],
+        "length": 2787.809315384748
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          9,
+          4,
+          7,
+          2,
+          3,
+          5,
+          1,
+          8,
+          0
+        ],
+        "length": 2787.809315384748
+      }
+    },
+    {
+      "id": "fresh-tsp10-00087",
+      "geometry_sha256": "75df1748bbc0ce74d63f31e72e62ec9e157a5f0acef5abba7863e64010019b0a",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          8,
+          9,
+          7,
+          3,
+          2,
+          4,
+          1,
+          6,
+          0
+        ],
+        "length": 1855.105118128817,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          5,
+          2,
+          4,
+          1,
+          8,
+          9,
+          7,
+          3,
+          0
+        ],
+        "length": 2113.3635161406346
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          6,
+          1,
+          4,
+          2,
+          3,
+          7,
+          9,
+          8,
+          5,
+          0
+        ],
+        "length": 1855.105118128817
+      }
+    },
+    {
+      "id": "fresh-tsp10-00088",
+      "geometry_sha256": "ad6b36301c915093f3745a35aaf341999814d49874915a5a6b018483e572f236",
+      "optimal": {
+        "route": [
+          0,
+          4,
+          5,
+          6,
+          8,
+          3,
+          2,
+          9,
+          1,
+          7,
+          0
+        ],
+        "length": 2660.301763781626,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          7,
+          5,
+          6,
+          1,
+          9,
+          2,
+          3,
+          8,
+          0
+        ],
+        "length": 2999.2368624325923
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          7,
+          5,
+          6,
+          8,
+          3,
+          2,
+          9,
+          1,
+          0
+        ],
+        "length": 2680.815073871973
+      }
+    },
+    {
+      "id": "fresh-tsp10-00089",
+      "geometry_sha256": "cd07e6aa5798418f4ee9490a516ec16f02f13d58d03c375a3b3d67e6101b15a7",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          3,
+          1,
+          6,
+          9,
+          8,
+          4,
+          2,
+          7,
+          0
+        ],
+        "length": 3209.5467946924587,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          5,
+          1,
+          6,
+          9,
+          3,
+          4,
+          2,
+          8,
+          0
+        ],
+        "length": 3871.11694914785
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          2,
+          4,
+          8,
+          9,
+          6,
+          1,
+          3,
+          5,
+          0
+        ],
+        "length": 3209.5467946924587
+      }
+    },
+    {
+      "id": "fresh-tsp10-00090",
+      "geometry_sha256": "34cfa7119901f243e6fe61ef5cc0315d78fcf7c74b0fd030136f76523da50e00",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          7,
+          1,
+          8,
+          9,
+          5,
+          4,
+          3,
+          6,
+          0
+        ],
+        "length": 2483.590819847843,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          6,
+          3,
+          7,
+          1,
+          8,
+          9,
+          4,
+          5,
+          0
+        ],
+        "length": 2647.503753348752
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          7,
+          1,
+          8,
+          9,
+          5,
+          4,
+          3,
+          6,
+          0
+        ],
+        "length": 2483.590819847843
+      }
+    },
+    {
+      "id": "fresh-tsp10-00091",
+      "geometry_sha256": "8e0e4f2c871d6f49acdf39ab1200c32ec3ac8b18745131d32977b15bee008d56",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          2,
+          8,
+          3,
+          4,
+          6,
+          5,
+          9,
+          7,
+          0
+        ],
+        "length": 2304.702199286339,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          6,
+          7,
+          9,
+          5,
+          4,
+          3,
+          8,
+          2,
+          0
+        ],
+        "length": 2529.4735215977153
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          2,
+          8,
+          3,
+          4,
+          6,
+          5,
+          9,
+          7,
+          0
+        ],
+        "length": 2304.702199286339
+      }
+    },
+    {
+      "id": "fresh-tsp10-00092",
+      "geometry_sha256": "bbff211460eba57e422bbb6830771e9719bb82443338889d4e2860fdac451e23",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          1,
+          4,
+          6,
+          5,
+          9,
+          2,
+          8,
+          7,
+          0
+        ],
+        "length": 3071.223331622692,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          4,
+          5,
+          6,
+          3,
+          7,
+          8,
+          2,
+          9,
+          0
+        ],
+        "length": 3545.613729487298
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          8,
+          2,
+          9,
+          5,
+          6,
+          4,
+          1,
+          3,
+          0
+        ],
+        "length": 3071.223331622692
+      }
+    },
+    {
+      "id": "fresh-tsp10-00093",
+      "geometry_sha256": "2ed3568a47a71ee00dab54b9056d3199d20196af335a801ef3fafe3d4bd731ce",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          9,
+          4,
+          7,
+          5,
+          1,
+          6,
+          2,
+          8,
+          0
+        ],
+        "length": 3095.433590627581,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          9,
+          4,
+          7,
+          5,
+          1,
+          6,
+          2,
+          8,
+          0
+        ],
+        "length": 3095.433590627581
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          9,
+          4,
+          7,
+          5,
+          1,
+          6,
+          2,
+          8,
+          0
+        ],
+        "length": 3095.433590627581
+      }
+    },
+    {
+      "id": "fresh-tsp10-00094",
+      "geometry_sha256": "8d071b15ee2454c9e9200d0526cb997b7aa86c9919b799153455b2bbca893d31",
+      "optimal": {
+        "route": [
+          0,
+          6,
+          2,
+          4,
+          1,
+          3,
+          5,
+          8,
+          9,
+          7,
+          0
+        ],
+        "length": 3000.7611966991117,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          7,
+          9,
+          8,
+          5,
+          3,
+          1,
+          4,
+          2,
+          6,
+          0
+        ],
+        "length": 3000.7611966991117
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          7,
+          9,
+          8,
+          5,
+          3,
+          1,
+          4,
+          2,
+          6,
+          0
+        ],
+        "length": 3000.7611966991117
+      }
+    },
+    {
+      "id": "fresh-tsp10-00095",
+      "geometry_sha256": "77302e91d19cdf1a7b811182c527a6960bf6bd57420e577848605b1d00cdf0d5",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          6,
+          7,
+          9,
+          2,
+          8,
+          5,
+          1,
+          4,
+          0
+        ],
+        "length": 3276.1655928864784,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          1,
+          5,
+          8,
+          2,
+          9,
+          7,
+          6,
+          3,
+          0
+        ],
+        "length": 3276.1655928864784
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          1,
+          5,
+          8,
+          2,
+          9,
+          7,
+          6,
+          3,
+          0
+        ],
+        "length": 3276.1655928864784
+      }
+    },
+    {
+      "id": "fresh-tsp10-00096",
+      "geometry_sha256": "ac627bf68a5c8582528d6152873650dd10e1c2318764a68c2927117cd6ecf7b6",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          4,
+          1,
+          6,
+          7,
+          2,
+          3,
+          9,
+          8,
+          0
+        ],
+        "length": 3430.7042550976403,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          5,
+          4,
+          1,
+          3,
+          9,
+          2,
+          7,
+          6,
+          8,
+          0
+        ],
+        "length": 3973.1716999217183
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          5,
+          4,
+          1,
+          6,
+          7,
+          2,
+          3,
+          9,
+          8,
+          0
+        ],
+        "length": 3430.7042550976403
+      }
+    },
+    {
+      "id": "fresh-tsp10-00097",
+      "geometry_sha256": "bee55a1d4957ef172f6a4ab35a104f6f8c558a7f0052b10087a2b92607134f51",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          1,
+          8,
+          5,
+          3,
+          6,
+          0
+        ],
+        "length": 2507.7387665833753,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          1,
+          8,
+          5,
+          3,
+          6,
+          0
+        ],
+        "length": 2507.7387665833753
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          4,
+          7,
+          9,
+          1,
+          8,
+          5,
+          3,
+          6,
+          0
+        ],
+        "length": 2507.7387665833753
+      }
+    },
+    {
+      "id": "fresh-tsp10-00098",
+      "geometry_sha256": "844137567deda10d2e6713479a57ccb75ea6cc8dac058f9e7b5b0dfc3c6001b2",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          9,
+          4,
+          3,
+          8,
+          5,
+          1,
+          6,
+          7,
+          0
+        ],
+        "length": 2990.3941347693108,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          6,
+          8,
+          2,
+          9,
+          4,
+          3,
+          5,
+          1,
+          7,
+          0
+        ],
+        "length": 3333.8961419475177
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          9,
+          4,
+          3,
+          8,
+          5,
+          1,
+          6,
+          7,
+          0
+        ],
+        "length": 2990.3941347693108
+      }
+    },
+    {
+      "id": "fresh-tsp10-00099",
+      "geometry_sha256": "d82be254cd072147fa713a53e2c15949a917423c3d7bfd159eeb310505a286de",
+      "optimal": {
+        "route": [
+          0,
+          5,
+          6,
+          4,
+          2,
+          1,
+          7,
+          3,
+          9,
+          8,
+          0
+        ],
+        "length": 2955.5357585930706,
+        "method": "Held-Karp exact dynamic programming",
+        "certificate": "Held\u2013Karp exact dynamic programming over float64 Euclidean edge costs"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          8,
+          9,
+          3,
+          7,
+          1,
+          2,
+          4,
+          6,
+          5,
+          0
+        ],
+        "length": 2955.5357585930706
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          8,
+          9,
+          3,
+          7,
+          1,
+          2,
+          4,
+          6,
+          5,
+          0
+        ],
+        "length": 2955.5357585930706
+      }
+    }
+  ]
+}

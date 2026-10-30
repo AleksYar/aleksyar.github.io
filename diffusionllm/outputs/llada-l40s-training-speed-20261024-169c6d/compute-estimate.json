@@ -1,0 +1,100 @@
+{
+  "created_at": "2026-10-24T14:16:36.512937+00:00",
+  "job_id": "1460638",
+  "scope": "TSP20 (~976 tokens), one L40S, BF16 LoRA, 500k examples, one epoch, effective batch 16.",
+  "observed_trials": 38,
+  "grid_completed": true,
+  "confirmation_results": 6,
+  "all_planned_trials_completed": true,
+  "out_of_memory_trials": 14,
+  "recommendations": {
+    "16": {
+      "baseline_trial": "confirm-r16-mb2-all",
+      "recommended_trial": "confirm-r16-mb2-none",
+      "microbatch": 2,
+      "gradient_accumulation": 8,
+      "checkpointing": "none",
+      "mean_seconds_per_update": 4.416898624835691,
+      "baseline_seconds_per_update": 6.2930792987463064,
+      "baseline_peak_allocated_gib": 17.338683605194092,
+      "baseline_peak_reserved_gib": 20.46484375,
+      "speedup": 1.4247733156837867,
+      "time_saved_pct": 29.81339634929412,
+      "training_hours_500k": 38.341133896143155,
+      "baseline_training_hours_500k": 54.62742446828391,
+      "peak_allocated_gib": 31.368255138397217,
+      "peak_reserved_gib": 37.673828125,
+      "reserved_memory_headroom_gib": 9.83563232421875,
+      "planning_hours_low": 44.17524728575747,
+      "planning_hours_high": 49.00936067537179,
+      "planning_allowance": "10\u201320% training-throughput contingency plus 2\u20133 h evaluation/checkpoint allowance; excludes queue, preemption and data preparation."
+    },
+    "64": {
+      "baseline_trial": "confirm-r64-mb2-all",
+      "recommended_trial": "confirm-r64-mb2-none",
+      "microbatch": 2,
+      "gradient_accumulation": 8,
+      "checkpointing": "none",
+      "mean_seconds_per_update": 4.493993736493091,
+      "baseline_seconds_per_update": 6.441506785670451,
+      "baseline_peak_allocated_gib": 19.233678340911865,
+      "baseline_peak_reserved_gib": 23.134765625,
+      "speedup": 1.4333590929072169,
+      "time_saved_pct": 30.23381196321533,
+      "training_hours_500k": 39.01036229594697,
+      "baseline_training_hours_500k": 55.915857514500445,
+      "peak_allocated_gib": 33.54558324813843,
+      "peak_reserved_gib": 39.39453125,
+      "reserved_memory_headroom_gib": 8.11492919921875,
+      "planning_hours_low": 44.91139852554167,
+      "planning_hours_high": 49.81243475513636,
+      "planning_allowance": "10\u201320% training-throughput contingency plus 2\u20133 h evaluation/checkpoint allowance; excludes queue, preemption and data preparation."
+    }
+  },
+  "checkpoint_loss_checks": [
+    {
+      "rank": 16,
+      "microbatch": 2,
+      "checkpoint_options": 4,
+      "initial_loss_spread": 0.0,
+      "relative_spread": 0.0
+    },
+    {
+      "rank": 16,
+      "microbatch": 4,
+      "checkpoint_options": 3,
+      "initial_loss_spread": 0.0,
+      "relative_spread": 0.0
+    },
+    {
+      "rank": 64,
+      "microbatch": 2,
+      "checkpoint_options": 4,
+      "initial_loss_spread": 0.0,
+      "relative_spread": 0.0
+    },
+    {
+      "rank": 64,
+      "microbatch": 4,
+      "checkpoint_options": 3,
+      "initial_loss_spread": 0.0,
+      "relative_spread": 0.0
+    }
+  ],
+  "limits": [
+    "Short profiles do not establish final model quality or sustained multi-day throughput.",
+    "Different microbatches change RNG consumption and dynamic EOS padding, so training trajectories need not be bit-identical.",
+    "No mixed TSP10\u2013100 or long-context GPU benchmark was performed.",
+    "Learning rate was held at 1e-4 for both ranks; this measures execution settings, not hyperparameter quality."
+  ],
+  "execution": {
+    "job_id": "1460638",
+    "job_name": "llada-speed-169c6d",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:42:58",
+    "gpu_hours": 0.716111111111111,
+    "node": "nlp-l40-1",
+    "allocated_resources": "billing=14,cpu=4,gres/gpu=1,node=1"
+  }
+}

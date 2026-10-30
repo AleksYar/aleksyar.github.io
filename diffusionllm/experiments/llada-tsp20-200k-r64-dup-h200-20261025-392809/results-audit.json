@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-26T11:24:42.412587+00:00",
+  "checks": [
+    "33 frozen source hashes unchanged",
+    "runtime configuration and dataset hashes verified",
+    "300 raw answers rescored and all valid distances independently recalculated",
+    "same 100 validation cases and prompts at all stages and in prior 160k run",
+    "12500 updates; 200000 distinct training IDs, each used once; no resume or memory fallback",
+    "microbatch 8 and effective batch 16; finite loss and gradients; duplicate coefficient 0.1 throughout",
+    "both permanent adapters hash verified remotely; full resume-state files retained"
+  ],
+  "job": {
+    "job_id": "1461382",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "node": "galileo4",
+    "elapsed": "07:41:02",
+    "started_at_cluster_local": "2026-10-25T16:08:54",
+    "ended_at_cluster_local": "2026-10-25T23:49:56",
+    "seconds": 27662,
+    "gpu_hours": 7.683888888888889
+  },
+  "compute": {
+    "training_update_seconds": 23174.63106304221,
+    "training_update_hours": 6.437397517511725,
+    "mean_seconds_per_update": 1.8539704850433767,
+    "median_seconds_per_update": 1.8564330404624343,
+    "evaluation_generation_seconds": 3053.5214816657826,
+    "evaluation_generation_hours": 0.8482004115738285,
+    "other_job_seconds": 1433.8474552920088,
+    "peak_allocated_gib": 82.96289730072021
+  },
+  "loss": {
+    "loss": {
+      "first_250_mean": 0.47981206223368644,
+      "last_250_mean": 0.19654515067487954
+    },
+    "sft_loss": {
+      "first_250_mean": 0.44764529810845854,
+      "last_250_mean": 0.18862551921606063
+    },
+    "duplicate_loss": {
+      "first_250_mean": 0.3216676349081099,
+      "last_250_mean": 0.07919631323956583
+    },
+    "duplicate_probability_surrogate": {
+      "first_250_mean": 0.20930028459429742,
+      "last_250_mean": 0.050857097978528144
+    }
+  },
+  "phases": {
+    "before": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 6,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": 158.2378264670892,
+      "median_gap_pct_complete": 152.36153268337915,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 510,
+      "mean_seconds": 7.764130125977099,
+      "distinct_city_sequences": 28
+    },
+    "update-006250": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 87,
+      "strict_valid": 87,
+      "strict_format": 99,
+      "optimal": 22,
+      "within_1pct": 40,
+      "mean_gap_pct_complete": 3.2188100065600738,
+      "median_gap_pct_complete": 1.559067545299686,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 11.39292409714777,
+      "distinct_city_sequences": 99
+    },
+    "after": {
+      "requested": 100,
+      "answers_saved": 100,
+      "complete": 95,
+      "strict_valid": 95,
+      "strict_format": 100,
+      "optimal": 39,
+      "within_1pct": 65,
+      "mean_gap_pct_complete": 1.3449765015634363,
+      "median_gap_pct_complete": 0.1793574069225201,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 86,
+      "mean_seconds": 11.378160593532957,
+      "distinct_city_sequences": 100
+    }
+  },
+  "prior_160k_rank64": {
+    "requested": 100,
+    "answers_saved": 100,
+    "complete": 91,
+    "strict_valid": 91,
+    "strict_format": 100,
+    "optimal": 36,
+    "within_1pct": 57,
+    "mean_gap_pct_complete": 1.747319957442576,
+    "median_gap_pct_complete": 0.25995695520659723,
+    "objective_consistent": 0,
+    "mean_visible_tokens": 86,
+    "mean_seconds": 22.2054802788049,
+    "distinct_city_sequences": 100
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 0,
+      "within_1pct": 2,
+      "mean_gap_pct_complete": 15.944217726336932
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 43,
+      "within_1pct": 61,
+      "mean_gap_pct_complete": 1.3525760156768927
+    }
+  },
+  "paired_midpoint_to_final": {
+    "common_valid_cases": 84,
+    "improved": 48,
+    "unchanged": 23,
+    "worsened": 13,
+    "mean_gap_change_percentage_points_common_valid": -1.8696926934378277,
+    "became_valid": 11,
+    "became_invalid": 3
+  },
+  "paired_prior_to_final": {
+    "common_valid_cases": 87,
+    "improved": 29,
+    "unchanged": 40,
+    "worsened": 18,
+    "mean_gap_change_percentage_points_common_valid": -0.35502129234314206,
+    "became_valid": 8,
+    "became_invalid": 4
+  },
+  "final_invalid_reasons": {
+    "duplicate_or_missing_city": 5
+  },
+  "final_invalid_cases": [
+    {
+      "id": "tsp20-validation-00008",
+      "reason": "duplicate_or_missing_city",
+      "repeated_cities": [
+        2
+      ],
+      "missing_cities": [
+        7
+      ],
+      "raw_answer": "Route: [0, 5, 18, 15, 8, 6, 10, 17, 14, 4, 16, 2, 2, 9, 12, 19, 11, 3, 1, 13, 0], Objective: 3876.006"
+    },
+    {
+      "id": "tsp20-validation-00027",
+      "reason": "duplicate_or_missing_city",
+      "repeated_cities": [
+        9
+      ],
+      "missing_cities": [
+        1
+      ],
+      "raw_answer": "Route: [0, 9, 16, 5, 15, 4, 19, 7, 6, 13, 12, 9, 14, 2, 11, 8, 10, 3, 18, 17, 0], Objective: 3625.206"
+    },
+    {
+      "id": "tsp20-validation-00043",
+      "reason": "duplicate_or_missing_city",
+      "repeated_cities": [
+        13
+      ],
+      "missing_cities": [
+        17
+      ],
+      "raw_answer": "Route: [0, 6, 15, 7, 18, 8, 19, 14, 10, 11, 5, 13, 13, 2, 1, 9, 3, 16, 4, 12, 0], Objective: 3876.122"
+    },
+    {
+      "id": "tsp20-validation-00073",
+      "reason": "duplicate_or_missing_city",
+      "repeated_cities": [
+        8
+      ],
+      "missing_cities": [
+        6
+      ],
+      "raw_answer": "Route: [0, 3, 10, 18, 17, 8, 11, 8, 12, 13, 1, 15, 19, 7, 16, 2, 9, 5, 4, 14, 0], Objective: 3522.006"
+    },
+    {
+      "id": "tsp20-validation-00093",
+      "reason": "duplicate_or_missing_city",
+      "repeated_cities": [
+        11
+      ],
+      "missing_cities": [
+        18
+      ],
+      "raw_answer": "Route: [0, 14, 10, 6, 1, 11, 16, 12, 3, 13, 9, 4, 15, 7, 11, 19, 2, 5, 8, 17, 0], Objective: 3947.202"
+    }
+  ],
+  "final_objective_mean_absolute_error": 106.10156892906068,
+  "checkpoint_audit": "remote-checkpoint-audit.json",
+  "limitations": [
+    "Validation set reused, not an untouched final test.",
+    "Gaps exclude invalid tours; average gaps may concern different valid subsets.",
+    "Loss, training examples and volume, schedule length, and GPU differ from the 160k run; not a controlled loss ablation.",
+    "Printed objectives are unreliable; quality metrics use recomputed coordinate distances."
+  ]
+}

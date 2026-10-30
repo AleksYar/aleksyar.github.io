@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "trials_checked": 15,
+  "input_and_source_hashes_checked": true,
+  "scheduler_completion_checked": true,
+  "distinct_assigned_gpus_checked": true,
+  "replica_hashes_checked": true,
+  "global_batch_and_tokens_checked": true,
+  "finite_metrics_and_adapter_updates_checked": true
+}

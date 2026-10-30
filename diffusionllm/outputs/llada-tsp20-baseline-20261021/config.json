@@ -1,0 +1,17 @@
+{
+  "model": "GSAI-ML/LLaDA-8B-Instruct",
+  "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "count": 100,
+  "seed": 20261021,
+  "steps": 64,
+  "max_tokens": 128,
+  "block_length": 128,
+  "temperature": 0,
+  "cfg_scale": 0,
+  "remasking": "low_confidence",
+  "dtype": "bf16",
+  "attempts": 1,
+  "repair": false,
+  "dataset_sha256": "b13ca290d96b6e6a06979695ecd32ef1767fab9af6454a1c8faf8e733d0386b1",
+  "prompt_version": 1
+}

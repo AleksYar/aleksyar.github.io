@@ -1,0 +1,96 @@
+{
+  "dataset_sha256": "16e97c005b62761a4fdffef7d6ca89cf82d08bfacc5c0a775f2fff2f9f9daedd",
+  "model": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 99,
+    "optimal": 71,
+    "within_1pct": 84,
+    "valid_pct_generated": 99.0,
+    "valid_pct_requested": 99.0,
+    "mean_gap_pct_valid": 0.31845265449364685,
+    "median_gap_pct_valid": 0.0,
+    "within_1pct_pct_requested": 84.0
+  },
+  "initial": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 100,
+    "optimal": 76,
+    "within_1pct": 88,
+    "valid_pct_generated": 100.0,
+    "valid_pct_requested": 100.0,
+    "mean_gap_pct_valid": 0.25159412025448047,
+    "median_gap_pct_valid": 0.0,
+    "within_1pct_pct_requested": 88.0
+  },
+  "run_status": "completed",
+  "all_answers_recorded": true,
+  "methods": {
+    "unfiltered_final": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 99,
+      "optimal": 71,
+      "within_1pct": 84,
+      "valid_pct_generated": 99.0,
+      "valid_pct_requested": 99.0,
+      "mean_gap_pct_valid": 0.31845265449364685,
+      "median_gap_pct_valid": 0.0,
+      "within_1pct_pct_requested": 84.0
+    },
+    "nearest_neighbor": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 100,
+      "optimal": 17,
+      "within_1pct": 20,
+      "valid_pct_generated": 100.0,
+      "valid_pct_requested": 100.0,
+      "mean_gap_pct_valid": 9.054602536900198,
+      "median_gap_pct_valid": 6.8110368666475125,
+      "within_1pct_pct_requested": 20.0
+    },
+    "nearest_neighbor_2opt": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 100,
+      "optimal": 83,
+      "within_1pct": 87,
+      "valid_pct_generated": 100.0,
+      "valid_pct_requested": 100.0,
+      "mean_gap_pct_valid": 0.49403400649647633,
+      "median_gap_pct_valid": 0.0,
+      "within_1pct_pct_requested": 87.0
+    }
+  },
+  "protocol": {
+    "initial_generation_passes": 9,
+    "maximum_generation_passes_per_block": 16,
+    "max_total_model_calls": 256,
+    "selector_calls_included": true,
+    "mask_selection": "highest trained-head gain score on valid routes; highest feasibility score on invalid routes",
+    "keep_stop_threshold_enabled": false,
+    "reject_worse_or_invalid": false,
+    "retain_best_valid": false,
+    "use_latest_completion_as_next_input": true,
+    "exclude_previously_tried_actions": false,
+    "temperature": 0.0,
+    "structured_city_slots": true,
+    "enforce_permutation": false,
+    "return": "last fully reconstructed route; stop if fewer than two calls remain",
+    "head_adaptation": "same learned weights and relative features; replace fixed20 indexing with N, relative positions divide by N-1; masks remain pairs/segments length3..8, plus invalid-tour singletons",
+    "size_transfer": "zero-shot from TSP20; no weight updates"
+  },
+  "final_vs_initial": {
+    "equal length": 91,
+    "longer": 7,
+    "became invalid": 1,
+    "shorter": 1
+  }
+}

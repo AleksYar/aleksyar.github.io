@@ -1,0 +1,19 @@
+{
+  "source_run": "[workspace]/experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba",
+  "training_change": {
+    "learning_rate": {
+      "before": 0.0001,
+      "after": 1e-05
+    }
+  },
+  "same_parent_checkpoint": true,
+  "same_optimizer_history": true,
+  "identical_files": {
+    "train.jsonl": "bbd55e742fcb319839a126c1d3ff3c99da5461d9a5b60da9080004bf57c50641",
+    "validation.jsonl": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+    "tokenized.json": "84373bf536259bcc05c939cfa0b0fbf72f4e6f6570f6b969241cc89913b1092a"
+  },
+  "fresh_comparison_count": 1000,
+  "fresh_comparison_seed": 2610202601,
+  "planned_comparison_wall_limit_hours": 12
+}

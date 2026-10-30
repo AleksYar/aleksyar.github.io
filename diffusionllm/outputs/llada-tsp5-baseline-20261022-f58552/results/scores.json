@@ -1,0 +1,462 @@
+[
+  {
+    "id": "tsp5-0000",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      "length": 2197.507107659952,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0001",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      "length": 2552.4982813418387,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0002",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        4,
+        3,
+        2,
+        0
+      ],
+      "length": 1747.0353967238352,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0003",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        1,
+        4,
+        3,
+        0
+      ],
+      "length": 2318.460396498013,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0004",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        3,
+        2,
+        1,
+        4,
+        0
+      ],
+      "length": 2338.722242009744,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0005",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "length": 1738.3985310030525,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0006",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "length": 2439.939228966002,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0007",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "length": 1671.3750803486928,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0008",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        3,
+        1,
+        2,
+        4,
+        0
+      ],
+      "length": 2364.936499959397,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0009",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        0
+      ],
+      "length": 1925.43127852348,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0010",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        0
+      ],
+      "length": 2243.818757648236,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0011",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "length": 2159.4263205739658,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0012",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        0
+      ],
+      "length": 1762.7862442370447,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0013",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        3,
+        1,
+        4,
+        0
+      ],
+      "length": 1891.9125650073613,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,3,0"
+  },
+  {
+    "id": "tsp5-0014",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        0
+      ],
+      "length": 2141.108970764359,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0015",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        0
+      ],
+      "length": 2273.7763915447085,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0016",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "length": 2149.5193562408967,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0017",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        2,
+        1,
+        3,
+        4,
+        0
+      ],
+      "length": 2231.3519250504605,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0018",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        0
+      ],
+      "length": 1626.5901702108285,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  },
+  {
+    "id": "tsp5-0019",
+    "generated": true,
+    "valid": false,
+    "reason": "unparseable_or_ambiguous_route",
+    "route": null,
+    "length": null,
+    "gap_pct": null,
+    "format_ok": false,
+    "optimal": {
+      "route": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        0
+      ],
+      "length": 2716.2449733761287,
+      "method": "Held-Karp exact dynamic programming"
+    },
+    "raw_answer": "Route: 0,1,2,3,4,0"
+  }
+]

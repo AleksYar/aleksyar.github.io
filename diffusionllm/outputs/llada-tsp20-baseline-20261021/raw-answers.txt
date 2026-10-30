@@ -1,0 +1,325 @@
+LLaDA-8B-Instruct: complete raw TSP answers
+No TSP fine-tuning. Each answer is the unchanged decoded text before the first EOS/EOT.
+Full canvases and token IDs are preserved in all_results.json.
+
+==============================================================================
+MAIN RUN: 100 cases, 64 steps, 128-token full block
+==============================================================================
+
+tsp20-000 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 19, 0
+
+tsp20-001 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 4, 3, 0
+
+tsp20-002 | primary status: unparseable_or_ambiguous_route
+Route: 0, 9, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 15, 15, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 8, 3, 9, 0
+
+tsp20-003 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 18, 14, 4, 6, 15, 7, 10, 11, 9, 12, 17, 3, 17, 16, 5, 19, 19, 7, 10, 13, 1, 18, 14, 4, 6, 15, 7, 10, 11, 9, 12, 17, 0
+
+tsp20-004 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 1, 13, 17, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0, 4, 0
+
+tsp20-005 | primary status: unparseable_or_ambiguous_route
+Route: 0, 14, 17, 18, 13, 19, 14, 18, 13, 14, 17, 18, 13, 13, 19, 14, 18, 13, 14, 17, 0, 14, 17, 18, 13, 19, 14, 18, 13, 14, 17, 0
+
+tsp20-006 | primary status: unparseable_or_ambiguous_route
+Route: 0, 17, 11, 2, 18, 3, 1, 4, 5, 16, 6, 7, 12, 8, 9, 13, 14, 15, 19, 18, 11, 17, 10, 12, 16, 16, 13, 14, 15, 19, 18, 11, 17, 0
+
+tsp20-007 | primary status: unparseable_or_ambiguous_route
+Route: 0, 14, 16, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 15, 14, 16, 19, 15, 16, 17, 19, 15, 14, 16, 0
+
+tsp20-008 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 0
+
+tsp20-009 | primary status: unparseable_or_ambiguous_route
+Route: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 17, 17, 0, 0, 0
+
+tsp20-010 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 2, 8, 8, 3, 3, 1, 1, 0, 2, 2, 8, 8, 3, 3, 1, 1, 2, 2, 8, 8, 3, 3, 1, 1, 0, 2, 2, 8, 8, 3, 3, 1, 1, 10, 10, 0, 2, 2, 0
+
+tsp20-011 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 4, 12, 5, 12, 19, 6, 15, 13, 8, 10, 14, 10, 11, 16, 1, 17, 9, 17, 7, 11, 18, 14, 8, 10, 13, 6, 15, 19, 5, 12, 4, 2, 0
+
+tsp20-012 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 6, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 10, 10, 6, 6, 0
+
+tsp20-013 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 14, 0, 1, 11, 13, 17, 18, 15, 9, 17, 4, 16, 10, 16, 16, 10, 13, 11, 13, 11, 1, 12, 6, 19, 12, 15, 18, 15, 0, 8, 14, 0
+
+tsp20-014 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 13, 12, 11, 10, 19, 14, 17, 17, 16, 15, 18, 17, 16, 15, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 0
+
+tsp20-015 | primary status: unparseable_or_ambiguous_route
+Route: 0, 13, 7, 17, 14, 18, 16, 19, 10, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 10, 19, 16, 18, 14, 17, 13, 0
+
+tsp20-016 | primary status: unparseable_or_ambiguous_route
+Route: 0, 12, 9, 2, 10, 11, 4, 6, 14, 7, 0, 12, 17, 8, 16, 18, 3, 13, 19, 5, 17, 1, 8, 15, 4, 6, 14, 7, 0, 12, 19, 2, 11, 10, 9, 0
+
+tsp20-017 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 15, 15, 0, 0, 5, 15, 0
+
+tsp20-018 | primary status: unparseable_or_ambiguous_route
+Route: 0, 19, 13, 1, 10, 2, 5, 1, 4, 3, 6, 8, 9, 14, 18, 11, 17, 12, 16, 17, 18, 14, 18, 11, 17, 15, 19, 12, 16, 16, 15, 19, 13, 0
+
+tsp20-019 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 16
+
+tsp20-020 | primary status: unparseable_or_ambiguous_route
+Route: 0, 14, 5, 17, 1, 3, 8, 2, 10, 4, 13, 6, 19, 7, 15, 8, 12, 11, 18, 14, 14, 16, 16, 14, 14, 16, 16, 14, 14, 16, 16, 17, 14, 0
+
+tsp20-021 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 12, 0, 7, 12, 0, 9, 12, 0, 10, 12, 0, 1, 12, 0, 5, 12, 0, 7, 12, 0, 10, 12, 0, 1, 12, 0, 9, 12, 0, 7, 12, 0, 3, 12, 0
+
+tsp20-022 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 6, 2, 4, 1, 0, 1, 0, 3, 8, 1, 0, 1, 0, 5, 8, 1, 0, 1, 0, 9, 10, 11, 1, 0, 1, 0, 3, 7, 3, 1, 0, 1, 0, 1, 4, 2, 6, 1, 0
+
+tsp20-023 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 6, 2, 4, 3, 9, 7, 5, 8, 1, 6, 9, 7, 3, 4, 2, 6, 1, 10, 10, 6, 2, 4, 3, 9, 7, 5, 7, 5, 8, 1, 6, 9, 7, 3, 4, 2, 6, 1, 0
+
+tsp20-024 | primary status: unparseable_or_ambiguous_route
+Route: 0, 11, 2, 6, 1, 13, 4, 13, 19, 12, 19, 12, 17, 18, 18, 8, 9, 10, 11, 17, 14, 16, 15, 14, 16, 14, 15, 12, 19, 13, 1, 2, 6, 0
+
+tsp20-025 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 13, 0, 7, 4, 15, 0, 6, 2, 16, 0, 1, 7, 19, 0, 8, 9, 17, 0, 10, 18, 0, 1, 7, 12, 0, 6, 2, 16, 0, 7, 4, 15, 0, 3, 13, 0
+
+tsp20-026 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 16, 16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+tsp20-027 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 17, 1, 8, 2, 14, 3, 18, 4, 19, 7, 13, 6, 11, 9, 10, 11, 12, 17, 13, 14, 15, 15, 13, 16, 11, 17, 18, 19, 14, 17, 17, 0
+
+tsp20-028 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 10, 0, 3, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+tsp20-029 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 13, 18, 0, 0, 0, 0, 0, 0, 8, 0, 5, 0
+
+tsp20-030 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 16, 3, 13, 4, 18, 2, 11, 8, 15, 9, 14, 7, 17, 1, 19, 14, 9, 17, 7, 18, 4, 12, 6, 15, 8, 11, 2, 13, 3, 16, 0, 6, 16, 0
+
+tsp20-031 | primary status: unparseable_or_ambiguous_route
+Route: 0, 17, 3, 6, 16, 3, 6, 15, 7, 6, 16, 3, 0, 17, 3, 6, 15, 15, 6, 16, 15, 6, 16, 3, 6, 15, 7, 6, 16, 3, 0, 17, 3, 6, 16, 3, 0
+
+tsp20-032 | primary status: unparseable_or_ambiguous_route
+Route: 0, 16, 13, 0, 16, 13, 0, 16, 13, 0, 16, 13, 0, 16, 13, 0, 16, 13, 0, 16, 13, 16, 16, 13, 0, 16, 13, 0, 16, 13, 0, 16, 13, 0
+
+tsp20-033 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 19, 1, 6, 13, 2, 5, 12, 3, 11, 14, 4, 7, 8, 9, 17, 19, 10, 16, 6, 12, 13, 2, 13, 1, 14, 11, 15, 18, 12, 18, 17, 19, 0
+
+tsp20-034 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 12, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 12, 0
+
+tsp20-035 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 14, 13, 16, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 0
+
+tsp20-036 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 13, 6, 11, 3, 19, 7, 12, 5, 10, 1, 15, 9, 16, 8, 17, 0, 14, 8, 18, 9, 16, 5, 10, 1, 15, 7, 12, 3, 19, 6, 11, 4, 13, 0
+
+tsp20-037 | primary status: unparseable_or_ambiguous_route
+Route: 0, 0
+
+tsp20-038 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 4, 12, 5, 15, 6, 1, 18, 11, 10, 16, 17, 13, 19, 14, 10, 15, 17, 13, 19, 14, 10, 15, 12, 18, 11, 10, 16, 17, 13, 19, 0
+
+tsp20-039 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 12, 9, 19, 3, 11, 5, 17, 1, 11, 3, 11, 1, 17, 5, 11, 1, 11, 3, 11, 1, 17, 5, 11, 3, 11, 1, 17, 5, 11, 3, 19, 9, 12, 0
+
+tsp20-040 | primary status: unparseable_or_ambiguous_route
+Route: 0, 19, 15, 18, 0, 19, 15, 18, 19, 15, 18, 19, 15, 18, 19, 15, 19, 15, 18, 19, 15, 18, 19, 15, 18, 19, 15, 18, 19, 15, 18, 0
+
+tsp20-041 | primary status: unparseable_or_ambiguous_route
+Route: 0, 14, 8, 11, 1, 16, 2, 4, 3, 18, 6, 4, 5, 15, 7, 5, 9, 13, 14, 10, 17, 12, 10, 9, 13, 7, 15, 6, 18, 3, 16, 1, 11, 8, 14, 0
+
+tsp20-042 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 5, 4, 3, 2, 1, 0
+
+tsp20-043 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 7, 0
+
+tsp20-044 | primary status: unparseable_or_ambiguous_route
+Route: 0, 12, 11, 0, 10, 11, 0, 12, 10, 0, 10, 11, 0, 12, 10, 0, 10, 11, 0, 12, 10, 0, 10, 11, 0, 12, 10, 0, 10, 11, 0, 9, 3, 1, 0
+
+tsp20-045 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 15, 0, 1, 0
+
+tsp20-046 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 7, 5, 0, 2, 18, 17, 0, 7, 5, 0
+
+tsp20-047 | primary status: unparseable_or_ambiguous_route
+Route: 0, 15, 11, 2, 17, 3, 8, 16, 4, 12, 5, 10, 6, 7, 11, 9, 19, 10, 12, 13, 14, 15, 18, 14, 13, 12, 10, 16, 17, 2, 11, 15, 11, 0
+
+tsp20-048 | primary status: unparseable_or_ambiguous_route
+Route: 0, 18, 17, 2, 5, 3, 1, 6, 7, 8, 4, 9, 10, 11, 12, 15, 14, 16, 19, 13, 14, 16, 16, 19, 10, 11, 12, 13, 14, 15, 16, 17, 18, 0
+
+tsp20-049 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 4, 10, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 4, 10, 0, 8, 4, 0, 8, 4, 0, 8, 4, 0, 8, 0
+
+tsp20-050 | primary status: unparseable_or_ambiguous_route
+Route: 0, 14, 5, 1, 9, 3, 2, 4, 7, 6, 4, 8, 13, 6, 9, 16, 3, 1, 19, 11, 10, 19, 16, 13, 8, 14, 0, 12, 15, 17, 12, 15, 15, 18, 5, 0
+
+tsp20-051 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 8, 2, 3, 14, 15, 11, 10, 13, 19, 17, 16, 12, 12, 18, 11, 10, 11, 9, 13, 19, 17, 16, 12, 18, 11, 15, 14, 3, 2, 8, 1, 0
+
+tsp20-052 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 1, 11, 15, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0, 3, 5, 0
+
+tsp20-053 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 5, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 0, 1, 1, 14, 14, 0
+
+tsp20-054 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0, 19, 0
+
+tsp20-055 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 0, 0, 1, 0, 2, 0, 3, 0, 4, 0, 5, 0, 6, 0, 7, 0, 8, 0, 9, 0, 10, 0, 11, 0
+
+tsp20-056 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 13, 0, 4, 13, 0, 3, 9, 17, 0, 3, 9, 17, 0, 3, 9, 17, 0, 3, 9, 17, 0, 2, 12, 11, 11, 14, 11, 10, 19, 15, 10, 18, 15, 0
+
+tsp20-057 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 12, 13, 14, 15, 16, 17, 18, 19, 12, 13, 14, 15, 16, 0
+
+tsp20-058 | primary status: unparseable_or_ambiguous_route
+Route: 0, 16, 1, 0, 16, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0
+
+tsp20-059 | primary status: unparseable_or_ambiguous_route
+Route: 0, 9, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 10, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+tsp20-060 | primary status: unparseable_or_ambiguous_route
+Route: 0, 17, 13, 1, 3, 4, 12, 13, 5, 14, 18, 16, 15, 6, 16, 15, 10, 12, 10, 17, 14, 17, 18, 14, 17, 18, 14, 17, 18, 14, 17, 13, 0
+
+tsp20-061 | primary status: unparseable_or_ambiguous_route
+Route: 0, 15, 3, 0, 15, 6, 0, 15, 7, 0, 15, 8, 0, 15, 2, 0, 15, 1, 0, 15, 9, 0, 15, 10, 0, 15, 11, 0, 15, 6, 0, 15, 4, 0, 15, 3, 0
+
+tsp20-062 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 16, 0, 12, 19, 1, 2, 4, 2, 5, 2, 3, 8, 3, 9, 14, 9, 17, 14, 11, 13, 11, 15, 12, 19, 12, 16, 6, 7, 6, 7, 9, 6, 7, 6, 0
+
+tsp20-063 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 6, 18, 11, 12, 5, 13, 9, 2, 19, 15, 10, 14, 16, 1, 7, 17, 10, 3, 6, 18, 11, 12, 5, 13, 9, 2, 19, 15, 10, 14, 16, 1, 0
+
+tsp20-064 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 10, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 10, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+tsp20-065 | primary status: unparseable_or_ambiguous_route
+Route: 0, 11, 12, 0, 11, 12, 0, 11, 12, 0, 11, 12, 0, 11, 12, 0, 11, 12, 0, 11, 12, 15, 11, 12, 0, 11, 12, 0, 11, 12, 0, 11, 12, 0
+
+tsp20-066 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 14, 8, 13, 5, 7, 6, 3, 7, 6, 9, 10, 11, 15, 16, 14, 17, 12, 17, 14, 16, 11, 10, 11, 6, 7, 6, 3, 7, 5, 8, 13, 14, 5, 0
+
+tsp20-067 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 7, 0, 3, 15, 1, 3, 15, 1, 8, 14, 5, 8, 19, 0, 5, 11, 6, 5, 11, 6, 3, 15, 1, 3, 15, 1, 3, 15, 1, 8, 14, 5, 8, 19, 0, 0
+
+tsp20-068 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 5, 4, 0, 1, 13, 18, 0, 5, 4, 0
+
+tsp20-069 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 13, 3, 10, 4, 10, 8, 18, 6, 18, 8, 10, 4, 10, 3, 10, 5, 13, 3, 10, 4, 10, 8, 18, 6, 18, 8, 10, 4, 10, 3, 10, 5, 13, 0
+
+tsp20-070 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 5, 2, 6, 9, 18, 10, 19, 13, 17, 12, 16, 11, 15, 16, 12, 13, 17, 12, 16, 11, 15, 16, 12, 14, 4, 7, 5, 9, 6, 2, 5, 1, 0
+
+tsp20-071 | primary status: unparseable_or_ambiguous_route
+Route: 0, 11, 12, 1, 8, 18, 2, 13, 19, 3, 5, 15, 4, 10, 7, 6, 18, 16, 1, 7, 0, 9, 10, 15, 11, 12, 19, 17, 2, 13, 19, 14, 18, 16, 0
+
+tsp20-072 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 12, 0, 3, 8, 5, 10, 13, 10, 11, 17, 11, 18, 18, 17, 12, 12, 12, 14, 14, 12, 14, 15, 16, 15, 15, 16, 15, 19, 14, 19, 0
+
+tsp20-073 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 13, 13, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 0, 4, 15, 0
+
+tsp20-074 | primary status: unparseable_or_ambiguous_route
+Route: 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 0, 10, 16, 19, 10, 16, 0, 10, 16, 0
+
+tsp20-075 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 18, 13, 15, 2, 12, 14, 3, 19, 4, 8, 17, 5, 6, 7, 18, 9, 11, 10, 10, 16, 12, 14, 15, 13, 15, 15, 17, 17, 19, 19, 18, 0
+
+tsp20-076 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 14, 0
+
+tsp20-077 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 11, 12, 0, 1, 15, 5, 19, 6, 17, 13, 8, 18, 14, 9, 16, 10, 7, 4,  7, 18, 14, 9, 16, 10, 19, 6, 17, 13, 5, 15, 1, 12, 0
+
+tsp20-078 | primary status: unparseable_or_ambiguous_route
+Route: 0, 13, 6, 3, 19, 2, 17, 10, 16, 4, 12, 18, 7, 9, 14, 19, 8, 13, 6, 3, 14, 7, 10, 14, 19, 2, 17, 10, 16, 4, 12, 18, 8, 13, 0
+
+tsp20-079 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 8, 13, 12, 11, 10, 19, 18, 17, 16, 15, 14, 17, 16, 15, 14, 13, 10, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 0
+
+tsp20-080 | primary status: unparseable_or_ambiguous_route
+Route: 0, 11, 8, 2, 11, 3, 17, 5, 16, 12, 6, 18, 7, 1, 15, 18, 12, 5, 17, 10, 13, 14, 10, 14, 19, 4, 10, 19, 3, 17, 8, 2, 11, 8, 0
+
+tsp20-081 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 19, 19, 0, 0, 7, 0
+
+tsp20-082 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 19, 1, 11, 3, 9, 17, 2, 18, 5, 15, 6, 14, 1, 11, 17, 3, 12, 9, 11, 10, 8, 13, 4, 16, 2, 18, 5, 15, 6, 14, 0, 19, 7, 0
+
+tsp20-083 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 18, 0
+
+tsp20-084 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 18, 0, 18, 7, 18, 0, 18, 7, 18, 7, 18, 0, 18, 18, 0, 18, 7, 18, 0, 18, 7, 18, 0, 18, 7, 18, 0, 18, 7, 18, 0, 18, 7, 0
+
+tsp20-085 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 13, 18, 18, 14, 14, 18, 18, 18, 13, 18, 18, 18, 13, 18, 18, 18, 13, 18, 18, 18, 13, 18, 18, 18, 13, 13, 18, 18, 14, 0
+
+tsp20-086 | primary status: unparseable_or_ambiguous_route
+Route: 0, 17, 8, 1, 13, 10, 2, 12, 5, 19, 4, 1, 13, 10, 2, 12, 5, 19, 9, 6, 1, 13, 10, 2, 12, 5, 19, 4, 1, 13, 10, 2, 12, 8, 17, 0
+
+tsp20-087 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 12, 1, 19, 4, 13, 12, 5, 11, 8, 17, 7, 10, 9, 15, 2, 16, 10, 9, 18, 19, 3, 14, 18, 1, 19, 13, 4, 13, 12, 6, 12, 11, 0
+
+tsp20-088 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 3, 0, 3, 5, 0, 5, 0, 10, 17, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 2, 3, 0
+
+tsp20-089 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 17, 13, 12, 11, 10, 14, 19, 18, 16, 15, 11, 10, 14, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 6, 5, 4, 3, 2, 1, 0
+
+tsp20-090 | primary status: unparseable_or_ambiguous_route
+Route: 0, 3, 1, 4, 0, 3, 1, 4, 1, 4, 1, 3, 0, 3, 1, 4, 1, 4, 1, 3, 10, 11, 2, 3, 0, 3, 1, 4, 1, 4, 1, 3, 0, 3, 1, 4, 1, 4, 1, 3, 0
+
+tsp20-091 | primary status: unparseable_or_ambiguous_route
+Route: 0, 18, 13, 0, 1, 2, 9, 3, 11, 17, 4, 5, 16, 6, 12, 14, 7, 11, 3, 8, 12, 14, 15, 17, 11, 16, 14, 12, 4, 10, 19, 0, 18, 13, 0
+
+tsp20-092 | primary status: unparseable_or_ambiguous_route
+Route: 0, 2, 16, 0, 3, 11, 1, 5, 11, 1, 6, 18, 7, 12, 9, 8, 13, 15, 7, 12, 9, 13, 15, 14, 15, 13, 14, 5, 11, 1, 3, 16, 0, 2, 16, 0
+
+tsp20-093 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 1, 0, 2, 7, 0, 3, 7, 0, 2, 7, 0, 3, 7, 0, 2, 7, 0, 3, 7, 0, 2, 7, 0, 3, 7, 0, 2, 7, 0, 3, 7, 0, 2, 7, 0, 17, 19, 1, 0
+
+tsp20-094 | primary status: unparseable_or_ambiguous_route
+Route: 0, 9, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+
+tsp20-095 | primary status: unparseable_or_ambiguous_route
+Route: 0, 6, 3, 9, 1, 10, 4, 13, 18, 5, 15, 12, 6, 14, 7, 16, 5, 19, 8, 10, 3, 19, 5, 15, 11, 5, 15, 16, 7, 18, 17, 2, 10, 3, 6, 0
+
+tsp20-096 | primary status: unparseable_or_ambiguous_route
+Route: 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 12, 19, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0, 5, 6, 0
+
+tsp20-097 | primary status: unparseable_or_ambiguous_route
+Route: 0, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 0
+
+tsp20-098 | primary status: unparseable_or_ambiguous_route
+Route: 0, 7, 15, 1, 2, 10, 3, 5, 14, 8, 6, 11, 6, 4, 17, 2, 9, 12, 9, 19, 19, 2, 10, 17, 4, 6, 11, 8, 5, 14, 3, 2, 10, 1, 7, 15, 0
+
+tsp20-099 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 15, 0
+==============================================================================
+POST-HOC DIAGNOSTIC: same first 5 cases, 128 steps, 32-token blocks
+==============================================================================
+
+tsp20-000 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 3, 0, 1, 4, 0, 3, 8, 0, 10, 0, 19, 0, 12, 2, 17, 0, 18, 5, 17, 0, 14, 0, 11, 0, 18, 0, 14, 0, 15, 0, 9, 0, 6, 0, 7, 0
+
+tsp20-001 | primary status: unparseable_or_ambiguous_route
+Route: 0, 8, 10, 1, 13, 4, 14, 2, 6, 5, 7, 12, 8, 9, 18, 13, 10, 15, 1, 11, 3, 19, 18, 9, 10, 1, 13, 4, 14, 2, 6, 5, 7, 8, 5, 8, 0
+
+tsp20-002 | primary status: unparseable_or_ambiguous_route
+Route: 0, 9, 3, 8, 0, 9, 3, 8, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0, 15, 0
+
+tsp20-003 | primary status: unparseable_or_ambiguous_route
+Route: 0, 1, 18, 14, 4, 6, 7, 10, 11, 3, 8, 17, 2, 13, 10, 9, 12, 15, 6, 11, 14, 1, 18, 16, 5, 19, 17, 3, 8, 17, 2, 3, 0, 1, 18, 0
+
+tsp20-004 | primary status: unparseable_or_ambiguous_route
+Route: 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 7, 0, 4, 0, 18, 0.

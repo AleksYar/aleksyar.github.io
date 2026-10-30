@@ -1,0 +1,419 @@
+tsp10-0000
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)
+City 5: (692, 758)
+City 6: (913, 558)
+City 7: (89, 604)
+City 8: (432, 32)
+City 9: (30, 95)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0001
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (223, 238)
+City 1: (517, 616)
+City 2: (27, 574)
+City 3: (203, 733)
+City 4: (665, 718)
+City 5: (558, 429)
+City 6: (225, 459)
+City 7: (603, 284)
+City 8: (828, 890)
+City 9: (6, 777)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0002
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (825, 163)
+City 1: (714, 432)
+City 2: (348, 284)
+City 3: (159, 220)
+City 4: (980, 781)
+City 5: (344, 104)
+City 6: (94, 389)
+City 7: (99, 367)
+City 8: (867, 352)
+City 9: (618, 270)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0003
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 44)
+City 1: (747, 470)
+City 2: (549, 127)
+City 3: (996, 944)
+City 4: (387, 80)
+City 5: (565, 300)
+City 6: (849, 643)
+City 7: (633, 906)
+City 8: (882, 370)
+City 9: (591, 196)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0004
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (721, 71)
+City 1: (46, 677)
+City 2: (233, 791)
+City 3: (296, 81)
+City 4: (875, 238)
+City 5: (887, 103)
+City 6: (389, 284)
+City 7: (464, 650)
+City 8: (854, 373)
+City 9: (166, 379)
+ANSWER
+Route: 0,1,2,3,4,5,6,7,8,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0005
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (363, 214)
+City 1: (686, 273)
+City 2: (718, 959)
+City 3: (699, 663)
+City 4: (73, 623)
+City 5: (650, 175)
+City 6: (546, 746)
+City 7: (250, 167)
+City 8: (473, 388)
+City 9: (276, 947)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0006
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (655, 704)
+City 1: (570, 224)
+City 2: (701, 332)
+City 3: (863, 786)
+City 4: (794, 57)
+City 5: (234, 841)
+City 6: (32, 824)
+City 7: (323, 410)
+City 8: (274, 67)
+City 9: (216, 935)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0007
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (965, 580)
+City 1: (897, 735)
+City 2: (322, 217)
+City 3: (671, 511)
+City 4: (405, 905)
+City 5: (936, 658)
+City 6: (469, 146)
+City 7: (271, 142)
+City 8: (252, 762)
+City 9: (574, 551)
+ANSWER
+Route: 0,1,2,3,4,6,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0008
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (269, 764)
+City 1: (598, 438)
+City 2: (919, 597)
+City 3: (408, 370)
+City 4: (224, 141)
+City 5: (521, 505)
+City 6: (93, 773)
+City 7: (48, 881)
+City 8: (112, 156)
+City 9: (642, 163)
+ANSWER
+Route: 0,1,2,3,4,5,6,7,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0009
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (811, 696)
+City 1: (432, 610)
+City 2: (65, 394)
+City 3: (390, 610)
+City 4: (479, 541)
+City 5: (257, 994)
+City 6: (566, 881)
+City 7: (965, 11)
+City 8: (696, 738)
+City 9: (117, 698)
+ANSWER
+Route: 0,1,2,3,4,5,6,7,8,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0010
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (906, 549)
+City 1: (768, 273)
+City 2: (787, 656)
+City 3: (348, 114)
+City 4: (300, 445)
+City 5: (161, 464)
+City 6: (3, 976)
+City 7: (739, 896)
+City 8: (736, 269)
+City 9: (995, 512)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0011
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (780, 182)
+City 1: (519, 934)
+City 2: (108, 891)
+City 3: (640, 305)
+City 4: (861, 654)
+City 5: (519, 623)
+City 6: (203, 156)
+City 7: (382, 780)
+City 8: (165, 552)
+City 9: (976, 797)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0012
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (944, 543)
+City 1: (940, 0)
+City 2: (613, 331)
+City 3: (500, 19)
+City 4: (114, 951)
+City 5: (371, 899)
+City 6: (851, 826)
+City 7: (314, 245)
+City 8: (59, 246)
+City 9: (899, 580)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0013
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (969, 80)
+City 1: (87, 749)
+City 2: (497, 835)
+City 3: (70, 778)
+City 4: (545, 784)
+City 5: (128, 131)
+City 6: (675, 486)
+City 7: (969, 562)
+City 8: (169, 271)
+City 9: (540, 893)
+ANSWER
+Route: 0,1,2,3,4,5,6,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0014
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (621, 433)
+City 1: (987, 216)
+City 2: (951, 552)
+City 3: (773, 747)
+City 4: (706, 205)
+City 5: (730, 319)
+City 6: (408, 687)
+City 7: (665, 382)
+City 8: (448, 921)
+City 9: (529, 462)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0015
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (123, 253)
+City 1: (230, 65)
+City 2: (346, 21)
+City 3: (602, 567)
+City 4: (235, 602)
+City 5: (225, 7)
+City 6: (72, 724)
+City 7: (646, 60)
+City 8: (234, 69)
+City 9: (927, 32)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0016
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (880, 338)
+City 1: (72, 526)
+City 2: (243, 285)
+City 3: (685, 497)
+City 4: (219, 552)
+City 5: (135, 740)
+City 6: (957, 903)
+City 7: (584, 590)
+City 8: (484, 248)
+City 9: (803, 484)
+ANSWER
+Route: 0,1,2,3,4,5,7,7,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0017
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 416)
+City 1: (194, 96)
+City 2: (99, 674)
+City 3: (441, 362)
+City 4: (433, 420)
+City 5: (478, 884)
+City 6: (746, 55)
+City 7: (689, 669)
+City 8: (661, 100)
+City 9: (62, 412)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0018
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (745, 347)
+City 1: (819, 882)
+City 2: (111, 254)
+City 3: (196, 194)
+City 4: (549, 459)
+City 5: (143, 432)
+City 6: (187, 285)
+City 7: (473, 255)
+City 8: (895, 945)
+City 9: (77, 453)
+ANSWER
+Route: 0,1,2,3,4,5,6,7,8,0
+STATUS: unparseable_or_ambiguous_route
+
+tsp10-0019
+PROMPT
+Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (827, 882)
+City 1: (876, 563)
+City 2: (100, 51)
+City 3: (667, 553)
+City 4: (856, 15)
+City 5: (992, 95)
+City 6: (948, 771)
+City 7: (869, 242)
+City 8: (170, 416)
+City 9: (497, 492)
+ANSWER
+Route: 0,1,2,3,4,5,7,8,9,0
+STATUS: unparseable_or_ambiguous_route

@@ -1,0 +1,745 @@
+{
+  "dataset_sha256": "2f2a1392e216d334ba0aa3dd85a49c34da24e916162e1a9c17dca2655eb15646",
+  "instances": [
+    {
+      "id": "tsp5-0000",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          0
+        ],
+        "length": 2197.507107659952,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          2,
+          3,
+          1,
+          0
+        ],
+        "length": 2266.284578102119
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          0
+        ],
+        "length": 2197.507107659952
+      }
+    },
+    {
+      "id": "tsp5-0001",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          4,
+          2,
+          0
+        ],
+        "length": 2552.4982813418387,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          3,
+          4,
+          2,
+          0
+        ],
+        "length": 2552.4982813418387
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          3,
+          4,
+          2,
+          0
+        ],
+        "length": 2552.4982813418387
+      }
+    },
+    {
+      "id": "tsp5-0002",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          3,
+          2,
+          0
+        ],
+        "length": 1747.0353967238352,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          3,
+          1,
+          4,
+          0
+        ],
+        "length": 1793.5137547701538
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          3,
+          4,
+          1,
+          0
+        ],
+        "length": 1747.035396723835
+      }
+    },
+    {
+      "id": "tsp5-0003",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          4,
+          3,
+          0
+        ],
+        "length": 2318.460396498013,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          1,
+          4,
+          3,
+          0
+        ],
+        "length": 2318.460396498013
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          1,
+          4,
+          3,
+          0
+        ],
+        "length": 2318.460396498013
+      }
+    },
+    {
+      "id": "tsp5-0004",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          0
+        ],
+        "length": 2338.722242009744,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "length": 2516.841173439995
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          0
+        ],
+        "length": 2338.722242009744
+      }
+    },
+    {
+      "id": "tsp5-0005",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 1738.3985310030525,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "length": 1752.3351299868934
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 1738.3985310030525
+      }
+    },
+    {
+      "id": "tsp5-0006",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          3,
+          0
+        ],
+        "length": 2439.939228966002,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          3,
+          0
+        ],
+        "length": 2439.939228966002
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          3,
+          0
+        ],
+        "length": 2439.939228966002
+      }
+    },
+    {
+      "id": "tsp5-0007",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 1671.3750803486928,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 1671.3750803486928
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 1671.3750803486928
+      }
+    },
+    {
+      "id": "tsp5-0008",
+      "optimal": {
+        "route": [
+          0,
+          3,
+          1,
+          2,
+          4,
+          0
+        ],
+        "length": 2364.936499959397,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 2562.189699367934
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          2,
+          1,
+          3,
+          0
+        ],
+        "length": 2364.936499959397
+      }
+    },
+    {
+      "id": "tsp5-0009",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          0
+        ],
+        "length": 1925.43127852348,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          1,
+          4,
+          2,
+          0
+        ],
+        "length": 2082.1137425109505
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          2,
+          4,
+          1,
+          0
+        ],
+        "length": 1925.43127852348
+      }
+    },
+    {
+      "id": "tsp5-0010",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 2243.818757648236,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 2243.818757648236
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 2243.818757648236
+      }
+    },
+    {
+      "id": "tsp5-0011",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          4,
+          1,
+          3,
+          0
+        ],
+        "length": 2159.4263205739658,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          0
+        ],
+        "length": 2435.6021556237333
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          1,
+          4,
+          2,
+          0
+        ],
+        "length": 2159.4263205739658
+      }
+    },
+    {
+      "id": "tsp5-0012",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          0
+        ],
+        "length": 1762.7862442370447,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          2,
+          1,
+          4,
+          0
+        ],
+        "length": 1816.560517431254
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          3,
+          2,
+          4,
+          1,
+          0
+        ],
+        "length": 1762.7862442370447
+      }
+    },
+    {
+      "id": "tsp5-0013",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          3,
+          1,
+          4,
+          0
+        ],
+        "length": 1891.9125650073613,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          1,
+          2,
+          3,
+          0
+        ],
+        "length": 1938.1519695324232
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          1,
+          3,
+          2,
+          0
+        ],
+        "length": 1891.912565007361
+      }
+    },
+    {
+      "id": "tsp5-0014",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          0
+        ],
+        "length": 2141.108970764359,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 2284.255597681478
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          1,
+          4,
+          2,
+          3,
+          0
+        ],
+        "length": 2141.108970764359
+      }
+    },
+    {
+      "id": "tsp5-0015",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          0
+        ],
+        "length": 2273.7763915447085,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "length": 2273.776391544709
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          3,
+          2,
+          1,
+          0
+        ],
+        "length": 2273.776391544709
+      }
+    },
+    {
+      "id": "tsp5-0016",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 2149.5193562408967,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          3,
+          1,
+          2,
+          4,
+          0
+        ],
+        "length": 2433.6864023393755
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 2149.5193562408967
+      }
+    },
+    {
+      "id": "tsp5-0017",
+      "optimal": {
+        "route": [
+          0,
+          2,
+          1,
+          3,
+          4,
+          0
+        ],
+        "length": 2231.3519250504605,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 2231.3519250504605
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          3,
+          1,
+          2,
+          0
+        ],
+        "length": 2231.3519250504605
+      }
+    },
+    {
+      "id": "tsp5-0018",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 1626.5901702108285,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          1,
+          3,
+          2,
+          0
+        ],
+        "length": 1686.9290994419243
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          2,
+          3,
+          1,
+          0
+        ],
+        "length": 1626.5901702108285
+      }
+    },
+    {
+      "id": "tsp5-0019",
+      "optimal": {
+        "route": [
+          0,
+          1,
+          3,
+          2,
+          4,
+          0
+        ],
+        "length": 2716.2449733761287,
+        "method": "Held-Karp exact dynamic programming"
+      },
+      "nearest_neighbor": {
+        "route": [
+          0,
+          4,
+          1,
+          3,
+          2,
+          0
+        ],
+        "length": 2992.1552104251978
+      },
+      "nearest_neighbor_2opt": {
+        "route": [
+          0,
+          4,
+          2,
+          3,
+          1,
+          0
+        ],
+        "length": 2716.2449733761287
+      }
+    }
+  ]
+}

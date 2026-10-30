@@ -1,0 +1,7604 @@
+{
+  "initial_route": [
+    0,
+    7,
+    9,
+    5,
+    4,
+    2,
+    3,
+    6,
+    1,
+    8,
+    0
+  ],
+  "initial_generation_calls": 9,
+  "initial_trace": {
+    "masked_city_positions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "masked_token_positions": [
+      512,
+      513,
+      516,
+      517,
+      520,
+      521,
+      524,
+      525,
+      528,
+      529,
+      532,
+      533,
+      536,
+      537,
+      540,
+      541,
+      544,
+      545
+    ],
+    "actual_inserted_mask_token_ids": [
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336,
+      126336
+    ],
+    "commits": [
+      {
+        "positions": [
+          1
+        ],
+        "cities": [
+          7
+        ],
+        "confidences": [
+          0.9899362325668335
+        ],
+        "remaining_city_masks": 8
+      },
+      {
+        "positions": [
+          2
+        ],
+        "cities": [
+          9
+        ],
+        "confidences": [
+          0.9997677206993103
+        ],
+        "remaining_city_masks": 7
+      },
+      {
+        "positions": [
+          3
+        ],
+        "cities": [
+          5
+        ],
+        "confidences": [
+          0.9999998807907104
+        ],
+        "remaining_city_masks": 6
+      },
+      {
+        "positions": [
+          9
+        ],
+        "cities": [
+          8
+        ],
+        "confidences": [
+          0.9999995231628418
+        ],
+        "remaining_city_masks": 5
+      },
+      {
+        "positions": [
+          8
+        ],
+        "cities": [
+          1
+        ],
+        "confidences": [
+          0.9999997615814209
+        ],
+        "remaining_city_masks": 4
+      },
+      {
+        "positions": [
+          6
+        ],
+        "cities": [
+          3
+        ],
+        "confidences": [
+          0.9999986886978149
+        ],
+        "remaining_city_masks": 3
+      },
+      {
+        "positions": [
+          7
+        ],
+        "cities": [
+          6
+        ],
+        "confidences": [
+          0.9999998807907104
+        ],
+        "remaining_city_masks": 2
+      },
+      {
+        "positions": [
+          4
+        ],
+        "cities": [
+          4
+        ],
+        "confidences": [
+          0.9999980926513672
+        ],
+        "remaining_city_masks": 1
+      },
+      {
+        "positions": [
+          5
+        ],
+        "cities": [
+          2
+        ],
+        "confidences": [
+          0.9999998807907104
+        ],
+        "remaining_city_masks": 0
+      }
+    ],
+    "response_token_ids": [
+      23257,
+      25,
+      831,
+      15,
+      15,
+      11,
+      220,
+      15,
+      22,
+      11,
+      220,
+      15,
+      24,
+      11,
+      220,
+      15,
+      20,
+      11,
+      220,
+      15,
+      19,
+      11,
+      220,
+      15,
+      17,
+      11,
+      220,
+      15,
+      18,
+      11,
+      220,
+      15,
+      21,
+      11,
+      220,
+      15,
+      16,
+      11,
+      220,
+      15,
+      23,
+      11,
+      220,
+      15,
+      15,
+      60,
+      126348
+    ]
+  },
+  "route": [
+    0,
+    7,
+    9,
+    5,
+    4,
+    2,
+    3,
+    6,
+    1,
+    8,
+    0
+  ],
+  "cycles": [
+    {
+      "cycle": 1,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 16,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 2,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 23,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 3,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 30,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 4,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 37,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 5,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 44,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 6,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 51,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 7,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 58,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 8,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 65,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 9,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 72,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 10,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 79,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 11,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 86,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 12,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 93,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 13,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 100,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 14,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 107,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 15,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 114,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 16,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 121,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 17,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 128,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 18,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 135,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 19,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 142,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 20,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 149,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 21,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 156,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 22,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 163,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 23,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 170,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 24,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 177,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 25,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 184,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 26,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 191,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 27,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 198,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 28,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 205,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 29,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 212,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 30,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 219,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 31,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 226,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 32,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 233,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 33,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 240,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 34,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 247,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 35,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 6,
+      "total_model_calls_cumulative": 254,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9
+          ],
+          "cities": [
+            8
+          ],
+          "confidences": [
+            0.9999995231628418
+          ],
+          "remaining_city_masks": 5
+        },
+        {
+          "positions": [
+            8
+          ],
+          "cities": [
+            1
+          ],
+          "confidences": [
+            0.9999997615814209
+          ],
+          "remaining_city_masks": 4
+        },
+        {
+          "positions": [
+            6
+          ],
+          "cities": [
+            3
+          ],
+          "confidences": [
+            0.9999986886978149
+          ],
+          "remaining_city_masks": 3
+        },
+        {
+          "positions": [
+            7
+          ],
+          "cities": [
+            6
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 2
+        },
+        {
+          "positions": [
+            4
+          ],
+          "cities": [
+            4
+          ],
+          "confidences": [
+            0.9999980926513672
+          ],
+          "remaining_city_masks": 1
+        },
+        {
+          "positions": [
+            5
+          ],
+          "cities": [
+            2
+          ],
+          "confidences": [
+            0.9999998807907104
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    },
+    {
+      "cycle": 36,
+      "input_route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "route": [
+        0,
+        7,
+        9,
+        5,
+        4,
+        2,
+        3,
+        6,
+        1,
+        8,
+        0
+      ],
+      "selection": {
+        "action": 57,
+        "positions": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "score_used": "gain",
+        "predicted_gain_pct": 0.0220947265625,
+        "predicted_feasibility_logit": 21.875
+      },
+      "generation_calls": 1,
+      "total_model_calls_cumulative": 256,
+      "masked_city_positions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "masked_token_positions": [
+        524,
+        525,
+        528,
+        529,
+        532,
+        533,
+        536,
+        537,
+        540,
+        541,
+        544,
+        545
+      ],
+      "actual_inserted_mask_token_ids": [
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336,
+        126336
+      ],
+      "commits": [
+        {
+          "positions": [
+            9,
+            8,
+            6,
+            5,
+            7,
+            4
+          ],
+          "cities": [
+            8,
+            1,
+            3,
+            2,
+            6,
+            4
+          ],
+          "confidences": [
+            0.9999995231628418,
+            0.9999983310699463,
+            0.9999954700469971,
+            0.9999871253967285,
+            0.9999867677688599,
+            0.9999631643295288
+          ],
+          "remaining_city_masks": 0
+        }
+      ],
+      "response_token_ids": [
+        23257,
+        25,
+        831,
+        15,
+        15,
+        11,
+        220,
+        15,
+        22,
+        11,
+        220,
+        15,
+        24,
+        11,
+        220,
+        15,
+        20,
+        11,
+        220,
+        15,
+        19,
+        11,
+        220,
+        15,
+        17,
+        11,
+        220,
+        15,
+        18,
+        11,
+        220,
+        15,
+        21,
+        11,
+        220,
+        15,
+        16,
+        11,
+        220,
+        15,
+        23,
+        11,
+        220,
+        15,
+        15,
+        60,
+        126348
+      ]
+    }
+  ],
+  "forward_passes": 256,
+  "generation_calls": 220,
+  "selector_calls": 36,
+  "unused_calls": 0,
+  "stop_reason": "fewer_than_two_calls_remaining",
+  "retained_best": false,
+  "acceptance_filter": false,
+  "id": "fresh-tsp10-00083",
+  "raw_answer": "Route: [00, 07, 09, 05, 04, 02, 03, 06, 01, 08, 00]",
+  "generated_token_ids": [
+    23257,
+    25,
+    831,
+    15,
+    15,
+    11,
+    220,
+    15,
+    22,
+    11,
+    220,
+    15,
+    24,
+    11,
+    220,
+    15,
+    20,
+    11,
+    220,
+    15,
+    19,
+    11,
+    220,
+    15,
+    17,
+    11,
+    220,
+    15,
+    18,
+    11,
+    220,
+    15,
+    21,
+    11,
+    220,
+    15,
+    16,
+    11,
+    220,
+    15,
+    23,
+    11,
+    220,
+    15,
+    15,
+    60,
+    126348
+  ],
+  "dataset_sha256": "16e97c005b62761a4fdffef7d6ca89cf82d08bfacc5c0a775f2fff2f9f9daedd",
+  "seconds": 19.399526015855372,
+  "seed": 125,
+  "rank": 3
+}

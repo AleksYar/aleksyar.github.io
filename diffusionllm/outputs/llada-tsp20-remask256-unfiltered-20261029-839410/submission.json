@@ -1,0 +1,13 @@
+{
+  "job_id": "1468418",
+  "status": "submitted",
+  "submitted_utc": "2026-10-29T19:54:04.464910+00:00",
+  "cases": 100,
+  "conditions": 1,
+  "checkpoint": "final500k/update31250",
+  "model_call_cap": 256,
+  "maximum_generation_passes_per_block": 16,
+  "gpu_count": 4,
+  "node": "nlp-l40-2",
+  "external_acceptance": false
+}

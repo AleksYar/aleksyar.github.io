@@ -1,0 +1,7 @@
+{
+  "step": 31250,
+  "fingerprint": "d84377ad94b8f9872c4befdf2873416485ff985bfccf3481829c5ebf40e2640b",
+  "head_sha256": "01e7775bea0b1aba44f16e9fda9f68737d79745d8832c3b43cf8532f6da725b9",
+  "adapter_sha256": "74f044ff674751f6792ee9110016fbe33b602eb34e70a5e496cc805a8a829389",
+  "training_state_sha256": "e1ccfcffa1e4d9226a8db610bf457d18cc9871e97ffb0f2a80d3af4279fdf9f5"
+}

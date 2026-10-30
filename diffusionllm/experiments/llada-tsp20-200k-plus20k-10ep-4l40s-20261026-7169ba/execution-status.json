@@ -1,0 +1,26 @@
+{
+  "job_id": "1462587",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "elapsed": "06:09:57",
+  "start_local": "2026-10-26T15:48:13",
+  "end_local": "2026-10-26T21:58:10",
+  "node": "nlp-l40-1",
+  "allocated_resources": "billing=56,cpu=16,gres/gpu=4,node=1",
+  "collected_at": "2026-10-26T20:16:19.217818+00:00",
+  "timezone": "Asia/Jerusalem",
+  "gpu_count": 4,
+  "stage": "full_experiment",
+  "phase": "after",
+  "step": 12500,
+  "training_status": {
+    "job_id": "1462587",
+    "updated_at_utc": "2026-10-26T19:58:07Z",
+    "status": "complete",
+    "phase": "complete",
+    "step": 12500,
+    "epoch": 10.0
+  },
+  "gpu_gate": "passed",
+  "supersedes_failed_job": "1462555"
+}

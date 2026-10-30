@@ -1,0 +1,11 @@
+{
+  "status": "complete",
+  "phase": "complete",
+  "step": 10000,
+  "task": "tsp20",
+  "job_id": "1460664",
+  "updated_at_utc": "2026-10-25T04:44:17Z",
+  "examples_seen": 160000,
+  "seconds_per_update_recent": 4.5019441763404755,
+  "peak_allocated_gib": 33.66094255447388
+}

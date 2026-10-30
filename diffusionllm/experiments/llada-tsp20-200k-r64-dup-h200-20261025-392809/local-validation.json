@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-10-25T14:00:44.249310+00:00",
+  "tests": 17,
+  "scope": "Loss gradients, collisions, multi-digit IDs, closure exemption, no hidden-target leakage, numerical finiteness, exact checkpoint resume, frozen base, solver oracle and settings. CPU-only."
+}

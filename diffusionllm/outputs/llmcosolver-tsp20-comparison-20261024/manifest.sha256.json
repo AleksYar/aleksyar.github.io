@@ -1,0 +1,21 @@
+{
+  "README.txt": "c9cfaa2197231554bdff4b013ff7a810b419a7bd94e18fd1efac6f9a8515a4f2",
+  "audit.json": "68e2fb31c49d7029d923aba5fd1c3e0e02c384a1a741f882701060d4769e3fea",
+  "comparison.json": "ed8a2223f421c711162f77c5ebf27c2df2c3a7189d96d316c9cc5db61cfcfc93",
+  "config.json": "f134fbee7ee7097e1b91bed69ead458f1be6614c200bd3b5107355e4a5fac3f7",
+  "data/author-format-test.jsonl": "f34b85a22f054e1f867a6072d59885830aa91004d347d4733cf9c2c1e2db9bf9",
+  "data/dataset.json": "14ae0a01cb9255917fdefacfdf461d5c48dfb11601c01e94630cfa35f6ba34b3",
+  "data/references.json": "d6268e86f1e2d00a6567392c1bb9bbde3aa7fd2a8806a637affcf4e49cdeafea",
+  "llada_scoring.py": "01d0aaf3a235d5f07812593a213fa7035e78b7ddff6cc30d1cbcabb5d9d17ddb",
+  "prepare_comparison.py": "7b04894fd0233b030471978d31fbf4b5f61a808a2e91042490d836fd46c123da",
+  "register_preparation.py": "54807ff9f632c1805968fa1df1f5b48088543593361db4387357209584412827",
+  "report.html": "3c7dd6ed1a1eb3554d8a368151699c5fc45f6626a12eef4de025e5e01777617d",
+  "run_baseline.py": "5fadefbc64c06975c5b1d3bac736a20e3f6bd290704b6b97d1b37015456abf57",
+  "source-provenance.json": "92864562bdae1029c5c69f0d7eca18733b353c692c7ae1efc2879a4098a70cd5",
+  "tsp_reference.py": "1e8fc9c067b01deb2e0c0f90c9901c8ea25044c1f6bde3951c592967e6d52ea8",
+  "upstream/Envs/TSPEnv/TSPEnv.py": "3c825a5bfb0b00c7f9c2cbcce87988eb3f1c364405b6cf4680451e916ff6c4a2",
+  "upstream/LICENSE": "5fdc51aade1fa743a70aa46e08e4fc8fa2f42660bd7c9429ca9325c07df41df6",
+  "upstream/eval.py": "96a93e7484ede62e5e9fc8ca31e4a2edcb993e11869e142dd0aa73f98307ac2b",
+  "upstream/main_train.py": "51e451591e0c376f1b5ad07ab52e630e70e9327a6f70e92f0c7e1dbcfb65b1ff",
+  "upstream/utils.py": "5f4d5408caaf84afc74d07343e2bb7226d55365ee649739575e6cd59fe330059"
+}

@@ -1,0 +1,70 @@
+{
+  "dataset_sha256": "7f84fd1e661b85cbfd596c1eb5d793de0de1ef5b9fb0f3918ae027b62228c176",
+  "model": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 95,
+    "optimal": 46,
+    "within_1pct": 75,
+    "valid_pct_generated": 95.0,
+    "valid_pct_requested": 95.0,
+    "mean_gap_pct_valid": 0.6989635149547624,
+    "median_gap_pct_valid": 0.017321700733541334,
+    "within_1pct_pct_requested": 75.0
+  },
+  "initial": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 94,
+    "optimal": 44,
+    "within_1pct": 72,
+    "valid_pct_generated": 94.0,
+    "valid_pct_requested": 94.0,
+    "mean_gap_pct_valid": 0.9378976982214328,
+    "median_gap_pct_valid": 0.03413742837219402,
+    "within_1pct_pct_requested": 72.0
+  },
+  "run_status": "completed",
+  "all_answers_recorded": true,
+  "methods": {
+    "unfiltered_final": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 95,
+      "optimal": 46,
+      "within_1pct": 75,
+      "valid_pct_generated": 95.0,
+      "valid_pct_requested": 95.0,
+      "mean_gap_pct_valid": 0.6989635149547624,
+      "median_gap_pct_valid": 0.017321700733541334,
+      "within_1pct_pct_requested": 75.0
+    }
+  },
+  "protocol": {
+    "initial_generation_passes": 16,
+    "maximum_generation_passes_per_block": 16,
+    "max_total_model_calls": 256,
+    "selector_calls_included": true,
+    "mask_selection": "highest trained-head gain score on valid routes; highest feasibility score on invalid routes",
+    "keep_stop_threshold_enabled": false,
+    "reject_worse_or_invalid": false,
+    "retain_best_valid": false,
+    "use_latest_completion_as_next_input": true,
+    "exclude_previously_tried_actions": false,
+    "temperature": 0.0,
+    "structured_city_slots": true,
+    "enforce_permutation": false,
+    "return": "last fully reconstructed route; stop if fewer than two calls remain"
+  },
+  "final_vs_initial": {
+    "equal length": 80,
+    "shorter": 8,
+    "longer": 5,
+    "repaired": 2,
+    "still invalid": 4,
+    "became invalid": 1
+  }
+}

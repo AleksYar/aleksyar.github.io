@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "step": 10000,
+  "training_examples_seen": 160000,
+  "before_answers": 100,
+  "after_answers": 100,
+  "intermediate_answers": 100,
+  "fingerprint": "2583c107504851911d267bf8a1d8d2b361da8654fc13105f3572e0d087b78388",
+  "peak_allocated_gib": 33.66094255447388
+}

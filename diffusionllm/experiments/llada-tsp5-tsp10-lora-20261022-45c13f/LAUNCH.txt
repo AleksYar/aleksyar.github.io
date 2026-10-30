@@ -1,0 +1,12 @@
+Both production jobs started 22 October 2026 at 19:08:13 IDT.
+TSP5: job 1458432, A40 GPU 2 on newton4.
+TSP10: job 1458434, A40 GPU 3 on newton4.
+Each is a detached Slurm batch job with an eight-hour maximum.
+
+The authoritative frozen input hashes are in launch-manifest.sha256.json.
+manifest.sha256.json and preparation-manifest.sha256.json preserve the earlier
+data-preparation bundle and are historical; current configuration hashes differ.
+
+Local reports are downloaded snapshots. The jobs update the reports on Newton.
+Use the check and fetch scripts in the workspace newton directory to refresh.
+Full optimizer checkpoints remain on Newton. Both jobs save every answer.

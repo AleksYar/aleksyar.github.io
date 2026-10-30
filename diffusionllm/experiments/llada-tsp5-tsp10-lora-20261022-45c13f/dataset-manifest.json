@@ -1,0 +1,48 @@
+{
+  "created_for": "LLMCoSolver-style LLaDA LoRA TSP5/TSP10 experiment",
+  "model_training_performed": false,
+  "datasets": {
+    "tsp5": {
+      "train": {
+        "count": 10000,
+        "seed": 4205,
+        "sha256": "ea7b6082598048eaed58a4621a89f213341ea6630b225627c5406f8f6f60bb65",
+        "bytes": 18240995,
+        "preparation_seconds": 0.641920833
+      },
+      "validation": {
+        "count": 100,
+        "seed": 104205,
+        "sha256": "31f6ea487441bbb5d7e86bf2e432af73786ce94d01545957c9a4d59de733052e",
+        "bytes": 198052,
+        "preparation_seconds": 0.018316
+      },
+      "duplicate_geometry_count": 0,
+      "exact_solver_exhaustive_crosschecks": 10100
+    },
+    "tsp10": {
+      "train": {
+        "count": 10000,
+        "seed": 4210,
+        "sha256": "bdf5af432af6913ba1426d450d2b15ba8070541706d485f39aed2ca7c98f9cab",
+        "bytes": 25657833,
+        "preparation_seconds": 26.861652917
+      },
+      "validation": {
+        "count": 100,
+        "seed": 104210,
+        "sha256": "6b81277613564942a4d75c8f79ea4f71f644724daab288ccc9e972112045187f",
+        "bytes": 274072,
+        "preparation_seconds": 0.5319275829999981
+      },
+      "duplicate_geometry_count": 0,
+      "exact_solver_exhaustive_crosschecks": 2
+    }
+  },
+  "distribution": "Distinct integer coordinates uniformly sampled from [0,999]^2",
+  "labels": "Exact optimal closed tours, canonical start 0 and lexicographically smaller reversal",
+  "distance": "Unrounded Euclidean; neighbor hints rounded to 1 decimal; displayed objective to 3 decimals",
+  "deduplication": "Hash of sorted coordinate pairs; shared exclusion set across train/validation per size",
+  "prompt": "Instruction + input with two nearest-neighbor hints; native LLaDA user/assistant chat template at tokenization",
+  "source": "Adapted format; not an exact replication of LLMCoSolver training"
+}

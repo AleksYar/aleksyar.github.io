@@ -1,0 +1,110 @@
+{
+  "cases": 200,
+  "cases_per_size": 100,
+  "sizes": [
+    10,
+    40
+  ],
+  "training_runs": 0,
+  "checkpoint": "[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250",
+  "checkpoint_hashes": {
+    "step": 31250,
+    "fingerprint": "d84377ad94b8f9872c4befdf2873416485ff985bfccf3481829c5ebf40e2640b",
+    "head_sha256": "01e7775bea0b1aba44f16e9fda9f68737d79745d8832c3b43cf8532f6da725b9",
+    "adapter_sha256": "74f044ff674751f6792ee9110016fbe33b602eb34e70a5e496cc805a8a829389",
+    "training_state_sha256": "e1ccfcffa1e4d9226a8db610bf457d18cc9871e97ffb0f2a80d3af4279fdf9f5"
+  },
+  "allocation_wall_seconds_total": 2165,
+  "allocated_gpu_hours_total": 2.4055555555555554,
+  "execution": "two sequential jobs, four L40S GPUs each",
+  "results": {
+    "10": {
+      "initial": {
+        "requested": 100,
+        "generated": 100,
+        "missing": 0,
+        "valid": 100,
+        "optimal": 76,
+        "within_1pct": 88,
+        "valid_pct_generated": 100.0,
+        "valid_pct_requested": 100.0,
+        "mean_gap_pct_valid": 0.25159412025448047,
+        "median_gap_pct_valid": 0.0,
+        "within_1pct_pct_requested": 88.0
+      },
+      "final": {
+        "requested": 100,
+        "generated": 100,
+        "missing": 0,
+        "valid": 99,
+        "optimal": 71,
+        "within_1pct": 84,
+        "valid_pct_generated": 99.0,
+        "valid_pct_requested": 99.0,
+        "mean_gap_pct_valid": 0.31845265449364685,
+        "median_gap_pct_valid": 0.0,
+        "within_1pct_pct_requested": 84.0
+      },
+      "final_vs_initial": {
+        "equal length": 91,
+        "longer": 7,
+        "became invalid": 1,
+        "shorter": 1
+      },
+      "valid_at_both_stages": {
+        "cases": 99,
+        "initial_mean_gap_pct": 0.2541354750045257,
+        "final_mean_gap_pct": 0.31845265449364685
+      },
+      "total_remasking_cycles": 3062,
+      "cases_with_no_route_change": 91,
+      "allocation_wall_seconds": 510,
+      "allocated_gpu_hours": 0.5666666666666667
+    },
+    "40": {
+      "initial": {
+        "requested": 100,
+        "generated": 100,
+        "missing": 0,
+        "valid": 52,
+        "optimal": 0,
+        "within_1pct": 4,
+        "valid_pct_generated": 52.0,
+        "valid_pct_requested": 52.0,
+        "mean_gap_pct_valid": 10.911817404355656,
+        "median_gap_pct_valid": 8.67753400739888,
+        "within_1pct_pct_requested": 4.0
+      },
+      "final": {
+        "requested": 100,
+        "generated": 100,
+        "missing": 0,
+        "valid": 71,
+        "optimal": 2,
+        "within_1pct": 9,
+        "valid_pct_generated": 71.0,
+        "valid_pct_requested": 71.0,
+        "mean_gap_pct_valid": 11.909549421209789,
+        "median_gap_pct_valid": 7.663017218906187,
+        "within_1pct_pct_requested": 9.0
+      },
+      "final_vs_initial": {
+        "shorter": 30,
+        "repaired": 23,
+        "equal length": 13,
+        "still invalid": 25,
+        "longer": 5,
+        "became invalid": 4
+      },
+      "valid_at_both_stages": {
+        "cases": 48,
+        "initial_mean_gap_pct": 9.820983808107902,
+        "final_mean_gap_pct": 6.8701293196796485
+      },
+      "total_remasking_cycles": 6148,
+      "cases_with_no_route_change": 24,
+      "allocation_wall_seconds": 1655,
+      "allocated_gpu_hours": 1.8388888888888888
+    }
+  }
+}

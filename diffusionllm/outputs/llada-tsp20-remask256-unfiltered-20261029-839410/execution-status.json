@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "job_id": "1468418",
+  "scheduler_state": "COMPLETED",
+  "scheduler_exit_code": "0:0",
+  "last_checked_utc": "2026-10-29T20:09:04.234041+00:00",
+  "cases": 100,
+  "conditions": 1,
+  "model_call_cap": 256,
+  "maximum_generation_passes_per_block": 16,
+  "gpu_count": 4,
+  "node": "nlp-l40-2",
+  "allocation_wall_seconds": 768,
+  "allocated_gpu_hours": 0.8533333333333334,
+  "initial": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 94,
+    "optimal": 44,
+    "within_1pct": 72,
+    "valid_pct_generated": 94.0,
+    "valid_pct_requested": 94.0,
+    "mean_gap_pct_valid": 0.9378976982214328,
+    "median_gap_pct_valid": 0.03413742837219402,
+    "within_1pct_pct_requested": 72.0
+  },
+  "final": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 95,
+    "optimal": 46,
+    "within_1pct": 75,
+    "valid_pct_generated": 95.0,
+    "valid_pct_requested": 95.0,
+    "mean_gap_pct_valid": 0.6989635149547624,
+    "median_gap_pct_valid": 0.017321700733541334,
+    "within_1pct_pct_requested": 75.0
+  },
+  "final_vs_initial": {
+    "equal length": 80,
+    "shorter": 8,
+    "longer": 5,
+    "repaired": 2,
+    "still invalid": 4,
+    "became invalid": 1
+  },
+  "audit": "results/audit.json",
+  "report": "results/report.html",
+  "checkpoint": "[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250",
+  "new_training": false
+}

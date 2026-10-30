@@ -1,0 +1,37 @@
+{
+  "completed": 5,
+  "planned": 5,
+  "complete": true,
+  "metrics": {
+    "llada": {
+      "count": 5,
+      "valid_count": 0,
+      "valid_pct": 0.0,
+      "mean_gap_pct_valid": null,
+      "median_gap_pct_valid": null,
+      "within_5pct_count": 0,
+      "within_5pct_all_pct": 0.0,
+      "mean_seconds": 27.516360590403202
+    },
+    "nearest_neighbor": {
+      "count": 5,
+      "valid_count": 5,
+      "valid_pct": 100.0,
+      "mean_gap_pct_valid": 17.56918974332809,
+      "median_gap_pct_valid": 21.274795284862403,
+      "within_5pct_count": 1,
+      "within_5pct_all_pct": 20.0,
+      "mean_seconds": 7.404420175589621e-05
+    },
+    "nearest_neighbor_2opt": {
+      "count": 5,
+      "valid_count": 5,
+      "valid_pct": 100.0,
+      "mean_gap_pct_valid": 0.9256301483872065,
+      "median_gap_pct_valid": 0.0,
+      "within_5pct_count": 5,
+      "within_5pct_all_pct": 100.0,
+      "mean_seconds": 0.000761045201215893
+    }
+  }
+}

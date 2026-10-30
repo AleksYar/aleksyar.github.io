@@ -1,0 +1,64 @@
+{
+  "tsp5": {
+    "train": {
+      "examples": 10000,
+      "prompt_tokens_min": 277,
+      "prompt_tokens_max": 288,
+      "target_tokens_min": 31,
+      "target_tokens_max": 32,
+      "total_tokens_min": 309,
+      "total_tokens_max": 320,
+      "total_tokens_mean": 318.3059,
+      "distinct_optimal_city_sequences": 12,
+      "largest_target_route_fraction": 0.0917,
+      "all_fit_without_truncation": true,
+      "labels_and_coordinates_consistent": true
+    },
+    "validation": {
+      "examples": 100,
+      "prompt_tokens_min": 282,
+      "prompt_tokens_max": 288,
+      "target_tokens_min": 32,
+      "target_tokens_max": 32,
+      "total_tokens_min": 314,
+      "total_tokens_max": 320,
+      "total_tokens_mean": 318.37,
+      "distinct_optimal_city_sequences": 12,
+      "largest_target_route_fraction": 0.13,
+      "all_fit_without_truncation": true,
+      "labels_and_coordinates_consistent": true
+    },
+    "train_validation_geometry_overlap": 0
+  },
+  "tsp10": {
+    "train": {
+      "examples": 10000,
+      "prompt_tokens_min": 466,
+      "prompt_tokens_max": 484,
+      "target_tokens_min": 47,
+      "target_tokens_max": 47,
+      "total_tokens_min": 513,
+      "total_tokens_max": 531,
+      "total_tokens_mean": 526.2417,
+      "distinct_optimal_city_sequences": 9746,
+      "largest_target_route_fraction": 0.0003,
+      "all_fit_without_truncation": true,
+      "labels_and_coordinates_consistent": true
+    },
+    "validation": {
+      "examples": 100,
+      "prompt_tokens_min": 470,
+      "prompt_tokens_max": 484,
+      "target_tokens_min": 47,
+      "target_tokens_max": 47,
+      "total_tokens_min": 517,
+      "total_tokens_max": 531,
+      "total_tokens_mean": 525.79,
+      "distinct_optimal_city_sequences": 100,
+      "largest_target_route_fraction": 0.01,
+      "all_fit_without_truncation": true,
+      "labels_and_coordinates_consistent": true
+    },
+    "train_validation_geometry_overlap": 0
+  }
+}

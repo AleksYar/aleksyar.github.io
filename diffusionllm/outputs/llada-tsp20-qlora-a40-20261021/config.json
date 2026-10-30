@@ -1,0 +1,37 @@
+{
+  "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+  "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "gpu": "NVIDIA A40",
+  "host": "newton4",
+  "slurm_job_id": "1457511",
+  "hard_time_limit_seconds": 900,
+  "quantization": "NF4, double quantization, BF16 compute",
+  "lora_rank": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "target_modules": [
+    "q_proj",
+    "v_proj"
+  ],
+  "learning_rate": 0.0002,
+  "max_optimizer_updates": 16,
+  "microbatch_size": 1,
+  "gradient_accumulation": 2,
+  "train_pool": 64,
+  "heldout_count": 4,
+  "seed": 20261021,
+  "generation": {
+    "canvas": 128,
+    "steps": 64,
+    "block_length": 128,
+    "temperature": 0.0
+  },
+  "data_sha256": "c252adf845bd2e362ffbc27a54926cfd0e6549b2afd9e949524c693c7608557c",
+  "versions": {
+    "torch": "2.6.0+cu124",
+    "transformers": "4.38.2",
+    "peft": "0.10.0",
+    "bitsandbytes": "0.45.5",
+    "accelerate": "0.28.0"
+  }
+}

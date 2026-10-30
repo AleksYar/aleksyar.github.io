@@ -1,0 +1,129 @@
+{
+  "status": "verified_complete",
+  "job_id": "1468567",
+  "training_records": 300000,
+  "unique_training_records": 300000,
+  "optimizer_updates": 18750,
+  "training_views": 600000,
+  "masked_digit_tokens": 3909760,
+  "loss_formula_verified_all_updates": true,
+  "raw_events_match_summary": true,
+  "replicas_agree": true,
+  "trained_parent_adapter_and_head_loaded": true,
+  "both_parameter_groups_receive_gradients_all_updates": true,
+  "started_utc": "2026-10-30T00:09:40+00:00",
+  "completed_utc": "2026-10-30T13:21:41+00:00",
+  "completed_local": "2026-10-30T15:21:41+02:00",
+  "scheduler_wall_seconds": 47521,
+  "scheduler_gpu_hours": 52.80111111111111,
+  "training_runner_elapsed_seconds": 47407.194325086195,
+  "timed_training_step_seconds": 46182.35118323099,
+  "allocation_seconds_outside_timed_steps": 1338.6488167690113,
+  "mean_seconds_per_update": 2.463058729772319,
+  "profile_mean_seconds_per_update": 2.3668167509604245,
+  "step_time_change_from_profile_pct": 4.066304616647698,
+  "profile_estimated_wall_hours": [
+    12.210812049022932,
+    15.17624616460671
+  ],
+  "actual_inside_estimate": true,
+  "loss_comparison_window_updates": 1000,
+  "loss_trends": {
+    "loss": {
+      "first_1000_updates": 0.1814073995517907,
+      "last_1000_updates": 0.12452636828782206,
+      "relative_change_pct": -31.355408547008828,
+      "whole_epoch_mean": 0.15092893147666614
+    },
+    "reconstruction_loss": {
+      "first_1000_updates": 0.09929068361113993,
+      "last_1000_updates": 0.07421240137935703,
+      "relative_change_pct": -25.2574373744862,
+      "whole_epoch_mean": 0.08830821095739881
+    },
+    "duplicate_loss": {
+      "first_1000_updates": 0.06962013656345735,
+      "last_1000_updates": 0.05037040908841786,
+      "relative_change_pct": -27.649654863135396,
+      "whole_epoch_mean": 0.061825678041621104
+    },
+    "selector_loss": {
+      "first_1000_updates": 0.6123067301283815,
+      "last_1000_updates": 0.35202842978943744,
+      "relative_change_pct": -42.5078294149032,
+      "whole_epoch_mean": 0.4407301558025483
+    },
+    "head_gain_loss": {
+      "first_1000_updates": 0.5998748615724899,
+      "last_1000_updates": 0.3419800935338883,
+      "relative_change_pct": -42.99142780588701,
+      "whole_epoch_mean": 0.42966554208805524
+    },
+    "head_feasibility_loss": {
+      "first_1000_updates": 0.0003790027576271812,
+      "last_1000_updates": 7.673592678394934e-05,
+      "relative_change_pct": -79.75320093595909,
+      "whole_epoch_mean": 0.0002907850733085558
+    },
+    "head_ranking_loss": {
+      "first_1000_updates": 0.12052866874287947,
+      "last_1000_updates": 0.09971600813792265,
+      "relative_change_pct": -17.267809245745426,
+      "whole_epoch_mean": 0.10773829344019116
+    }
+  },
+  "evaluation_cases": 100,
+  "quality_conclusion": "The separate 100-case, 256-call evaluation is complete; see its audited final-tour metrics.",
+  "checkpoint_path": "[cluster-home]/llada-tsp20-300k-mask5to8-4l40s-20261030-508fc3/results/checkpoint-018750",
+  "checkpoint_files_verified": {
+    "adapter/adapter_model.safetensors": {
+      "sha256": "73586037254056b308511dcda73b66a939da9430e549dbb8aeddee1fe3fc7009",
+      "bytes": 671151016
+    },
+    "prediction_head.safetensors": {
+      "sha256": "c0de6cddc94c67f1f911e7adfdb2b19c4d5aa04021db3c41df4d808b831b1c95",
+      "bytes": 5283976
+    },
+    "training-state.pt": {
+      "sha256": "bc7749a62a58c13f49b669987746a4b8e9bb4b4d02efd3e1570cbcd2492fb01d",
+      "bytes": 1353173990
+    }
+  },
+  "weights_location": "Newton",
+  "collected_utc": "2026-10-30T15:12:20.193001+00:00",
+  "evaluation_cases_in_training_job": 0,
+  "post_training_evaluation": {
+    "run_dir": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141",
+    "job_id": "1469253",
+    "cases": 100,
+    "model_call_cap": 256,
+    "initial": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 94,
+      "optimal": 42,
+      "within_1pct": 67,
+      "valid_pct_generated": 94.0,
+      "valid_pct_requested": 94.0,
+      "mean_gap_pct_valid": 1.7316079798187607,
+      "median_gap_pct_valid": 0.10048779594776791,
+      "within_1pct_pct_requested": 67.0
+    },
+    "final": {
+      "requested": 100,
+      "generated": 100,
+      "missing": 0,
+      "valid": 98,
+      "optimal": 46,
+      "within_1pct": 69,
+      "valid_pct_generated": 98.0,
+      "valid_pct_requested": 98.0,
+      "mean_gap_pct_valid": 1.7166241689647517,
+      "median_gap_pct_valid": 0.045694717084643344,
+      "within_1pct_pct_requested": 69.0
+    },
+    "audit_status": "passed",
+    "completed_utc": "2026-10-30T15:37:58.260749+00:00"
+  }
+}

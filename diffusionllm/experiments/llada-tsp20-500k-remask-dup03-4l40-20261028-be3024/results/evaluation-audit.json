@@ -1,0 +1,1116 @@
+{
+  "status": "passed",
+  "audited_at_utc": "2026-10-29T16:36:49.171833+00:00",
+  "method": "Independent standard-library audit of saved routes; no model inference or optimization run.",
+  "checks": [
+    "100 expected case IDs, no duplicates or missing cases",
+    "Input and inference source hashes match run manifest",
+    "Checkpoint component hashes match completion manifest (weights remain on Newton)",
+    "All initial and final scores and 1226 proposals checked against original coordinates",
+    "Every tour closes at zero and includes each city exactly once before its closing zero",
+    "Reference tour lengths independently recomputed; MILP optimality certificates not re-solved",
+    "All proposals preserve unmasked slots; acceptance and final-incumbent selection verified",
+    "Forward-call accounting and 128-call limit verified",
+    "Exactly 500000 distinct training record indices in 31250 updates"
+  ],
+  "maximum_objective_discrepancy": 0.0,
+  "initial": {
+    "cases": 100,
+    "complete": 94,
+    "optimal": 44,
+    "within_1pct": 72,
+    "mean_gap_pct_complete": 0.9378976982214304,
+    "median_gap_pct_complete": 0.034137428372205125,
+    "max_gap_pct_complete": 10.880188178812134
+  },
+  "final": {
+    "cases": 100,
+    "complete": 100,
+    "optimal": 51,
+    "within_1pct": 80,
+    "mean_gap_pct_complete": 0.6566935406326002,
+    "median_gap_pct_complete": 2.220446049250313e-14,
+    "max_gap_pct_complete": 8.682555237815803
+  },
+  "remasking": {
+    "repaired_invalid_cases": 6,
+    "repaired_ids": [
+      "tsp20-validation-00020",
+      "tsp20-validation-00022",
+      "tsp20-validation-00030",
+      "tsp20-validation-00056",
+      "tsp20-validation-00067",
+      "tsp20-validation-00080"
+    ],
+    "improved_initially_valid_cases": 11,
+    "improved_ids": [
+      "tsp20-validation-00005",
+      "tsp20-validation-00014",
+      "tsp20-validation-00016",
+      "tsp20-validation-00024",
+      "tsp20-validation-00026",
+      "tsp20-validation-00040",
+      "tsp20-validation-00048",
+      "tsp20-validation-00059",
+      "tsp20-validation-00068",
+      "tsp20-validation-00074",
+      "tsp20-validation-00079"
+    ],
+    "distinct_cases_changed": 17,
+    "worsened_cases": 0,
+    "newly_optimal_cases": 7,
+    "revision_attempts": 1226,
+    "accepted_revisions": 24,
+    "invalid_proposals": 48,
+    "acceptance_rate_pct": 1.9575856443719413,
+    "mean_gap_initially_valid_before": 0.9378976982214304,
+    "mean_gap_initially_valid_after": 0.60398179102957
+  },
+  "inference": {
+    "mean_seconds": 11.852626147512346,
+    "mean_forward_calls": 99.58,
+    "max_forward_calls": 128
+  },
+  "training": {
+    "records_seen": 500000,
+    "unique_record_indices": 500000,
+    "updates": 31250,
+    "parent_adapter_restored": true,
+    "base_frozen": true,
+    "lora_and_head_updated": true,
+    "mean_seconds_per_update": 2.1797804937920717,
+    "summed_update_seconds": 68118.14043100225,
+    "checkpoint": "[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250"
+  },
+  "runtime": {
+    "training_wall_seconds": 71134,
+    "evaluation_wall_seconds": 364,
+    "gpu_count": 4,
+    "training_and_evaluation_allocated_gpu_hours": 79.44222222222223,
+    "excludes": "Earlier profiling, dataset generation, queue and local result audit"
+  },
+  "historical_original_200k": {
+    "requested": 100,
+    "answers_saved": 100,
+    "complete": 95,
+    "strict_valid": 95,
+    "strict_format": 100,
+    "optimal": 39,
+    "within_1pct": 65,
+    "mean_gap_pct_complete": 1.3449765015634363,
+    "median_gap_pct_complete": 0.1793574069225201,
+    "objective_consistent": 0,
+    "mean_visible_tokens": 86,
+    "mean_seconds": 11.378160593532957,
+    "distinct_city_sequences": 100
+  },
+  "limitations": [
+    "One historical 100-case benchmark; no new-seed or unseen-test-set generalization claim.",
+    "Historical checkpoint comparison uses different inference; not a controlled head ablation.",
+    "Before/after remasking comes from the same saved trajectories, not a second evaluation run.",
+    "Objectives are computed externally; these results do not test the model generating numeric objectives.",
+    "General-question quality with the adapter enabled was not evaluated."
+  ],
+  "per_case": [
+    {
+      "id": "tsp20-validation-00000",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00001",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.07515079956523785,
+      "final_gap_pct": 0.07515079956523785,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00002",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00003",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.5060044759217952,
+      "final_gap_pct": 0.5060044759217952,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00004",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00005",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 4.169986538003823,
+      "final_gap_pct": 3.693283909463241,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00006",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.08368075751092885,
+      "final_gap_pct": 0.08368075751092885,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00007",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00008",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 5.303191403200436,
+      "final_gap_pct": 5.303191403200436,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00009",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00010",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.0882133325288432,
+      "final_gap_pct": 2.0882133325288432,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00011",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 3.3766042683484265,
+      "final_gap_pct": 3.3766042683484265,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00012",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00013",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00014",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.9072982908542526,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00015",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00016",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.42567470029890586,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00017",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00018",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00019",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.27113051551252987,
+      "final_gap_pct": 0.27113051551252987,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00020",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": 7.211507235814851,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00021",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.03088397990802516,
+      "final_gap_pct": 0.03088397990802516,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00022",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 2,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00023",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00024",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 4.0052817199643265,
+      "final_gap_pct": 0.2658339620863259,
+      "accepted_revisions": 2,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00025",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00026",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 10.880188178812134,
+      "final_gap_pct": 4.167323582845994,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00027",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.18655380715983938,
+      "final_gap_pct": 0.18655380715983938,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00028",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00029",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -2.220446049250313e-14,
+      "final_gap_pct": -2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00030",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 3,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00031",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00032",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00033",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00034",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00035",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.012152124388387087,
+      "final_gap_pct": 0.012152124388387087,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00036",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.03739087683638509,
+      "final_gap_pct": 0.03739087683638509,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00037",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00038",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00039",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00040",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 4.93318472106441,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 2,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00041",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00042",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.4105880729715414,
+      "final_gap_pct": 1.4105880729715414,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00043",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.3105792893443926,
+      "final_gap_pct": 0.3105792893443926,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00044",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00045",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00046",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.32492547589471066,
+      "final_gap_pct": 0.32492547589471066,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00047",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00048",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 10.684512685831372,
+      "final_gap_pct": 0.04987473826294497,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00049",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00050",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.4371155137794744,
+      "final_gap_pct": 1.4371155137794744,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00051",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00052",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.10854889138445234,
+      "final_gap_pct": 0.10854889138445234,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00053",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00054",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.15963847327635783,
+      "final_gap_pct": 0.15963847327635783,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00055",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.3278213410633954,
+      "final_gap_pct": 1.3278213410633954,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00056",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": 1.445241688572363,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00057",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.017321700733541334,
+      "final_gap_pct": 0.017321700733541334,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00058",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.05520687056135287,
+      "final_gap_pct": 0.05520687056135287,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00059",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.1322128787121697,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00060",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00061",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 4.565483628402434,
+      "final_gap_pct": 4.565483628402434,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00062",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.1291921473322244,
+      "final_gap_pct": 0.1291921473322244,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00063",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 8.682555237815803,
+      "final_gap_pct": 8.682555237815803,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00064",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.5373457934097168,
+      "final_gap_pct": 1.5373457934097168,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00065",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.18374544098489487,
+      "final_gap_pct": 0.18374544098489487,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00066",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00067",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 2,
+      "initial_optimal": false,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00068",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.18518337549568997,
+      "final_gap_pct": 0.04259841340350512,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00069",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.5865437923495032,
+      "final_gap_pct": 0.5865437923495032,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00070",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00071",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00072",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.388882838556027,
+      "final_gap_pct": 1.388882838556027,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00073",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00074",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.4259334252645592,
+      "final_gap_pct": 1.820016306046135,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00075",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00076",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -2.220446049250313e-14,
+      "final_gap_pct": -2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00077",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00078",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.1619692624230007,
+      "final_gap_pct": 0.1619692624230007,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00079",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.9082189591970833,
+      "final_gap_pct": 1.2306492853556783,
+      "accepted_revisions": 1,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00080",
+      "initial_valid": false,
+      "final_valid": true,
+      "initial_gap_pct": null,
+      "final_gap_pct": 0.2383167820932286,
+      "accepted_revisions": 2,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00081",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.2015623086715452,
+      "final_gap_pct": 2.2015623086715452,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00082",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00083",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.1300975749056743,
+      "final_gap_pct": 0.1300975749056743,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00084",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 3.0370832631689826,
+      "final_gap_pct": 3.0370832631689826,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00085",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.42810823743122395,
+      "final_gap_pct": 0.42810823743122395,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00086",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.220446049250313e-14,
+      "final_gap_pct": 2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00087",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00088",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.5085209246665112,
+      "final_gap_pct": 0.5085209246665112,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00089",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00090",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.4363168392729433,
+      "final_gap_pct": 0.4363168392729433,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00091",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 2.4795658529178866,
+      "final_gap_pct": 2.4795658529178866,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00092",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -1.1102230246251565e-14,
+      "final_gap_pct": -1.1102230246251565e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00093",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.08981772028791024,
+      "final_gap_pct": 0.08981772028791024,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00094",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.12582479233029797,
+      "final_gap_pct": 0.12582479233029797,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00095",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.16702550646632286,
+      "final_gap_pct": 0.16702550646632286,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    },
+    {
+      "id": "tsp20-validation-00096",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00097",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 0.0,
+      "final_gap_pct": 0.0,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00098",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": -2.220446049250313e-14,
+      "final_gap_pct": -2.220446049250313e-14,
+      "accepted_revisions": 0,
+      "initial_optimal": true,
+      "final_optimal": true
+    },
+    {
+      "id": "tsp20-validation-00099",
+      "initial_valid": true,
+      "final_valid": true,
+      "initial_gap_pct": 1.5423650280326662,
+      "final_gap_pct": 1.5423650280326662,
+      "accepted_revisions": 0,
+      "initial_optimal": false,
+      "final_optimal": false
+    }
+  ]
+}

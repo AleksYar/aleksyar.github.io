@@ -1,0 +1,12 @@
+{
+  "completed_answers": 28,
+  "official_previous_exact_token_matches": 20,
+  "traced_input_matches": 128,
+  "source_hashes_checked": true,
+  "html_links_checked": true,
+  "copy_control_exact_match": true,
+  "arithmetic_control": "Manually verified: 12*4 + 6*4 = 72 km, correct.",
+  "square_control": "Optimal route length 4; missing brackets.",
+  "prior_benchmark_files_unchanged": true,
+  "visual_preview": "Not attempted; local-file browser policy blocked preview in previous run."
+}

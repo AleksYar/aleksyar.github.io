@@ -1,0 +1,36 @@
+LLaDA x TSP experiment library
+
+Public URL: https://aleksyar.github.io/diffusionllm/
+
+This is an independent section of the existing website. Do not add a link to
+the homepage. The homepage and its main/ assets are intentionally unchanged.
+
+The site is a snapshot of the saved DiffusionLLM experiment dashboards. The
+public export includes all registered/discovered entries, report pages and
+their permitted dependencies. Local paths are anonymized; operational
+authorization fields are omitted. Large training data, weights, scripts and
+some logs are retained in the research workspace and labelled as local files.
+publication.json records coverage, file hashes and the exact snapshot time.
+
+To refresh after collecting more experimental results:
+
+1. In the DiffusionLLM workspace, rebuild the normal dashboards:
+   .venv/bin/python dashboard/build.py
+
+2. Export from that workspace into this checkout's diffusionllm/ directory:
+   .venv/bin/python dashboard/export_public_site.py \
+     --workspace /absolute/path/to/DiffusionLLM \
+     --destination /absolute/path/to/aleksyar.github.io/diffusionllm
+
+   A copy of the exporter is also kept in .github/scripts/export-diffusionllm.py.
+   It accepts the same arguments and needs Python 3.9 or newer.
+
+3. Review the export and publication.json, then commit the diffusionllm/ changes
+   and push to main. The existing GitHub Pages deployment publishes the update.
+
+The exporter checks all local HTML links/fragments, experiment coverage, JSON
+syntax, source consistency and credential-like patterns before replacing the
+previous export. Original evidence is not modified. No cluster work is run.
+
+The root .nojekyll file preserves the existing HTML and the report/evidence
+file names without Jekyll processing. No new hosting service is used.

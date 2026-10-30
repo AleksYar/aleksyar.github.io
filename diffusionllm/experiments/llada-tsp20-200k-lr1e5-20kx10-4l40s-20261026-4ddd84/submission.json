@@ -1,0 +1,9 @@
+{
+  "job_id": "1463107",
+  "submitted_at": "2026-10-26T20:36:17.318967+00:00",
+  "node": "nlp-l40-1",
+  "gpu_count": 4,
+  "learning_rate": 1e-05,
+  "remote_root": "[cluster-home]/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84",
+  "test_only": "passed"
+}

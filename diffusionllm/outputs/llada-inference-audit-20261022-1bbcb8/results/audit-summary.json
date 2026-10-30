@@ -1,0 +1,694 @@
+{
+  "job_id": "1458371",
+  "elapsed": "00:05:54",
+  "generated": 28,
+  "official_same_settings": {
+    "cases": 20,
+    "strict_valid": 0,
+    "semantic_valid_without_format_requirement": 0,
+    "same_readable_answers_as_previous": 20,
+    "same_full_token_arrays_as_previous": 20
+  },
+  "replays": {
+    "cases": 2,
+    "same_full_token_arrays_as_previous": 2
+  },
+  "official_chat_settings": {
+    "cases": 3,
+    "strict_valid": 0,
+    "semantic_valid_without_format_requirement": 0
+  },
+  "trace": {
+    "traced_case": "tsp10-0000",
+    "passes_compared": 128,
+    "identical_input_passes": 128,
+    "first_different_input_pass": null,
+    "same_first_forward_choices": true,
+    "same_first_forward_confidences": true
+  },
+  "diagnostics": {
+    "replay-ours-tsp10-0000": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "replay-ours-tsp10-0016": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        7,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6,
+        8
+      ],
+      "repeated_cities": [
+        7
+      ],
+      "note": "Incomplete or repeated-city route. Missing cities: [6, 8]. Repeated cities: [7]."
+    },
+    "official-same-tsp10-0000": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0001": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0002": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0003": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0004": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "official-same-tsp10-0005": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0006": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0007": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        5
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [5]."
+    },
+    "official-same-tsp10-0008": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        8
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [8]."
+    },
+    "official-same-tsp10-0009": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "official-same-tsp10-0010": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0011": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0012": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0013": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        7
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [7]."
+    },
+    "official-same-tsp10-0014": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0015": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0016": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        7,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6,
+        8
+      ],
+      "repeated_cities": [
+        7
+      ],
+      "note": "Incomplete or repeated-city route. Missing cities: [6, 8]. Repeated cities: [7]."
+    },
+    "official-same-tsp10-0017": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-same-tsp10-0018": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "official-same-tsp10-0019": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        6
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [6]."
+    },
+    "official-chat-tsp10-0000": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "official-chat-tsp10-0007": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "official-chat-tsp10-0016": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": false,
+      "reason": "wrong_number_of_cities",
+      "missing_cities": [
+        9
+      ],
+      "repeated_cities": [],
+      "note": "Incomplete or repeated-city route. Missing cities: [9]."
+    },
+    "control-copy-route": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        0
+      ],
+      "bare_list_diagnostic": false,
+      "semantic_valid": true,
+      "reason": "valid",
+      "missing_cities": [],
+      "repeated_cities": [],
+      "note": "Complete tour."
+    },
+    "control-arithmetic": {
+      "semantic_valid": null,
+      "note": "Arithmetic control; inspect answer against 72 km."
+    },
+    "control-square-tsp4": {
+      "route_read_without_repair": [
+        0,
+        1,
+        2,
+        3,
+        0
+      ],
+      "bare_list_diagnostic": true,
+      "semantic_valid": true,
+      "reason": "valid",
+      "missing_cities": [],
+      "repeated_cities": [],
+      "note": "Complete tour.",
+      "length": 4.0,
+      "optimal_length": 4,
+      "gap_pct": 0.0
+    }
+  },
+  "controls": [
+    {
+      "id": "control-copy-route",
+      "answer": "Route: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]",
+      "diagnostic": {
+        "route_read_without_repair": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          0
+        ],
+        "bare_list_diagnostic": false,
+        "semantic_valid": true,
+        "reason": "valid",
+        "missing_cities": [],
+        "repeated_cities": [],
+        "note": "Complete tour."
+      }
+    },
+    {
+      "id": "control-arithmetic",
+      "answer": "Lily can run 12 kilometers per hour for 4 hours, so she runs a total of 12 * 4 = 48 kilometers.\nAfter that, she runs 6 kilometers per hour for the remaining 4 hours, so she runs a total of 6 * 4 = 24 kilometers.\nTherefore, Lily can run a total of 48 + 24 = 72 kilometers in 8 hours.\nThe final result is 72",
+      "diagnostic": {
+        "semantic_valid": null,
+        "note": "Arithmetic control; inspect answer against 72 km."
+      }
+    },
+    {
+      "id": "control-square-tsp4",
+      "answer": "Route: 0,1,2,3,0",
+      "diagnostic": {
+        "route_read_without_repair": [
+          0,
+          1,
+          2,
+          3,
+          0
+        ],
+        "bare_list_diagnostic": true,
+        "semantic_valid": true,
+        "reason": "valid",
+        "missing_cities": [],
+        "repeated_cities": [],
+        "note": "Complete tour.",
+        "length": 4.0,
+        "optimal_length": 4,
+        "gap_pct": 0.0
+      }
+    }
+  ],
+  "official_tsp10_pattern": {
+    "route_entry_counts": {
+      "10": 20
+    },
+    "answers_with_missing_cities": 20,
+    "answers_with_repeated_cities": 1
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "status": "complete",
+  "step": 12500,
+  "training_examples_seen": 200000,
+  "fingerprint": "8be723edbaa042bc1fe4f445d4fbfb1fee48971596650e5e70cf4964417cb859",
+  "replica_hashes": [
+    "d10aeb99a8f998e5125980874c03861fcaad5c419fd993ed8ec76cdaf15e3c00",
+    "d10aeb99a8f998e5125980874c03861fcaad5c419fd993ed8ec76cdaf15e3c00",
+    "d10aeb99a8f998e5125980874c03861fcaad5c419fd993ed8ec76cdaf15e3c00",
+    "d10aeb99a8f998e5125980874c03861fcaad5c419fd993ed8ec76cdaf15e3c00"
+  ],
+  "frozen_base_sample_unchanged": true,
+  "adapter_reload_exact": true,
+  "per_rank_memory": [
+    {
+      "rank": 0,
+      "peak_allocated_gib": 26.600215435028076,
+      "peak_reserved_gib": 36.095703125,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 1,
+      "peak_allocated_gib": 26.60336446762085,
+      "peak_reserved_gib": 36.126953125,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 2,
+      "peak_allocated_gib": 26.593105792999268,
+      "peak_reserved_gib": 38.08984375,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 3,
+      "peak_allocated_gib": 26.60320520401001,
+      "peak_reserved_gib": 36.11328125,
+      "capacity_gib": 47.50946044921875
+    }
+  ],
+  "steady_seconds_per_update": 1.1507911526714452,
+  "resume_state_restored_exactly": null,
+  "resume_replay_close": null,
+  "resume_validation": null
+}

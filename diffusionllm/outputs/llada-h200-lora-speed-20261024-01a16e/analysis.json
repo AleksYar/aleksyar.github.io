@@ -1,0 +1,649 @@
+{
+  "created_at": "2026-10-24T15:39:08.491947+00:00",
+  "job_id": "1460666",
+  "status": "complete",
+  "scope": "LLaDA-8B-Instruct, TSP20 sample 959\u2013991 tokens, one H200 NVL on galileo4; BF16 base and FP32 adapters.",
+  "trial_count": 37,
+  "screen_trials": 20,
+  "oom_trials": 4,
+  "insufficient_headroom_trials": [
+    "capacity-r64-eb64-mb64-all",
+    "confirm1-r16-eb16-mb16-quarter",
+    "confirm2-r16-eb16-mb16-quarter",
+    "screen-r64-eb16-mb16-quarter"
+  ],
+  "recommendations": {
+    "16": {
+      "trials": [
+        "confirm1-r16-eb16-mb8-none",
+        "confirm2-r16-eb16-mb8-none"
+      ],
+      "repeats": 2,
+      "timed_updates": 48,
+      "mean_seconds_per_update": 1.8334156155469827,
+      "median_seconds_per_update": 1.8362073830794543,
+      "step_stdev_seconds": 0.009316266512509719,
+      "repeat_means_seconds": [
+        1.8330740076877798,
+        1.8337572234061856
+      ],
+      "repeat_mean_spread_pct": 0.037264639431030644,
+      "examples_per_second": 8.726881054313779,
+      "padded_tokens_per_second": 8570.524435423991,
+      "peak_allocated_gib": 78.55630683898926,
+      "peak_reserved_gib": 106.748046875,
+      "total_gpu_gib": 139.81109619140625,
+      "rank": 16,
+      "alpha": 32,
+      "microbatch": 8,
+      "gradient_accumulation": 2,
+      "effective_batch": 16,
+      "checkpointing": "none",
+      "stress_passed": true,
+      "stress_trial": "stress-r16-eb16-mb8-none",
+      "stress_peak_reserved_gib": 80.068359375,
+      "reserved_headroom_gib": 33.06304931640625,
+      "l40s_optimized_seconds_per_update": 4.416898624835691,
+      "speedup_vs_optimized_l40s": 2.409109307993949,
+      "h200_transfer_baseline_seconds_per_update": 3.238213104157088,
+      "speedup_vs_h200_transfer_baseline": 1.766218786781194,
+      "time_saved_vs_h200_transfer_pct": 43.381872762069996,
+      "h200_transfer_baseline_observed_mean_range": [
+        3.0279111144399002,
+        3.238213104157088
+      ],
+      "speedup_vs_h200_transfer_observed_range": [
+        1.6515137586719806,
+        1.766218786781194
+      ],
+      "transfer_baseline_variability_note": "Screening and longer confirmation can differ; this range is observational, not a confidence interval. The transfer baseline has one longer confirmation.",
+      "training_only_hours": {
+        "100000": 3.183013221435734,
+        "160000": 5.092821154297174,
+        "500000": 15.915066107178669
+      },
+      "runner_up_within_3pct": false
+    },
+    "64": {
+      "trials": [
+        "confirm1-r64-eb16-mb8-none",
+        "confirm2-r64-eb16-mb8-none"
+      ],
+      "repeats": 2,
+      "timed_updates": 48,
+      "mean_seconds_per_update": 1.84858405815127,
+      "median_seconds_per_update": 1.8468263212125748,
+      "step_stdev_seconds": 0.012622142854857406,
+      "repeat_means_seconds": [
+        1.8398486860096455,
+        1.8573194302928944
+      ],
+      "repeat_mean_spread_pct": 0.9450879015326483,
+      "examples_per_second": 8.65527316945558,
+      "padded_tokens_per_second": 8500.1995251695,
+      "peak_allocated_gib": 80.83889961242676,
+      "peak_reserved_gib": 108.48828125,
+      "total_gpu_gib": 139.81109619140625,
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 8,
+      "gradient_accumulation": 2,
+      "effective_batch": 16,
+      "checkpointing": "none",
+      "stress_passed": true,
+      "stress_trial": "stress-r64-eb16-mb8-none",
+      "stress_peak_reserved_gib": 83.541015625,
+      "reserved_headroom_gib": 31.32281494140625,
+      "l40s_optimized_seconds_per_update": 4.493993736493091,
+      "speedup_vs_optimized_l40s": 2.43104646319813,
+      "h200_transfer_baseline_seconds_per_update": 3.5725293183738054,
+      "speedup_vs_h200_transfer_baseline": 1.9325760722758891,
+      "time_saved_vs_h200_transfer_pct": 48.25559447073384,
+      "h200_transfer_baseline_observed_mean_range": [
+        2.129805065691471,
+        3.5725293183738054
+      ],
+      "speedup_vs_h200_transfer_observed_range": [
+        1.152127790078123,
+        1.9325760722758891
+      ],
+      "transfer_baseline_variability_note": "Screening and longer confirmation can differ; this range is observational, not a confidence interval. The transfer baseline has one longer confirmation.",
+      "training_only_hours": {
+        "100000": 3.2093473231792884,
+        "160000": 5.134955717086862,
+        "500000": 16.046736615896442
+      },
+      "runner_up_within_3pct": false
+    }
+  },
+  "finalists": {
+    "16": [
+      {
+        "trials": [
+          "confirm1-r16-eb16-mb8-none",
+          "confirm2-r16-eb16-mb8-none"
+        ],
+        "repeats": 2,
+        "timed_updates": 48,
+        "mean_seconds_per_update": 1.8334156155469827,
+        "median_seconds_per_update": 1.8362073830794543,
+        "step_stdev_seconds": 0.009316266512509719,
+        "repeat_means_seconds": [
+          1.8330740076877798,
+          1.8337572234061856
+        ],
+        "repeat_mean_spread_pct": 0.037264639431030644,
+        "examples_per_second": 8.726881054313779,
+        "padded_tokens_per_second": 8570.524435423991,
+        "peak_allocated_gib": 78.55630683898926,
+        "peak_reserved_gib": 106.748046875,
+        "total_gpu_gib": 139.81109619140625,
+        "rank": 16,
+        "alpha": 32,
+        "microbatch": 8,
+        "gradient_accumulation": 2,
+        "effective_batch": 16,
+        "checkpointing": "none",
+        "stress_passed": true,
+        "stress_trial": "stress-r16-eb16-mb8-none",
+        "stress_peak_reserved_gib": 80.068359375,
+        "reserved_headroom_gib": 33.06304931640625
+      }
+    ],
+    "64": [
+      {
+        "trials": [
+          "confirm1-r64-eb16-mb8-none",
+          "confirm2-r64-eb16-mb8-none"
+        ],
+        "repeats": 2,
+        "timed_updates": 48,
+        "mean_seconds_per_update": 1.84858405815127,
+        "median_seconds_per_update": 1.8468263212125748,
+        "step_stdev_seconds": 0.012622142854857406,
+        "repeat_means_seconds": [
+          1.8398486860096455,
+          1.8573194302928944
+        ],
+        "repeat_mean_spread_pct": 0.9450879015326483,
+        "examples_per_second": 8.65527316945558,
+        "padded_tokens_per_second": 8500.1995251695,
+        "peak_allocated_gib": 80.83889961242676,
+        "peak_reserved_gib": 108.48828125,
+        "total_gpu_gib": 139.81109619140625,
+        "rank": 64,
+        "alpha": 64,
+        "microbatch": 8,
+        "gradient_accumulation": 2,
+        "effective_batch": 16,
+        "checkpointing": "none",
+        "stress_passed": true,
+        "stress_trial": "stress-r64-eb16-mb8-none",
+        "stress_peak_reserved_gib": 83.541015625,
+        "reserved_headroom_gib": 31.32281494140625
+      },
+      {
+        "trials": [
+          "confirm1-r64-eb16-mb8-quarter",
+          "confirm2-r64-eb16-mb8-quarter"
+        ],
+        "repeats": 2,
+        "timed_updates": 48,
+        "mean_seconds_per_update": 2.0455768758159443,
+        "median_seconds_per_update": 2.0426740089897066,
+        "step_stdev_seconds": 0.017880270795713495,
+        "repeat_means_seconds": [
+          2.050983609263009,
+          2.040170142368879
+        ],
+        "repeat_mean_spread_pct": 0.5286267664624663,
+        "examples_per_second": 7.821754434732689,
+        "padded_tokens_per_second": 7681.614667777062,
+        "peak_allocated_gib": 66.63270664215088,
+        "peak_reserved_gib": 89.171875,
+        "total_gpu_gib": 139.81109619140625,
+        "rank": 64,
+        "alpha": 64,
+        "microbatch": 8,
+        "gradient_accumulation": 2,
+        "effective_batch": 16,
+        "checkpointing": "quarter",
+        "stress_passed": false,
+        "reserved_headroom_gib": 50.63922119140625
+      }
+    ]
+  },
+  "capacity": [
+    {
+      "name": "capacity-confirm-r64-eb32-mb32-all",
+      "status": "ok",
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 32,
+      "gradient_accumulation": 1,
+      "effective_batch": 32,
+      "stress": false,
+      "checkpointing": "all",
+      "phase": "capacity-confirm",
+      "warmup_updates": 3,
+      "timed_updates_requested": 16,
+      "job_id": "1460666",
+      "host": "galileo4",
+      "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+      "learning_rate": 0.0001,
+      "dropout": 0.05,
+      "sequence_length_min": 959,
+      "sequence_length_max": 991,
+      "sequence_length_mean": 975.525390625,
+      "gpu": "NVIDIA H200 NVL",
+      "total_gpu_gib": 139.81109619140625,
+      "trainable_parameters": 167772160,
+      "adapted_projections": 224,
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.38.2",
+        "peft": "0.10.0",
+        "accelerate": "1.3.0"
+      },
+      "native_checkpointing": "whole_layer",
+      "load_and_setup_seconds": 19.099461367353797,
+      "dynamic_eos_padding": true,
+      "frozen_base_dtype": "bfloat16",
+      "adapter_dtype": "float32",
+      "cuda_version": "12.4",
+      "compute_capability": [
+        9,
+        0
+      ],
+      "initial_allocated_gib": 15.555671691894531,
+      "initial_reserved_gib": 15.587890625,
+      "world_size": 1,
+      "physical_gpu_constraint": "galileo4 H200",
+      "scheduler_total_updates": 3125,
+      "flash_sdp_enabled": true,
+      "memory_efficient_sdp_enabled": false,
+      "math_sdp_enabled": true,
+      "gpu_snapshot_before": "NVIDIA H200 NVL, GPU-76a76ec4-52b8-630a-9e05-17880509ec02, 143771 MiB, 600.00 W, 58, 1785 MHz",
+      "median_seconds_per_update": 5.097823242656887,
+      "mean_seconds_per_update": 5.098172149329912,
+      "min_seconds_per_update": 5.068799518980086,
+      "max_seconds_per_update": 5.132069096900523,
+      "stdev_seconds_per_update": 0.013125691898930009,
+      "examples_per_second": 6.2767594076253355,
+      "training_hours_500k": 22.127483287022187,
+      "peak_allocated_gib": 45.07438802719116,
+      "peak_reserved_gib": 94.087890625,
+      "adapter_B_norm_sum": 7.056886998005211,
+      "elapsed_seconds": 116.72637772094458,
+      "safe_headroom": true,
+      "throughput_ratio_vs_primary_rank64": 0.7251948361117002
+    },
+    {
+      "name": "capacity-r64-eb32-mb32-all",
+      "status": "ok",
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 32,
+      "gradient_accumulation": 1,
+      "effective_batch": 32,
+      "stress": false,
+      "checkpointing": "all",
+      "phase": "capacity",
+      "warmup_updates": 2,
+      "timed_updates_requested": 5,
+      "job_id": "1460666",
+      "host": "galileo4",
+      "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+      "learning_rate": 0.0001,
+      "dropout": 0.05,
+      "sequence_length_min": 959,
+      "sequence_length_max": 991,
+      "sequence_length_mean": 975.525390625,
+      "gpu": "NVIDIA H200 NVL",
+      "total_gpu_gib": 139.81109619140625,
+      "trainable_parameters": 167772160,
+      "adapted_projections": 224,
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.38.2",
+        "peft": "0.10.0",
+        "accelerate": "1.3.0"
+      },
+      "native_checkpointing": "whole_layer",
+      "load_and_setup_seconds": 16.821804662700742,
+      "dynamic_eos_padding": true,
+      "frozen_base_dtype": "bfloat16",
+      "adapter_dtype": "float32",
+      "cuda_version": "12.4",
+      "compute_capability": [
+        9,
+        0
+      ],
+      "initial_allocated_gib": 15.555671691894531,
+      "initial_reserved_gib": 15.587890625,
+      "world_size": 1,
+      "physical_gpu_constraint": "galileo4 H200",
+      "scheduler_total_updates": 3125,
+      "flash_sdp_enabled": true,
+      "memory_efficient_sdp_enabled": false,
+      "math_sdp_enabled": true,
+      "gpu_snapshot_before": "NVIDIA H200 NVL, GPU-76a76ec4-52b8-630a-9e05-17880509ec02, 143771 MiB, 600.00 W, 58, 1785 MHz",
+      "median_seconds_per_update": 5.0627610720694065,
+      "mean_seconds_per_update": 5.062103866878897,
+      "min_seconds_per_update": 5.022201505955309,
+      "max_seconds_per_update": 5.09981471626088,
+      "stdev_seconds_per_update": 0.029979818569333228,
+      "examples_per_second": 6.321482300941011,
+      "training_hours_500k": 21.970936922217433,
+      "peak_allocated_gib": 44.95902872085571,
+      "peak_reserved_gib": 64.220703125,
+      "adapter_B_norm_sum": 1.0285752348136157,
+      "elapsed_seconds": 53.10329031199217,
+      "safe_headroom": true,
+      "throughput_ratio_vs_primary_rank64": 0.7303619628378102
+    },
+    {
+      "name": "capacity-r64-eb32-mb32-half",
+      "status": "out_of_memory",
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 32,
+      "gradient_accumulation": 1,
+      "effective_batch": 32,
+      "stress": false,
+      "checkpointing": "half",
+      "phase": "capacity",
+      "warmup_updates": 2,
+      "timed_updates_requested": 5,
+      "job_id": "1460666",
+      "host": "galileo4",
+      "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+      "learning_rate": 0.0001,
+      "dropout": 0.05,
+      "sequence_length_min": 959,
+      "sequence_length_max": 991,
+      "sequence_length_mean": 975.525390625,
+      "gpu": "NVIDIA H200 NVL",
+      "total_gpu_gib": 139.81109619140625,
+      "trainable_parameters": 167772160,
+      "adapted_projections": 224,
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.38.2",
+        "peft": "0.10.0",
+        "accelerate": "1.3.0"
+      },
+      "native_checkpointing": "one_in_two",
+      "load_and_setup_seconds": 15.889036311302334,
+      "dynamic_eos_padding": true,
+      "frozen_base_dtype": "bfloat16",
+      "adapter_dtype": "float32",
+      "cuda_version": "12.4",
+      "compute_capability": [
+        9,
+        0
+      ],
+      "initial_allocated_gib": 15.555671691894531,
+      "initial_reserved_gib": 15.587890625,
+      "world_size": 1,
+      "physical_gpu_constraint": "galileo4 H200",
+      "scheduler_total_updates": 3125,
+      "flash_sdp_enabled": true,
+      "memory_efficient_sdp_enabled": false,
+      "math_sdp_enabled": true,
+      "gpu_snapshot_before": "NVIDIA H200 NVL, GPU-76a76ec4-52b8-630a-9e05-17880509ec02, 143771 MiB, 600.00 W, 59, 1785 MHz",
+      "error_type": "OutOfMemoryError",
+      "error": "CUDA out of memory. Tried to allocate 738.00 MiB. GPU 0 has a total capacity of 139.81 GiB of which 633.69 MiB is free. Including non-PyTorch memory, this process has 139.18 GiB memory in use. Of the allocated memory 137.84 GiB is allocated by PyTorch, and 701.20 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+      "elapsed_seconds": 17.417795025277883,
+      "peak_allocated_gib": 138.31767654418945,
+      "peak_reserved_gib": 138.5234375,
+      "safe_headroom": false
+    },
+    {
+      "name": "capacity-r64-eb32-mb32-quarter",
+      "status": "out_of_memory",
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 32,
+      "gradient_accumulation": 1,
+      "effective_batch": 32,
+      "stress": false,
+      "checkpointing": "quarter",
+      "phase": "capacity",
+      "warmup_updates": 2,
+      "timed_updates_requested": 5,
+      "job_id": "1460666",
+      "host": "galileo4",
+      "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+      "learning_rate": 0.0001,
+      "dropout": 0.05,
+      "sequence_length_min": 959,
+      "sequence_length_max": 991,
+      "sequence_length_mean": 975.525390625,
+      "gpu": "NVIDIA H200 NVL",
+      "total_gpu_gib": 139.81109619140625,
+      "trainable_parameters": 167772160,
+      "adapted_projections": 224,
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.38.2",
+        "peft": "0.10.0",
+        "accelerate": "1.3.0"
+      },
+      "native_checkpointing": "one_in_four",
+      "load_and_setup_seconds": 15.44803478801623,
+      "dynamic_eos_padding": true,
+      "frozen_base_dtype": "bfloat16",
+      "adapter_dtype": "float32",
+      "cuda_version": "12.4",
+      "compute_capability": [
+        9,
+        0
+      ],
+      "initial_allocated_gib": 15.555671691894531,
+      "initial_reserved_gib": 15.587890625,
+      "world_size": 1,
+      "physical_gpu_constraint": "galileo4 H200",
+      "scheduler_total_updates": 3125,
+      "flash_sdp_enabled": true,
+      "memory_efficient_sdp_enabled": false,
+      "math_sdp_enabled": true,
+      "gpu_snapshot_before": "NVIDIA H200 NVL, GPU-76a76ec4-52b8-630a-9e05-17880509ec02, 143771 MiB, 600.00 W, 62, 1785 MHz",
+      "error_type": "OutOfMemoryError",
+      "error": "CUDA out of memory. Tried to allocate 1.44 GiB. GPU 0 has a total capacity of 139.81 GiB of which 443.69 MiB is free. Including non-PyTorch memory, this process has 139.37 GiB memory in use. Of the allocated memory 138.09 GiB is allocated by PyTorch, and 629.86 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)",
+      "elapsed_seconds": 16.70950473891571,
+      "peak_allocated_gib": 138.09389114379883,
+      "peak_reserved_gib": 138.708984375,
+      "safe_headroom": false
+    },
+    {
+      "name": "capacity-r64-eb64-mb64-all",
+      "status": "ok",
+      "rank": 64,
+      "alpha": 64,
+      "microbatch": 64,
+      "gradient_accumulation": 1,
+      "effective_batch": 64,
+      "stress": false,
+      "checkpointing": "all",
+      "phase": "capacity",
+      "warmup_updates": 2,
+      "timed_updates_requested": 5,
+      "job_id": "1460666",
+      "host": "galileo4",
+      "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+      "learning_rate": 0.0001,
+      "dropout": 0.05,
+      "sequence_length_min": 959,
+      "sequence_length_max": 991,
+      "sequence_length_mean": 975.525390625,
+      "gpu": "NVIDIA H200 NVL",
+      "total_gpu_gib": 139.81109619140625,
+      "trainable_parameters": 167772160,
+      "adapted_projections": 224,
+      "versions": {
+        "torch": "2.6.0+cu124",
+        "transformers": "4.38.2",
+        "peft": "0.10.0",
+        "accelerate": "1.3.0"
+      },
+      "native_checkpointing": "whole_layer",
+      "load_and_setup_seconds": 15.496938133146614,
+      "dynamic_eos_padding": true,
+      "frozen_base_dtype": "bfloat16",
+      "adapter_dtype": "float32",
+      "cuda_version": "12.4",
+      "compute_capability": [
+        9,
+        0
+      ],
+      "initial_allocated_gib": 15.555671691894531,
+      "initial_reserved_gib": 15.587890625,
+      "world_size": 1,
+      "physical_gpu_constraint": "galileo4 H200",
+      "scheduler_total_updates": 1563,
+      "flash_sdp_enabled": true,
+      "memory_efficient_sdp_enabled": false,
+      "math_sdp_enabled": true,
+      "gpu_snapshot_before": "NVIDIA H200 NVL, GPU-76a76ec4-52b8-630a-9e05-17880509ec02, 143771 MiB, 600.00 W, 59, 1785 MHz",
+      "median_seconds_per_update": 10.18818289320916,
+      "mean_seconds_per_update": 10.197742805443704,
+      "min_seconds_per_update": 10.150775223970413,
+      "max_seconds_per_update": 10.250699187163264,
+      "stdev_seconds_per_update": 0.04533722955102889,
+      "examples_per_second": 6.275898620019703,
+      "training_hours_500k": 22.131934594147683,
+      "peak_allocated_gib": 73.25743818283081,
+      "peak_reserved_gib": 138.771484375,
+      "adapter_B_norm_sum": 2.1756086056120694,
+      "elapsed_seconds": 87.52843570103869,
+      "safe_headroom": false,
+      "throughput_ratio_vs_primary_rank64": 0.7250953837213736
+    }
+  ],
+  "skipped_capacity_trials": [
+    {
+      "event": "capacity_skipped",
+      "elapsed_seconds": 1857.4712598687038,
+      "rank": 64,
+      "effective_batch": 32,
+      "microbatch": 32,
+      "checkpointing": "none",
+      "reason": "Smaller microbatch already ran out of memory",
+      "evidence": [
+        "screen-r64-eb16-mb16-none"
+      ]
+    },
+    {
+      "event": "capacity_skipped",
+      "elapsed_seconds": 1948.994904243853,
+      "rank": 64,
+      "effective_batch": 64,
+      "microbatch": 64,
+      "checkpointing": "none",
+      "reason": "Smaller microbatch already ran out of memory",
+      "evidence": [
+        "screen-r64-eb16-mb16-none"
+      ]
+    },
+    {
+      "event": "capacity_skipped",
+      "elapsed_seconds": 1949.002299261745,
+      "rank": 64,
+      "effective_batch": 64,
+      "microbatch": 64,
+      "checkpointing": "quarter",
+      "reason": "Smaller microbatch already ran out of memory",
+      "evidence": [
+        "capacity-r64-eb32-mb32-quarter"
+      ]
+    },
+    {
+      "event": "capacity_skipped",
+      "elapsed_seconds": 1949.0103897126392,
+      "rank": 64,
+      "effective_batch": 64,
+      "microbatch": 64,
+      "checkpointing": "half",
+      "reason": "Smaller microbatch already ran out of memory",
+      "evidence": [
+        "capacity-r64-eb32-mb32-half"
+      ]
+    }
+  ],
+  "checkpoint_loss_checks": [
+    {
+      "rank": 16,
+      "microbatch": 2,
+      "checkpointing": [
+        "all",
+        "none"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 3.159046173095703e-05
+    },
+    {
+      "rank": 16,
+      "microbatch": 8,
+      "checkpointing": [
+        "none",
+        "quarter"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 0.00010409951210021973
+    },
+    {
+      "rank": 16,
+      "microbatch": 16,
+      "checkpointing": [
+        "all",
+        "half",
+        "quarter"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 0.0005286931991577148
+    },
+    {
+      "rank": 64,
+      "microbatch": 2,
+      "checkpointing": [
+        "all",
+        "none"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 0.00030291080474853516
+    },
+    {
+      "rank": 64,
+      "microbatch": 8,
+      "checkpointing": [
+        "none",
+        "quarter"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 0.0001589655876159668
+    },
+    {
+      "rank": 64,
+      "microbatch": 16,
+      "checkpointing": [
+        "all",
+        "half",
+        "quarter"
+      ],
+      "initial_loss_spread": 0.0,
+      "initial_gradient_norm_spread": 0.0004863142967224121
+    }
+  ],
+  "all_results_finished": true,
+  "limits": [
+    "Fastest confirmed among tested configurations, not a global optimum.",
+    "No full fine-tuning or model-quality evaluation; learning rate was fixed at 1e-4.",
+    "Capacity cohorts change effective batch and optimizer update count; validate quality before adopting.",
+    "Short profiles and sample-tail stress do not establish memory safety for longer sequences or sustained multi-day throughput.",
+    "Training-only projections exclude evaluation, checkpoint writes, loading, queueing, and preemption.",
+    "The H200 microbatch-2 baseline varies between screening and longer confirmation; a single tuning-only speedup is not a stable hardware guarantee.",
+    "Different microbatches can change stochastic draws and EOS padding; trajectories need not be identical."
+  ],
+  "accounting": "1460666|llada-h200-01a16e|COMPLETED|0:0|00:35:57|galileo4|billing=14,cpu=4,gres/gpu=1,node=1\n"
+}

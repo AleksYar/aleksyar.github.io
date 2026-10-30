@@ -1,0 +1,3 @@
+JobID|JobName|State|ExitCode|Elapsed|Start|End|NodeList|AllocTRES
+1458386|llada-tsp5-t256-d7cf15|COMPLETED|0:0|00:04:20|2026-10-22T17:50:22|2026-10-22T17:54:42|newton4|billing=14,cpu=4,gres/gpu=1,node=1
+1458386.batch|batch|COMPLETED|0:0|00:04:20|2026-10-22T17:50:22|2026-10-22T17:54:42|newton4|cpu=4,gres/gpu=1,mem=0,node=1

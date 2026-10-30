@@ -1,0 +1,29 @@
+{
+  "training_examples": 160000,
+  "epochs": 1,
+  "gpu": "one L40S",
+  "rank": 64,
+  "alpha": 64,
+  "effective_batch_size": 16,
+  "optimizer_updates": 10000,
+  "midpoint_update": 5000,
+  "midpoint_examples": 80000,
+  "measured_seconds_per_update": 4.493993736493091,
+  "training_hours": 12.48331593470303,
+  "midpoint_training_hours": 6.241657967351515,
+  "validation_answers": 300,
+  "evaluation_hours_from_prior_run": 1.778438163884243,
+  "planning_gpu_hours": [
+    15,
+    18
+  ],
+  "excluded": [
+    "CPU data preparation",
+    "queue time",
+    "preemption/repeated work"
+  ],
+  "basis": "24 timed rank-64, microbatch-2, no-activation-checkpointing updates; historical TSP20 evaluation timing",
+  "benchmark_job": "1460638",
+  "peak_allocated_gib": 33.54558324813843,
+  "qualification": "A projection, not a completed 160k run."
+}

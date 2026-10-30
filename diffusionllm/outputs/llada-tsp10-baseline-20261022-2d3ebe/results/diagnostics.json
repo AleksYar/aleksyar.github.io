@@ -1,0 +1,480 @@
+{
+  "all_answers_saved": true,
+  "requested": 20,
+  "generated": 20,
+  "valid": 0,
+  "slurm_elapsed": "00:02:03",
+  "job_id": "1458324",
+  "gpu": "NVIDIA A40",
+  "mean_seconds_per_answer": 5.632769094893592,
+  "peak_allocated_gpu_gib": 15.154752254486084,
+  "missing_city_counts": {
+    "5": 1,
+    "6": 16,
+    "7": 1,
+    "8": 1,
+    "9": 1
+  },
+  "diagnostics": [
+    {
+      "id": "tsp10-0000",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0001",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0002",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0003",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0004",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0005",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0006",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0007",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        5
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0008",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        0
+      ],
+      "missing_cities": [
+        8
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0009",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        0
+      ],
+      "missing_cities": [
+        9
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0010",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0011",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0012",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0013",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        7
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0014",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0015",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0016",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0017",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0018",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    },
+    {
+      "id": "tsp10-0019",
+      "comma_separated_ids": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        0
+      ],
+      "missing_cities": [
+        6
+      ],
+      "unique_cities_visited": 9,
+      "route_id_count": 10,
+      "closed": true,
+      "ascending_city_order": true,
+      "note": "Diagnostic reading of existing IDs only; no tour repair or primary-score change."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "authorized_utc": "2026-10-29T23:20:08.757522+00:00",
+  "training": {
+    "records": 300000,
+    "epochs": 1,
+    "optimizer_updates": 18750,
+    "model_forward_backward_views": 600000,
+    "effective_batch": 16,
+    "gpu_count": 4,
+    "node": "nlp-l40-2",
+    "initialization": {
+      "checkpoint": "[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250",
+      "adapter_sha256": "74f044ff674751f6792ee9110016fbe33b602eb34e70a5e496cc805a8a829389",
+      "head_sha256": "01e7775bea0b1aba44f16e9fda9f68737d79745d8832c3b43cf8532f6da725b9",
+      "parent_experiment": "llada-tsp20-500k-remask-dup03-4l40-20261028-be3024",
+      "parent_updates": 31250,
+      "parent_training_examples": 500000,
+      "load_trained_head": true,
+      "optimizer_state": "fresh AdamW; retain trained adapter and prediction-head weights"
+    },
+    "min_mask_cities": 5,
+    "max_mask_cities": 8,
+    "loss": "masked CE + 0.3 duplicate + 0.1 selector",
+    "all_records_have_masked_reconstruction": true
+  },
+  "quick_profile": {
+    "runs": 2,
+    "updates_per_run": 10,
+    "discard_profile_weights": true
+  },
+  "evaluation": {
+    "runs": 0,
+    "scheduled": false,
+    "existing_benchmark_cases_if_requested": 100,
+    "description": "Training only is scheduled; no extra evaluation or holdout generation."
+  },
+  "full_training_after_successful_profile": true,
+  "allocation_limit_hours": 20
+}

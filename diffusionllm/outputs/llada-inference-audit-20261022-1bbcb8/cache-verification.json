@@ -1,0 +1,75 @@
+{
+  "revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "checks": [
+    {
+      "file": "config.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "configuration_llada.py",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "generation_config.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "model-00001-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model-00002-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model-00003-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model-00004-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model-00005-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model-00006-of-00006.safetensors",
+      "check": "Expected content-addressed cache filename and size; payload not rehashed",
+      "passed": true
+    },
+    {
+      "file": "model.safetensors.index.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "modeling_llada.py",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "special_tokens_map.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "tokenizer.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    },
+    {
+      "file": "tokenizer_config.json",
+      "check": "Git blob hash matches official pinned checkpoint",
+      "passed": true
+    }
+  ]
+}

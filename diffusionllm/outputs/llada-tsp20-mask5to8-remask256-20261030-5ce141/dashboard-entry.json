@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141",
+  "run_dir": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141",
+  "title": "TSP20 · new 300k checkpoint · 100 cases · 256 calls",
+  "status": "completed",
+  "created_at": "2026-10-30T15:24:19.798044+00:00",
+  "updated_at": "2026-10-30T15:41:38.608295+00:00",
+  "job_id": "1469253",
+  "scheduler": {
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:12:34"
+  },
+  "description": "TSP-specific head and decoder; general questions are unsupported in this mode. 100 TSP20 instances · 86 output tokens · 256 diffusion steps · BF16 · untuned LLaDA-8B-Instruct.",
+  "note": "Completed and audited: all 100 cases, 3,088 remasking cycles, masks of 5–8 cities, 255–256 total model calls. Final: 98 valid, 46 optimal, 69 within 1%; mean valid gap 1.717%. Previous checkpoint: 95 valid, 46 optimal, 0.699% gap.",
+  "requested": 100,
+  "answers_saved": 100,
+  "metrics": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 98,
+    "optimal": 46,
+    "within_1pct": 69,
+    "valid_pct_generated": 98.0,
+    "valid_pct_requested": 98.0,
+    "mean_gap_pct_valid": 1.7166241689647517,
+    "median_gap_pct_valid": 0.045694717084643344,
+    "within_1pct_pct_requested": 69.0
+  },
+  "dataset_sha256": "7f84fd1e661b85cbfd596c1eb5d793de0de1ef5b9fb0f3918ae027b62228c176",
+  "config_sha256": "f861cd5f769486a582a6b72415030eccb589f8d1ce7b8e65b3fa8b4fdba44f43",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "All saved answers",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/raw-answers.txt",
+      "kind": "Answers"
+    },
+    {
+      "label": "Answers as JSONL",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/answers.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Scored summary",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/summary.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Per-instance scores",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/scores.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Run provenance",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/results/run.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Slurm accounting",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/slurm-accounting.txt",
+      "kind": "Log"
+    },
+    {
+      "label": "Job script",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/run.sbatch",
+      "kind": "Code"
+    },
+    {
+      "label": "Submission record",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/submission.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "tsp-mask5-eval-5ce141-1469253.out",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/logs/tsp-mask5-eval-5ce141-1469253.out",
+      "kind": "Log"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

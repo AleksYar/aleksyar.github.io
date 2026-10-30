@@ -1,0 +1,63 @@
+{
+  "phases": [
+    {
+      "name": "final500k/unfiltered/256/seed42",
+      "kind": "evaluation",
+      "runs": 1,
+      "parallel_runs": 1,
+      "run_waves": 1,
+      "timed_units_per_run": 25,
+      "gpus_per_run": 4,
+      "measurement": {
+        "seconds": [
+          30.470699877115493,
+          38.4
+        ],
+        "metric": "seconds_per_inference_batch_per_replica",
+        "evidence": "extrapolated",
+        "source": "experiments/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/evaluation-audit.json; prior mean 11.852626 s at 99.58 calls, scaled to256; upper estimate adds approximately26% implementation allowance"
+      },
+      "compute_seconds_per_run": [
+        761.7674969278874,
+        960.0
+      ],
+      "known_wall_hours": [
+        0.22826874914663536,
+        0.3
+      ],
+      "known_gpu_hours": [
+        0.9130749965865415,
+        1.2
+      ]
+    }
+  ],
+  "execution_model": "sequential phases; explicit concurrency within each phase",
+  "training_runs": 0,
+  "evaluation_case_attempts": 100,
+  "evaluation_forward_call_cap_total": 25600,
+  "peak_simultaneous_gpus": 4,
+  "compute_wall_hours": [
+    0.2116020824799687,
+    0.26666666666666666
+  ],
+  "known_allocation_wall_hours": [
+    0.22826874914663536,
+    0.3
+  ],
+  "known_elapsed_hours": [
+    0.22826874914663536,
+    0.3
+  ],
+  "known_gpu_hours": [
+    0.9130749965865415,
+    1.2
+  ],
+  "unestimated": [
+    "queue wait",
+    "local preparation and result retrieval time",
+    "queue time"
+  ],
+  "complete_elapsed_estimate": false,
+  "range_interpretation": "input planning scenarios, not a statistical confidence interval",
+  "jobs_submitted": false
+}

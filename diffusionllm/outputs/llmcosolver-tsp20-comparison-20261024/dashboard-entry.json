@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llmcosolver-tsp20-comparison-20261024",
+  "run_dir": "outputs/llmcosolver-tsp20-comparison-20261024",
+  "title": "TSP20 · LLMCoSolver comparison and baseline preparation",
+  "status": "prepared",
+  "created_at": "2026-10-24T11:06:37.776937+00:00",
+  "updated_at": "2026-10-24T11:06:37.776937+00:00",
+  "job_id": null,
+  "scheduler": null,
+  "description": "LLMCoSolver baseline preparation: same 100 TSP20 validation cases, native prompt, strict scoring. Awaiting an accessible and identified checkpoint.",
+  "note": "100 paired cases validated. Checkpoint link expired; verify adapter base model and training stage before a new GPU run. No baseline answers generated.",
+  "requested": 100,
+  "answers_saved": 0,
+  "metrics": null,
+  "dataset_sha256": "14ae0a01cb9255917fdefacfdf461d5c48dfb11601c01e94630cfa35f6ba34b3",
+  "config_sha256": "f134fbee7ee7097e1b91bed69ead458f1be6614c200bd3b5107355e4a5fac3f7",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "Execution notes",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/README.txt",
+      "kind": "Notes"
+    },
+    {
+      "label": "Inference runner",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/run_baseline.py",
+      "kind": "Code"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llmcosolver-tsp20-comparison-20261024/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

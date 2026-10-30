@@ -1,0 +1,14 @@
+{
+  "cases": 100,
+  "complete": 100,
+  "complete_fraction": 1.0,
+  "optimal": 51,
+  "within_1pct": 80,
+  "mean_gap_pct_complete": 0.6566935406326002,
+  "mean_seconds": 11.852626147512346,
+  "mean_forward_passes": 99.58,
+  "raw_initial_complete": 94,
+  "revision_attempts": 1226,
+  "accepted_revisions": 24,
+  "invalid_revision_proposals": 48
+}

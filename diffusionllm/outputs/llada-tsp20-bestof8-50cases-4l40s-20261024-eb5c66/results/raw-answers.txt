@@ -1,0 +1,2549 @@
+tsp20-validation-00000
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [845, 466], neighbors: [9: 72.3, 15: 81.8];
+Node 1, coordinates: [662, 883], neighbors: [10: 119.1, 5: 135.7];
+Node 2, coordinates: [936, 644], neighbors: [11: 50.2, 4: 79.6];
+Node 3, coordinates: [115, 461], neighbors: [19: 210.2, 7: 285.8];
+Node 4, coordinates: [972, 573], neighbors: [11: 35.0, 2: 79.6];
+Node 5, coordinates: [607, 759], neighbors: [10: 86.5, 1: 135.7];
+Node 6, coordinates: [880, 970], neighbors: [1: 234.7, 10: 275.3];
+Node 7, coordinates: [332, 647], neighbors: [12: 74.0, 17: 140.1];
+Node 8, coordinates: [356, 871], neighbors: [17: 113.6, 18: 168.1];
+Node 9, coordinates: [773, 473], neighbors: [15: 44.7, 0: 72.3];
+Node 10, coordinates: [693, 768], neighbors: [5: 86.5, 1: 119.1];
+Node 11, coordinates: [971, 608], neighbors: [4: 35.0, 2: 50.2];
+Node 12, coordinates: [286, 705], neighbors: [7: 74.0, 17: 75.0];
+Node 13, coordinates: [53, 925], neighbors: [17: 276.1, 8: 307.8];
+Node 14, coordinates: [526, 931], neighbors: [18: 15.8, 1: 144.2];
+Node 15, coordinates: [781, 517], neighbors: [9: 44.7, 0: 81.8];
+Node 16, coordinates: [524, 283], neighbors: [19: 253.6, 9: 313.2];
+Node 17, coordinates: [288, 780], neighbors: [12: 75.0, 8: 113.6];
+Node 18, coordinates: [511, 936], neighbors: [14: 15.8, 1: 160.0];
+Node 19, coordinates: [324, 439], neighbors: [7: 208.2, 3: 210.2];
+
+Candidate 1; seed 42; 28.16 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3393.993
+
+Candidate 2; seed 43; 28.16 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3430.336
+
+Candidate 3; seed 44; 28.10 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3411.342
+
+Candidate 4; seed 45; 28.21 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 1, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3495.696
+
+Candidate 5; seed 46; 28.32 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3320.046
+
+Candidate 6; seed 47; 28.27 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3264.952
+
+Candidate 7; seed 48; 28.15 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3593.753
+
+Candidate 8; seed 49; 28.60 s
+Route: [0, 9, 16, 19, 3, 7, 12, 17, 13, 8, 18, 14, 5, 10, 1, 6, 2, 11, 4, 15, 0], Objective: 3418.793
+
+tsp20-validation-00001
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [285, 216], neighbors: [13: 102.3, 1: 116.4];
+Node 1, coordinates: [183, 272], neighbors: [0: 116.4, 14: 160.6];
+Node 2, coordinates: [356, 456], neighbors: [15: 135.1, 11: 151.8];
+Node 3, coordinates: [544, 338], neighbors: [11: 80.7, 6: 110.3];
+Node 4, coordinates: [208, 852], neighbors: [7: 208.9, 10: 275.0];
+Node 5, coordinates: [508, 160], neighbors: [9: 98.5, 6: 150.2];
+Node 6, coordinates: [621, 259], neighbors: [3: 110.3, 5: 150.2];
+Node 7, coordinates: [7, 795], neighbors: [4: 208.9, 10: 478.9];
+Node 8, coordinates: [873, 354], neighbors: [18: 169.5, 17: 240.8];
+Node 9, coordinates: [548, 70], neighbors: [5: 98.5, 6: 202.6];
+Node 10, coordinates: [483, 848], neighbors: [12: 106.5, 4: 275.0];
+Node 11, coordinates: [499, 405], neighbors: [3: 80.7, 2: 151.8];
+Node 12, coordinates: [573, 905], neighbors: [10: 106.5, 16: 349.4];
+Node 13, coordinates: [301, 115], neighbors: [0: 102.3, 1: 196.4];
+Node 14, coordinates: [26, 306], neighbors: [1: 160.6, 0: 274.2];
+Node 15, coordinates: [433, 567], neighbors: [2: 135.1, 11: 174.9];
+Node 16, coordinates: [890, 758], neighbors: [17: 165.4, 19: 235.0];
+Node 17, coordinates: [902, 593], neighbors: [19: 148.7, 16: 165.4];
+Node 18, coordinates: [720, 427], neighbors: [19: 142.6, 8: 169.5];
+Node 19, coordinates: [756, 565], neighbors: [18: 142.6, 17: 148.7];
+
+Candidate 1; seed 50; 28.90 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3842.524
+
+Candidate 2; seed 51; 28.81 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3740.007
+
+Candidate 3; seed 52; 28.49 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3877.208
+
+Candidate 4; seed 53; 29.03 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3776.747
+
+Candidate 5; seed 54; 29.04 s
+Route: [0, 1, 14, 7, 4, 10, 12, 16, 17, 8, 18, 19, 15, 2, 11, 3, 6, 9, 9, 13, 0], Objective: 3833.575
+
+Candidate 6; seed 55; 28.99 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3696.444
+
+Candidate 7; seed 56; 28.60 s
+Route: [0, 1, 14, 7, 4, 10, 12, 16, 17, 8, 18, 19, 15, 2, 11, 3, 6, 5, 9, 13, 0], Objective: 3812.770
+
+Candidate 8; seed 57; 29.13 s
+Route: [0, 13, 9, 5, 6, 3, 11, 2, 15, 19, 18, 8, 17, 16, 12, 10, 4, 7, 1, 14, 0], Objective: 3740.440
+
+tsp20-validation-00002
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [114, 369], neighbors: [4: 156.3, 9: 159.9];
+Node 1, coordinates: [650, 935], neighbors: [11: 71.8, 7: 233.8];
+Node 2, coordinates: [388, 905], neighbors: [11: 193.3, 1: 263.7];
+Node 3, coordinates: [67, 151], neighbors: [10: 72.3, 4: 110.1];
+Node 4, coordinates: [15, 248], neighbors: [3: 110.1, 9: 145.8];
+Node 5, coordinates: [979, 535], neighbors: [8: 189.3, 18: 210.3];
+Node 6, coordinates: [498, 412], neighbors: [19: 153.2, 13: 161.8];
+Node 7, coordinates: [877, 879], neighbors: [1: 233.8, 11: 298.2];
+Node 8, coordinates: [797, 483], neighbors: [19: 166.0, 5: 189.3];
+Node 9, coordinates: [157, 215], neighbors: [3: 110.4, 4: 145.8];
+Node 10, coordinates: [60, 79], neighbors: [3: 72.3, 9: 167.0];
+Node 11, coordinates: [581, 915], neighbors: [1: 71.8, 2: 193.3];
+Node 12, coordinates: [938, 182], neighbors: [18: 146.1, 15: 169.8];
+Node 13, coordinates: [463, 570], neighbors: [6: 161.8, 19: 250.8];
+Node 14, coordinates: [392, 69], neighbors: [9: 276.7, 16: 306.8];
+Node 15, coordinates: [954, 13], neighbors: [12: 169.8, 16: 258.2];
+Node 16, coordinates: [698, 47], neighbors: [15: 258.2, 12: 275.4];
+Node 17, coordinates: [56, 622], neighbors: [0: 259.6, 4: 376.2];
+Node 18, coordinates: [942, 328], neighbors: [12: 146.1, 5: 210.3];
+Node 19, coordinates: [651, 404], neighbors: [6: 153.2, 8: 166.0];
+
+Candidate 1; seed 58; 29.00 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4277.774
+
+Candidate 2; seed 59; 28.95 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4230.839
+
+Candidate 3; seed 60; 28.53 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4100.928
+
+Candidate 4; seed 61; 29.12 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4355.068
+
+Candidate 5; seed 62; 28.94 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4300.332
+
+Candidate 6; seed 63; 28.89 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4239.589
+
+Candidate 7; seed 64; 28.45 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4197.967
+
+Candidate 8; seed 65; 29.05 s
+Route: [0, 4, 3, 10, 9, 14, 16, 15, 12, 18, 5, 8, 19, 6, 13, 7, 1, 11, 2, 17, 0], Objective: 4239.075
+
+tsp20-validation-00003
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [569, 36], neighbors: [18: 141.0, 15: 150.7];
+Node 1, coordinates: [7, 401], neighbors: [7: 113.2, 10: 223.1];
+Node 2, coordinates: [582, 802], neighbors: [12: 207.9, 16: 254.8];
+Node 3, coordinates: [58, 61], neighbors: [1: 343.8, 5: 401.9];
+Node 4, coordinates: [130, 973], neighbors: [8: 211.3, 17: 346.3];
+Node 5, coordinates: [448, 158], neighbors: [18: 93.4, 0: 171.8];
+Node 6, coordinates: [367, 602], neighbors: [12: 93.6, 17: 113.2];
+Node 7, coordinates: [13, 514], neighbors: [10: 110.0, 1: 113.2];
+Node 8, coordinates: [247, 797], neighbors: [17: 143.4, 4: 211.3];
+Node 9, coordinates: [850, 667], neighbors: [14: 220.5, 16: 275.1];
+Node 10, coordinates: [12, 624], neighbors: [7: 110.0, 1: 223.1];
+Node 11, coordinates: [980, 265], neighbors: [15: 358.3, 13: 405.8];
+Node 12, coordinates: [453, 639], neighbors: [6: 93.6, 16: 174.6];
+Node 13, coordinates: [597, 399], neighbors: [19: 72.0, 16: 149.1];
+Node 14, coordinates: [876, 886], neighbors: [9: 220.5, 2: 305.8];
+Node 15, coordinates: [634, 172], neighbors: [18: 94.0, 0: 150.7];
+Node 16, coordinates: [602, 548], neighbors: [13: 149.1, 19: 165.9];
+Node 17, coordinates: [267, 655], neighbors: [6: 113.2, 8: 143.4];
+Node 18, coordinates: [540, 174], neighbors: [5: 93.4, 15: 94.0];
+Node 19, coordinates: [525, 401], neighbors: [13: 72.0, 16: 165.9];
+
+Candidate 1; seed 66; 29.12 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 19, 11, 15, 0], Objective: 4219.058
+
+Candidate 2; seed 67; 29.09 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 19, 19, 11, 15, 0], Objective: 4231.301
+
+Candidate 3; seed 68; 28.64 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 19, 11, 15, 0], Objective: 4334.625
+
+Candidate 4; seed 69; 29.15 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 19, 11, 15, 0], Objective: 4387.737
+
+Candidate 5; seed 70; 29.14 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 19, 13, 11, 15, 0], Objective: 4455.951
+
+Candidate 6; seed 71; 29.15 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 19, 11, 15, 0], Objective: 4306.952
+
+Candidate 7; seed 72; 28.75 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 19, 11, 15, 0], Objective: 4431.929
+
+Candidate 8; seed 73; 29.10 s
+Route: [0, 18, 5, 3, 1, 7, 10, 4, 8, 17, 6, 12, 2, 14, 9, 16, 13, 13, 11, 15, 0], Objective: 4313.700
+
+tsp20-validation-00004
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [884, 728], neighbors: [8: 130.0, 5: 259.4];
+Node 1, coordinates: [678, 928], neighbors: [5: 31.0, 3: 96.2];
+Node 2, coordinates: [418, 199], neighbors: [6: 47.5, 7: 121.0];
+Node 3, coordinates: [608, 862], neighbors: [5: 89.1, 1: 96.2];
+Node 4, coordinates: [791, 62], neighbors: [19: 75.5, 14: 257.1];
+Node 5, coordinates: [689, 899], neighbors: [1: 31.0, 3: 89.1];
+Node 6, coordinates: [387, 235], neighbors: [2: 47.5, 7: 74.2];
+Node 7, coordinates: [353, 301], neighbors: [6: 74.2, 11: 81.4];
+Node 8, coordinates: [754, 726], neighbors: [0: 130.0, 5: 184.8];
+Node 9, coordinates: [369, 869], neighbors: [12: 213.1, 3: 239.1];
+Node 10, coordinates: [105, 901], neighbors: [12: 63.0, 17: 251.2];
+Node 11, coordinates: [281, 263], neighbors: [7: 81.4, 6: 109.6];
+Node 12, coordinates: [156, 864], neighbors: [10: 63.0, 9: 213.1];
+Node 13, coordinates: [178, 305], neighbors: [18: 89.7, 11: 111.2];
+Node 14, coordinates: [599, 233], neighbors: [15: 142.9, 2: 184.2];
+Node 15, coordinates: [646, 368], neighbors: [14: 142.9, 2: 283.8];
+Node 16, coordinates: [88, 454], neighbors: [13: 174.1, 18: 183.1];
+Node 17, coordinates: [19, 665], neighbors: [16: 222.0, 12: 241.6];
+Node 18, coordinates: [95, 271], neighbors: [13: 89.7, 16: 183.1];
+Node 19, coordinates: [865, 77], neighbors: [4: 75.5, 14: 308.4];
+
+Candidate 1; seed 74; 28.93 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3423.973
+
+Candidate 2; seed 75; 28.97 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3404.434
+
+Candidate 3; seed 76; 28.41 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3480.992
+
+Candidate 4; seed 77; 28.94 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3416.717
+
+Candidate 5; seed 78; 28.99 s
+Route: [0, 8, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 0], Objective: 3403.310
+
+Candidate 6; seed 79; 28.98 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3546.378
+
+Candidate 7; seed 80; 28.44 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3514.519
+
+Candidate 8; seed 81; 28.98 s
+Route: [0, 5, 1, 3, 9, 12, 10, 17, 16, 18, 13, 11, 7, 6, 2, 14, 4, 19, 15, 8, 0], Objective: 3490.290
+
+tsp20-validation-00005
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [899, 635], neighbors: [6: 129.4, 19: 195.2];
+Node 1, coordinates: [725, 311], neighbors: [3: 197.8, 5: 205.2];
+Node 2, coordinates: [389, 680], neighbors: [13: 128.2, 14: 135.5];
+Node 3, coordinates: [655, 496], neighbors: [19: 88.5, 10: 131.5];
+Node 4, coordinates: [420, 501], neighbors: [10: 114.8, 14: 119.0];
+Node 5, coordinates: [865, 161], neighbors: [1: 205.2, 3: 395.4];
+Node 6, coordinates: [786, 698], neighbors: [0: 129.4, 19: 157.1];
+Node 7, coordinates: [743, 873], neighbors: [12: 85.5, 15: 148.0];
+Node 8, coordinates: [88, 836], neighbors: [9: 118.7, 13: 316.4];
+Node 9, coordinates: [135, 727], neighbors: [8: 118.7, 13: 205.9];
+Node 10, coordinates: [528, 462], neighbors: [4: 114.8, 3: 131.5];
+Node 11, coordinates: [153, 425], neighbors: [16: 193.9, 14: 216.5];
+Node 12, coordinates: [702, 948], neighbors: [7: 85.5, 15: 160.5];
+Node 13, coordinates: [293, 595], neighbors: [14: 40.5, 2: 128.2];
+Node 14, coordinates: [319, 564], neighbors: [13: 40.5, 4: 119.0];
+Node 15, coordinates: [862, 961], neighbors: [7: 148.0, 12: 160.5];
+Node 16, coordinates: [95, 240], neighbors: [17: 75.9, 11: 193.9];
+Node 17, coordinates: [112, 166], neighbors: [16: 75.9, 11: 262.2];
+Node 18, coordinates: [442, 195], neighbors: [10: 280.5, 1: 305.9];
+Node 19, coordinates: [721, 555], neighbors: [3: 88.5, 6: 157.1];
+
+Candidate 1; seed 82; 29.97 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3859.133
+
+Candidate 2; seed 83; 29.98 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3888.078
+
+Candidate 3; seed 84; 29.71 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3870.426
+
+Candidate 4; seed 85; 30.03 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3980.946
+
+Candidate 5; seed 86; 29.99 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3892.639
+
+Candidate 6; seed 87; 30.00 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3845.930
+
+Candidate 7; seed 88; 29.72 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3972.410
+
+Candidate 8; seed 89; 30.04 s
+Route: [0, 6, 15, 7, 12, 2, 8, 9, 13, 14, 4, 11, 16, 17, 18, 5, 1, 10, 3, 19, 0], Objective: 3889.895
+
+tsp20-validation-00006
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [934, 422], neighbors: [2: 98.8, 10: 99.8];
+Node 1, coordinates: [685, 406], neighbors: [11: 127.6, 4: 140.9];
+Node 2, coordinates: [837, 403], neighbors: [4: 75.4, 0: 98.8];
+Node 3, coordinates: [856, 245], neighbors: [17: 108.2, 11: 110.7];
+Node 4, coordinates: [809, 473], neighbors: [2: 75.4, 0: 135.0];
+Node 5, coordinates: [191, 299], neighbors: [15: 106.0, 8: 127.4];
+Node 6, coordinates: [638, 776], neighbors: [14: 180.4, 19: 236.2];
+Node 7, coordinates: [27, 972], neighbors: [19: 406.2, 14: 534.1];
+Node 8, coordinates: [151, 420], neighbors: [15: 100.9, 5: 127.4];
+Node 9, coordinates: [268, 6], neighbors: [12: 146.0, 5: 302.9];
+Node 10, coordinates: [975, 513], neighbors: [0: 99.8, 4: 170.8];
+Node 11, coordinates: [763, 305], neighbors: [3: 110.7, 2: 122.8];
+Node 12, coordinates: [132, 59], neighbors: [9: 146.0, 5: 247.1];
+Node 13, coordinates: [838, 647], neighbors: [4: 176.4, 10: 191.6];
+Node 14, coordinates: [480, 689], neighbors: [19: 161.4, 6: 180.4];
+Node 15, coordinates: [247, 389], neighbors: [8: 100.9, 5: 106.0];
+Node 16, coordinates: [845, 107], neighbors: [17: 109.0, 3: 138.4];
+Node 17, coordinates: [934, 170], neighbors: [3: 108.2, 16: 109.0];
+Node 18, coordinates: [553, 472], neighbors: [1: 147.6, 14: 228.9];
+Node 19, coordinates: [409, 834], neighbors: [14: 161.4, 6: 236.2];
+
+Candidate 1; seed 90; 29.18 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3984.724
+
+Candidate 2; seed 91; 29.21 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 4951.495
+
+Candidate 3; seed 92; 28.75 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3932.467
+
+Candidate 4; seed 93; 29.14 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 4018.681
+
+Candidate 5; seed 94; 29.16 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3077.699
+
+Candidate 6; seed 95; 29.19 s
+Route: [0, 2, 4, 1, 11, 3, 17, 16, 9, 18, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3941.097
+
+Candidate 7; seed 96; 28.77 s
+Route: [0, 2, 4, 18, 1, 11, 3, 17, 16, 9, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3904.198
+
+Candidate 8; seed 97; 29.19 s
+Route: [0, 2, 4, 1, 11, 3, 17, 16, 9, 18, 12, 5, 15, 8, 7, 19, 14, 6, 13, 10, 0], Objective: 3175.548
+
+tsp20-validation-00007
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [318, 11], neighbors: [11: 107.7, 10: 207.5];
+Node 1, coordinates: [988, 481], neighbors: [13: 139.7, 14: 245.3];
+Node 2, coordinates: [654, 289], neighbors: [14: 192.2, 6: 232.1];
+Node 3, coordinates: [304, 563], neighbors: [9: 204.8, 18: 216.6];
+Node 4, coordinates: [518, 774], neighbors: [12: 104.3, 16: 155.6];
+Node 5, coordinates: [915, 758], neighbors: [13: 253.0, 1: 286.5];
+Node 6, coordinates: [424, 320], neighbors: [10: 135.2, 2: 232.1];
+Node 7, coordinates: [32, 282], neighbors: [8: 96.0, 19: 159.2];
+Node 8, coordinates: [125, 306], neighbors: [19: 82.6, 15: 90.1];
+Node 9, coordinates: [102, 529], neighbors: [15: 147.8, 19: 155.3];
+Node 10, coordinates: [431, 185], neighbors: [6: 135.2, 11: 162.1];
+Node 11, coordinates: [425, 23], neighbors: [0: 107.7, 10: 162.1];
+Node 12, coordinates: [510, 878], neighbors: [4: 104.3, 16: 128.5];
+Node 13, coordinates: [852, 513], neighbors: [1: 139.7, 14: 232.1];
+Node 14, coordinates: [846, 281], neighbors: [2: 192.2, 13: 232.1];
+Node 15, coordinates: [155, 391], neighbors: [19: 8.0, 8: 90.1];
+Node 16, coordinates: [384, 853], neighbors: [12: 128.5, 4: 155.6];
+Node 17, coordinates: [870, 4], neighbors: [14: 278.0, 2: 357.6];
+Node 18, coordinates: [171, 734], neighbors: [9: 216.3, 3: 216.6];
+Node 19, coordinates: [155, 383], neighbors: [15: 8.0, 8: 82.6];
+
+Candidate 1; seed 98; 29.20 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3991.731
+
+Candidate 2; seed 99; 29.27 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3990.364
+
+Candidate 3; seed 100; 28.77 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3789.480
+
+Candidate 4; seed 101; 29.26 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3981.835
+
+Candidate 5; seed 102; 29.05 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3993.886
+
+Candidate 6; seed 103; 29.27 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 4895.237
+
+Candidate 7; seed 104; 28.71 s
+Route: [0, 7, 8, 19, 15, 9, 3, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3891.070
+
+Candidate 8; seed 105; 29.29 s
+Route: [0, 7, 8, 19, 15, 9, 9, 18, 16, 12, 4, 5, 13, 1, 14, 17, 2, 6, 10, 11, 0], Objective: 3894.727
+
+tsp20-validation-00008
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [543, 89], neighbors: [8: 179.1, 1: 186.7];
+Node 1, coordinates: [678, 218], neighbors: [0: 186.7, 11: 199.0];
+Node 2, coordinates: [276, 802], neighbors: [16: 47.0, 9: 55.2];
+Node 3, coordinates: [977, 296], neighbors: [1: 309.0, 11: 323.5];
+Node 4, coordinates: [136, 516], neighbors: [16: 284.1, 9: 314.2];
+Node 5, coordinates: [495, 298], neighbors: [18: 120.0, 15: 198.3];
+Node 6, coordinates: [301, 106], neighbors: [8: 67.9, 15: 78.0];
+Node 7, coordinates: [272, 914], neighbors: [2: 112.1, 16: 136.7];
+Node 8, coordinates: [367, 122], neighbors: [15: 57.2, 6: 67.9];
+Node 9, coordinates: [321, 770], neighbors: [2: 55.2, 16: 89.0];
+Node 10, coordinates: [241, 0], neighbors: [6: 121.8, 17: 152.0];
+Node 11, coordinates: [677, 417], neighbors: [1: 199.0, 5: 217.5];
+Node 12, coordinates: [397, 835], neighbors: [9: 100.0, 2: 125.4];
+Node 13, coordinates: [752, 24], neighbors: [1: 207.6, 0: 218.9];
+Node 14, coordinates: [14, 218], neighbors: [17: 164.7, 6: 308.1];
+Node 15, coordinates: [341, 173], neighbors: [8: 57.2, 6: 78.0];
+Node 16, coordinates: [233, 783], neighbors: [2: 47.0, 9: 89.0];
+Node 17, coordinates: [120, 92], neighbors: [10: 152.0, 14: 164.7];
+Node 18, coordinates: [437, 403], neighbors: [5: 120.0, 11: 240.4];
+Node 19, coordinates: [757, 798], neighbors: [12: 361.9, 11: 389.3];
+
+Candidate 1; seed 106; 29.00 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 2, 9, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3970.699
+
+Candidate 2; seed 107; 29.13 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 2, 9, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3948.339
+
+Candidate 3; seed 108; 28.47 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 2, 2, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3965.078
+
+Candidate 4; seed 109; 29.05 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 2, 9, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3874.170
+
+Candidate 5; seed 110; 29.03 s
+Route: [0, 13, 3, 1, 5, 18, 11, 19, 12, 7, 2, 7, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3899.641
+
+Candidate 6; seed 111; 29.11 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 9, 2, 2, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3149.277
+
+Candidate 7; seed 112; 28.57 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 9, 2, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3874.687
+
+Candidate 8; seed 113; 29.06 s
+Route: [0, 13, 3, 1, 11, 5, 18, 19, 12, 7, 2, 7, 16, 4, 14, 17, 10, 6, 15, 8, 0], Objective: 3899.372
+
+tsp20-validation-00009
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [130, 167], neighbors: [10: 149.4, 18: 153.1];
+Node 1, coordinates: [64, 887], neighbors: [14: 284.9, 12: 360.3];
+Node 2, coordinates: [199, 542], neighbors: [12: 58.0, 7: 194.5];
+Node 3, coordinates: [850, 30], neighbors: [17: 176.6, 9: 293.0];
+Node 4, coordinates: [714, 855], neighbors: [5: 44.1, 15: 81.3];
+Node 5, coordinates: [677, 831], neighbors: [4: 44.1, 15: 99.4];
+Node 6, coordinates: [883, 646], neighbors: [16: 115.3, 13: 135.1];
+Node 7, coordinates: [364, 439], neighbors: [19: 99.1, 12: 180.8];
+Node 8, coordinates: [612, 964], neighbors: [5: 148.0, 4: 149.3];
+Node 9, coordinates: [854, 323], neighbors: [17: 128.4, 3: 293.0];
+Node 10, coordinates: [200, 35], neighbors: [0: 149.4, 18: 165.4];
+Node 11, coordinates: [995, 937], neighbors: [16: 196.5, 15: 265.5];
+Node 12, coordinates: [246, 576], neighbors: [2: 58.0, 14: 166.1];
+Node 13, coordinates: [787, 741], neighbors: [15: 57.6, 6: 135.1];
+Node 14, coordinates: [303, 732], neighbors: [12: 166.1, 2: 216.6];
+Node 15, coordinates: [770, 796], neighbors: [13: 57.6, 4: 81.3];
+Node 16, coordinates: [926, 753], neighbors: [6: 115.3, 13: 139.5];
+Node 17, coordinates: [894, 201], neighbors: [9: 128.4, 3: 176.6];
+Node 18, coordinates: [35, 47], neighbors: [0: 153.1, 10: 165.4];
+Node 19, coordinates: [462, 454], neighbors: [7: 99.1, 12: 248.1];
+
+Candidate 1; seed 114; 29.20 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 4, 5, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4018.526
+
+Candidate 2; seed 115; 29.22 s
+Route: [0, 10, 3, 17, 9, 6, 16, 11, 13, 15, 5, 4, 8, 1, 14, 12, 2, 19, 7, 18, 0], Objective: 4183.726
+
+Candidate 3; seed 116; 28.78 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 4, 4, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4144.083
+
+Candidate 4; seed 117; 29.20 s
+Route: [0, 10, 3, 17, 9, 6, 16, 11, 13, 15, 5, 4, 8, 1, 14, 12, 2, 19, 7, 18, 0], Objective: 4025.710
+
+Candidate 5; seed 118; 29.25 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 5, 5, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4106.349
+
+Candidate 6; seed 119; 29.25 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 4, 4, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4002.759
+
+Candidate 7; seed 120; 28.63 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 4, 5, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4072.775
+
+Candidate 8; seed 121; 29.28 s
+Route: [0, 7, 19, 2, 12, 14, 1, 8, 5, 4, 15, 13, 11, 16, 6, 9, 17, 3, 10, 18, 0], Objective: 4094.148
+
+tsp20-validation-00010
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [604, 517], neighbors: [11: 81.8, 16: 256.8];
+Node 1, coordinates: [196, 692], neighbors: [9: 48.8, 15: 152.7];
+Node 2, coordinates: [800, 847], neighbors: [8: 75.0, 16: 142.6];
+Node 3, coordinates: [935, 155], neighbors: [10: 128.7, 13: 268.4];
+Node 4, coordinates: [284, 100], neighbors: [14: 133.2, 12: 231.5];
+Node 5, coordinates: [640, 109], neighbors: [13: 114.9, 3: 298.6];
+Node 6, coordinates: [968, 564], neighbors: [7: 28.6, 10: 281.7];
+Node 7, coordinates: [985, 587], neighbors: [6: 28.6, 10: 306.2];
+Node 8, coordinates: [845, 907], neighbors: [2: 75.0, 16: 215.8];
+Node 9, coordinates: [239, 669], neighbors: [1: 48.8, 15: 172.9];
+Node 10, coordinates: [948, 283], neighbors: [3: 128.7, 6: 281.7];
+Node 11, coordinates: [673, 473], neighbors: [0: 81.8, 16: 287.3];
+Node 12, coordinates: [82, 213], neighbors: [14: 100.3, 17: 196.3];
+Node 13, coordinates: [706, 15], neighbors: [5: 114.9, 3: 268.4];
+Node 14, coordinates: [176, 178], neighbors: [12: 100.3, 4: 133.2];
+Node 15, coordinates: [89, 583], neighbors: [1: 152.7, 9: 172.9];
+Node 16, coordinates: [687, 760], neighbors: [2: 142.6, 8: 215.8];
+Node 17, coordinates: [52, 19], neighbors: [12: 196.3, 14: 201.6];
+Node 18, coordinates: [321, 957], neighbors: [1: 293.0, 9: 299.4];
+Node 19, coordinates: [23, 862], neighbors: [1: 242.5, 15: 286.7];
+
+Candidate 1; seed 122; 29.11 s
+Route: [0, 11, 9, 18, 19, 1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4377.970
+
+Candidate 2; seed 123; 29.15 s
+Route: [0, 11, 9, 18, 1,  1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4370.717
+
+Candidate 3; seed 124; 28.69 s
+Route: [0, 11, 9, 18, 19, 1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4159.480
+
+Candidate 4; seed 125; 29.20 s
+Route: [0, 11, 9, 18, 19, 9, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4384.902
+
+Candidate 5; seed 126; 29.12 s
+Route: [0, 11, 9, 18, 19, 1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4274.050
+
+Candidate 6; seed 127; 29.16 s
+Route: [0, 11, 9, 1, 18, 19, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4323.644
+
+Candidate 7; seed 128; 28.68 s
+Route: [0, 11, 9, 18, 19, 1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4247.179
+
+Candidate 8; seed 129; 29.14 s
+Route: [0, 11, 9, 18, 19, 1, 15, 12, 17, 14, 4, 5, 13, 3, 10, 6, 7, 8, 2, 16, 0], Objective: 4248.821
+
+tsp20-validation-00011
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [982, 806], neighbors: [13: 77.9, 19: 124.7];
+Node 1, coordinates: [351, 351], neighbors: [8: 134.1, 15: 274.0];
+Node 2, coordinates: [77, 597], neighbors: [4: 222.3, 11: 284.5];
+Node 3, coordinates: [781, 696], neighbors: [5: 45.8, 17: 107.2];
+Node 4, coordinates: [189, 789], neighbors: [10: 146.7, 11: 162.8];
+Node 5, coordinates: [820, 672], neighbors: [3: 45.8, 17: 110.2];
+Node 6, coordinates: [852, 344], neighbors: [7: 310.4, 5: 329.6];
+Node 7, coordinates: [994, 68], neighbors: [6: 310.4, 12: 516.4];
+Node 8, coordinates: [221, 318], neighbors: [1: 134.1, 2: 314.0];
+Node 9, coordinates: [737, 970], neighbors: [17: 222.8, 19: 230.2];
+Node 10, coordinates: [255, 920], neighbors: [4: 146.7, 11: 218.2];
+Node 11, coordinates: [335, 717], neighbors: [15: 122.2, 14: 125.3];
+Node 12, coordinates: [478, 47], neighbors: [1: 329.5, 8: 373.5];
+Node 13, coordinates: [961, 881], neighbors: [0: 77.9, 19: 145.0];
+Node 14, coordinates: [445, 657], neighbors: [15: 53.0, 18: 64.3];
+Node 15, coordinates: [408, 619], neighbors: [14: 53.0, 18: 114.9];
+Node 16, coordinates: [479, 856], neighbors: [18: 139.4, 11: 200.1];
+Node 17, coordinates: [850, 778], neighbors: [19: 11.2, 3: 107.2];
+Node 18, coordinates: [468, 717], neighbors: [14: 64.3, 15: 114.9];
+Node 19, coordinates: [861, 776], neighbors: [17: 11.2, 5: 111.8];
+
+Candidate 1; seed 130; 29.18 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4941.607
+
+Candidate 2; seed 131; 29.13 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4959.209
+
+Candidate 3; seed 132; 28.75 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4019.149
+
+Candidate 4; seed 133; 29.14 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4131.461
+
+Candidate 5; seed 134; 29.18 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 3959.743
+
+Candidate 6; seed 135; 29.25 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4840.529
+
+Candidate 7; seed 136; 28.78 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4974.426
+
+Candidate 8; seed 137; 29.22 s
+Route: [0, 5, 6, 7, 12, 1, 8, 2, 4, 10, 11, 15, 14, 18, 16, 9, 3, 17, 19, 13, 0], Objective: 4918.470
+
+tsp20-validation-00012
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [52, 926], neighbors: [6: 50.0, 16: 53.2];
+Node 1, coordinates: [568, 816], neighbors: [15: 124.8, 4: 150.5];
+Node 2, coordinates: [778, 106], neighbors: [13: 436.9, 11: 541.9];
+Node 3, coordinates: [268, 476], neighbors: [14: 79.1, 13: 195.9];
+Node 4, coordinates: [711, 863], neighbors: [9: 89.5, 17: 125.4];
+Node 5, coordinates: [9, 142], neighbors: [19: 85.0, 18: 165.5];
+Node 6, coordinates: [42, 877], neighbors: [0: 50.0, 16: 51.9];
+Node 7, coordinates: [153, 974], neighbors: [16: 103.0, 0: 111.8];
+Node 8, coordinates: [165, 773], neighbors: [16: 138.8, 6: 161.1];
+Node 9, coordinates: [680, 947], neighbors: [4: 89.5, 1: 172.4];
+Node 10, coordinates: [182, 223], neighbors: [19: 186.3, 5: 191.0];
+Node 11, coordinates: [722, 645], neighbors: [15: 108.2, 17: 131.5];
+Node 12, coordinates: [480, 594], neighbors: [15: 196.4, 1: 238.8];
+Node 13, coordinates: [409, 340], neighbors: [3: 195.9, 14: 245.1];
+Node 14, coordinates: [192, 454], neighbors: [3: 79.1, 10: 231.2];
+Node 15, coordinates: [637, 712], neighbors: [11: 108.2, 1: 124.8];
+Node 16, coordinates: [92, 891], neighbors: [6: 51.9, 0: 53.2];
+Node 17, coordinates: [784, 761], neighbors: [4: 125.4, 11: 131.5];
+Node 18, coordinates: [124, 23], neighbors: [19: 80.7, 5: 165.5];
+Node 19, coordinates: [65, 78], neighbors: [18: 80.7, 5: 85.0];
+
+Candidate 1; seed 138; 29.09 s
+Route: [0, 6, 8, 14, 3, 10, 5, 19, 18, 13, 2, 12, 15, 11, 17, 4, 9, 1, 7, 16, 0], Objective: 3964.726
+
+Candidate 2; seed 139; 29.09 s
+Route: [0, 6, 8, 14, 3, 10, 5, 19, 18, 2, 13, 12, 15, 11, 17, 4, 9, 1, 7, 16, 0], Objective: 3897.543
+
+Candidate 3; seed 140; 28.59 s
+Route: [0, 6, 8, 14, 3, 10, 5, 19, 18, 13, 2, 12, 15, 11, 17, 4, 9, 1, 7, 16, 0], Objective: 3050.539
+
+Candidate 4; seed 141; 29.11 s
+Route: [0, 6, 16, 8, 3, 14, 5, 19, 18, 10, 13, 2, 11, 15, 17, 4, 9, 1, 12, 7, 0], Objective: 4101.099
+
+Candidate 5; seed 142; 29.05 s
+Route: [0, 6, 16, 7, 8, 3, 14, 10, 5, 19, 18, 13, 2, 11, 15, 17, 4, 9, 1, 12, 0], Objective: 4027.827
+
+Candidate 6; seed 143; 29.01 s
+Route: [0, 6, 16, 7, 8, 14, 18, 9, 19, 10, 13, 2, 11, 15, 17, 4, 9, 1, 12, 7, 0], Objective: 4079.045
+
+Candidate 7; seed 144; 28.63 s
+Route: [0, 6, 8, 14, 5, 19, 5,, 3, 10, 13, 2, 12, 15, 11, 17, 4, 9, 1, 7, 16, 0], Objective: 3853.970
+
+Candidate 8; seed 145; 29.03 s
+Route: [0, 6, 8, 14, 3, 10, 5, 19, 18, 13, 2, 12, 15, 11, 17, 4, 9, 1, 7, 16, 0], Objective: 3882.926
+
+tsp20-validation-00013
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [379, 176], neighbors: [7: 175.1, 14: 241.5];
+Node 1, coordinates: [872, 255], neighbors: [4: 133.9, 16: 180.9];
+Node 2, coordinates: [426, 418], neighbors: [8: 21.4, 9: 241.1];
+Node 3, coordinates: [705, 669], neighbors: [12: 232.3, 19: 237.9];
+Node 4, coordinates: [824, 130], neighbors: [17: 89.1, 1: 133.9];
+Node 5, coordinates: [202, 566], neighbors: [10: 164.8, 15: 217.7];
+Node 6, coordinates: [967, 865], neighbors: [19: 142.4, 13: 208.4];
+Node 7, coordinates: [528, 84], neighbors: [0: 175.1, 9: 268.3];
+Node 8, coordinates: [443, 431], neighbors: [2: 21.4, 9: 231.2];
+Node 9, coordinates: [648, 324], neighbors: [8: 231.2, 1: 234.4];
+Node 10, coordinates: [62, 653], neighbors: [15: 161.6, 5: 164.8];
+Node 11, coordinates: [144, 969], neighbors: [15: 189.9, 10: 326.5];
+Node 12, coordinates: [516, 804], neighbors: [18: 216.9, 3: 232.3];
+Node 13, coordinates: [782, 961], neighbors: [18: 170.8, 6: 208.4];
+Node 14, coordinates: [164, 286], neighbors: [0: 241.5, 5: 282.6];
+Node 15, coordinates: [162, 780], neighbors: [10: 161.6, 11: 189.9];
+Node 16, coordinates: [960, 97], neighbors: [4: 139.9, 17: 151.7];
+Node 17, coordinates: [819, 41], neighbors: [4: 89.1, 16: 151.7];
+Node 18, coordinates: [615, 997], neighbors: [13: 170.8, 12: 216.9];
+Node 19, coordinates: [936, 726], neighbors: [6: 142.4, 3: 237.9];
+
+Candidate 1; seed 146; 29.17 s
+Route: [0, 7, 17, 16, 4, 1, 9, 8, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4225.994
+
+Candidate 2; seed 147; 29.22 s
+Route: [0, 7, 17, 16, 4, 1, 9, 2, 8, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4105.934
+
+Candidate 3; seed 148; 28.83 s
+Route: [0, 7, 17, 16, 4, 1, 9, 8, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4188.534
+
+Candidate 4; seed 149; 29.18 s
+Route: [0, 7, 17, 16, 4, 1, 9, 2, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4171.933
+
+Candidate 5; seed 150; 29.19 s
+Route: [0, 7, 17, 16, 4, 1, 9, 2, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4227.129
+
+Candidate 6; seed 151; 29.24 s
+Route: [0, 7, 17, 16, 4, 1, 9, 8, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4162.427
+
+Candidate 7; seed 152; 28.76 s
+Route: [0, 7, 17, 16, 4, 1, 9, 8, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4000.909
+
+Candidate 8; seed 153; 29.16 s
+Route: [0, 7, 17, 16, 4, 1, 9, 2, 2, 3, 19, 6, 13, 18, 12, 11, 15, 10, 5, 14, 0], Objective: 4160.402
+
+tsp20-validation-00014
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [800, 447], neighbors: [5: 175.3, 9: 196.7];
+Node 1, coordinates: [577, 748], neighbors: [19: 188.4, 7: 191.4];
+Node 2, coordinates: [139, 584], neighbors: [8: 21.5, 4: 158.6];
+Node 3, coordinates: [459, 943], neighbors: [18: 48.1, 15: 180.7];
+Node 4, coordinates: [293, 546], neighbors: [6: 25.6, 10: 49.7];
+Node 5, coordinates: [733, 285], neighbors: [0: 175.3, 12: 297.9];
+Node 6, coordinates: [313, 530], neighbors: [10: 25.5, 4: 25.6];
+Node 7, coordinates: [742, 651], neighbors: [19: 70.2, 9: 166.2];
+Node 8, coordinates: [147, 564], neighbors: [2: 21.5, 4: 147.1];
+Node 9, coordinates: [904, 614], neighbors: [7: 166.2, 19: 175.2];
+Node 10, coordinates: [338, 525], neighbors: [6: 25.5, 4: 49.7];
+Node 11, coordinates: [364, 616], neighbors: [10: 94.6, 4: 99.7];
+Node 12, coordinates: [531, 504], neighbors: [13: 102.9, 10: 194.1];
+Node 13, coordinates: [452, 438], neighbors: [12: 102.9, 10: 143.4];
+Node 14, coordinates: [849, 998], neighbors: [17: 205.1, 19: 292.9];
+Node 15, coordinates: [299, 859], neighbors: [18: 135.0, 3: 180.7];
+Node 16, coordinates: [60, 352], neighbors: [8: 229.2, 2: 245.1];
+Node 17, coordinates: [991, 850], neighbors: [14: 205.1, 9: 251.5];
+Node 18, coordinates: [424, 910], neighbors: [3: 48.1, 15: 135.0];
+Node 19, coordinates: [763, 718], neighbors: [7: 70.2, 9: 175.2];
+
+Candidate 1; seed 154; 29.15 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3524.610
+
+Candidate 2; seed 155; 29.19 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3375.945
+
+Candidate 3; seed 156; 28.70 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3301.204
+
+Candidate 4; seed 157; 29.16 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3392.475
+
+Candidate 5; seed 158; 29.18 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3457.329
+
+Candidate 6; seed 159; 29.16 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3469.901
+
+Candidate 7; seed 160; 28.74 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3656.427
+
+Candidate 8; seed 161; 29.09 s
+Route: [0, 5, 12, 13, 10, 6, 4, 16, 8, 2, 11, 15, 18, 3, 1, 14, 17, 19, 7, 9, 0], Objective: 3444.817
+
+tsp20-validation-00015
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [755, 873], neighbors: [18: 49.6, 14: 146.2];
+Node 1, coordinates: [129, 617], neighbors: [11: 105.2, 2: 109.4];
+Node 2, coordinates: [35, 561], neighbors: [1: 109.4, 11: 208.6];
+Node 3, coordinates: [385, 330], neighbors: [19: 96.2, 13: 108.8];
+Node 4, coordinates: [816, 442], neighbors: [10: 181.2, 5: 197.8];
+Node 5, coordinates: [974, 561], neighbors: [4: 197.8, 10: 342.5];
+Node 6, coordinates: [106, 823], neighbors: [11: 141.2, 1: 207.3];
+Node 7, coordinates: [967, 967], neighbors: [8: 19.2, 0: 231.9];
+Node 8, coordinates: [955, 952], neighbors: [7: 19.2, 0: 215.0];
+Node 9, coordinates: [496, 767], neighbors: [12: 41.8, 17: 97.0];
+Node 10, coordinates: [640, 485], neighbors: [4: 181.2, 17: 284.9];
+Node 11, coordinates: [185, 706], neighbors: [1: 105.2, 6: 141.2];
+Node 12, coordinates: [456, 779], neighbors: [9: 41.8, 17: 137.6];
+Node 13, coordinates: [290, 277], neighbors: [3: 108.8, 19: 134.2];
+Node 14, coordinates: [609, 866], neighbors: [17: 101.3, 18: 140.8];
+Node 15, coordinates: [401, 66], neighbors: [19: 174.9, 13: 238.4];
+Node 16, coordinates: [320, 597], neighbors: [11: 173.5, 1: 192.0];
+Node 17, coordinates: [593, 766], neighbors: [9: 97.0, 14: 101.3];
+Node 18, coordinates: [739, 920], neighbors: [0: 49.6, 14: 140.8];
+Node 19, coordinates: [419, 240], neighbors: [3: 96.2, 13: 134.2];
+
+Candidate 1; seed 162; 29.23 s
+Route: [0, 8, 7, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3604.529
+
+Candidate 2; seed 163; 29.26 s
+Route: [0, 7, 8, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3670.471
+
+Candidate 3; seed 164; 28.84 s
+Route: [0, 7, 7, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3782.190
+
+Candidate 4; seed 165; 29.22 s
+Route: [0, 7, 8, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3773.249
+
+Candidate 5; seed 166; 29.17 s
+Route: [0, 8, 8, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3682.918
+
+Candidate 6; seed 167; 29.26 s
+Route: [0, 7, 8, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3734.283
+
+Candidate 7; seed 168; 28.85 s
+Route: [0, 8, 7, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3702.125
+
+Candidate 8; seed 169; 29.21 s
+Route: [0, 7, 7, 5, 4, 10, 3, 19, 15, 13, 2, 1, 6, 11, 16, 12, 9, 17, 14, 18, 0], Objective: 3546.990
+
+tsp20-validation-00016
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [564, 465], neighbors: [2: 102.2, 3: 156.2];
+Node 1, coordinates: [261, 772], neighbors: [16: 102.0, 11: 122.1];
+Node 2, coordinates: [658, 425], neighbors: [3: 84.0, 7: 100.4];
+Node 3, coordinates: [659, 341], neighbors: [2: 84.0, 0: 156.2];
+Node 4, coordinates: [662, 596], neighbors: [10: 42.2, 7: 117.6];
+Node 5, coordinates: [714, 806], neighbors: [10: 200.3, 4: 216.3];
+Node 6, coordinates: [807, 81], neighbors: [19: 216.3, 17: 258.1];
+Node 7, coordinates: [727, 498], neighbors: [2: 100.4, 10: 110.6];
+Node 8, coordinates: [442, 591], neighbors: [0: 175.4, 4: 220.1];
+Node 9, coordinates: [525, 219], neighbors: [18: 131.5, 3: 181.2];
+Node 10, coordinates: [703, 606], neighbors: [4: 42.2, 7: 110.6];
+Node 11, coordinates: [204, 664], neighbors: [1: 122.1, 16: 217.9];
+Node 12, coordinates: [50, 353], neighbors: [14: 302.7, 11: 347.0];
+Node 13, coordinates: [943, 864], neighbors: [5: 236.2, 10: 352.4];
+Node 14, coordinates: [140, 64], neighbors: [18: 283.6, 12: 302.7];
+Node 15, coordinates: [919, 476], neighbors: [17: 152.7, 7: 193.3];
+Node 16, coordinates: [262, 874], neighbors: [1: 102.0, 11: 217.9];
+Node 17, coordinates: [871, 331], neighbors: [19: 89.6, 15: 152.7];
+Node 18, coordinates: [403, 170], neighbors: [9: 131.5, 14: 283.6];
+Node 19, coordinates: [927, 261], neighbors: [17: 89.6, 15: 215.1];
+
+Candidate 1; seed 170; 29.22 s
+Route: [0, 3, 2, 7, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 1, 16, 4, 8, 0], Objective: 4903.975
+
+Candidate 2; seed 171; 29.23 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 4005.814
+
+Candidate 3; seed 172; 28.84 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 4911.496
+
+Candidate 4; seed 173; 29.20 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 4809.671
+
+Candidate 5; seed 174; 29.27 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 3052.984
+
+Candidate 6; seed 175; 29.27 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 4184.453
+
+Candidate 7; seed 176; 28.85 s
+Route: [0, 3, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 3092.449
+
+Candidate 8; seed 177; 29.27 s
+Route: [0, 2, 7, 4, 10, 5, 13, 15, 17, 19, 6, 3, 9, 18, 14, 12, 11, 16, 1, 8, 0], Objective: 4964.451
+
+tsp20-validation-00017
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [234, 890], neighbors: [10: 233.6, 19: 267.2];
+Node 1, coordinates: [720, 978], neighbors: [8: 205.2, 2: 303.7];
+Node 2, coordinates: [648, 683], neighbors: [8: 120.8, 9: 194.7];
+Node 3, coordinates: [855, 549], neighbors: [9: 178.4, 5: 210.3];
+Node 4, coordinates: [2, 598], neighbors: [19: 125.5, 14: 368.3];
+Node 5, coordinates: [878, 340], neighbors: [7: 109.8, 16: 144.5];
+Node 6, coordinates: [139, 243], neighbors: [18: 40.0, 14: 360.1];
+Node 7, coordinates: [973, 285], neighbors: [5: 109.8, 16: 173.5];
+Node 8, coordinates: [618, 800], neighbors: [2: 120.8, 1: 205.2];
+Node 9, coordinates: [686, 492], neighbors: [3: 178.4, 2: 194.7];
+Node 10, coordinates: [21, 986], neighbors: [0: 233.6, 19: 265.1];
+Node 11, coordinates: [967, 41], neighbors: [13: 76.4, 16: 225.2];
+Node 12, coordinates: [600, 183], neighbors: [17: 136.5, 15: 207.3];
+Node 13, coordinates: [891, 33], neighbors: [11: 76.4, 16: 190.9];
+Node 14, coordinates: [363, 525], neighbors: [9: 324.7, 2: 325.9];
+Node 15, coordinates: [499, 2], neighbors: [12: 207.3, 17: 327.5];
+Node 16, coordinates: [817, 209], neighbors: [17: 98.0, 5: 144.5];
+Node 17, coordinates: [724, 240], neighbors: [16: 98.0, 12: 136.5];
+Node 18, coordinates: [137, 203], neighbors: [6: 40.0, 14: 393.4];
+Node 19, coordinates: [27, 721], neighbors: [4: 125.5, 10: 265.1];
+
+Candidate 1; seed 178; 29.19 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4249.065
+
+Candidate 2; seed 179; 29.26 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4385.635
+
+Candidate 3; seed 180; 28.84 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4378.940
+
+Candidate 4; seed 181; 29.31 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4315.836
+
+Candidate 5; seed 182; 29.09 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4309.079
+
+Candidate 6; seed 183; 29.21 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4394.186
+
+Candidate 7; seed 184; 28.72 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4370.840
+
+Candidate 8; seed 185; 29.32 s
+Route: [0, 1, 8, 2, 9, 3, 5, 7, 11, 13, 16, 17, 12, 15, 18, 6, 14, 4, 19, 10, 0], Objective: 4309.555
+
+tsp20-validation-00018
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [68, 553], neighbors: [2: 92.2, 15: 139.0];
+Node 1, coordinates: [300, 148], neighbors: [10: 147.3, 5: 197.4];
+Node 2, coordinates: [128, 483], neighbors: [0: 92.2, 12: 215.4];
+Node 3, coordinates: [765, 585], neighbors: [9: 66.1, 18: 147.1];
+Node 4, coordinates: [709, 416], neighbors: [9: 112.0, 19: 118.1];
+Node 5, coordinates: [155, 14], neighbors: [7: 169.8, 1: 197.4];
+Node 6, coordinates: [220, 828], neighbors: [8: 148.0, 11: 190.1];
+Node 7, coordinates: [8, 99], neighbors: [5: 169.8, 10: 213.2];
+Node 8, coordinates: [219, 976], neighbors: [6: 148.0, 11: 276.5];
+Node 9, coordinates: [742, 523], neighbors: [3: 66.1, 19: 111.1];
+Node 10, coordinates: [177, 229], neighbors: [1: 147.3, 7: 213.2];
+Node 11, coordinates: [400, 767], neighbors: [6: 190.1, 8: 276.5];
+Node 12, coordinates: [80, 693], neighbors: [15: 14.0, 0: 140.5];
+Node 13, coordinates: [620, 527], neighbors: [16: 54.3, 17: 84.3];
+Node 14, coordinates: [708, 292], neighbors: [4: 124.0, 19: 193.0];
+Node 15, coordinates: [66, 692], neighbors: [12: 14.0, 0: 139.0];
+Node 16, coordinates: [608, 580], neighbors: [13: 54.3, 17: 127.9];
+Node 17, coordinates: [573, 457], neighbors: [13: 84.3, 16: 127.9];
+Node 18, coordinates: [850, 465], neighbors: [19: 32.4, 9: 122.6];
+Node 19, coordinates: [823, 447], neighbors: [18: 32.4, 9: 111.1];
+
+Candidate 1; seed 186; 29.03 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3121.660
+
+Candidate 2; seed 187; 29.14 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3285.982
+
+Candidate 3; seed 188; 28.54 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3384.418
+
+Candidate 4; seed 189; 29.13 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3363.866
+
+Candidate 5; seed 190; 29.07 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 9, 3, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3297.916
+
+Candidate 6; seed 191; 29.07 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3304.313
+
+Candidate 7; seed 192; 28.60 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 3, 9, 16, 13, 17, 11, 8, 6, 12, 15, 0], Objective: 3269.955
+
+Candidate 8; seed 193; 29.07 s
+Route: [0, 2, 10, 7, 5, 1, 14, 4, 19, 18, 9, 9, 13, 16, 17, 11, 8, 6, 12, 15, 0], Objective: 3390.667
+
+tsp20-validation-00019
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [423, 861], neighbors: [8: 24.0, 13: 164.5];
+Node 1, coordinates: [687, 424], neighbors: [10: 100.3, 6: 210.8];
+Node 2, coordinates: [989, 604], neighbors: [3: 110.0, 5: 168.8];
+Node 3, coordinates: [923, 516], neighbors: [2: 110.0, 5: 200.6];
+Node 4, coordinates: [499, 159], neighbors: [16: 169.3, 18: 210.1];
+Node 5, coordinates: [853, 704], neighbors: [2: 168.8, 3: 200.6];
+Node 6, coordinates: [868, 316], neighbors: [3: 207.4, 17: 210.0];
+Node 7, coordinates: [462, 497], neighbors: [10: 210.6, 1: 236.5];
+Node 8, coordinates: [422, 885], neighbors: [0: 24.0, 12: 153.8];
+Node 9, coordinates: [146, 409], neighbors: [15: 93.4, 14: 193.6];
+Node 10, coordinates: [671, 523], neighbors: [1: 100.3, 7: 210.6];
+Node 11, coordinates: [709, 933], neighbors: [5: 270.5, 8: 291.0];
+Node 12, coordinates: [290, 964], neighbors: [8: 153.8, 0: 168.2];
+Node 13, coordinates: [281, 778], neighbors: [0: 164.5, 8: 177.0];
+Node 14, coordinates: [252, 247], neighbors: [16: 109.5, 15: 119.0];
+Node 15, coordinates: [155, 316], neighbors: [9: 93.4, 14: 119.0];
+Node 16, coordinates: [361, 257], neighbors: [14: 109.5, 18: 165.3];
+Node 17, coordinates: [719, 168], neighbors: [6: 210.0, 4: 220.2];
+Node 18, coordinates: [296, 105], neighbors: [14: 148.7, 16: 165.3];
+Node 19, coordinates: [48, 819], neighbors: [13: 236.6, 12: 282.1];
+
+Candidate 1; seed 194; 29.97 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3519.644
+
+Candidate 2; seed 195; 30.08 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3754.033
+
+Candidate 3; seed 196; 29.73 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3707.341
+
+Candidate 4; seed 197; 30.13 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3839.936
+
+Candidate 5; seed 198; 29.96 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3757.433
+
+Candidate 6; seed 199; 30.05 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3832.926
+
+Candidate 7; seed 200; 29.70 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3778.136
+
+Candidate 8; seed 201; 30.09 s
+Route: [0, 8, 12, 11, 5, 2, 3, 10, 7, 1, 6, 17, 4, 18, 16, 14, 15, 9, 19, 13, 0], Objective: 3610.628
+
+tsp20-validation-00020
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [369, 578], neighbors: [11: 109.6, 5: 123.2];
+Node 1, coordinates: [170, 990], neighbors: [10: 156.5, 4: 169.6];
+Node 2, coordinates: [607, 466], neighbors: [8: 107.3, 14: 148.1];
+Node 3, coordinates: [624, 117], neighbors: [17: 30.4, 7: 277.0];
+Node 4, coordinates: [147, 822], neighbors: [10: 37.9, 12: 126.5];
+Node 5, coordinates: [262, 517], neighbors: [0: 123.2, 12: 204.2];
+Node 6, coordinates: [14, 269], neighbors: [5: 350.7, 16: 351.9];
+Node 7, coordinates: [381, 250], neighbors: [16: 164.3, 17: 269.4];
+Node 8, coordinates: [675, 549], neighbors: [14: 81.2, 2: 107.3];
+Node 9, coordinates: [806, 539], neighbors: [13: 104.9, 8: 131.4];
+Node 10, coordinates: [183, 834], neighbors: [4: 37.9, 12: 122.5];
+Node 11, coordinates: [380, 687], neighbors: [0: 109.6, 15: 119.9];
+Node 12, coordinates: [216, 716], neighbors: [10: 122.5, 4: 126.5];
+Node 13, coordinates: [866, 453], neighbors: [9: 104.9, 8: 213.8];
+Node 14, coordinates: [625, 613], neighbors: [18: 74.3, 8: 81.2];
+Node 15, coordinates: [343, 801], neighbors: [11: 119.9, 12: 152.8];
+Node 16, coordinates: [321, 97], neighbors: [7: 164.3, 17: 281.0];
+Node 17, coordinates: [602, 96], neighbors: [3: 30.4, 7: 269.4];
+Node 18, coordinates: [676, 667], neighbors: [14: 74.3, 8: 118.0];
+Node 19, coordinates: [914, 821], neighbors: [18: 283.5, 9: 302.0];
+
+Candidate 1; seed 202; 29.21 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3847.999
+
+Candidate 2; seed 203; 29.22 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3840.489
+
+Candidate 3; seed 204; 28.83 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3687.309
+
+Candidate 4; seed 205; 29.13 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3757.346
+
+Candidate 5; seed 206; 29.21 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3766.403
+
+Candidate 6; seed 207; 29.24 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3668.826
+
+Candidate 7; seed 208; 28.82 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3778.289
+
+Candidate 8; seed 209; 29.22 s
+Route: [0, 5, 6, 16, 7, 17, 3, 13, 9, 19, 18, 14, 8, 2, 12, 4, 10, 1, 15, 11, 0], Objective: 3765.483
+
+tsp20-validation-00021
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [641, 52], neighbors: [1: 50.4, 7: 60.9];
+Node 1, coordinates: [609, 13], neighbors: [0: 50.4, 7: 105.8];
+Node 2, coordinates: [842, 995], neighbors: [15: 231.1, 4: 355.9];
+Node 3, coordinates: [76, 439], neighbors: [5: 72.1, 9: 93.0];
+Node 4, coordinates: [805, 641], neighbors: [15: 212.2, 2: 355.9];
+Node 5, coordinates: [97, 370], neighbors: [3: 72.1, 13: 154.5];
+Node 6, coordinates: [393, 453], neighbors: [19: 28.0, 18: 147.3];
+Node 7, coordinates: [700, 67], neighbors: [0: 60.9, 1: 105.8];
+Node 8, coordinates: [666, 202], neighbors: [17: 117.6, 7: 139.2];
+Node 9, coordinates: [57, 530], neighbors: [3: 93.0, 5: 164.9];
+Node 10, coordinates: [32, 124], neighbors: [5: 254.4, 3: 318.1];
+Node 11, coordinates: [389, 917], neighbors: [12: 232.6, 16: 312.1];
+Node 12, coordinates: [224, 753], neighbors: [16: 146.2, 11: 232.6];
+Node 13, coordinates: [246, 411], neighbors: [19: 136.9, 18: 147.2];
+Node 14, coordinates: [803, 10], neighbors: [7: 117.7, 0: 167.4];
+Node 15, coordinates: [691, 820], neighbors: [4: 212.2, 2: 231.1];
+Node 16, coordinates: [93, 818], neighbors: [12: 146.2, 9: 290.2];
+Node 17, coordinates: [762, 270], neighbors: [8: 117.6, 7: 212.3];
+Node 18, coordinates: [354, 311], neighbors: [13: 147.2, 6: 147.3];
+Node 19, coordinates: [370, 469], neighbors: [6: 28.0, 13: 136.9];
+
+Candidate 1; seed 210; 28.96 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3864.284
+
+Candidate 2; seed 211; 28.93 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3868.922
+
+Candidate 3; seed 212; 28.42 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3895.961
+
+Candidate 4; seed 213; 28.98 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3850.434
+
+Candidate 5; seed 214; 28.98 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3740.135
+
+Candidate 6; seed 215; 28.96 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3767.446
+
+Candidate 7; seed 216; 28.47 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3991.260
+
+Candidate 8; seed 217; 28.97 s
+Route: [0, 1, 18, 6, 19, 13, 10, 5, 3, 9, 16, 12, 11, 2, 15, 4, 17, 8, 14, 7, 0], Objective: 3763.486
+
+tsp20-validation-00022
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [557, 147], neighbors: [5: 20.2, 11: 210.2];
+Node 1, coordinates: [64, 137], neighbors: [14: 154.4, 10: 335.0];
+Node 2, coordinates: [255, 966], neighbors: [19: 46.2, 8: 79.1];
+Node 3, coordinates: [720, 916], neighbors: [7: 184.2, 16: 361.7];
+Node 4, coordinates: [759, 331], neighbors: [18: 113.2, 6: 214.2];
+Node 5, coordinates: [550, 128], neighbors: [0: 20.2, 11: 221.1];
+Node 6, coordinates: [952, 238], neighbors: [18: 115.5, 9: 190.2];
+Node 7, coordinates: [818, 760], neighbors: [3: 184.2, 16: 193.8];
+Node 8, coordinates: [331, 944], neighbors: [19: 65.8, 2: 79.1];
+Node 9, coordinates: [981, 50], neighbors: [13: 46.6, 6: 190.2];
+Node 10, coordinates: [332, 338], neighbors: [11: 95.5, 14: 205.5];
+Node 11, coordinates: [423, 309], neighbors: [10: 95.5, 0: 210.2];
+Node 12, coordinates: [36, 532], neighbors: [15: 87.7, 14: 278.0];
+Node 13, coordinates: [999, 7], neighbors: [9: 46.6, 6: 235.7];
+Node 14, coordinates: [137, 273], neighbors: [1: 154.4, 10: 205.5];
+Node 15, coordinates: [76, 610], neighbors: [12: 87.7, 14: 342.5];
+Node 16, coordinates: [995, 681], neighbors: [17: 141.5, 7: 193.8];
+Node 17, coordinates: [914, 565], neighbors: [16: 141.5, 7: 217.3];
+Node 18, coordinates: [837, 249], neighbors: [4: 113.2, 6: 115.5];
+Node 19, coordinates: [269, 922], neighbors: [2: 46.2, 8: 65.8];
+
+Candidate 1; seed 218; 29.03 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 14, 1, 10, 11, 0], Objective: 3962.416
+
+Candidate 2; seed 219; 29.03 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 14, 1, 10, 11, 0], Objective: 3862.676
+
+Candidate 3; seed 220; 28.57 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 14, 1, 10, 11, 0], Objective: 3873.437
+
+Candidate 4; seed 221; 29.01 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 9, 15, 12, 1,,14, 10, 11, 0], Objective: 3889.720
+
+Candidate 5; seed 222; 29.06 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 1,,14, 10, 11, 0], Objective: 3872.811
+
+Candidate 6; seed 223; 29.08 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 14, 1, 10, 11, 0], Objective: 3895.060
+
+Candidate 7; seed 224; 28.53 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19, 2, 15, 12, 1,,14, 10, 11, 0], Objective: 3866.607
+
+Candidate 8; seed 225; 29.07 s
+Route: [0, 5, 4, 18, 9, 13, 6, 17, 16, 7, 3, 8, 19,19, 15, 12, 1, 11, 10, 11, 0], Objective: 3901.048
+
+tsp20-validation-00023
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [739, 944], neighbors: [13: 252.9, 7: 301.3];
+Node 1, coordinates: [134, 938], neighbors: [11: 151.8, 7: 306.9];
+Node 2, coordinates: [181, 249], neighbors: [8: 138.2, 5: 208.2];
+Node 3, coordinates: [572, 177], neighbors: [19: 52.6, 14: 121.9];
+Node 4, coordinates: [456, 48], neighbors: [14: 54.6, 6: 87.9];
+Node 5, coordinates: [336, 388], neighbors: [12: 77.5, 16: 78.7];
+Node 6, coordinates: [427, 131], neighbors: [14: 63.0, 4: 87.9];
+Node 7, coordinates: [439, 972], neighbors: [11: 168.2, 18: 250.2];
+Node 8, coordinates: [129, 377], neighbors: [2: 138.2, 10: 180.9];
+Node 9, coordinates: [348, 75], neighbors: [6: 96.8, 4: 111.3];
+Node 10, coordinates: [283, 472], neighbors: [5: 99.3, 16: 117.7];
+Node 11, coordinates: [283, 909], neighbors: [1: 151.8, 7: 168.2];
+Node 12, coordinates: [385, 328], neighbors: [5: 77.5, 16: 111.5];
+Node 13, coordinates: [830, 708], neighbors: [17: 240.8, 0: 252.9];
+Node 14, coordinates: [480, 97], neighbors: [4: 54.6, 6: 63.0];
+Node 15, coordinates: [337, 650], neighbors: [18: 154.0, 10: 186.0];
+Node 16, coordinates: [396, 439], neighbors: [5: 78.7, 12: 111.5];
+Node 17, coordinates: [707, 501], neighbors: [13: 240.8, 19: 305.8];
+Node 18, coordinates: [472, 724], neighbors: [15: 154.0, 7: 250.2];
+Node 19, coordinates: [613, 210], neighbors: [3: 52.6, 14: 174.5];
+
+Candidate 1; seed 226; 29.10 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3341.217
+
+Candidate 2; seed 227; 29.16 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3411.190
+
+Candidate 3; seed 228; 28.64 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3357.826
+
+Candidate 4; seed 229; 29.12 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3306.215
+
+Candidate 5; seed 230; 29.15 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3470.791
+
+Candidate 6; seed 231; 29.22 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3354.151
+
+Candidate 7; seed 232; 28.70 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3477.840
+
+Candidate 8; seed 233; 29.20 s
+Route: [0, 7, 11, 1, 18, 15, 10, 16, 5, 12, 8, 2, 9, 6, 4, 14, 3, 19, 17, 13, 0], Objective: 3368.930
+
+tsp20-validation-00024
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [478, 315], neighbors: [10: 25.6, 9: 147.1];
+Node 1, coordinates: [803, 900], neighbors: [16: 69.4, 17: 180.6];
+Node 2, coordinates: [9, 948], neighbors: [12: 122.0, 5: 243.2];
+Node 3, coordinates: [421, 136], neighbors: [10: 180.3, 14: 181.5];
+Node 4, coordinates: [66, 199], neighbors: [6: 240.0, 14: 266.6];
+Node 5, coordinates: [252, 957], neighbors: [12: 208.1, 2: 243.2];
+Node 6, coordinates: [68, 439], neighbors: [4: 240.0, 11: 253.1];
+Node 7, coordinates: [637, 228], neighbors: [9: 91.8, 13: 97.8];
+Node 8, coordinates: [432, 610], neighbors: [0: 298.6, 10: 317.9];
+Node 9, coordinates: [625, 319], neighbors: [13: 90.1, 7: 91.8];
+Node 10, coordinates: [498, 299], neighbors: [0: 25.6, 9: 128.6];
+Node 11, coordinates: [75, 692], neighbors: [12: 154.0, 6: 253.1];
+Node 12, coordinates: [76, 846], neighbors: [2: 122.0, 11: 154.0];
+Node 13, coordinates: [711, 292], neighbors: [9: 90.1, 7: 97.8];
+Node 14, coordinates: [273, 31], neighbors: [3: 181.5, 4: 266.6];
+Node 15, coordinates: [861, 469], neighbors: [13: 232.0, 18: 255.2];
+Node 16, coordinates: [866, 871], neighbors: [1: 69.4, 17: 113.8];
+Node 17, coordinates: [947, 791], neighbors: [16: 113.8, 1: 180.6];
+Node 18, coordinates: [907, 218], neighbors: [13: 209.5, 19: 241.8];
+Node 19, coordinates: [760, 26], neighbors: [7: 236.5, 18: 241.8];
+
+Candidate 1; seed 234; 29.06 s
+Route: [0, 8, 5, 12, 2, 11, 6, 4, 14, 3, 7, 19, 18, 13, 15, 17, 16, 1, 9, 10, 0], Objective: 4164.343
+
+Candidate 2; seed 235; 29.15 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 13, 9, 2, 11, 6, 14, 4, 3, 10, 0], Objective: 4257.327
+
+Candidate 3; seed 236; 28.61 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 9, 2, 12, 11, 6, 4, 14, 3, 10, 0], Objective: 4257.457
+
+Candidate 4; seed 237; 29.18 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 9, 13, 14, 4, 6, 11, 2, 3, 10, 0], Objective: 4154.440
+
+Candidate 5; seed 238; 29.16 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 13, 9, 14, 4, 6, 11, 2, 3, 10, 0], Objective: 4092.946
+
+Candidate 6; seed 239; 29.21 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 13, 9, 2, 11, 6, 14, 4, 3, 10, 0], Objective: 4108.443
+
+Candidate 7; seed 240; 28.72 s
+Route: [0, 8, 5, 12, 1, 16, 17, 15, 18, 19, 7, 9, 13, 3, 14, 4, 11, 2, 6, 10, 0], Objective: 4254.935
+
+Candidate 8; seed 241; 29.23 s
+Route: [0, 8, 9, 13, 7, 19, 18, 15, 17, 16, 1, 5, 2, 12, 11, 6, 4, 14, 3, 10, 0], Objective: 4126.217
+
+tsp20-validation-00025
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [108, 617], neighbors: [6: 172.9, 2: 217.6];
+Node 1, coordinates: [842, 625], neighbors: [16: 147.1, 17: 216.5];
+Node 2, coordinates: [157, 405], neighbors: [0: 217.6, 15: 220.8];
+Node 3, coordinates: [671, 303], neighbors: [9: 104.4, 13: 217.0];
+Node 4, coordinates: [485, 904], neighbors: [18: 53.9, 5: 140.9];
+Node 5, coordinates: [469, 764], neighbors: [14: 136.0, 4: 140.9];
+Node 6, coordinates: [149, 785], neighbors: [0: 172.9, 5: 320.7];
+Node 7, coordinates: [78, 63], neighbors: [2: 351.0, 19: 485.3];
+Node 8, coordinates: [460, 580], neighbors: [14: 48.7, 15: 129.1];
+Node 9, coordinates: [575, 262], neighbors: [3: 104.4, 19: 215.3];
+Node 10, coordinates: [980, 974], neighbors: [16: 239.3, 1: 375.3];
+Node 11, coordinates: [977, 67], neighbors: [13: 173.3, 12: 355.0];
+Node 12, coordinates: [628, 2], neighbors: [19: 79.1, 9: 265.3];
+Node 13, coordinates: [858, 193], neighbors: [11: 173.3, 3: 217.0];
+Node 14, coordinates: [468, 628], neighbors: [8: 48.7, 5: 136.0];
+Node 15, coordinates: [349, 514], neighbors: [8: 129.1, 14: 164.8];
+Node 16, coordinates: [935, 739], neighbors: [1: 147.1, 10: 239.3];
+Node 17, coordinates: [666, 751], neighbors: [5: 197.4, 1: 216.5];
+Node 18, coordinates: [495, 957], neighbors: [4: 53.9, 5: 194.7];
+Node 19, coordinates: [563, 47], neighbors: [12: 79.1, 9: 215.3];
+
+Candidate 1; seed 242; 29.19 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4496.120
+
+Candidate 2; seed 243; 29.19 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4385.959
+
+Candidate 3; seed 244; 28.79 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4493.708
+
+Candidate 4; seed 245; 29.14 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4490.478
+
+Candidate 5; seed 246; 29.19 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4492.876
+
+Candidate 6; seed 247; 29.20 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4580.753
+
+Candidate 7; seed 248; 28.73 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4579.402
+
+Candidate 8; seed 249; 29.20 s
+Route: [0, 2, 7, 19, 12, 11, 13, 3, 9, 1, 16, 10, 17, 18, 4, 5, 14, 8, 15, 6, 0], Objective: 4590.850
+
+tsp20-validation-00026
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [555, 353], neighbors: [6: 66.0, 8: 74.7];
+Node 1, coordinates: [174, 442], neighbors: [16: 126.6, 11: 302.1];
+Node 2, coordinates: [674, 86], neighbors: [15: 96.2, 7: 153.0];
+Node 3, coordinates: [809, 921], neighbors: [5: 23.3, 13: 186.2];
+Node 4, coordinates: [444, 82], neighbors: [12: 126.0, 15: 143.2];
+Node 5, coordinates: [830, 931], neighbors: [3: 23.3, 13: 176.8];
+Node 6, coordinates: [621, 353], neighbors: [8: 33.0, 0: 66.0];
+Node 7, coordinates: [675, 239], neighbors: [19: 44.8, 8: 96.8];
+Node 8, coordinates: [622, 320], neighbors: [6: 33.0, 0: 74.7];
+Node 9, coordinates: [922, 693], neighbors: [13: 120.2, 3: 254.5];
+Node 10, coordinates: [954, 222], neighbors: [19: 263.0, 18: 269.4];
+Node 11, coordinates: [345, 193], neighbors: [12: 22.8, 4: 148.7];
+Node 12, coordinates: [359, 175], neighbors: [11: 22.8, 4: 126.0];
+Node 13, coordinates: [957, 808], neighbors: [9: 120.2, 5: 176.8];
+Node 14, coordinates: [256, 756], neighbors: [16: 221.4, 1: 324.5];
+Node 15, coordinates: [584, 52], neighbors: [2: 96.2, 4: 143.2];
+Node 16, coordinates: [144, 565], neighbors: [1: 126.6, 14: 221.4];
+Node 17, coordinates: [587, 681], neighbors: [18: 318.6, 3: 326.9];
+Node 18, coordinates: [778, 426], neighbors: [19: 168.7, 6: 173.1];
+Node 19, coordinates: [697, 278], neighbors: [7: 44.8, 8: 86.0];
+
+Candidate 1; seed 250; 29.06 s
+Route: [0, 6, 8, 19, 7, 2, 10, 18, 9, 13, 5, 3, 17, 14, 16, 1, 11, 12, 4, 15, 0], Objective: 3394.756
+
+Candidate 2; seed 251; 29.10 s
+Route: [0, 6, 8, 19, 7, 2, 10, 18, 9, 13, 5, 3, 17, 14, 16, 1, 11, 12, 4, 15, 0], Objective: 3363.107
+
+Candidate 3; seed 252; 28.59 s
+Route: [0, 6, 8, 19, 7, 2, 10, 18, 9, 13, 5, 3, 17, 14, 16, 1, 11, 12, 4, 15, 0], Objective: 3466.366
+
+Candidate 4; seed 253; 29.06 s
+Route: [0, 6, 8, 17, 7, 2, 10, 18, 13, 5, 3, 14, 16, 1, 11, 12, 4, 15, 7, 19, 0], Objective: 3464.667
+
+Candidate 5; seed 254; 29.04 s
+Route: [0, 6, 8, 19, 7, 2, 15, 12, 4, 11, 1, 16, 3, 14, 17, 5, 13, 9, 10, 18, 0], Objective: 3440.121
+
+Candidate 6; seed 255; 29.08 s
+Route: [0, 6, 8, 19, 7, 2, 15, 12, 4, 12, 11, 1, 16, 17, 3, 5, 13, 9, 10, 18, 0], Objective: 3262.385
+
+Candidate 7; seed 256; 28.54 s
+Route: [0, 6, 8, 9, 13, 2, 19, 18, 17, 5, 14, 1, 11, 4, 12, 15, 2, 10, 7, 18, 0], Objective: 3419.359
+
+Candidate 8; seed 257; 29.05 s
+Route: [0, 6, 8, 19, 7, 15, 2, 10, 18, 9, 13, 5, 3, 17, 14, 16, 1, 11, 4, 12, 0], Objective: 3284.777
+
+tsp20-validation-00027
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [389, 599], neighbors: [9: 114.2, 14: 153.9];
+Node 1, coordinates: [688, 879], neighbors: [15: 41.7, 5: 138.0];
+Node 2, coordinates: [443, 403], neighbors: [14: 56.9, 11: 84.8];
+Node 3, coordinates: [127, 674], neighbors: [10: 105.1, 17: 174.6];
+Node 4, coordinates: [954, 918], neighbors: [15: 246.8, 1: 268.8];
+Node 5, coordinates: [550, 881], neighbors: [16: 79.6, 1: 138.0];
+Node 6, coordinates: [676, 290], neighbors: [7: 137.6, 13: 153.4];
+Node 7, coordinates: [790, 367], neighbors: [6: 137.6, 19: 200.1];
+Node 8, coordinates: [327, 316], neighbors: [11: 120.5, 2: 145.0];
+Node 9, coordinates: [497, 636], neighbors: [0: 114.2, 14: 182.4];
+Node 10, coordinates: [80, 580], neighbors: [3: 105.1, 17: 273.2];
+Node 11, coordinates: [363, 431], neighbors: [2: 84.8, 14: 94.3];
+Node 12, coordinates: [534, 453], neighbors: [14: 81.2, 2: 103.8];
+Node 13, coordinates: [534, 348], neighbors: [12: 105.0, 2: 106.3];
+Node 14, coordinates: [453, 459], neighbors: [2: 56.9, 12: 81.2];
+Node 15, coordinates: [717, 849], neighbors: [1: 41.7, 5: 170.0];
+Node 16, coordinates: [507, 948], neighbors: [5: 79.6, 1: 193.7];
+Node 17, coordinates: [265, 781], neighbors: [3: 174.6, 0: 220.2];
+Node 18, coordinates: [95, 921], neighbors: [17: 220.2, 3: 249.1];
+Node 19, coordinates: [990, 373], neighbors: [7: 200.1, 6: 324.8];
+
+Candidate 1; seed 258; 29.11 s
+Route: [0, 3, 18, 17, 5, 16, 1, 15, 4, 19, 7, 6, 13, 12, 2, 14, 8, 11, 14, 9, 0], Objective: 3565.685
+
+Candidate 2; seed 259; 29.14 s
+Route: [0, 3, 10, 18, 5, 16, 1, 15, 4, 19, 7, 6, 13, 12, 2, 11, 8, 14, 17, 9, 0], Objective: 3576.267
+
+Candidate 3; seed 260; 28.70 s
+Route: [0, 9, 12, 12, 2, 11, 8, 13, 6, 7, 19, 4, 15, 1, 5, 16, 17, 18, 3, 10, 0], Objective: 3494.304
+
+Candidate 4; seed 261; 29.11 s
+Route: [0, 9, 12, 14, 2, 11, 8, 13, 6, 7, 19, 4, 15, 1, 5, 16, 17, 18, 3, 10, 0], Objective: 3535.845
+
+Candidate 5; seed 262; 29.14 s
+Route: [0, 3, 10, 18, 5, 16, 1, 15, 4, 19, 7, 6, 13, 12, 2, 11, 8, 14, 17, 9, 0], Objective: 3443.710
+
+Candidate 6; seed 263; 29.16 s
+Route: [0, 9, 14, 11, 8, 2, 12, 13, 6, 7, 19, 4, 15, 1, 5, 16, 17, 18, 3, 10, 0], Objective: 3432.304
+
+Candidate 7; seed 264; 28.68 s
+Route: [0, 9, 12, 14, 2, 11, 8, 13, 6, 7, 19, 4, 15, 1, 5, 16, 17, 18, 3, 10, 0], Objective: 3609.621
+
+Candidate 8; seed 265; 29.12 s
+Route: [0, 9, 12, 14, 8, 11, 2, 13, 6, 7, 19, 15, 4, 1, 16, 5, 17, 18, 3, 10, 0], Objective: 3442.066
+
+tsp20-validation-00028
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [422, 821], neighbors: [13: 42.2, 1: 102.1];
+Node 1, coordinates: [364, 737], neighbors: [13: 59.9, 0: 102.1];
+Node 2, coordinates: [317, 835], neighbors: [10: 63.6, 13: 93.3];
+Node 3, coordinates: [243, 307], neighbors: [18: 44.9, 4: 206.2];
+Node 4, coordinates: [39, 337], neighbors: [18: 191.4, 3: 206.2];
+Node 5, coordinates: [784, 190], neighbors: [16: 341.0, 15: 455.4];
+Node 6, coordinates: [265, 39], neighbors: [9: 27.7, 3: 268.9];
+Node 7, coordinates: [974, 749], neighbors: [14: 129.1, 8: 252.9];
+Node 8, coordinates: [813, 944], neighbors: [12: 218.5, 7: 252.9];
+Node 9, coordinates: [277, 14], neighbors: [6: 27.7, 16: 289.8];
+Node 10, coordinates: [326, 898], neighbors: [2: 63.6, 0: 123.1];
+Node 11, coordinates: [513, 896], neighbors: [0: 117.9, 13: 159.2];
+Node 12, coordinates: [700, 757], neighbors: [14: 198.6, 8: 218.5];
+Node 13, coordinates: [397, 787], neighbors: [0: 42.2, 1: 59.9];
+Node 14, coordinates: [876, 665], neighbors: [7: 129.1, 12: 198.6];
+Node 15, coordinates: [466, 516], neighbors: [17: 111.8, 1: 243.4];
+Node 16, coordinates: [448, 248], neighbors: [3: 213.3, 18: 240.7];
+Node 17, coordinates: [495, 624], neighbors: [15: 111.8, 1: 173.0];
+Node 18, coordinates: [230, 350], neighbors: [3: 44.9, 4: 191.4];
+Node 19, coordinates: [170, 568], neighbors: [18: 226.1, 1: 257.3];
+
+Candidate 1; seed 266; 29.08 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 4, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3717.525
+
+Candidate 2; seed 267; 29.14 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 8, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3860.928
+
+Candidate 3; seed 268; 28.67 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 4, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3892.774
+
+Candidate 4; seed 269; 29.09 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 8, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3890.660
+
+Candidate 5; seed 270; 29.13 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 4, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3701.827
+
+Candidate 6; seed 271; 29.15 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 4,, 8, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3752.447
+
+Candidate 7; seed 272; 28.64 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 8, 4, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3799.773
+
+Candidate 8; seed 273; 29.13 s
+Route: [0, 10, 2, 13, 1, 17, 15, 19, 18, 4, 3, 6, 9, 16, 5, 14, 7, 8, 12, 11, 0], Objective: 3721.143
+
+tsp20-validation-00029
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [744, 120], neighbors: [11: 60.7, 18: 84.1];
+Node 1, coordinates: [95, 467], neighbors: [2: 174.0, 4: 176.3];
+Node 2, coordinates: [197, 608], neighbors: [4: 87.8, 1: 174.0];
+Node 3, coordinates: [674, 627], neighbors: [12: 35.6, 13: 125.4];
+Node 4, coordinates: [116, 642], neighbors: [2: 87.8, 5: 104.8];
+Node 5, coordinates: [15, 670], neighbors: [4: 104.8, 2: 192.3];
+Node 6, coordinates: [476, 993], neighbors: [17: 269.6, 13: 316.8];
+Node 7, coordinates: [892, 558], neighbors: [16: 67.1, 19: 217.1];
+Node 8, coordinates: [978, 975], neighbors: [16: 370.4, 7: 425.8];
+Node 9, coordinates: [629, 70], neighbors: [18: 62.3, 0: 125.4];
+Node 10, coordinates: [387, 292], neighbors: [15: 285.8, 14: 296.5];
+Node 11, coordinates: [801, 141], neighbors: [0: 60.7, 18: 142.0];
+Node 12, coordinates: [652, 655], neighbors: [3: 35.6, 13: 93.4];
+Node 13, coordinates: [565, 689], neighbors: [12: 93.4, 3: 125.4];
+Node 14, coordinates: [252, 28], neighbors: [15: 96.9, 10: 296.5];
+Node 15, coordinates: [347, 9], neighbors: [14: 96.9, 10: 285.8];
+Node 16, coordinates: [869, 621], neighbors: [7: 67.1, 3: 195.1];
+Node 17, coordinates: [307, 783], neighbors: [2: 206.7, 4: 237.4];
+Node 18, coordinates: [660, 124], neighbors: [9: 62.3, 0: 84.1];
+Node 19, coordinates: [897, 341], neighbors: [7: 217.1, 11: 221.8];
+
+Candidate 1; seed 274; 28.99 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 4, 5, 1, 10, 14, 15, 9, 18, 0], Objective: 3953.186
+
+Candidate 2; seed 275; 28.98 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 5, 4, 5, 1, 10, 14, 15, 9, 18, 0], Objective: 3804.934
+
+Candidate 3; seed 276; 28.56 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 4, 5, 1, 10, 14, 15, 9, 18, 0], Objective: 3890.951
+
+Candidate 4; seed 277; 29.08 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 5, 4, 2, 1, 10, 14, 15, 9, 18, 0], Objective: 3974.668
+
+Candidate 5; seed 278; 29.01 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 4, 2, 1, 10, 14, 15, 9, 18, 0], Objective: 3864.894
+
+Candidate 6; seed 279; 29.07 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 5, 4, 1, 10, 14, 15, 9, 18, 0], Objective: 3763.410
+
+Candidate 7; seed 280; 28.49 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 4, 5, 2, 10, 14, 15, 9, 18, 0], Objective: 3882.113
+
+Candidate 8; seed 281; 29.09 s
+Route: [0, 11, 19, 7, 16, 8, 3, 12, 13, 6, 17, 2, 4, 2, 1, 10, 14, 15, 9, 18, 0], Objective: 3866.394
+
+tsp20-validation-00030
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [694, 62], neighbors: [6: 128.5, 7: 150.7];
+Node 1, coordinates: [860, 449], neighbors: [8: 77.2, 13: 121.1];
+Node 2, coordinates: [360, 185], neighbors: [17: 43.3, 19: 136.6];
+Node 3, coordinates: [202, 842], neighbors: [15: 87.5, 16: 179.6];
+Node 4, coordinates: [207, 557], neighbors: [18: 172.0, 11: 224.0];
+Node 5, coordinates: [559, 856], neighbors: [12: 179.8, 9: 214.7];
+Node 6, coordinates: [806, 125], neighbors: [7: 109.1, 0: 128.5];
+Node 7, coordinates: [839, 21], neighbors: [6: 109.1, 0: 150.7];
+Node 8, coordinates: [933, 474], neighbors: [1: 77.2, 13: 156.4];
+Node 9, coordinates: [392, 721], neighbors: [5: 214.7, 3: 225.3];
+Node 10, coordinates: [587, 464], neighbors: [13: 229.0, 1: 273.4];
+Node 11, coordinates: [16, 440], neighbors: [18: 223.4, 4: 224.0];
+Node 12, coordinates: [719, 774], neighbors: [5: 179.8, 13: 234.7];
+Node 13, coordinates: [798, 553], neighbors: [1: 121.1, 8: 156.4];
+Node 14, coordinates: [589, 187], neighbors: [0: 163.2, 6: 225.7];
+Node 15, coordinates: [127, 797], neighbors: [3: 87.5, 16: 192.5];
+Node 16, coordinates: [96, 987], neighbors: [3: 179.6, 15: 192.5];
+Node 17, coordinates: [355, 228], neighbors: [2: 43.3, 19: 142.5];
+Node 18, coordinates: [233, 387], neighbors: [4: 172.0, 17: 200.4];
+Node 19, coordinates: [224, 172], neighbors: [2: 136.6, 17: 142.5];
+
+Candidate 1; seed 282; 29.14 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3699.444
+
+Candidate 2; seed 283; 29.25 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3643.931
+
+Candidate 3; seed 284; 28.81 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3747.560
+
+Candidate 4; seed 285; 29.29 s
+Route: [0, 7, 6, 8, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3578.418
+
+Candidate 5; seed 286; 29.11 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3768.437
+
+Candidate 6; seed 287; 29.23 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3642.949
+
+Candidate 7; seed 288; 28.74 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3827.833
+
+Candidate 8; seed 289; 29.25 s
+Route: [0, 7, 6, 1, 8, 13, 10, 12, 5, 9, 3, 16, 15, 4, 11, 18, 19, 2, 17, 14, 0], Objective: 3769.081
+
+tsp20-validation-00031
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [497, 735], neighbors: [8: 105.5, 18: 108.1];
+Node 1, coordinates: [920, 599], neighbors: [13: 91.8, 17: 225.1];
+Node 2, coordinates: [82, 520], neighbors: [9: 48.7, 7: 148.5];
+Node 3, coordinates: [660, 546], neighbors: [17: 58.6, 11: 182.0];
+Node 4, coordinates: [306, 724], neighbors: [12: 67.2, 8: 105.6];
+Node 5, coordinates: [851, 378], neighbors: [13: 163.4, 1: 231.5];
+Node 6, coordinates: [268, 582], neighbors: [15: 22.8, 12: 109.8];
+Node 7, coordinates: [50, 665], neighbors: [2: 148.5, 9: 158.6];
+Node 8, coordinates: [399, 774], neighbors: [0: 105.5, 4: 105.6];
+Node 9, coordinates: [130, 528], neighbors: [2: 48.7, 6: 148.2];
+Node 10, coordinates: [455, 2], neighbors: [16: 84.4, 11: 525.5];
+Node 11, coordinates: [479, 527], neighbors: [3: 182.0, 15: 198.6];
+Node 12, coordinates: [248, 690], neighbors: [4: 67.2, 6: 109.8];
+Node 13, coordinates: [946, 511], neighbors: [1: 91.8, 5: 163.4];
+Node 14, coordinates: [523, 896], neighbors: [18: 61.4, 0: 163.1];
+Node 15, coordinates: [290, 588], neighbors: [6: 22.8, 12: 110.3];
+Node 16, coordinates: [463, 86], neighbors: [10: 84.4, 11: 441.3];
+Node 17, coordinates: [695, 593], neighbors: [3: 58.6, 19: 192.4];
+Node 18, coordinates: [492, 843], neighbors: [14: 61.4, 0: 108.1];
+Node 19, coordinates: [659, 782], neighbors: [0: 168.7, 14: 177.5];
+
+Candidate 1; seed 290; 29.06 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3165.280
+
+Candidate 2; seed 291; 29.13 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3311.600
+
+Candidate 3; seed 292; 28.52 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3371.980
+
+Candidate 4; seed 293; 29.11 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3282.997
+
+Candidate 5; seed 294; 29.01 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3184.592
+
+Candidate 6; seed 295; 29.07 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3248.401
+
+Candidate 7; seed 296; 28.56 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3258.941
+
+Candidate 8; seed 297; 29.17 s
+Route: [0, 8, 4, 12, 15, 6, 7, 2, 9, 11, 16, 10, 5, 13, 1, 3, 17, 19, 14, 18, 0], Objective: 3210.406
+
+tsp20-validation-00032
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [294, 821], neighbors: [13: 196.0, 12: 197.0];
+Node 1, coordinates: [827, 62], neighbors: [2: 384.0, 11: 388.2];
+Node 2, coordinates: [889, 441], neighbors: [19: 65.5, 6: 231.7];
+Node 3, coordinates: [811, 921], neighbors: [15: 111.8, 9: 120.4];
+Node 4, coordinates: [38, 388], neighbors: [8: 135.1, 10: 222.6];
+Node 5, coordinates: [786, 794], neighbors: [9: 99.5, 18: 102.6];
+Node 6, coordinates: [907, 672], neighbors: [18: 105.1, 5: 171.8];
+Node 7, coordinates: [593, 812], neighbors: [14: 54.1, 9: 124.4];
+Node 8, coordinates: [161, 444], neighbors: [4: 135.1, 16: 181.4];
+Node 9, coordinates: [709, 857], neighbors: [5: 99.5, 3: 120.4];
+Node 10, coordinates: [218, 257], neighbors: [8: 195.5, 4: 222.6];
+Node 11, coordinates: [479, 234], neighbors: [10: 262.0, 8: 381.1];
+Node 12, coordinates: [451, 940], neighbors: [14: 165.1, 7: 191.2];
+Node 13, coordinates: [462, 720], neighbors: [14: 112.4, 7: 160.1];
+Node 14, coordinates: [540, 801], neighbors: [7: 54.1, 13: 112.4];
+Node 15, coordinates: [911, 971], neighbors: [17: 96.2, 3: 111.8];
+Node 16, coordinates: [270, 589], neighbors: [8: 181.4, 13: 232.4];
+Node 17, coordinates: [979, 903], neighbors: [15: 96.2, 3: 169.0];
+Node 18, coordinates: [804, 693], neighbors: [5: 102.6, 6: 105.1];
+Node 19, coordinates: [855, 497], neighbors: [2: 65.5, 6: 182.6];
+
+Candidate 1; seed 298; 29.09 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3682.400
+
+Candidate 2; seed 299; 29.20 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3786.483
+
+Candidate 3; seed 300; 28.77 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3997.938
+
+Candidate 4; seed 301; 29.25 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3740.404
+
+Candidate 5; seed 302; 29.07 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3710.777
+
+Candidate 6; seed 303; 29.22 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3694.913
+
+Candidate 7; seed 304; 28.76 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3677.529
+
+Candidate 8; seed 305; 29.29 s
+Route: [0, 12, 14, 7, 9, 3, 15, 17, 5, 18, 6, 19, 2, 1, 11, 10, 4, 8, 16, 13, 0], Objective: 3746.070
+
+tsp20-validation-00033
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [897, 418], neighbors: [8: 23.6, 9: 147.1];
+Node 1, coordinates: [613, 464], neighbors: [3: 100.0, 12: 121.1];
+Node 2, coordinates: [975, 738], neighbors: [18: 193.5, 8: 307.7];
+Node 3, coordinates: [513, 465], neighbors: [1: 100.0, 11: 171.3];
+Node 4, coordinates: [312, 110], neighbors: [7: 298.5, 6: 359.2];
+Node 5, coordinates: [759, 116], neighbors: [16: 103.2, 14: 152.8];
+Node 6, coordinates: [87, 390], neighbors: [15: 20.6, 17: 203.5];
+Node 7, coordinates: [33, 4], neighbors: [4: 298.5, 15: 374.9];
+Node 8, coordinates: [911, 437], neighbors: [0: 23.6, 9: 163.8];
+Node 9, coordinates: [927, 274], neighbors: [14: 121.7, 13: 145.3];
+Node 10, coordinates: [191, 932], neighbors: [19: 329.2, 17: 398.0];
+Node 11, coordinates: [523, 636], neighbors: [3: 171.3, 19: 186.0];
+Node 12, coordinates: [734, 470], neighbors: [1: 121.1, 0: 171.1];
+Node 13, coordinates: [917, 129], neighbors: [14: 26.9, 9: 145.3];
+Node 14, coordinates: [907, 154], neighbors: [13: 26.9, 9: 121.7];
+Node 15, coordinates: [71, 377], neighbors: [6: 20.6, 17: 210.3];
+Node 16, coordinates: [780, 15], neighbors: [5: 103.2, 13: 178.2];
+Node 17, coordinates: [9, 578], neighbors: [6: 203.5, 15: 210.3];
+Node 18, coordinates: [810, 637], neighbors: [12: 183.5, 2: 193.5];
+Node 19, coordinates: [337, 637], neighbors: [11: 186.0, 3: 246.1];
+
+Candidate 1; seed 306; 29.11 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4220.806
+
+Candidate 2; seed 307; 29.17 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4140.086
+
+Candidate 3; seed 308; 28.71 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4043.572
+
+Candidate 4; seed 309; 29.17 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4114.463
+
+Candidate 5; seed 310; 29.09 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4030.443
+
+Candidate 6; seed 311; 29.14 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4108.247
+
+Candidate 7; seed 312; 28.74 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4105.301
+
+Candidate 8; seed 313; 29.11 s
+Route: [0, 8, 9, 14, 13, 16, 5, 4, 7, 15, 6, 17, 10, 19, 11, 3, 1, 12, 18, 2, 0], Objective: 4000.799
+
+tsp20-validation-00034
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [793, 575], neighbors: [5: 167.1, 6: 170.4];
+Node 1, coordinates: [831, 369], neighbors: [0: 209.5, 19: 216.2];
+Node 2, coordinates: [36, 480], neighbors: [14: 110.1, 9: 232.3];
+Node 3, coordinates: [261, 654], neighbors: [10: 81.1, 9: 149.1];
+Node 4, coordinates: [366, 313], neighbors: [7: 89.4, 17: 212.2];
+Node 5, coordinates: [788, 742], neighbors: [0: 167.1, 6: 176.2];
+Node 6, coordinates: [639, 648], neighbors: [16: 98.7, 0: 170.4];
+Node 7, coordinates: [308, 245], neighbors: [4: 89.4, 18: 146.4];
+Node 8, coordinates: [69, 222], neighbors: [18: 158.3, 7: 240.1];
+Node 9, coordinates: [267, 505], neighbors: [10: 68.0, 3: 149.1];
+Node 10, coordinates: [265, 573], neighbors: [9: 68.0, 3: 81.1];
+Node 11, coordinates: [777, 958], neighbors: [5: 216.3, 6: 339.3];
+Node 12, coordinates: [178, 892], neighbors: [15: 100.2, 3: 252.1];
+Node 13, coordinates: [840, 85], neighbors: [19: 70.3, 1: 284.1];
+Node 14, coordinates: [75, 583], neighbors: [2: 110.1, 10: 190.3];
+Node 15, coordinates: [89, 938], neighbors: [12: 100.2, 3: 332.0];
+Node 16, coordinates: [557, 593], neighbors: [6: 98.7, 0: 236.7];
+Node 17, coordinates: [571, 258], neighbors: [4: 212.2, 7: 263.3];
+Node 18, coordinates: [205, 141], neighbors: [7: 146.4, 8: 158.3];
+Node 19, coordinates: [822, 153], neighbors: [13: 70.3, 1: 216.2];
+
+Candidate 1; seed 314; 28.98 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3961.150
+
+Candidate 2; seed 315; 29.04 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3955.264
+
+Candidate 3; seed 316; 28.51 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3644.648
+
+Candidate 4; seed 317; 28.97 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3982.915
+
+Candidate 5; seed 318; 29.00 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3912.700
+
+Candidate 6; seed 319; 29.07 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3960.659
+
+Candidate 7; seed 320; 28.52 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3979.019
+
+Candidate 8; seed 321; 29.02 s
+Route: [0, 1, 19, 13, 17, 4, 7, 18, 8, 2, 14, 9, 10, 3, 15, 12, 16, 6, 11, 5, 0], Objective: 3963.041
+
+tsp20-validation-00035
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [358, 953], neighbors: [13: 264.6, 12: 377.5];
+Node 1, coordinates: [506, 307], neighbors: [7: 172.5, 19: 173.8];
+Node 2, coordinates: [841, 102], neighbors: [11: 144.5, 7: 355.6];
+Node 3, coordinates: [987, 707], neighbors: [16: 91.4, 10: 122.5];
+Node 4, coordinates: [31, 120], neighbors: [18: 175.0, 15: 177.0];
+Node 5, coordinates: [9, 456], neighbors: [9: 98.3, 4: 336.7];
+Node 6, coordinates: [749, 789], neighbors: [10: 132.9, 16: 167.2];
+Node 7, coordinates: [650, 402], neighbors: [17: 152.5, 1: 172.5];
+Node 8, coordinates: [197, 15], neighbors: [15: 20.6, 18: 104.4];
+Node 9, coordinates: [17, 554], neighbors: [5: 98.3, 12: 255.1];
+Node 10, coordinates: [866, 726], neighbors: [16: 60.0, 3: 122.5];
+Node 11, coordinates: [774, 230], neighbors: [2: 144.5, 7: 212.0];
+Node 12, coordinates: [9, 809], neighbors: [9: 255.1, 13: 261.1];
+Node 13, coordinates: [251, 711], neighbors: [12: 261.1, 0: 264.6];
+Node 14, coordinates: [485, 482], neighbors: [17: 160.6, 1: 176.3];
+Node 15, coordinates: [177, 20], neighbors: [8: 20.6, 18: 103.2];
+Node 16, coordinates: [914, 762], neighbors: [10: 60.0, 3: 91.4];
+Node 17, coordinates: [629, 553], neighbors: [7: 152.5, 14: 160.6];
+Node 18, coordinates: [206, 119], neighbors: [15: 103.2, 8: 104.4];
+Node 19, coordinates: [481, 135], neighbors: [1: 173.8, 18: 275.5];
+
+Candidate 1; seed 322; 29.02 s
+Route: [0, 6, 16, 3, 10, 17, 14, 1, 7, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 3056.414
+
+Candidate 2; seed 323; 29.22 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 4041.645
+
+Candidate 3; seed 324; 28.83 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 4015.816
+
+Candidate 4; seed 325; 29.28 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 4034.360
+
+Candidate 5; seed 326; 29.12 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 3093.340
+
+Candidate 6; seed 327; 29.22 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 3060.158
+
+Candidate 7; seed 328; 28.74 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 3964.750
+
+Candidate 8; seed 329; 29.22 s
+Route: [0, 6, 16, 3, 10, 17, 14, 7, 1, 11, 2, 19, 8, 15, 18, 4, 5, 9, 12, 13, 0], Objective: 4024.999
+
+tsp20-validation-00036
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [218, 667], neighbors: [16: 99.0, 17: 221.6];
+Node 1, coordinates: [973, 810], neighbors: [11: 176.7, 2: 300.4];
+Node 2, coordinates: [734, 992], neighbors: [11: 271.1, 5: 286.2];
+Node 3, coordinates: [459, 262], neighbors: [18: 196.5, 15: 209.4];
+Node 4, coordinates: [393, 919], neighbors: [5: 99.3, 6: 224.5];
+Node 5, coordinates: [477, 866], neighbors: [4: 99.3, 6: 147.4];
+Node 6, coordinates: [497, 720], neighbors: [5: 147.4, 7: 182.4];
+Node 7, coordinates: [673, 672], neighbors: [11: 153.6, 6: 182.4];
+Node 8, coordinates: [219, 354], neighbors: [15: 208.2, 16: 214.0];
+Node 9, coordinates: [914, 485], neighbors: [11: 267.4, 14: 269.4];
+Node 10, coordinates: [25, 251], neighbors: [19: 8.1, 13: 46.2];
+Node 11, coordinates: [814, 733], neighbors: [7: 153.6, 1: 176.7];
+Node 12, coordinates: [762, 108], neighbors: [14: 142.7, 18: 208.8];
+Node 13, coordinates: [21, 205], neighbors: [19: 43.4, 10: 46.2];
+Node 14, coordinates: [784, 249], neighbors: [12: 142.7, 9: 269.4];
+Node 15, coordinates: [397, 462], neighbors: [17: 58.0, 16: 208.0];
+Node 16, coordinates: [218, 568], neighbors: [0: 99.0, 17: 171.5];
+Node 17, coordinates: [382, 518], neighbors: [15: 58.0, 16: 171.5];
+Node 18, coordinates: [554, 90], neighbors: [3: 196.5, 12: 208.8];
+Node 19, coordinates: [32, 247], neighbors: [10: 8.1, 13: 43.4];
+
+Candidate 1; seed 330; 29.10 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3843.206
+
+Candidate 2; seed 331; 29.25 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3895.959
+
+Candidate 3; seed 332; 28.79 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 13, 8, 15, 17, 16, 0], Objective: 3780.949
+
+Candidate 4; seed 333; 29.20 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3785.169
+
+Candidate 5; seed 334; 29.14 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3797.804
+
+Candidate 6; seed 335; 29.22 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3693.884
+
+Candidate 7; seed 336; 28.85 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3735.148
+
+Candidate 8; seed 337; 29.21 s
+Route: [0, 4, 5, 6, 7, 2, 11, 1, 9, 14, 12, 18, 3, 13, 19, 10, 8, 15, 17, 16, 0], Objective: 3846.410
+
+tsp20-validation-00037
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [960, 243], neighbors: [15: 146.6, 9: 219.5];
+Node 1, coordinates: [853, 511], neighbors: [4: 52.7, 8: 91.4];
+Node 2, coordinates: [726, 227], neighbors: [9: 53.7, 12: 148.4];
+Node 3, coordinates: [162, 190], neighbors: [5: 153.2, 10: 456.1];
+Node 4, coordinates: [809, 540], neighbors: [1: 52.7, 8: 131.0];
+Node 5, coordinates: [295, 114], neighbors: [3: 153.2, 10: 304.0];
+Node 6, coordinates: [488, 857], neighbors: [19: 196.4, 13: 215.4];
+Node 7, coordinates: [223, 808], neighbors: [17: 17.2, 18: 255.0];
+Node 8, coordinates: [940, 539], neighbors: [1: 91.4, 4: 131.0];
+Node 9, coordinates: [750, 179], neighbors: [2: 53.7, 12: 95.9];
+Node 10, coordinates: [578, 3], neighbors: [11: 164.1, 12: 207.9];
+Node 11, coordinates: [742, 8], neighbors: [12: 81.6, 10: 164.1];
+Node 12, coordinates: [769, 85], neighbors: [11: 81.6, 9: 95.9];
+Node 13, coordinates: [432, 649], neighbors: [18: 20.6, 6: 215.4];
+Node 14, coordinates: [775, 949], neighbors: [19: 121.2, 16: 172.4];
+Node 15, coordinates: [851, 145], neighbors: [12: 101.6, 9: 106.6];
+Node 16, coordinates: [860, 799], neighbors: [14: 172.4, 19: 189.4];
+Node 17, coordinates: [237, 798], neighbors: [7: 17.2, 18: 237.9];
+Node 18, coordinates: [414, 639], neighbors: [13: 20.6, 6: 230.2];
+Node 19, coordinates: [684, 869], neighbors: [14: 121.2, 16: 189.4];
+
+Candidate 1; seed 338; 29.15 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 9, 2, 15, 0], Objective: 3466.439
+
+Candidate 2; seed 339; 29.16 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 9, 2, 15, 0], Objective: 3507.159
+
+Candidate 3; seed 340; 28.76 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 2, 2, 15, 0], Objective: 3490.539
+
+Candidate 4; seed 341; 29.17 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 2, 2, 15, 0], Objective: 3512.632
+
+Candidate 5; seed 342; 29.03 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 2, 2, 15, 0], Objective: 3528.704
+
+Candidate 6; seed 343; 29.18 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 9, 9, 15, 0], Objective: 3404.943
+
+Candidate 7; seed 344; 28.71 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 2, 2, 15, 0], Objective: 3466.435
+
+Candidate 8; seed 345; 29.21 s
+Route: [0, 1, 4, 8, 16, 14, 19, 6, 13, 18, 7, 17, 3, 5, 10, 11, 12, 2, 2, 15, 0], Objective: 3670.596
+
+tsp20-validation-00038
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [268, 262], neighbors: [11: 221.6, 10: 250.7];
+Node 1, coordinates: [604, 423], neighbors: [17: 83.9, 19: 89.1];
+Node 2, coordinates: [798, 218], neighbors: [15: 63.2, 14: 208.5];
+Node 3, coordinates: [93, 978], neighbors: [7: 87.3, 8: 313.5];
+Node 4, coordinates: [924, 990], neighbors: [16: 265.0, 6: 340.9];
+Node 5, coordinates: [402, 0], neighbors: [11: 84.0, 0: 294.3];
+Node 6, coordinates: [731, 709], neighbors: [16: 204.4, 19: 228.0];
+Node 7, coordinates: [78, 892], neighbors: [3: 87.3, 8: 241.5];
+Node 8, coordinates: [199, 683], neighbors: [9: 62.8, 12: 110.1];
+Node 9, coordinates: [257, 659], neighbors: [8: 62.8, 12: 125.1];
+Node 10, coordinates: [321, 507], neighbors: [9: 164.9, 12: 176.8];
+Node 11, coordinates: [400, 84], neighbors: [5: 84.0, 0: 221.6];
+Node 12, coordinates: [160, 580], neighbors: [8: 110.1, 9: 125.1];
+Node 13, coordinates: [514, 943], neighbors: [16: 163.5, 18: 227.9];
+Node 14, coordinates: [593, 256], neighbors: [1: 167.4, 2: 208.5];
+Node 15, coordinates: [850, 254], neighbors: [2: 63.2, 14: 257.0];
+Node 16, coordinates: [673, 905], neighbors: [13: 163.5, 6: 204.4];
+Node 17, coordinates: [532, 466], neighbors: [1: 83.9, 19: 97.1];
+Node 18, coordinates: [467, 720], neighbors: [9: 218.7, 13: 227.9];
+Node 19, coordinates: [618, 511], neighbors: [1: 89.1, 17: 97.1];
+
+Candidate 1; seed 346; 29.08 s
+Route: [0, 10, 12, 9, 8, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3972.325
+
+Candidate 2; seed 347; 29.06 s
+Route: [0, 10, 12, 9, 8, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3962.780
+
+Candidate 3; seed 348; 28.66 s
+Route: [0, 10, 12, 9, 8, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3980.042
+
+Candidate 4; seed 349; 29.11 s
+Route: [0, 10, 12, 8, 9, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3825.924
+
+Candidate 5; seed 350; 29.05 s
+Route: [0, 10, 12, 9, 8, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3802.236
+
+Candidate 6; seed 351; 29.10 s
+Route: [0, 10, 12, 8, 9, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3828.995
+
+Candidate 7; seed 352; 28.66 s
+Route: [0, 10, 12, 8, 7, 3, 9, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3948.123
+
+Candidate 8; seed 353; 29.21 s
+Route: [0, 10, 12, 9, 8, 7, 3, 18, 13, 16, 4, 6, 19, 17, 1, 15, 2, 14, 5, 11, 0], Objective: 3904.846
+
+tsp20-validation-00039
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [437, 248], neighbors: [14: 38.6, 17: 61.4];
+Node 1, coordinates: [338, 391], neighbors: [17: 123.2, 12: 152.6];
+Node 2, coordinates: [606, 455], neighbors: [9: 165.6, 17: 228.7];
+Node 3, coordinates: [807, 183], neighbors: [4: 71.1, 16: 152.1];
+Node 4, coordinates: [840, 246], neighbors: [3: 71.1, 16: 82.6];
+Node 5, coordinates: [363, 877], neighbors: [18: 163.1, 15: 204.7];
+Node 6, coordinates: [869, 820], neighbors: [10: 297.8, 18: 352.3];
+Node 7, coordinates: [174, 52], neighbors: [13: 133.9, 12: 240.4];
+Node 8, coordinates: [106, 473], neighbors: [1: 246.1, 15: 274.1];
+Node 9, coordinates: [461, 535], neighbors: [2: 165.6, 1: 189.4];
+Node 10, coordinates: [616, 977], neighbors: [18: 121.8, 5: 272.0];
+Node 11, coordinates: [863, 40], neighbors: [19: 58.0, 3: 153.6];
+Node 12, coordinates: [325, 239], neighbors: [14: 74.0, 0: 112.4];
+Node 13, coordinates: [51, 105], neighbors: [7: 133.9, 12: 305.0];
+Node 14, coordinates: [399, 241], neighbors: [0: 38.6, 12: 74.0];
+Node 15, coordinates: [252, 705], neighbors: [5: 204.7, 9: 269.4];
+Node 16, coordinates: [856, 327], neighbors: [4: 82.6, 3: 152.1];
+Node 17, coordinates: [430, 309], neighbors: [0: 61.4, 14: 74.7];
+Node 18, coordinates: [525, 896], neighbors: [10: 121.8, 5: 163.1];
+Node 19, coordinates: [921, 39], neighbors: [11: 58.0, 3: 183.7];
+
+Candidate 1; seed 354; 29.00 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3784.495
+
+Candidate 2; seed 355; 29.19 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3707.913
+
+Candidate 3; seed 356; 28.74 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3861.424
+
+Candidate 4; seed 357; 29.23 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3700.823
+
+Candidate 5; seed 358; 29.14 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3689.204
+
+Candidate 6; seed 359; 29.18 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3878.100
+
+Candidate 7; seed 360; 28.76 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3774.020
+
+Candidate 8; seed 361; 29.24 s
+Route: [0, 14, 12, 7, 13, 8, 15, 5, 18, 10, 6, 16, 4, 19, 11, 3, 2, 9, 1, 17, 0], Objective: 3783.742
+
+tsp20-validation-00040
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [346, 605], neighbors: [15: 144.1, 18: 170.5];
+Node 1, coordinates: [902, 974], neighbors: [2: 222.4, 10: 381.4];
+Node 2, coordinates: [684, 930], neighbors: [10: 159.3, 1: 222.4];
+Node 3, coordinates: [124, 340], neighbors: [13: 138.3, 5: 199.1];
+Node 4, coordinates: [211, 68], neighbors: [16: 36.9, 5: 109.0];
+Node 5, coordinates: [130, 141], neighbors: [13: 99.0, 4: 109.0];
+Node 6, coordinates: [541, 396], neighbors: [14: 43.2, 8: 97.0];
+Node 7, coordinates: [677, 552], neighbors: [6: 207.0, 8: 217.8];
+Node 8, coordinates: [476, 468], neighbors: [6: 97.0, 14: 130.2];
+Node 9, coordinates: [680, 270], neighbors: [19: 97.0, 14: 165.3];
+Node 10, coordinates: [526, 910], neighbors: [17: 107.8, 2: 159.3];
+Node 11, coordinates: [75, 559], neighbors: [12: 55.7, 15: 156.5];
+Node 12, coordinates: [130, 550], neighbors: [11: 55.7, 15: 120.7];
+Node 13, coordinates: [191, 219], neighbors: [5: 99.0, 3: 138.3];
+Node 14, coordinates: [537, 353], neighbors: [6: 43.2, 8: 130.2];
+Node 15, coordinates: [207, 643], neighbors: [18: 50.5, 12: 120.7];
+Node 16, coordinates: [242, 88], neighbors: [4: 36.9, 5: 123.9];
+Node 17, coordinates: [475, 815], neighbors: [10: 107.8, 2: 238.5];
+Node 18, coordinates: [200, 693], neighbors: [15: 50.5, 12: 159.2];
+Node 19, coordinates: [774, 294], neighbors: [9: 97.0, 14: 244.2];
+
+Candidate 1; seed 362; 29.05 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3389.197
+
+Candidate 2; seed 363; 29.20 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 19, 9, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3107.456
+
+Candidate 3; seed 364; 28.75 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3409.208
+
+Candidate 4; seed 365; 29.28 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3245.708
+
+Candidate 5; seed 366; 29.13 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3296.658
+
+Candidate 6; seed 367; 29.25 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 19, 9, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3366.238
+
+Candidate 7; seed 368; 28.80 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3321.402
+
+Candidate 8; seed 369; 29.25 s
+Route: [0, 17, 10, 2, 1, 7, 8, 6, 14, 9, 19, 16, 4, 5, 13, 3, 11, 12, 15, 18, 0], Objective: 3319.009
+
+tsp20-validation-00041
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [966, 231], neighbors: [7: 309.9, 3: 345.4];
+Node 1, coordinates: [552, 580], neighbors: [16: 125.4, 9: 139.3];
+Node 2, coordinates: [55, 771], neighbors: [10: 203.8, 11: 218.7];
+Node 3, coordinates: [632, 319], neighbors: [7: 38.6, 9: 196.3];
+Node 4, coordinates: [305, 638], neighbors: [16: 167.9, 1: 253.7];
+Node 5, coordinates: [27, 282], neighbors: [14: 85.9, 11: 273.1];
+Node 6, coordinates: [389, 210], neighbors: [15: 142.5, 18: 231.0];
+Node 7, coordinates: [663, 296], neighbors: [3: 38.6, 9: 215.2];
+Node 8, coordinates: [328, 958], neighbors: [12: 183.2, 16: 317.1];
+Node 9, coordinates: [673, 511], neighbors: [1: 139.3, 19: 188.8];
+Node 10, coordinates: [11, 970], neighbors: [2: 203.8, 8: 317.2];
+Node 11, coordinates: [21, 555], neighbors: [2: 218.7, 14: 229.6];
+Node 12, coordinates: [507, 997], neighbors: [8: 183.2, 16: 325.2];
+Node 13, coordinates: [875, 889], neighbors: [19: 240.2, 12: 383.5];
+Node 14, coordinates: [93, 337], neighbors: [5: 85.9, 11: 229.6];
+Node 15, coordinates: [333, 79], neighbors: [18: 119.9, 6: 142.5];
+Node 16, coordinates: [469, 674], neighbors: [1: 125.4, 4: 167.9];
+Node 17, coordinates: [664, 39], neighbors: [7: 257.0, 3: 281.8];
+Node 18, coordinates: [215, 58], neighbors: [15: 119.9, 6: 231.0];
+Node 19, coordinates: [770, 673], neighbors: [9: 188.8, 1: 237.0];
+
+Candidate 1; seed 370; 29.00 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4480.689
+
+Candidate 2; seed 371; 29.22 s
+Route: [0, 7, 3, 9, 19, 1, 16, 4, 13, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4427.155
+
+Candidate 3; seed 372; 28.83 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4457.497
+
+Candidate 4; seed 373; 29.32 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4524.169
+
+Candidate 5; seed 374; 28.97 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4489.679
+
+Candidate 6; seed 375; 29.20 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4597.448
+
+Candidate 7; seed 376; 28.80 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4424.797
+
+Candidate 8; seed 377; 29.29 s
+Route: [0, 7, 3, 9, 19, 13, 1, 16, 4, 12, 8, 10, 2, 11, 14, 5, 18, 15, 6, 17, 0], Objective: 4305.759
+
+tsp20-validation-00042
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [664, 748], neighbors: [2: 53.7, 19: 78.9];
+Node 1, coordinates: [117, 910], neighbors: [7: 161.1, 9: 177.2];
+Node 2, coordinates: [690, 795], neighbors: [0: 53.7, 19: 87.1];
+Node 3, coordinates: [918, 24], neighbors: [12: 234.2, 8: 282.6];
+Node 4, coordinates: [776, 993], neighbors: [15: 82.0, 2: 215.9];
+Node 5, coordinates: [912, 412], neighbors: [8: 231.9, 12: 242.1];
+Node 6, coordinates: [580, 880], neighbors: [19: 85.2, 2: 139.0];
+Node 7, coordinates: [205, 775], neighbors: [9: 102.0, 1: 161.1];
+Node 8, coordinates: [747, 249], neighbors: [12: 48.4, 11: 198.8];
+Node 9, coordinates: [281, 843], neighbors: [7: 102.0, 1: 177.2];
+Node 10, coordinates: [313, 472], neighbors: [17: 24.1, 16: 249.5];
+Node 11, coordinates: [667, 431], neighbors: [13: 130.7, 8: 198.8];
+Node 12, coordinates: [777, 211], neighbors: [8: 48.4, 3: 234.2];
+Node 13, coordinates: [698, 558], neighbors: [11: 130.7, 0: 193.0];
+Node 14, coordinates: [450, 258], neighbors: [17: 243.8, 10: 254.1];
+Node 15, coordinates: [833, 934], neighbors: [4: 82.0, 2: 199.4];
+Node 16, coordinates: [77, 553], neighbors: [18: 26.0, 10: 249.5];
+Node 17, coordinates: [337, 474], neighbors: [10: 24.1, 14: 243.8];
+Node 18, coordinates: [52, 546], neighbors: [16: 26.0, 10: 271.3];
+Node 19, coordinates: [603, 798], neighbors: [0: 78.9, 6: 85.2];
+
+Candidate 1; seed 378; 28.99 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 16, 18, 7, 1, 9, 6, 19, 0], Objective: 3348.697
+
+Candidate 2; seed 379; 29.19 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 18, 16, 7, 1, 9, 6, 19, 0], Objective: 3589.246
+
+Candidate 3; seed 380; 28.66 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 16, 16, 1, 1, 9, 6, 19, 0], Objective: 3724.475
+
+Candidate 4; seed 381; 29.23 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 16, 18, 7, 1, 9, 6, 19, 0], Objective: 3611.060
+
+Candidate 5; seed 382; 29.03 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 16, 18, 7, 1, 9, 6, 19, 0], Objective: 3614.525
+
+Candidate 6; seed 383; 29.15 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 16, 18, 7, 1, 9, 6, 19, 0], Objective: 3549.266
+
+Candidate 7; seed 384; 28.73 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 18, 16, 1, 1, 9, 6, 19, 0], Objective: 3674.771
+
+Candidate 8; seed 385; 29.33 s
+Route: [0, 2, 4, 15, 13, 11, 5, 3, 12, 8, 14, 17, 10, 18, 16, 7, 1, 9, 6, 19, 0], Objective: 3507.197
+
+tsp20-validation-00043
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [244, 812], neighbors: [7: 180.1, 8: 193.2];
+Node 1, coordinates: [845, 275], neighbors: [9: 139.1, 2: 199.4];
+Node 2, coordinates: [680, 387], neighbors: [9: 167.9, 1: 199.4];
+Node 3, coordinates: [730, 66], neighbors: [9: 157.6, 1: 238.5];
+Node 4, coordinates: [374, 498], neighbors: [16: 180.2, 19: 195.7];
+Node 5, coordinates: [832, 683], neighbors: [11: 92.7, 13: 130.0];
+Node 6, coordinates: [55, 857], neighbors: [15: 114.5, 0: 194.3];
+Node 7, coordinates: [294, 985], neighbors: [0: 180.1, 18: 201.4];
+Node 8, coordinates: [437, 821], neighbors: [18: 91.7, 19: 156.7];
+Node 9, coordinates: [716, 223], neighbors: [1: 139.1, 3: 157.6];
+Node 10, coordinates: [897, 933], neighbors: [11: 170.2, 14: 246.5];
+Node 11, coordinates: [877, 764], neighbors: [5: 92.7, 10: 170.2];
+Node 12, coordinates: [168, 510], neighbors: [4: 206.3, 0: 311.4];
+Node 13, coordinates: [809, 555], neighbors: [17: 100.7, 5: 130.0];
+Node 14, coordinates: [679, 818], neighbors: [5: 204.0, 11: 205.2];
+Node 15, coordinates: [66, 971], neighbors: [6: 114.5, 7: 228.4];
+Node 16, coordinates: [444, 332], neighbors: [4: 180.2, 2: 242.3];
+Node 17, coordinates: [721, 604], neighbors: [13: 100.7, 5: 136.2];
+Node 18, coordinates: [478, 903], neighbors: [8: 91.7, 7: 201.4];
+Node 19, coordinates: [471, 668], neighbors: [8: 156.7, 4: 195.7];
+
+Candidate 1; seed 386; 29.14 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3851.459
+
+Candidate 2; seed 387; 29.26 s
+Route: [0, 7, 15, 6, 12, 4, 16, 3, 9, 1, 2, 17, 13, 5, 11, 10, 14, 18, 8, 19, 0], Objective: 3844.476
+
+Candidate 3; seed 388; 28.81 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3889.421
+
+Candidate 4; seed 389; 29.45 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3899.945
+
+Candidate 5; seed 390; 29.10 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3856.424
+
+Candidate 6; seed 391; 29.19 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3963.650
+
+Candidate 7; seed 392; 28.81 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3845.539
+
+Candidate 8; seed 393; 29.40 s
+Route: [0, 6, 15, 7, 8, 18, 14, 10, 11, 5, 17, 13, 2, 1, 9, 3, 16, 4, 12, 19, 0], Objective: 3861.928
+
+tsp20-validation-00044
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [63, 167], neighbors: [7: 354.3, 19: 356.7];
+Node 1, coordinates: [952, 452], neighbors: [10: 145.8, 17: 347.6];
+Node 2, coordinates: [677, 737], neighbors: [9: 246.6, 10: 266.3];
+Node 3, coordinates: [821, 46], neighbors: [13: 62.6, 12: 113.8];
+Node 4, coordinates: [325, 465], neighbors: [7: 49.2, 6: 99.4];
+Node 5, coordinates: [552, 298], neighbors: [17: 144.1, 15: 163.0];
+Node 6, coordinates: [401, 401], neighbors: [15: 72.6, 7: 88.5];
+Node 7, coordinates: [314, 417], neighbors: [4: 49.2, 6: 88.5];
+Node 8, coordinates: [151, 767], neighbors: [16: 112.3, 14: 188.2];
+Node 9, coordinates: [472, 874], neighbors: [2: 246.6, 14: 287.2];
+Node 10, coordinates: [897, 587], neighbors: [1: 145.8, 2: 266.3];
+Node 11, coordinates: [303, 603], neighbors: [16: 136.6, 4: 139.7];
+Node 12, coordinates: [711, 17], neighbors: [3: 113.8, 13: 149.8];
+Node 13, coordinates: [830, 108], neighbors: [3: 62.6, 12: 149.8];
+Node 14, coordinates: [195, 950], neighbors: [8: 188.2, 9: 287.2];
+Node 15, coordinates: [392, 329], neighbors: [6: 72.6, 7: 117.6];
+Node 16, coordinates: [178, 658], neighbors: [8: 112.3, 11: 136.6];
+Node 17, coordinates: [605, 432], neighbors: [5: 144.1, 6: 206.3];
+Node 18, coordinates: [920, 934], neighbors: [2: 312.8, 10: 347.8];
+Node 19, coordinates: [40, 523], neighbors: [16: 193.1, 8: 268.1];
+
+Candidate 1; seed 394; 29.05 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 16, 11, 19, 0], Objective: 4351.184
+
+Candidate 2; seed 395; 29.28 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 11, 11, 19, 0], Objective: 4234.639
+
+Candidate 3; seed 396; 28.65 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 11, 16, 19, 0], Objective: 4299.290
+
+Candidate 4; seed 397; 29.32 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 16, 16, 19, 0], Objective: 4076.698
+
+Candidate 5; seed 398; 29.00 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 16, 11, 19, 0], Objective: 4208.496
+
+Candidate 6; seed 399; 29.19 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 11, 11, 19, 0], Objective: 4179.932
+
+Candidate 7; seed 400; 28.70 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 16, 11, 19, 0], Objective: 4279.918
+
+Candidate 8; seed 401; 29.35 s
+Route: [0, 7, 4, 6, 15, 17, 5, 12, 3, 13, 1, 10, 18, 2, 9, 14, 8, 11, 11, 19, 0], Objective: 4194.888
+
+tsp20-validation-00045
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [972, 906], neighbors: [3: 50.0, 16: 175.1];
+Node 1, coordinates: [620, 709], neighbors: [2: 33.6, 6: 128.8];
+Node 2, coordinates: [640, 682], neighbors: [1: 33.6, 6: 95.9];
+Node 3, coordinates: [982, 857], neighbors: [0: 50.0, 7: 186.4];
+Node 4, coordinates: [502, 892], neighbors: [10: 155.4, 18: 206.3];
+Node 5, coordinates: [347, 242], neighbors: [12: 141.9, 13: 204.4];
+Node 6, coordinates: [714, 621], neighbors: [2: 95.9, 1: 128.8];
+Node 7, coordinates: [798, 827], neighbors: [11: 74.3, 16: 121.1];
+Node 8, coordinates: [536, 31], neighbors: [13: 202.1, 5: 283.3];
+Node 9, coordinates: [625, 485], neighbors: [6: 162.5, 2: 197.6];
+Node 10, coordinates: [376, 983], neighbors: [18: 144.8, 4: 155.4];
+Node 11, coordinates: [791, 753], neighbors: [7: 74.3, 6: 152.8];
+Node 12, coordinates: [314, 380], neighbors: [5: 141.9, 9: 328.2];
+Node 13, coordinates: [334, 38], neighbors: [8: 202.1, 5: 204.4];
+Node 14, coordinates: [161, 849], neighbors: [18: 137.5, 19: 150.7];
+Node 15, coordinates: [95, 657], neighbors: [19: 157.2, 14: 203.0];
+Node 16, coordinates: [802, 948], neighbors: [7: 121.1, 0: 175.1];
+Node 17, coordinates: [338, 755], neighbors: [19: 105.0, 18: 113.3];
+Node 18, coordinates: [298, 861], neighbors: [17: 113.3, 14: 137.5];
+Node 19, coordinates: [239, 720], neighbors: [17: 105.0, 14: 150.7];
+
+Candidate 1; seed 402; 29.10 s
+Route: [0, 3, 1, 4, 10, 18, 14, 17, 19, 15, 12, 5, 13, 8, 9, 6, 2, 11, 7, 16, 0], Objective: 3497.727
+
+Candidate 2; seed 403; 29.30 s
+Route: [0, 3, 9, 8, 13, 5, 12, 15, 14, 19, 17, 18, 10, 4, 1, 2, 6, 11, 7, 16, 0], Objective: 3543.205
+
+Candidate 3; seed 404; 28.80 s
+Route: [0, 3, 2, 1, 4, 10, 18, 14, 17, 19, 15, 12, 5, 13, 8, 9, 6, 11, 7, 16, 0], Objective: 3403.944
+
+Candidate 4; seed 405; 29.45 s
+Route: [0, 3, 2, 1, 4, 10, 18, 14, 17, 19, 15, 12, 5, 13, 8, 9, 6, 11, 7, 16, 0], Objective: 3417.225
+
+Candidate 5; seed 406; 29.10 s
+Route: [0, 3, 4, 10, 18, 14, 17, 19, 15, 12, 5, 13, 8, 9, 2, 1, 6, 11, 7, 16, 0], Objective: 3595.684
+
+Candidate 6; seed 407; 29.22 s
+Route: [0, 3, 9, 8, 13, 5, 12, 15, 14, 19, 17, 18, 10, 4, 1, 2, 6, 11, 7, 16, 0], Objective: 3641.786
+
+Candidate 7; seed 408; 28.76 s
+Route: [0, 3, 2, 1, 10, 4, 18, 14, 17, 19, 15, 12, 13, 5, 8, 9, 6, 11, 7, 16, 0], Objective: 3531.499
+
+Candidate 8; seed 409; 29.42 s
+Route: [0, 3, 9, 8, 13, 5, 12, 15, 19, 17, 14, 18, 10, 4, 1, 2, 6, 11, 7, 16, 0], Objective: 3589.468
+
+tsp20-validation-00046
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [797, 309], neighbors: [3: 84.2, 12: 131.2];
+Node 1, coordinates: [260, 427], neighbors: [8: 95.4, 13: 129.3];
+Node 2, coordinates: [49, 942], neighbors: [10: 116.0, 19: 179.0];
+Node 3, coordinates: [791, 225], neighbors: [0: 84.2, 6: 167.9];
+Node 4, coordinates: [141, 567], neighbors: [1: 183.7, 19: 210.5];
+Node 5, coordinates: [191, 4], neighbors: [14: 169.9, 17: 221.1];
+Node 6, coordinates: [902, 99], neighbors: [3: 167.9, 0: 234.8];
+Node 7, coordinates: [863, 633], neighbors: [11: 158.3, 12: 297.4];
+Node 8, coordinates: [205, 349], neighbors: [13: 47.4, 1: 95.4];
+Node 9, coordinates: [537, 666], neighbors: [16: 102.0, 18: 141.5];
+Node 10, coordinates: [75, 829], neighbors: [19: 67.0, 2: 116.0];
+Node 11, coordinates: [793, 491], neighbors: [12: 142.8, 7: 158.3];
+Node 12, coordinates: [693, 389], neighbors: [0: 131.2, 11: 142.8];
+Node 13, coordinates: [220, 304], neighbors: [8: 47.4, 1: 129.3];
+Node 14, coordinates: [143, 167], neighbors: [17: 98.0, 13: 157.2];
+Node 15, coordinates: [381, 341], neighbors: [1: 148.4, 13: 165.2];
+Node 16, coordinates: [475, 747], neighbors: [18: 44.0, 9: 102.0];
+Node 17, coordinates: [45, 170], neighbors: [14: 98.0, 13: 220.4];
+Node 18, coordinates: [434, 763], neighbors: [16: 44.0, 9: 141.5];
+Node 19, coordinates: [116, 776], neighbors: [10: 67.0, 2: 179.0];
+
+Candidate 1; seed 410; 29.08 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3550.490
+
+Candidate 2; seed 411; 29.04 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3417.256
+
+Candidate 3; seed 412; 28.73 s
+Route: [0, 3, 6, 5, 14, 17, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3577.689
+
+Candidate 4; seed 413; 29.31 s
+Route: [0, 3, 6, 5, 14, 17, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3564.789
+
+Candidate 5; seed 414; 29.19 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3692.442
+
+Candidate 6; seed 415; 29.01 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3640.620
+
+Candidate 7; seed 416; 28.74 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3565.815
+
+Candidate 8; seed 417; 29.25 s
+Route: [0, 3, 6, 5, 17, 14, 15, 13, 8, 1, 4, 19, 10, 2, 18, 16, 9, 7, 11, 12, 0], Objective: 3741.795
+
+tsp20-validation-00047
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [292, 776], neighbors: [15: 209.4, 6: 215.4];
+Node 1, coordinates: [576, 770], neighbors: [15: 116.2, 14: 188.5];
+Node 2, coordinates: [444, 360], neighbors: [19: 40.7, 18: 180.0];
+Node 3, coordinates: [45, 908], neighbors: [12: 184.1, 0: 280.1];
+Node 4, coordinates: [15, 509], neighbors: [11: 140.9, 12: 218.2];
+Node 5, coordinates: [377, 29], neighbors: [18: 162.1, 7: 263.4];
+Node 6, coordinates: [372, 976], neighbors: [15: 174.2, 0: 215.4];
+Node 7, coordinates: [115, 2], neighbors: [5: 263.4, 18: 327.1];
+Node 8, coordinates: [870, 488], neighbors: [9: 106.8, 13: 116.7];
+Node 9, coordinates: [795, 412], neighbors: [10: 93.9, 13: 96.7];
+Node 10, coordinates: [835, 327], neighbors: [13: 65.8, 9: 93.9];
+Node 11, coordinates: [67, 378], neighbors: [4: 140.9, 17: 196.4];
+Node 12, coordinates: [52, 724], neighbors: [3: 184.1, 4: 218.2];
+Node 13, coordinates: [883, 372], neighbors: [10: 65.8, 9: 96.7];
+Node 14, coordinates: [758, 721], neighbors: [1: 188.5, 8: 258.5];
+Node 15, coordinates: [489, 847], neighbors: [1: 116.2, 6: 174.2];
+Node 16, coordinates: [632, 377], neighbors: [9: 166.7, 2: 188.8];
+Node 17, coordinates: [236, 478], neighbors: [11: 196.4, 4: 223.2];
+Node 18, coordinates: [382, 191], neighbors: [19: 139.5, 5: 162.1];
+Node 19, coordinates: [427, 323], neighbors: [2: 40.7, 18: 139.5];
+
+Candidate 1; seed 418; 29.14 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3659.512
+
+Candidate 2; seed 419; 28.95 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3863.116
+
+Candidate 3; seed 420; 28.75 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3934.639
+
+Candidate 4; seed 421; 29.23 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3838.918
+
+Candidate 5; seed 422; 29.15 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3819.867
+
+Candidate 6; seed 423; 28.91 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3723.524
+
+Candidate 7; seed 424; 28.69 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3864.747
+
+Candidate 8; seed 425; 29.24 s
+Route: [0, 3, 12, 4, 11, 17, 7, 5, 18, 19, 2, 16, 9, 10, 13, 8, 14, 1, 15, 6, 0], Objective: 3885.901
+
+tsp20-validation-00048
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [13, 212], neighbors: [6: 100.1, 2: 151.6];
+Node 1, coordinates: [735, 151], neighbors: [13: 83.0, 12: 233.1];
+Node 2, coordinates: [84, 346], neighbors: [17: 46.4, 6: 99.5];
+Node 3, coordinates: [464, 677], neighbors: [9: 296.4, 15: 307.8];
+Node 4, coordinates: [131, 955], neighbors: [10: 112.5, 15: 426.4];
+Node 5, coordinates: [759, 967], neighbors: [19: 92.9, 16: 171.7];
+Node 6, coordinates: [106, 249], neighbors: [2: 99.5, 0: 100.1];
+Node 7, coordinates: [523, 334], neighbors: [9: 164.3, 13: 200.1];
+Node 8, coordinates: [927, 567], neighbors: [18: 46.9, 11: 79.1];
+Node 9, coordinates: [646, 443], neighbors: [7: 164.3, 13: 228.5];
+Node 10, coordinates: [159, 846], neighbors: [4: 112.5, 15: 314.7];
+Node 11, coordinates: [994, 609], neighbors: [18: 33.2, 8: 79.1];
+Node 12, coordinates: [968, 143], neighbors: [1: 233.1, 13: 291.8];
+Node 13, coordinates: [686, 218], neighbors: [1: 83.0, 7: 200.1];
+Node 14, coordinates: [362, 17], neighbors: [6: 345.5, 7: 355.5];
+Node 15, coordinates: [192, 533], neighbors: [17: 202.5, 2: 215.9];
+Node 16, coordinates: [816, 805], neighbors: [5: 171.7, 19: 187.9];
+Node 17, coordinates: [56, 383], neighbors: [2: 46.4, 6: 143.0];
+Node 18, coordinates: [963, 597], neighbors: [11: 33.2, 8: 46.9];
+Node 19, coordinates: [849, 990], neighbors: [5: 92.9, 16: 187.9];
+
+Candidate 1; seed 426; 29.04 s
+Route: [0, 6, 2, 17, 15, 10, 4, 3, 5, 19, 16, 11, 18, 8, 12, 1, 13, 9, 7, 14, 0], Objective: 4089.109
+
+Candidate 2; seed 427; 28.76 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 3996.431
+
+Candidate 3; seed 428; 28.53 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 4084.892
+
+Candidate 4; seed 429; 29.27 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 4175.429
+
+Candidate 5; seed 430; 29.02 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 4045.178
+
+Candidate 6; seed 431; 28.72 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 4029.956
+
+Candidate 7; seed 432; 28.46 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 3007.587
+
+Candidate 8; seed 433; 29.14 s
+Route: [0, 6, 2, 17, 15, 4, 10, 3, 5, 19, 16, 11, 18, 8, 9, 12, 1, 13, 7, 14, 0], Objective: 4102.837
+
+tsp20-validation-00049
+PROMPT
+### Instruction
+Find a minimum-distance closed tour through the 20 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [315, 252], neighbors: [15: 161.5, 2: 163.9];
+Node 1, coordinates: [962, 551], neighbors: [18: 275.7, 14: 374.4];
+Node 2, coordinates: [452, 162], neighbors: [11: 160.0, 0: 163.9];
+Node 3, coordinates: [781, 977], neighbors: [14: 89.9, 5: 178.9];
+Node 4, coordinates: [263, 716], neighbors: [8: 142.2, 9: 168.4];
+Node 5, coordinates: [634, 875], neighbors: [12: 121.7, 3: 178.9];
+Node 6, coordinates: [665, 59], neighbors: [11: 132.5, 10: 205.3];
+Node 7, coordinates: [87, 570], neighbors: [8: 179.8, 4: 228.7];
+Node 8, coordinates: [124, 746], neighbors: [13: 72.9, 9: 114.6];
+Node 9, coordinates: [165, 853], neighbors: [13: 82.9, 8: 114.6];
+Node 10, coordinates: [848, 152], neighbors: [18: 158.0, 6: 205.3];
+Node 11, coordinates: [611, 180], neighbors: [6: 132.5, 2: 160.0];
+Node 12, coordinates: [514, 895], neighbors: [5: 121.7, 3: 279.3];
+Node 13, coordinates: [93, 812], neighbors: [8: 72.9, 9: 82.9];
+Node 14, coordinates: [829, 901], neighbors: [3: 89.9, 5: 196.7];
+Node 15, coordinates: [173, 329], neighbors: [0: 161.5, 7: 255.9];
+Node 16, coordinates: [609, 352], neighbors: [19: 108.2, 17: 115.9];
+Node 17, coordinates: [504, 401], neighbors: [19: 15.3, 16: 115.9];
+Node 18, coordinates: [830, 309], neighbors: [10: 158.0, 16: 225.1];
+Node 19, coordinates: [517, 409], neighbors: [17: 15.3, 16: 108.2];
+
+Candidate 1; seed 434; 29.12 s
+Route: [0, 2, 11, 6, 10, 18, 19, 17, 16, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3671.923
+
+Candidate 2; seed 435; 28.95 s
+Route: [0, 2, 11, 6, 10, 18, 19, 17, 16, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3508.875
+
+Candidate 3; seed 436; 28.70 s
+Route: [0, 2, 11, 6, 10, 18, 19, 17, 16, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3609.423
+
+Candidate 4; seed 437; 29.21 s
+Route: [0, 2, 11, 6, 10, 16, 19, 17, 18, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3584.308
+
+Candidate 5; seed 438; 29.11 s
+Route: [0, 2, 11, 6, 10, 18, 19, 17, 16, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3620.652
+
+Candidate 6; seed 439; 28.93 s
+Route: [0, 2, 11, 6, 10, 16, 19, 17, 18, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3569.443
+
+Candidate 7; seed 440; 28.73 s
+Route: [0, 2, 11, 6, 10, 18, 16, 17, 19, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3679.322
+
+Candidate 8; seed 441; 29.23 s
+Route: [0, 2, 11, 6, 10, 18, 19, 17, 16, 1, 14, 3, 5, 12, 4, 9, 13, 8, 7, 15, 0], Objective: 3476.118

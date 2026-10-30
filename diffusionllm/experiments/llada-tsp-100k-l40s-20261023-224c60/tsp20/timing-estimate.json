@@ -1,0 +1,9 @@
+{
+  "status": "profile_passed",
+  "task": "tsp20",
+  "gpu": "NVIDIA L40S",
+  "seconds_per_update": 6.690983824742337,
+  "training_hours_estimate": 11.61629136239989,
+  "evaluation_hours_estimate": 1.4037890306673944,
+  "qualification": "Four updates and one answer only; excludes queue, preemption, loading, checkpoint I/O and data preparation."
+}

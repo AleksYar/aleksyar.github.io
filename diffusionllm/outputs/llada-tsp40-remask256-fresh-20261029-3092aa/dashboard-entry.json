@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa",
+  "run_dir": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa",
+  "title": "TSP40 · 100 fresh cases · learned remasking",
+  "status": "completed",
+  "created_at": "2026-10-29T20:33:18.442150+00:00",
+  "updated_at": "2026-10-29T21:13:00.202754+00:00",
+  "job_id": "1468499",
+  "scheduler": {
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:27:35"
+  },
+  "description": "TSP-specific head and decoder; general questions are unsupported in this mode. 100 fresh TSP40 cases · unchanged TSP20-trained 500k checkpoint · learned remasking with a 256-call cap · latest completion always retained.",
+  "note": "All 100 cases collected and audited. Initial: 52 valid, 0 optimal. Final: 71 valid, 2 optimal. Allocation: 27m35s. Both tests: 36m05s and 2.406 GPU-hours.",
+  "requested": 100,
+  "answers_saved": 100,
+  "metrics": {
+    "requested": 100,
+    "generated": 100,
+    "missing": 0,
+    "valid": 71,
+    "optimal": 2,
+    "within_1pct": 9,
+    "valid_pct_generated": 71.0,
+    "valid_pct_requested": 71.0,
+    "mean_gap_pct_valid": 11.909549421209789,
+    "median_gap_pct_valid": 7.663017218906187,
+    "within_1pct_pct_requested": 9.0
+  },
+  "dataset_sha256": "c077e28b122351f7759ca5324720dabffff0fbeed0f0ad8f4789a2330fc9f44c",
+  "config_sha256": "bc66af036782d56aacb5c3e0d8aee3533d0dfe6cd96fcd4c8f1b18ac9c0fd58b",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "All saved answers",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/raw-answers.txt",
+      "kind": "Answers"
+    },
+    {
+      "label": "Answers as JSONL",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/answers.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Scored summary",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/summary.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Per-instance scores",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/scores.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Run provenance",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/results/run.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Slurm accounting",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/slurm-accounting.txt",
+      "kind": "Log"
+    },
+    {
+      "label": "Job script",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/run.sbatch",
+      "kind": "Code"
+    },
+    {
+      "label": "Submission record",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/submission.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "tsp40-fresh-3092aa-1468499.out",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/logs/tsp40-fresh-3092aa-1468499.out",
+      "kind": "Log"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

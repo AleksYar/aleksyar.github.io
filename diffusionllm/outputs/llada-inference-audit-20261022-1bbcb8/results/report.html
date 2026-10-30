@@ -1,0 +1,419 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LLaDA inference audit</title><style>body{margin:0;background:#f3f6f8;color:#203246;font:16px/1.6 system-ui,sans-serif}main{max-width:1080px;margin:auto;padding:38px 24px 70px}h1{font-size:36px;line-height:1.2}h2{margin-top:32px}h3{font-size:17px}.label{font-size:12px;letter-spacing:1.4px;font-weight:750;color:#527184}.card,details{background:white;border:1px solid #d9e2e9;border-radius:12px;padding:20px;margin:14px 0}.highlight{border-left:5px solid #247985}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:15px;border-radius:8px;background:#eef3f7;font:13px/1.6 ui-monospace,monospace}table{width:100%;border-collapse:collapse;min-width:600px}th,td{text-align:left;padding:12px;border-bottom:1px solid #dce5eb}.scroll{overflow:auto}summary{cursor:pointer;font-weight:650}a{color:#176880}.muted{color:#5b7083;font-size:14px}code{overflow-wrap:anywhere}</style><style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style></head><body><nav class="public-nav" aria-label="Experiment library"><a href="../../../index.html">← All experiments</a><a href="../../../about.html">About these results</a></nav><main>
+<div class="label">NEWTON · OFFICIAL IMPLEMENTATION CHECK · 22 OCTOBER 2026</div><h1>Are we running LLaDA correctly?</h1>
+<div class="card highlight"><strong>The official sampler reproduced 20 of the 20 previous readable answers at identical settings.</strong><p>Official sampling produced 0/20 valid tours under the primary parser, and 0/20 complete tours when unambiguous bare comma lists are inspected separately. This diagnostic does not repair or rescore prior answers.</p></div>
+<p><strong>These results support correct inference for the tested configuration.</strong> All 20 complete token arrays match the official sampler. The copy control reproduced the supplied 11-entry list exactly; arithmetic gave the correct 72 km; the four-city square received an optimal tour of length 4, with a formatting error (missing brackets). Together, these checks point to a task/prompt limitation in the TSP10 results.</p>
+<h2>What was actually tested</h2><div class="card scroll"><table><thead><tr><th>Check</th><th>Cases</th><th>Result</th></tr></thead><tbody>
+<tr><td>Replay frozen local sampler · 256/128/256</td><td>2</td><td>2/2 exact full-token matches</td></tr>
+<tr><td>Official sampler · same 256/128/256</td><td>20</td><td>20/20 text matches; 20/20 full-token matches</td></tr>
+<tr><td>Official chat example settings · 128/128/32</td><td>3</td><td>0/3 strict-valid; 0/3 semantically complete</td></tr>
+<tr><td>Token-by-token input trace · first TSP case</td><td>128 passes</td><td>128/128 identical model inputs</td></tr>
+<tr><td>Copying, arithmetic, four-city square</td><td>3</td><td>Full responses below</td></tr></tbody></table></div>
+<p class="muted">Settings are output positions / diffusion passes / block length. One A40, BF16, untuned LLaDA-8B-Instruct, temperature 0, seed 42, no guidance or EOS suppression. Job 1458371: 00:05:54, exit 0, within a 15-minute hard cap.</p>
+<h2>Checks that passed</h2><ul><li>Every original prompt is distinct, and all token IDs match the official chat-template procedure.</li><li>Decoding the entire saved canvas gives the same readable text as the saved short answer. No omitted city is hidden by the stopping logic.</li><li>Cached tokenizer, model configuration, and model code match the pinned official files by content hash.</li><li>The loaded model class uses the official source, evaluation mode, bidirectional attention, no KV cache, and no LoRA modules.</li><li>All 28 requested diagnostic answers were saved, with complete token arrays and the expected number of passes.</li></ul>
+<h2>Implementation and interpretation limits</h2><p>Our sampler ranks confidence within the active block; the official sampler ranks a full sequence whose ineligible positions have negative-infinite confidence. These are equivalent when rankings are unique, but equal-confidence ties can select a different order. A synthetic test demonstrates this possibility. The table above records what happened with the actual model.</p>
+<p>The earlier benchmark used two newly committed positions per step. The official chat example uses one per step and 32-position blocks. Both schedules are supported; the earlier setup was not the official chat default. Increasing output length and steps together left the same two-positions-per-step ratio. Already committed tokens are not revised by either sampler.</p>
+<p>Repeated numerical city sequences are consistent with a weak coordinate-to-route strategy under this prompt. These tests do not prove that every prompt or decoding setting will fail, and they do not establish a fine-tuned model's capability. The three chat-default cases are diagnostic, not a new 20-instance estimate. Weight files were checked for their expected content-addressed cache names and sizes; this audit did not rehash all 16 GB of weights.</p>
+<p>All 20 TSP10 outputs contain ten entries including the repeated starting city. A complete closed tour needs eleven entries. This is consistent with a counting or instruction-following failure; it is a behavioral interpretation, not a measurement of the model's internal reasoning. The generation procedure does not enforce the permutation constraint. A useful next prompt check would explicitly request eleven entries and allow reasoning before the final route, while keeping the official sampler fixed.</p>
+<h2>Simple controls</h2><div class="card"><h3>control-copy-route</h3><pre>Route: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]</pre><p>Complete tour.</p></div><div class="card"><h3>control-arithmetic</h3><pre>Lily can run 12 kilometers per hour for 4 hours, so she runs a total of 12 * 4 = 48 kilometers.
+After that, she runs 6 kilometers per hour for the remaining 4 hours, so she runs a total of 6 * 4 = 24 kilometers.
+Therefore, Lily can run a total of 48 + 24 = 72 kilometers in 8 hours.
+The final result is 72</pre><p>Arithmetic control; inspect answer against 72 km.</p></div><div class="card"><h3>control-square-tsp4</h3><pre>Route: 0,1,2,3,0</pre><p>Complete tour.</p></div>
+<h2>All 28 prompts and answers</h2><details><summary>replay-ours-tsp10-0000 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)
+City 5: (692, 758)
+City 6: (913, 558)
+City 7: (89, 604)
+City 8: (432, 32)
+City 9: (30, 95)</pre></details><details><summary>replay-ours-tsp10-0016 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,7,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6, 8]. Repeated cities: [7].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,7,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (880, 338)
+City 1: (72, 526)
+City 2: (243, 285)
+City 3: (685, 497)
+City 4: (219, 552)
+City 5: (135, 740)
+City 6: (957, 903)
+City 7: (584, 590)
+City 8: (484, 248)
+City 9: (803, 484)</pre></details><details><summary>official-same-tsp10-0000 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)
+City 5: (692, 758)
+City 6: (913, 558)
+City 7: (89, 604)
+City 8: (432, 32)
+City 9: (30, 95)</pre></details><details><summary>official-same-tsp10-0001 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (223, 238)
+City 1: (517, 616)
+City 2: (27, 574)
+City 3: (203, 733)
+City 4: (665, 718)
+City 5: (558, 429)
+City 6: (225, 459)
+City 7: (603, 284)
+City 8: (828, 890)
+City 9: (6, 777)</pre></details><details><summary>official-same-tsp10-0002 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (825, 163)
+City 1: (714, 432)
+City 2: (348, 284)
+City 3: (159, 220)
+City 4: (980, 781)
+City 5: (344, 104)
+City 6: (94, 389)
+City 7: (99, 367)
+City 8: (867, 352)
+City 9: (618, 270)</pre></details><details><summary>official-same-tsp10-0003 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 44)
+City 1: (747, 470)
+City 2: (549, 127)
+City 3: (996, 944)
+City 4: (387, 80)
+City 5: (565, 300)
+City 6: (849, 643)
+City 7: (633, 906)
+City 8: (882, 370)
+City 9: (591, 196)</pre></details><details><summary>official-same-tsp10-0004 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (721, 71)
+City 1: (46, 677)
+City 2: (233, 791)
+City 3: (296, 81)
+City 4: (875, 238)
+City 5: (887, 103)
+City 6: (389, 284)
+City 7: (464, 650)
+City 8: (854, 373)
+City 9: (166, 379)</pre></details><details><summary>official-same-tsp10-0005 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (363, 214)
+City 1: (686, 273)
+City 2: (718, 959)
+City 3: (699, 663)
+City 4: (73, 623)
+City 5: (650, 175)
+City 6: (546, 746)
+City 7: (250, 167)
+City 8: (473, 388)
+City 9: (276, 947)</pre></details><details><summary>official-same-tsp10-0006 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (655, 704)
+City 1: (570, 224)
+City 2: (701, 332)
+City 3: (863, 786)
+City 4: (794, 57)
+City 5: (234, 841)
+City 6: (32, 824)
+City 7: (323, 410)
+City 8: (274, 67)
+City 9: (216, 935)</pre></details><details><summary>official-same-tsp10-0007 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,6,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [5].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,6,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (965, 580)
+City 1: (897, 735)
+City 2: (322, 217)
+City 3: (671, 511)
+City 4: (405, 905)
+City 5: (936, 658)
+City 6: (469, 146)
+City 7: (271, 142)
+City 8: (252, 762)
+City 9: (574, 551)</pre></details><details><summary>official-same-tsp10-0008 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,6,7,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [8].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,6,7,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (269, 764)
+City 1: (598, 438)
+City 2: (919, 597)
+City 3: (408, 370)
+City 4: (224, 141)
+City 5: (521, 505)
+City 6: (93, 773)
+City 7: (48, 881)
+City 8: (112, 156)
+City 9: (642, 163)</pre></details><details><summary>official-same-tsp10-0009 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (811, 696)
+City 1: (432, 610)
+City 2: (65, 394)
+City 3: (390, 610)
+City 4: (479, 541)
+City 5: (257, 994)
+City 6: (566, 881)
+City 7: (965, 11)
+City 8: (696, 738)
+City 9: (117, 698)</pre></details><details><summary>official-same-tsp10-0010 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (906, 549)
+City 1: (768, 273)
+City 2: (787, 656)
+City 3: (348, 114)
+City 4: (300, 445)
+City 5: (161, 464)
+City 6: (3, 976)
+City 7: (739, 896)
+City 8: (736, 269)
+City 9: (995, 512)</pre></details><details><summary>official-same-tsp10-0011 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (780, 182)
+City 1: (519, 934)
+City 2: (108, 891)
+City 3: (640, 305)
+City 4: (861, 654)
+City 5: (519, 623)
+City 6: (203, 156)
+City 7: (382, 780)
+City 8: (165, 552)
+City 9: (976, 797)</pre></details><details><summary>official-same-tsp10-0012 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (944, 543)
+City 1: (940, 0)
+City 2: (613, 331)
+City 3: (500, 19)
+City 4: (114, 951)
+City 5: (371, 899)
+City 6: (851, 826)
+City 7: (314, 245)
+City 8: (59, 246)
+City 9: (899, 580)</pre></details><details><summary>official-same-tsp10-0013 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,6,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [7].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,6,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (969, 80)
+City 1: (87, 749)
+City 2: (497, 835)
+City 3: (70, 778)
+City 4: (545, 784)
+City 5: (128, 131)
+City 6: (675, 486)
+City 7: (969, 562)
+City 8: (169, 271)
+City 9: (540, 893)</pre></details><details><summary>official-same-tsp10-0014 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (621, 433)
+City 1: (987, 216)
+City 2: (951, 552)
+City 3: (773, 747)
+City 4: (706, 205)
+City 5: (730, 319)
+City 6: (408, 687)
+City 7: (665, 382)
+City 8: (448, 921)
+City 9: (529, 462)</pre></details><details><summary>official-same-tsp10-0015 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (123, 253)
+City 1: (230, 65)
+City 2: (346, 21)
+City 3: (602, 567)
+City 4: (235, 602)
+City 5: (225, 7)
+City 6: (72, 724)
+City 7: (646, 60)
+City 8: (234, 69)
+City 9: (927, 32)</pre></details><details><summary>official-same-tsp10-0016 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,7,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6, 8]. Repeated cities: [7].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,7,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (880, 338)
+City 1: (72, 526)
+City 2: (243, 285)
+City 3: (685, 497)
+City 4: (219, 552)
+City 5: (135, 740)
+City 6: (957, 903)
+City 7: (584, 590)
+City 8: (484, 248)
+City 9: (803, 484)</pre></details><details><summary>official-same-tsp10-0017 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (826, 416)
+City 1: (194, 96)
+City 2: (99, 674)
+City 3: (441, 362)
+City 4: (433, 420)
+City 5: (478, 884)
+City 6: (746, 55)
+City 7: (689, 669)
+City 8: (661, 100)
+City 9: (62, 412)</pre></details><details><summary>official-same-tsp10-0018 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,6,7,8,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (745, 347)
+City 1: (819, 882)
+City 2: (111, 254)
+City 3: (196, 194)
+City 4: (549, 459)
+City 5: (143, 432)
+City 6: (187, 285)
+City 7: (473, 255)
+City 8: (895, 945)
+City 9: (77, 453)</pre></details><details><summary>official-same-tsp10-0019 · 256/128/256</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><p>Incomplete or repeated-city route. Missing cities: [6].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (827, 882)
+City 1: (876, 563)
+City 2: (100, 51)
+City 3: (667, 553)
+City 4: (856, 15)
+City 5: (992, 95)
+City 6: (948, 771)
+City 7: (869, 242)
+City 8: (170, 416)
+City 9: (497, 492)</pre></details><details><summary>official-chat-tsp10-0000 · 128/128/32</summary><h3>Audit answer</h3><pre>Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (654, 114)
+City 1: (25, 759)
+City 2: (281, 250)
+City 3: (228, 142)
+City 4: (754, 104)
+City 5: (692, 758)
+City 6: (913, 558)
+City 7: (89, 604)
+City 8: (432, 32)
+City 9: (30, 95)</pre></details><details><summary>official-chat-tsp10-0007 · 128/128/32</summary><h3>Audit answer</h3><pre>Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,6,7,8,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (965, 580)
+City 1: (897, 735)
+City 2: (322, 217)
+City 3: (671, 511)
+City 4: (405, 905)
+City 5: (936, 658)
+City 6: (469, 146)
+City 7: (271, 142)
+City 8: (252, 762)
+City 9: (574, 551)</pre></details><details><summary>official-chat-tsp10-0016 · 128/128/32</summary><h3>Audit answer</h3><pre>Route: 0, 1, 2, 3, 4, 5, 6, 7, 8, 0</pre><p>Incomplete or repeated-city route. Missing cities: [9].</p><h3>Previous saved answer</h3><pre>Route: 0,1,2,3,4,5,7,7,9,0</pre><h3>Prompt</h3><pre>Solve the Euclidean Traveling Salesman Problem for these 10 cities.
+Find the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.
+Distances are straight-line Euclidean distances.
+Output only one line: Route: [city IDs separated by commas].
+Include city 0 at both the beginning and the end. Do not include explanations or an objective value.
+City 0: (880, 338)
+City 1: (72, 526)
+City 2: (243, 285)
+City 3: (685, 497)
+City 4: (219, 552)
+City 5: (135, 740)
+City 6: (957, 903)
+City 7: (584, 590)
+City 8: (484, 248)
+City 9: (803, 484)</pre></details><details><summary>control-copy-route · 128/128/32</summary><h3>Audit answer</h3><pre>Route: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]</pre><p>Complete tour.</p><h3>Prompt</h3><pre>Repeat this line exactly, without adding or removing anything:
+Route: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]</pre></details><details><summary>control-arithmetic · 128/128/32</summary><h3>Audit answer</h3><pre>Lily can run 12 kilometers per hour for 4 hours, so she runs a total of 12 * 4 = 48 kilometers.
+After that, she runs 6 kilometers per hour for the remaining 4 hours, so she runs a total of 6 * 4 = 24 kilometers.
+Therefore, Lily can run a total of 48 + 24 = 72 kilometers in 8 hours.
+The final result is 72</pre><p>Arithmetic control; inspect answer against 72 km.</p><h3>Prompt</h3><pre>Lily can run 12 kilometers per hour for 4 hours. After that, she runs 6 kilometers per hour. How many kilometers can she run in 8 hours?</pre></details><details><summary>control-square-tsp4 · 128/128/32</summary><h3>Audit answer</h3><pre>Route: 0,1,2,3,0</pre><p>Complete tour.</p><h3>Prompt</h3><pre>Solve this Euclidean Traveling Salesman Problem. Start at city 0, visit cities 1, 2, and 3 exactly once, then return to city 0. Find the shortest closed route. Output only Route: [city IDs separated by commas].
+City 0: (0, 0)
+City 1: (1, 0)
+City 2: (1, 1)
+City 3: (0, 1)</pre></details>
+<h2>Evidence and official sources</h2><p><a href="raw-answers.txt">All answers as text</a> · <a href="answers.jsonl">Full token arrays</a> · <a href="audit-summary.json">Audit summary and diagnostics</a> · <a href="../cache-verification.json">Cached-file verification</a> · <a href="../local-token-audit.json">Prompt and stopping checks</a> · <span class="local-artifact" title="Retained in the research workspace; not included in this public export">Terminal log <small>(local file)</small></span></p>
+<p><a href="https://github.com/ML-GSAI/LLaDA/blob/9182493720ed723ef8031210d85959364e51cbe0/generate.py">Pinned official sampler</a> · <a href="https://github.com/ML-GSAI/LLaDA/blob/9182493720ed723ef8031210d85959364e51cbe0/chat.py">Official chat example</a> · <a href="https://huggingface.co/GSAI-ML/LLaDA-8B-Instruct/tree/08b83a6feb34df1a6011b80c3c00c7563e963b07">Pinned model checkpoint</a></p>
+<details><summary>Runtime provenance</summary><pre>{
+  &quot;status&quot;: &quot;completed&quot;,
+  &quot;job_id&quot;: &quot;1458371&quot;,
+  &quot;hostname&quot;: &quot;newton4&quot;,
+  &quot;requested&quot;: 28,
+  &quot;generated&quot;: 28,
+  &quot;source_sha256&quot;: {
+    &quot;check_cache.py&quot;: &quot;4ff17a3e56ecfa313426cb3181cbed14b6954c2ba30ad9836b4705feb19dbfeb&quot;,
+    &quot;cpu_sampler_audit.py&quot;: &quot;9a680ec6b26f4cd75a5b1b625bb08279284801f14d0a4b59cd2d5bea8486b427&quot;,
+    &quot;llada_backend.py&quot;: &quot;54cc6bc5561bf5e5d1c09559c8c91a70387835d92dc177f9e5116c944c12ac69&quot;,
+    &quot;preflight.py&quot;: &quot;b1c66ea228a4ed9fff9c373441f841a5a4fe2e4fc28d2934c281b782519f6b93&quot;,
+    &quot;run_audit.py&quot;: &quot;c3b3882a71c433211e2d2f32602f08744018ae5a9d19dbd052ded8d70182e0fd&quot;,
+    &quot;tsp_benchmark.py&quot;: &quot;818abe582c7bf9b3c1a7db64ed4f40474f84fdb37ea503b223dc21218744778c&quot;,
+    &quot;official/chat.py&quot;: &quot;c4c3fc23c636c5ad165a7a1bc4c2977b482ed66e6c23033927229034ff7d0dee&quot;,
+    &quot;official/configuration_llada.py&quot;: &quot;c947a64d8b735affa69d5adeb416c83ce607c8925270884e4471ae11068e2bfe&quot;,
+    &quot;official/generate.py&quot;: &quot;d4d2d3c015511e63fe9237cd3197346148fb0c795b6c89e0b5ef4846be25252e&quot;,
+    &quot;official/modeling_llada.py&quot;: &quot;98bac7e53fef0bb7ca01e3716c11a7f710d183e10dbb9783b88db9dbba2e3766&quot;
+  },
+  &quot;config_sha256&quot;: &quot;52a868fd16da8c667e72eb4431359368ccdfc2e99526b4e17a81a15a0261528c&quot;,
+  &quot;model_revision&quot;: &quot;08b83a6feb34df1a6011b80c3c00c7563e963b07&quot;,
+  &quot;official_source_sha256&quot;: &quot;d4d2d3c015511e63fe9237cd3197346148fb0c795b6c89e0b5ef4846be25252e&quot;,
+  &quot;model_id&quot;: &quot;GSAI-ML/LLaDA-8B-Instruct&quot;,
+  &quot;model_class&quot;: &quot;LLaDAModelLM&quot;,
+  &quot;model_source&quot;: &quot;[cluster-home]/llada-tsp20-baseline-20261021/model-cache/modules/transformers_modules/08b83a6feb34df1a6011b80c3c00c7563e963b07/modeling_llada.py&quot;,
+  &quot;loaded_model_source_matches_official&quot;: true,
+  &quot;gpu&quot;: &quot;NVIDIA A40&quot;,
+  &quot;dtype&quot;: &quot;torch.bfloat16&quot;,
+  &quot;model_training&quot;: false,
+  &quot;use_cache&quot;: false,
+  &quot;adapter&quot;: null,
+  &quot;quantization&quot;: null,
+  &quot;parameter_devices&quot;: [
+    &quot;cuda:0&quot;
+  ],
+  &quot;torch_version&quot;: &quot;2.6.0+cu124&quot;,
+  &quot;elapsed_seconds&quot;: 352.86265881202416
+}</pre></details></main></body></html>

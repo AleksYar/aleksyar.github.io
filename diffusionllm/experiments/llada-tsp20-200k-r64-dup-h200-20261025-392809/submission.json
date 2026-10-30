@@ -1,0 +1,7 @@
+{
+  "preparation": "local_cpu_verified",
+  "remote_dir": "[cluster-home]/llada-tsp20-200k-r64-dup-h200-20261025-392809",
+  "training_examples": 200000,
+  "midpoint_examples": 100000,
+  "training_job": "1461382"
+}

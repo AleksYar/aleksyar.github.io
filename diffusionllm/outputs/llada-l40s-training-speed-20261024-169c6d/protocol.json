@@ -1,0 +1,49 @@
+{
+  "created_on": "2026-10-24",
+  "task": "TSP20 training throughput and memory benchmark",
+  "effective_batch_size": 16,
+  "ranks": [
+    16,
+    64
+  ],
+  "microbatches": [
+    2,
+    4,
+    8,
+    16
+  ],
+  "checkpointing": [
+    "all",
+    "half",
+    "quarter",
+    "none"
+  ],
+  "screening": {
+    "warmup_updates": 3,
+    "timed_updates": 7
+  },
+  "confirmation": {
+    "warmup_updates": 3,
+    "timed_updates": 24,
+    "selection": "baseline and fastest two configurations per rank with at least 3 GiB reserved-memory headroom"
+  },
+  "gpu": "one NVIDIA L40S",
+  "hard_limit_minutes": 50,
+  "soft_limit_minutes": 45,
+  "unchanged": [
+    "model revision",
+    "BF16 base",
+    "FP32 adapters",
+    "masked-response objective",
+    "dynamic EOS padding",
+    "learning rate 1e-4",
+    "AdamW",
+    "LoRA dropout 0.05",
+    "data order"
+  ],
+  "rank64_alpha": 64,
+  "rank16_alpha": 32,
+  "training_examples_for_projection": 500000,
+  "projected_updates": 31250,
+  "scope": "Short training profile only; no full fine-tuning or model quality evaluation. Results apply to TSP20-length examples, not mixed TSP10\u2013100."
+}

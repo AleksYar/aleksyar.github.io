@@ -1,0 +1,92 @@
+{
+  "phases": [
+    {
+      "name": "TSP10 fresh100",
+      "kind": "evaluation",
+      "runs": 1,
+      "parallel_runs": 1,
+      "run_waves": 1,
+      "timed_units_per_run": 25,
+      "gpus_per_run": 4,
+      "measurement": {
+        "seconds": [
+          17,
+          24
+        ],
+        "metric": "seconds_per_inference_batch_per_replica",
+        "evidence": "extrapolated",
+        "source": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/audit.json:29.5096868617s/case,255.95calls,L40S,four independent replicas. New measured input lengths:553.09tokens(TSP10),1888.55(TSP40),vs~997TSP20. Planning range allows memory-bound backbone and increased head-action evaluation; not a statistical confidence interval."
+      },
+      "compute_seconds_per_run": [
+        425.0,
+        600.0
+      ],
+      "known_wall_hours": [
+        0.12638888888888888,
+        0.18333333333333332
+      ],
+      "known_gpu_hours": [
+        0.5055555555555555,
+        0.7333333333333333
+      ]
+    },
+    {
+      "name": "TSP40 fresh100",
+      "kind": "evaluation",
+      "runs": 1,
+      "parallel_runs": 1,
+      "run_waves": 1,
+      "timed_units_per_run": 25,
+      "gpus_per_run": 4,
+      "measurement": {
+        "seconds": [
+          60,
+          96
+        ],
+        "metric": "seconds_per_inference_batch_per_replica",
+        "evidence": "extrapolated",
+        "source": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/results/audit.json:29.5096868617s/case,255.95calls,L40S,four independent replicas. New measured input lengths:553.09tokens(TSP10),1888.55(TSP40),vs~997TSP20. Planning range allows memory-bound backbone and increased head-action evaluation; not a statistical confidence interval."
+      },
+      "compute_seconds_per_run": [
+        1500.0,
+        2400.0
+      ],
+      "known_wall_hours": [
+        0.425,
+        0.6833333333333333
+      ],
+      "known_gpu_hours": [
+        1.7,
+        2.7333333333333334
+      ]
+    }
+  ],
+  "execution_model": "sequential phases; explicit concurrency within each phase",
+  "training_runs": 0,
+  "evaluation_case_attempts": 200,
+  "evaluation_forward_call_cap_total": 51200,
+  "peak_simultaneous_gpus": 4,
+  "compute_wall_hours": [
+    0.5347222222222222,
+    0.8333333333333334
+  ],
+  "known_allocation_wall_hours": [
+    0.5513888888888889,
+    0.8666666666666667
+  ],
+  "known_elapsed_hours": [
+    0.5513888888888889,
+    0.8666666666666667
+  ],
+  "known_gpu_hours": [
+    2.2055555555555557,
+    3.466666666666667
+  ],
+  "unestimated": [
+    "transfer and result collection wall time",
+    "queue time"
+  ],
+  "complete_elapsed_estimate": false,
+  "range_interpretation": "input planning scenarios, not a statistical confidence interval",
+  "jobs_submitted": false
+}

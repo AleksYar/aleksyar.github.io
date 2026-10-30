@@ -1,0 +1,2 @@
+JobID|JobName|State|ExitCode|Start|End|Elapsed|ElapsedRaw|AllocTRES|NodeList|Submit
+1468567|tsp300k-mask5-508fc3|COMPLETED|0:0|2026-10-30T00:09:40|2026-10-30T13:21:41|13:12:01|47521|billing=56,cpu=16,gres/gpu=4,node=1|nlp-l40-2|2026-10-30T00:09:13

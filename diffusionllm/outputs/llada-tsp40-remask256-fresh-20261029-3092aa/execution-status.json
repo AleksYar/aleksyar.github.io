@@ -1,0 +1,13 @@
+{
+  "observed_utc": "2026-10-29T21:11:50.405593+00:00",
+  "job_id": "1468499",
+  "status": "COMPLETED",
+  "exit_code": "0:0",
+  "cases": 100,
+  "gpus": 4,
+  "allocation_wall_seconds": 1655,
+  "allocated_gpu_hours": 1.8388888888888888,
+  "mean_seconds_per_case": 65.00359225963707,
+  "all_trajectories_audited": true,
+  "report": "results/report.html"
+}

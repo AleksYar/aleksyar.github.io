@@ -1,0 +1,90 @@
+{
+  "status": "measured",
+  "runs": [
+    {
+      "trial": "repeat1",
+      "mean_seconds_per_update": 2.365672882313707,
+      "setup_seconds": 12.190533814951777,
+      "elapsed_seconds": 38.82026968291029,
+      "peak_reserved_gib": 31.16796875
+    },
+    {
+      "trial": "repeat2",
+      "mean_seconds_per_update": 2.367960619607142,
+      "setup_seconds": 10.585112515836954,
+      "elapsed_seconds": 37.19738662568852,
+      "peak_reserved_gib": 31.16796875
+    }
+  ],
+  "mean_seconds_per_update": 2.3668167509604245,
+  "optimizer_updates": 18750,
+  "training_compute_point_hours": 12.327170577918878,
+  "planning": {
+    "phases": [
+      {
+        "name": "300k masking continuation",
+        "kind": "training",
+        "runs": 1,
+        "parallel_runs": 1,
+        "run_waves": 1,
+        "timed_units_per_run": 18750,
+        "gpus_per_run": 4,
+        "measurement": {
+          "seconds": [
+            2.248475913412403,
+            2.721839263604488
+          ],
+          "metric": "seconds_per_optimizer_update",
+          "evidence": "extrapolated",
+          "source": "Measured synchronized steps in profile/repeat1.json and repeat2.json; +/- planning margin, not a confidence interval."
+        },
+        "compute_seconds_per_run": [
+          42158.923376482555,
+          51034.486192584154
+        ],
+        "known_wall_hours": [
+          12.210812049022932,
+          15.17624616460671
+        ],
+        "known_gpu_hours": [
+          48.84324819609173,
+          60.70498465842684
+        ]
+      }
+    ],
+    "execution_model": "sequential phases; explicit concurrency within each phase",
+    "training_runs": 1,
+    "evaluation_case_attempts": 0,
+    "evaluation_forward_call_cap_total": 0,
+    "peak_simultaneous_gpus": 4,
+    "compute_wall_hours": [
+      11.710812049022932,
+      14.17624616460671
+    ],
+    "known_allocation_wall_hours": [
+      12.210812049022932,
+      15.17624616460671
+    ],
+    "known_elapsed_hours": [
+      12.210812049022932,
+      15.17624616460671
+    ],
+    "known_gpu_hours": [
+      48.84324819609173,
+      60.70498465842684
+    ],
+    "unestimated": [
+      "data transfer",
+      "interruptions or restart allowance",
+      "queue time"
+    ],
+    "complete_elapsed_estimate": false,
+    "range_interpretation": "input planning scenarios, not a statistical confidence interval",
+    "jobs_submitted": false
+  },
+  "profile_updates": 20,
+  "profile_training_records": 320,
+  "profile_weights_discarded": true,
+  "profile_gpu_hours_excluding_allocation_wrapper": 0.0844640625651098,
+  "full_training_gate_passed": true
+}

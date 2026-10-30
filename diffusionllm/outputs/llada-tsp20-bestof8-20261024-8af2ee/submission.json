@@ -1,0 +1,12 @@
+{
+  "job_id": "1460442",
+  "submitted_at_recorded": "2026-10-24T11:32:16.707817+00:00",
+  "remote_run_dir": "[cluster-home]/llada-tsp20-bestof8-20261024-8af2ee",
+  "node": "nlp-l40-1",
+  "account": "cs",
+  "partition": "public",
+  "gres": "gpu:L40:1",
+  "wall_limit": "12:00:00",
+  "slurm_test_only_passed": true,
+  "config_sha256": "c5502f2228e068f3e3806f6bc650fb52954848492c51ecfbd56555d7f1bb07ca"
+}

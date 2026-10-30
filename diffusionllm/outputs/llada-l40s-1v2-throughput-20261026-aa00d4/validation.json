@@ -1,0 +1,10 @@
+{
+  "status": "ok",
+  "trials_checked": 23,
+  "sample_hash_checked": true,
+  "uploaded_source_hashes_checked": true,
+  "accounting_checked": true,
+  "global_batch_and_token_counts_checked": true,
+  "finite_losses_gradients_and_updates_checked": true,
+  "ddp_replica_hashes_checked": true
+}

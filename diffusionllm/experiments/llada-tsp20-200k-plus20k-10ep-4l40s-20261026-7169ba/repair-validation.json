@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "tests": 14,
+  "change": "Verify exact restored adapter/optimizer/scheduler/RNG state, then bounded numerical next-update replay",
+  "diagnostic_job": "1462568",
+  "original_job": "1462555",
+  "max_observed_parameter_error": 1.862645149230957e-08,
+  "checkpoint_state_restored_exactly": true,
+  "data_config_training_recipe_unchanged": true,
+  "observed_at_utc": "2026-10-26T13:47:06.119142+00:00"
+}

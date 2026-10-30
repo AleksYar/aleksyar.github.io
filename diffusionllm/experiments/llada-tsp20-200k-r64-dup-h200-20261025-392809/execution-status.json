@@ -1,0 +1,45 @@
+{
+  "job_id": "1461382",
+  "state": "COMPLETED",
+  "exit_code": "0:0",
+  "node": "galileo4",
+  "elapsed": "07:41:02",
+  "started_at_cluster_local": "2026-10-25T16:08:54",
+  "ended_at_cluster_local": "2026-10-25T23:49:56",
+  "stage": "full_experiment",
+  "phase": "complete",
+  "step": 12500,
+  "examples_seen": 200000,
+  "answers_saved": 300,
+  "profile_status": {
+    "status": "complete",
+    "phase": "profile",
+    "step": 12,
+    "task": "tsp20",
+    "job_id": "1461382",
+    "updated_at_utc": "2026-10-25T14:11:58Z",
+    "examples_seen": 192,
+    "seconds_per_update_recent": 1.9397930005022015,
+    "peak_allocated_gib": 82.85898494720459
+  },
+  "training_status": {
+    "status": "complete",
+    "phase": "complete",
+    "step": 12500,
+    "task": "tsp20",
+    "job_id": "1461382",
+    "updated_at_utc": "2026-10-25T21:29:38Z",
+    "examples_seen": 200000,
+    "seconds_per_update_recent": 1.8643498254241422,
+    "peak_allocated_gib": 82.96289730072021
+  },
+  "timing_estimate": {
+    "status": "profile_passed",
+    "gpu": "NVIDIA H200 NVL",
+    "seconds_per_update": 1.8416973619023338,
+    "training_hours_estimate": 6.394782506605326,
+    "evaluation_hours_estimate": 0.9487382191776609,
+    "qualification": "12-update integration check with the new loss: four longest-example updates and eight representative updates; one validation answer. Excludes queue, preemption, loading, checkpoint I/O and data preparation."
+  },
+  "collected_at": "2026-10-26T11:22:53.116885+00:00"
+}

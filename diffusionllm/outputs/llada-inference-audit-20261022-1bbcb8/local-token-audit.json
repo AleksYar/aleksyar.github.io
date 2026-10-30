@@ -1,0 +1,178 @@
+{
+  "llada-tsp10-baseline-20261022-2d3ebe": {
+    "all_20_template_ids_match_official": true,
+    "unique_prompts": 20,
+    "all_20_full_canvas_decodes_equal_saved_answers": true,
+    "tail_token_counts": [
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 96
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 96
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 96
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 96
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      },
+      {
+        "126348": 1,
+        "126081": 105
+      }
+    ],
+    "example_rendered_prompt": "<|startoftext|><|start_header_id|>user<|end_header_id|>\n\nSolve the Euclidean Traveling Salesman Problem for these 10 cities.\nFind the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.\nDistances are straight-line Euclidean distances.\nOutput only one line: Route: [city IDs separated by commas].\nInclude city 0 at both the beginning and the end. Do not include explanations or an objective value.\nCity 0: (654, 114)\nCity 1: (25, 759)\nCity 2: (281, 250)\nCity 3: (228, 142)\nCity 4: (754, 104)\nCity 5: (692, 758)\nCity 6: (913, 558)\nCity 7: (89, 604)\nCity 8: (432, 32)\nCity 9: (30, 95)<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  },
+  "llada-tsp10-t256-s128-20261022-9ded8b": {
+    "all_20_template_ids_match_official": true,
+    "unique_prompts": 20,
+    "all_20_full_canvas_decodes_equal_saved_answers": true,
+    "tail_token_counts": [
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      },
+      {
+        "126348": 1,
+        "126081": 233
+      }
+    ],
+    "example_rendered_prompt": "<|startoftext|><|start_header_id|>user<|end_header_id|>\n\nSolve the Euclidean Traveling Salesman Problem for these 10 cities.\nFind the shortest closed route. Start at city 0, visit every other city exactly once, then return to city 0.\nDistances are straight-line Euclidean distances.\nOutput only one line: Route: [city IDs separated by commas].\nInclude city 0 at both the beginning and the end. Do not include explanations or an objective value.\nCity 0: (654, 114)\nCity 1: (25, 759)\nCity 2: (281, 250)\nCity 3: (228, 142)\nCity 4: (754, 104)\nCity 5: (692, 758)\nCity 6: (913, 558)\nCity 7: (89, 604)\nCity 8: (432, 32)\nCity 9: (30, 95)<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
+  }
+}

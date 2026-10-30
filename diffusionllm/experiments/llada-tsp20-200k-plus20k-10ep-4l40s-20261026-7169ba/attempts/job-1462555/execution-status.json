@@ -1,0 +1,12 @@
+{
+  "job_id": "1462555",
+  "state": "FAILED",
+  "exit_code": "1:0",
+  "elapsed": "00:01:24",
+  "node": "nlp-l40-1",
+  "observed_at_utc": "2026-10-26T13:41:45.516181+00:00",
+  "stage": "GPU validation gate",
+  "step": 12,
+  "full_training_started": false,
+  "failure": "Strict checkpoint replay assertion"
+}

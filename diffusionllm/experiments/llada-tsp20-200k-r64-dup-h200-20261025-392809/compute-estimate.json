@@ -1,0 +1,40 @@
+{
+  "new_examples": 200000,
+  "optimizer_updates": 12500,
+  "prior_h200_seconds_per_update": 1.84858405815127,
+  "prior_loss_training_only_hours": 6.418694646358577,
+  "planning_gpu_hours": [
+    7.5,
+    9.0
+  ],
+  "qualification": "Measured on this experiment: 12 GPU updates (4 longest-example stress updates, 8 representative updates) and one validation generation. Training timing excludes checkpoint/report I/O and evaluation; total range allows for them and model loading. Validation estimate extrapolates one answer. Queue and preemption are extra. CPU preparation finished locally in 402.45 seconds.",
+  "status": "completed_actuals_available",
+  "job_id": "1461382",
+  "updated_at": "2026-10-25T14:12:40.246169+00:00",
+  "new_loss_seconds_per_update": 1.8416973619023338,
+  "training_hours_estimate": 6.394782506605326,
+  "validation_hours_estimate": 0.9487382191776609,
+  "training_plus_validation_hours": 7.343520725782986,
+  "planning_central_gpu_hours": 8.0,
+  "midpoint_checkpoint_hours_from_start": [
+    3.5,
+    4.5
+  ],
+  "peak_allocated_gib": 82.85898494720459,
+  "peak_reserved_gib": 87.37109375,
+  "gpu_capacity_gib": 139.81109619140625,
+  "actual": {
+    "job_id": "1461382",
+    "wall_time": "07:41:02",
+    "gpu_hours": 7.683888888888889,
+    "training_update_seconds": 23174.63106304221,
+    "training_update_hours": 6.437397517511725,
+    "mean_seconds_per_update": 1.8539704850433767,
+    "median_seconds_per_update": 1.8564330404624343,
+    "evaluation_generation_seconds": 3053.5214816657826,
+    "evaluation_generation_hours": 0.8482004115738285,
+    "other_job_seconds": 1433.8474552920088,
+    "peak_allocated_gib": 82.96289730072021
+  },
+  "actuals_checked_at": "2026-10-26T11:24:42.412587+00:00"
+}

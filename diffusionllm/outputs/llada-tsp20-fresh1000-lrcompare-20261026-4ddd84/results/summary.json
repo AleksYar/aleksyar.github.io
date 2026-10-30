@@ -1,0 +1,131 @@
+{
+  "status": "incomplete",
+  "fingerprint": null,
+  "requested_per_model": 1000,
+  "models": {
+    "original-200k": {
+      "requested": 1000,
+      "answers_saved": 0,
+      "complete": 0,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": null,
+      "median_gap_pct_complete": null,
+      "objective_consistent": 0,
+      "mean_visible_tokens": null,
+      "mean_seconds": null,
+      "distinct_city_sequences": 0
+    },
+    "lr1e4-epoch8": {
+      "requested": 1000,
+      "answers_saved": 0,
+      "complete": 0,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": null,
+      "median_gap_pct_complete": null,
+      "objective_consistent": 0,
+      "mean_visible_tokens": null,
+      "mean_seconds": null,
+      "distinct_city_sequences": 0
+    },
+    "lr1e4-epoch10": {
+      "requested": 1000,
+      "answers_saved": 0,
+      "complete": 0,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 0,
+      "within_1pct": 0,
+      "mean_gap_pct_complete": null,
+      "median_gap_pct_complete": null,
+      "objective_consistent": 0,
+      "mean_visible_tokens": null,
+      "mean_seconds": null,
+      "distinct_city_sequences": 0
+    }
+  },
+  "paired_comparisons": {
+    "lr1e4-epoch8_minus_original-200k": {
+      "paired_answers": 0,
+      "complete": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "strict_valid": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "optimal": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "within_1pct": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "both_complete": 0,
+      "mean_gap_change_on_same_complete_cases": null
+    },
+    "lr1e4-epoch10_minus_original-200k": {
+      "paired_answers": 0,
+      "complete": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "strict_valid": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "optimal": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "within_1pct": {
+        "gained": 0,
+        "lost": 0,
+        "difference_percentage_points": null,
+        "approximate_paired_95ci_percentage_points": null
+      },
+      "both_complete": 0,
+      "mean_gap_change_on_same_complete_cases": null
+    }
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 1000,
+      "complete": 1000,
+      "optimal": 10,
+      "within_1pct": 22,
+      "mean_gap_pct_complete": 17.201046819756684
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 1000,
+      "complete": 1000,
+      "optimal": 462,
+      "within_1pct": 629,
+      "mean_gap_pct_complete": 1.3861179133405201
+    }
+  },
+  "answers_saved": 0,
+  "all_answer_scores_recomputed": true,
+  "interpretation": "Gap excludes incomplete tours. Paired intervals are approximate descriptive 95% intervals, not adjusted for multiple comparisons. Models and checkpoint selection were fixed before fresh-set evaluation."
+}

@@ -1,0 +1,19 @@
+{
+  "status": "prepared",
+  "model_id": null,
+  "description": "LLMCoSolver baseline preparation: same 100 TSP20 validation cases, native prompt, strict scoring. Awaiting an accessible and identified checkpoint.",
+  "dataset": "data/dataset.json",
+  "references": "data/references.json",
+  "output": "results",
+  "dtype": "bf16",
+  "max_tokens": 3000,
+  "steps": 0,
+  "seed": 42,
+  "attempts_per_instance": 1,
+  "do_sample": false,
+  "repair": false,
+  "upstream_commit": "f6388991d243c0aa91d9ee7e2fa18ed1c9e72477",
+  "execution_gate": "Clone preparation to a fresh run, verify checkpoint task/stage/base model and hashes, pin runtime, then preflight Newton before submission.",
+  "planned_secondary": "Separate best-of-8 run, temperature 0.7/top_p 0.9 per repository defaults. Paper states top_p 0.7; record choice explicitly.",
+  "final_test": "Use a new disjoint TSP20 set after protocol selection."
+}

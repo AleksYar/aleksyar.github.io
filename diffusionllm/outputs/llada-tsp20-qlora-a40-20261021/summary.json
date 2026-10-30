@@ -1,0 +1,78 @@
+{
+  "status": "complete",
+  "updates": 16,
+  "examples_seen": 32,
+  "training_seconds": 35.303233073995216,
+  "elapsed_seconds": 259.37958731502295,
+  "peak_gpu_allocated_gib": 9.35654878616333,
+  "adapter_reload_exact": true,
+  "changed_parameter_tensors": 128,
+  "finite_nonzero_gradients": true,
+  "results": {
+    "before": {
+      "count": 4,
+      "valid": 0,
+      "mean_gap_pct_valid": null,
+      "within_5pct": 0
+    },
+    "after": {
+      "count": 4,
+      "valid": 0,
+      "mean_gap_pct_valid": null,
+      "within_5pct": 0
+    }
+  },
+  "probe_before": [
+    {
+      "id": "train-000",
+      "loss": 0.34856510162353516
+    },
+    {
+      "id": "train-001",
+      "loss": 0.025899117812514305
+    },
+    {
+      "id": "heldout-000",
+      "loss": 0.03236515820026398
+    },
+    {
+      "id": "heldout-001",
+      "loss": 0.06599440425634384
+    },
+    {
+      "id": "heldout-002",
+      "loss": 0.2769993245601654
+    },
+    {
+      "id": "heldout-003",
+      "loss": 0.09684642404317856
+    }
+  ],
+  "probe_after": [
+    {
+      "id": "train-000",
+      "loss": 0.33198416233062744
+    },
+    {
+      "id": "train-001",
+      "loss": 0.013088295236229897
+    },
+    {
+      "id": "heldout-000",
+      "loss": 0.018307849764823914
+    },
+    {
+      "id": "heldout-001",
+      "loss": 0.06285995990037918
+    },
+    {
+      "id": "heldout-002",
+      "loss": 0.15339885652065277
+    },
+    {
+      "id": "heldout-003",
+      "loss": 0.05328095331788063
+    }
+  ],
+  "limitation": "Four held-out cases and at most 32 training exposures; technical smoke test, not a performance estimate."
+}

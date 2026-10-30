@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "validation_hash_verified": true,
+  "references_verified": 100,
+  "answers_rescored": 100,
+  "saved_summary_matches": true,
+  "cpu_baselines_recomputed": true,
+  "upstream_scoring_replayed": true,
+  "upstream_extra_revisit_test": "reproduced",
+  "gpu_inference_tested": false
+}

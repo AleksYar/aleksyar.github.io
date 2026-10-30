@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Our latest 50-case TSP20 evaluation compared with published LLMCoSolver references, with training and evaluation differences labeled.">
+<title>TSP20 comparison · LLaDA & LLMCoSolver</title>
+<style>
+:root{color-scheme:light;--ink:#172b3a;--muted:#596b79;--line:#dce3e7;--blue:#1958a5;--tint:#edf5ff}
+*{box-sizing:border-box}
+body{margin:0;padding:44px 28px;background:#f5f6f4;color:var(--ink);font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:1120px;margin:auto;background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 35px #20374708}
+header{padding:28px 32px 22px}
+.eyebrow{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:11px;letter-spacing:1.25px;text-transform:uppercase;font-weight:650}
+h1{margin:13px 0 7px;font-size:30px;line-height:1.2;letter-spacing:-.8px;font-weight:680}
+.subtitle{margin:0;color:var(--muted);font-size:15px}
+.context{margin:0 32px 22px;border-left:3px solid #6e8ba6;padding:10px 14px;background:#f3f6f8;font-size:13px;color:#405461}
+.context strong{color:var(--ink)}
+.table-wrap{overflow-x:auto;margin:0 32px;scrollbar-width:thin}
+table{width:100%;min-width:890px;border-collapse:collapse;text-align:left;font-size:14px}
+caption{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+col.solver{width:27%}col.method{width:20%}col.eval{width:29%}col.rate{width:11%}col.gap{width:13%}
+thead th{padding:10px 13px;background:#f7f8f9;color:var(--muted);font-size:11px;letter-spacing:.65px;text-transform:uppercase;font-weight:650;white-space:nowrap;border-bottom:1px solid var(--line)}
+tbody th,tbody td{padding:14px 13px;vertical-align:middle;border-bottom:1px solid var(--line)}
+tbody th{font-weight:600}
+.primary{display:block;font-weight:600;white-space:nowrap}
+.secondary{display:block;margin-top:3px;font-size:11px;font-weight:400;color:var(--muted);white-space:nowrap}
+.number{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums;font-size:18px;font-weight:550}
+thead .number{font-size:11px}
+.gap{font-weight:700}
+.latest{background:var(--tint)}
+.latest th{box-shadow:inset 3px 0 var(--blue)}
+.latest .number{color:var(--blue)}
+.paper-start th,.paper-start td{border-top:2px solid #bfcbd3}
+.badge{display:inline-block;vertical-align:2px;margin-left:5px;padding:2px 5px;background:#dceaff;color:#1958a5;border-radius:4px;font-size:9px;line-height:1.25;letter-spacing:.5px;text-transform:uppercase}
+a{color:#1958a5;text-decoration:underline;text-decoration-color:#b7cce4;text-underline-offset:3px}
+a:hover{text-decoration-color:currentColor}
+a:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+.notes{padding:18px 32px 23px;font-size:12px;color:var(--muted)}
+.notes p{margin:0 0 9px}
+.notes p:last-child{margin-bottom:0}
+.notes strong{color:#344c5e;font-weight:650}
+footer{display:flex;justify-content:space-between;gap:20px;padding:14px 32px;border-top:1px solid var(--line);background:#fafbfb;color:var(--muted);font-size:11px}
+footer p{margin:0}
+@media(max-width:650px){body{padding:14px 10px}main{border-radius:11px}header{padding:22px 20px 18px}h1{font-size:26px}.eyebrow{font-size:10px;letter-spacing:.8px}.context{margin:0 20px 18px}.table-wrap{margin:0 20px}.notes{padding:18px 20px}footer{padding:14px 20px;display:block}footer p+p{margin-top:6px}}
+@media print{body{padding:0;background:#fff;font-size:12px}main{max-width:none;border:0;border-radius:0;box-shadow:none}header{padding:10px 0 18px}.context{margin:0 0 18px}.table-wrap{margin:0;overflow:visible}table{min-width:0;font-size:12px}.primary,.secondary{white-space:normal}.notes{padding:16px 0}footer{padding:12px 0;background:none}thead th,tbody th,tbody td{padding:10px 8px}tr{break-inside:avoid}.latest{print-color-adjust:exact;-webkit-print-color-adjust:exact}a{color:inherit}h1{font-size:26px}@page{size:A4 landscape;margin:15mm}}
+</style>
+<style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style></head>
+<body><nav class="public-nav" aria-label="Experiment library"><a href="../../index.html">← All experiments</a><a href="../../about.html">About these results</a></nav>
+<main>
+<header>
+  <div class="eyebrow"><span>Experiment comparison</span><time datetime="2026-10-24">24 October 2026</time></div>
+  <h1>TSP20: LLaDA &amp; LLMCoSolver</h1>
+  <p class="subtitle">Untuned and fine-tuned LLaDA on the same 50 cases, alongside published references.</p>
+</header>
+<p class="context"><strong>Different evaluation sets.</strong> LLMCoSolver does not report a separate TSP20 score. Its results below cover multiple city counts; it has not been rerun on our 50 cases.</p>
+<div class="table-wrap" tabindex="0" role="region" aria-label="Comparison table; scroll horizontally on small screens">
+<table aria-describedby="metric-note">
+  <caption>Our TSP20 results and published LLMCoSolver references</caption>
+  <colgroup><col class="solver"><col class="method"><col class="eval"><col class="rate"><col class="gap"></colgroup>
+  <thead><tr><th scope="col">Model</th><th scope="col">Training / inference</th><th scope="col">Evaluation set / source</th><th class="number" scope="col">Valid ↑</th><th class="number" scope="col">Mean gap ↓</th></tr></thead>
+  <tbody><tr class="untuned">
+      <th scope="row"><span class="primary">Our LLaDA-8B</span><span class="secondary">Original Instruct checkpoint</span></th>
+      <td><span class="primary">No TSP fine-tuning</span><span class="secondary">Single greedy solution</span></td>
+      <td><span class="primary">TSP20 · 50 cases</span><span class="secondary">Same validation subset · <a href="untuned-summary.json">50-case scores</a></span></td>
+      <td class="number">2%</td>
+      <td class="number gap">117.85%</td>
+    </tr>
+<tr class="">
+      <th scope="row"><span class="primary">Our LLaDA-8B </span><span class="secondary">100k-example fine-tune</span></th>
+      <td><span class="primary">SFT only</span><span class="secondary">Single greedy solution</span></td>
+      <td><span class="primary">TSP20 · 50 cases</span><span class="secondary">Same validation subset · <a href="../llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/report.html">Local results</a></span></td>
+      <td class="number">92%</td>
+      <td class="number gap">3.04%</td>
+    </tr>
+<tr class="latest">
+      <th scope="row"><span class="primary">Our LLaDA-8B <span class="badge">Latest</span></span><span class="secondary">100k-example fine-tune</span></th>
+      <td><span class="primary">SFT only</span><span class="secondary">Best of 8</span></td>
+      <td><span class="primary">TSP20 · 50 cases</span><span class="secondary">Same validation subset · <a href="../llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/report.html">Local results</a></span></td>
+      <td class="number">100%</td>
+      <td class="number gap">1.57%</td>
+    </tr>
+<tr class="paper-start">
+      <th scope="row"><span class="primary">LLMCoSolver </span><span class="secondary">Qwen2.5-7B</span></th>
+      <td><span class="primary">SFT + RL</span><span class="secondary">Best of 8</span></td>
+      <td><span class="primary">10–30 cities · 100 cases</span><span class="secondary">Paper small-instance set · <a href="https://arxiv.org/html/2509.16865v1">Tables 2 &amp; 6</a></span></td>
+      <td class="number">100%</td>
+      <td class="number gap">0.14%</td>
+    </tr>
+<tr class="">
+      <th scope="row"><span class="primary">LLMCoSolver </span><span class="secondary">Qwen2.5-7B</span></th>
+      <td><span class="primary">SFT only</span><span class="secondary">Single greedy solution</span></td>
+      <td><span class="primary">Mixed-size TSP</span><span class="secondary">Paper aggregate · <a href="https://arxiv.org/html/2509.16865v1">Table 1</a></span></td>
+      <td class="number">89%</td>
+      <td class="number gap">2.30%</td>
+    </tr>
+<tr class="">
+      <th scope="row"><span class="primary">LLMCoSolver · unified </span><span class="secondary">Qwen2.5-7B · seven tasks</span></th>
+      <td><span class="primary">SFT only</span><span class="secondary">Best of 8</span></td>
+      <td><span class="primary">Mixed-size TSP</span><span class="secondary">Paper aggregate · <a href="https://arxiv.org/html/2509.16865v1">Table 10</a></span></td>
+      <td class="number">100%</td>
+      <td class="number gap">0.86%</td>
+    </tr>
+<tr class="">
+      <th scope="row"><span class="primary">LLMCoSolver </span><span class="secondary">Qwen2.5-7B</span></th>
+      <td><span class="primary">SFT + RL</span><span class="secondary">Best of 8</span></td>
+      <td><span class="primary">Mixed-size TSP</span><span class="secondary">Paper aggregate · <a href="https://arxiv.org/html/2509.16865v1">Table 1</a></span></td>
+      <td class="number">100%</td>
+      <td class="number gap">1.07%</td>
+    </tr></tbody>
+</table>
+</div>
+<div class="notes">
+  <p id="metric-note"><strong>Reading the numbers.</strong> Valid = feasible tours; lower gap is better. Our gaps use recomputed tour lengths versus exact optima and average only valid tours: 1/50 untuned, 46/50 tuned greedy, 50/50 best of 8. The untuned mean therefore reflects just one tour. Paper values are reported as published, using its solver references and scoring.</p>
+  <p><strong>Scope.</strong> All three of our rows use the same reused validation subset, not an untouched test set. Untuned means the Instruct checkpoint before TSP fine-tuning; its saved answers were rescored with the same evaluator. Best of 8 generated 400 candidates. The unified LLMCoSolver is a separate model trained across seven tasks; SFT means supervised fine-tuning and RL means reinforcement learning.</p>
+</div>
+<footer>
+  <p>Sources: <a href="../llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/results/report.html">50-case run report</a> · <a href="https://arxiv.org/html/2509.16865v1">LLMCoSolver paper, v1</a> · <a href="https://github.com/Summer142857/LLMCoSolver">Repository</a></p>
+  <p>Published references have not been reproduced locally.</p>
+</footer>
+</main>
+</body>
+</html>

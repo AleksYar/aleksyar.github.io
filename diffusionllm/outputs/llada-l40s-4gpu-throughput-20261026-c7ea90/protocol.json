@@ -1,0 +1,114 @@
+{
+  "created_on": "2026-10-26",
+  "task": "Four-GPU L40S scaling at fixed effective batch16",
+  "user_selected_recipe": "Earlier rank64 standard masked loss; no city uniqueness loss",
+  "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+  "model_revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "rank": 64,
+  "alpha": 64,
+  "dropout": 0.05,
+  "effective_batch": 16,
+  "world_sizes": [
+    4
+  ],
+  "screen_pairs": [
+    [
+      1,
+      "none"
+    ],
+    [
+      2,
+      "none"
+    ],
+    [
+      2,
+      "quarter"
+    ],
+    [
+      4,
+      "half"
+    ],
+    [
+      4,
+      "all"
+    ],
+    [
+      4,
+      "none"
+    ]
+  ],
+  "additional_screen": null,
+  "screen": {
+    "warmup": 3,
+    "timed_updates": 7
+  },
+  "confirm": {
+    "warmup": 3,
+    "timed_updates": 24,
+    "independent_repeats": 2,
+    "top_candidates_per_world_size": 2
+  },
+  "stress": {
+    "warmup": 2,
+    "timed_updates": 8,
+    "sample": "16 longest examples from the same 512-row training-only sample"
+  },
+  "hard_limit_minutes": 30,
+  "soft_limit_minutes": 27,
+  "per_trial_seconds": 360,
+  "minimum_reserved_headroom_gib": 3.0,
+  "measurement": "CUDA synchronized complete forward/loss/backward/clip/AdamW/scheduler update; max elapsed across ranks; excludes loading, metric collectives and JSON writes",
+  "timing_order": "One-GPU and two-GPU controls before four-GPU screening; four-GPU top two confirmed twice in reverse order; then two-GPU and one-GPU controls; selected four-GPU upper-tail check.",
+  "ddp": {
+    "backend": "nccl",
+    "broadcast_buffers": false,
+    "find_unused_parameters": false,
+    "gradient_as_bucket_view": true,
+    "no_sync": "all but final microbatch",
+    "local_loss_normalization": "mean over each equal-sized local batch; DDP averages gradients once"
+  },
+  "unchanged": [
+    "BF16 frozen base",
+    "FP32 adapters",
+    "224 block projections",
+    "AdamW lr1e-4 weight_decay0.01",
+    "cosine schedule 10000 updates 5% warmup",
+    "dynamic EOS padding",
+    "no truncation",
+    "original masked diffusion objective"
+  ],
+  "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+  "screen_selection_notes": [
+    "Four GPUs hold four examples per rank per update; valid microbatches are 1, 2 and 4.",
+    "Same dtype, model, rank64/alpha64, objective, 512-example sample, optimizer, schedule and global batch as the earlier 1v2 run.",
+    "mb4/none rechecked after its prior one- and two-GPU memory failures.",
+    "mb4/quarter omitted: earlier matched L40S results had less than 1 GiB headroom; half and full checkpointing cover larger-batch tradeoffs.",
+    "Effective batches larger than16 are outside this matched scaling comparison."
+  ],
+  "limitations": [
+    "Different GPU counts/microbatches change RNG draws and padding; no claim of bitwise equivalent training between layouts.",
+    "Short profile checks speed and execution, not convergence or solution quality.",
+    "No full fine-tuning or checkpoint resume is launched."
+  ],
+  "sources": [
+    "https://docs.pytorch.org/docs/2.6/checkpoint.html",
+    "https://github.com/pytorch/pytorch/blob/v2.6.0/torch/nn/parallel/distributed.py"
+  ],
+  "control_world_sizes": [
+    1,
+    2
+  ],
+  "baseline_controls": {
+    "settings": {
+      "microbatch": 1,
+      "checkpointing": "none"
+    },
+    "warmup": 3,
+    "timed_updates": 24,
+    "independent_repeats": 2,
+    "two_gpu_pair": "first two allocated GPUs in both repeats",
+    "single_gpu": "first allocated GPU before sweep; second allocated GPU after sweep"
+  },
+  "previous_run": "llada-l40s-1v2-throughput-20261026-aa00d4",
+  "topology_note": "Availability check showed three selected GPUs sharing a PCIe switch and the fourth across CPU sockets; capture actual allocation topology."
+}

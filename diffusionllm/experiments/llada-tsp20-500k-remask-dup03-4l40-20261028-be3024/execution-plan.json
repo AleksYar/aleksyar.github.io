@@ -1,0 +1,38 @@
+{
+  "authorized_utc": "2026-10-28T16:42:06.054588+00:00",
+  "immutable_recipe": "config.json",
+  "config_sha256": "6450d2a693bd422cad33730c56e6bcd87978e2009cbc3c315fb6169815d43b92",
+  "package_manifest_sha256": "6b201cd9747de5cfbeab949adb25ec8a3b6cadb7aacdd9a4a2a0859e84bfdb8e",
+  "training": {
+    "records": 500000,
+    "epochs": 1,
+    "updates": 31250,
+    "gpu_count": 4,
+    "node": "nlp-l40-2",
+    "estimated_compute_hours": 18.456612909623857,
+    "allocation_limit_hours": 24
+  },
+  "evaluation": {
+    "runs": 1,
+    "cases": 100,
+    "checkpoint": "final",
+    "policy": "learned",
+    "max_forward_calls_per_case": 128,
+    "threshold": 0.05,
+    "gpu_count": 4,
+    "planning_minutes": [
+      10,
+      15
+    ],
+    "allocation_limit_hours": 1
+  },
+  "extra_comparison_sweep_scheduled": false,
+  "unused_generated_holdouts": 11000,
+  "general_question_comparison_scheduled": false,
+  "estimate_excludes": [
+    "queue time",
+    "training setup",
+    "checkpoint I/O",
+    "preemption/restarts"
+  ]
+}

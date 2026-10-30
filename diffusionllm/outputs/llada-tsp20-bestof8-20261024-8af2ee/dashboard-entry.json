@@ -1,0 +1,123 @@
+{
+  "schema_version": 1,
+  "id": "outputs/llada-tsp20-bestof8-20261024-8af2ee",
+  "run_dir": "outputs/llada-tsp20-bestof8-20261024-8af2ee",
+  "title": "TSP20 · fine-tuned · best of 8",
+  "status": "cancelled",
+  "created_at": "2026-10-24T11:30:37.812354+00:00",
+  "updated_at": "2026-10-24T11:45:23.712853+00:00",
+  "job_id": "1460442",
+  "scheduler": {
+    "state": "CANCELLED",
+    "exit_code": "0:0",
+    "elapsed": "00:10:55"
+  },
+  "description": "100 fixed TSP20 validation cases · latest 100k-example SFT adapter · best of 8 · temperature 0.7 · 512 output positions / 128 diffusion steps · BF16",
+  "note": "Cancelled at user request. Partial answers preserved. Replaced by a fresh 50-case best-of-8 run using four L40S GPUs on nlp-l40-1.",
+  "requested": 100,
+  "answers_saved": 2,
+  "metrics": {
+    "requested": 100,
+    "generated": 2,
+    "missing": 98,
+    "valid": 2,
+    "valid_pct_generated": 100.0,
+    "valid_pct_requested": 2.0,
+    "optimal": 1,
+    "within_1pct": 1,
+    "mean_gap_pct_valid": 0.9128882406521877,
+    "median_gap_pct_valid": 0.9128882406521877,
+    "strict_format": 2,
+    "strict_valid": 2,
+    "reported_objective_consistent": 0
+  },
+  "dataset_sha256": "ae944052f3121925e556f6ae334917404b990f37f1494e8c31cdcbcda87fd38e",
+  "config_sha256": "c5502f2228e068f3e3806f6bc650fb52954848492c51ecfbd56555d7f1bb07ca",
+  "links": [
+    {
+      "label": "Report",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/report.html",
+      "kind": "Report"
+    },
+    {
+      "label": "All saved answers",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/raw-answers.txt",
+      "kind": "Answers"
+    },
+    {
+      "label": "Answers as JSONL",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/answers.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Scored summary",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/summary.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Per-instance scores",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/scores.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Run provenance",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/run.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "All eight candidates per instance",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/results/candidates.jsonl",
+      "kind": "Answers"
+    },
+    {
+      "label": "Execution notes",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/README.txt",
+      "kind": "Notes"
+    },
+    {
+      "label": "Dataset",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/data/dataset.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Exact reference routes",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/data/references.json",
+      "kind": "Dataset"
+    },
+    {
+      "label": "Settings",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/config.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Slurm accounting",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/slurm-accounting.txt",
+      "kind": "Log"
+    },
+    {
+      "label": "Job script",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/run.sbatch",
+      "kind": "Code"
+    },
+    {
+      "label": "Submission record",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/submission.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "Frozen source hashes",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/manifest.sha256.json",
+      "kind": "Settings"
+    },
+    {
+      "label": "tsp20-b8-8af2ee-1460442.out",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/logs/tsp20-b8-8af2ee-1460442.out",
+      "kind": "Log"
+    },
+    {
+      "label": "Dashboard record",
+      "href": "outputs/llada-tsp20-bestof8-20261024-8af2ee/dashboard-entry.json",
+      "kind": "Settings"
+    }
+  ]
+}

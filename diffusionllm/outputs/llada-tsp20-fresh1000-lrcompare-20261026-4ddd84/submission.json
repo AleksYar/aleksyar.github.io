@@ -1,0 +1,11 @@
+{
+  "job_id": "1463120",
+  "submitted_at": "2026-10-26T20:57:53.531930+00:00",
+  "dependency": "afterok:1463107",
+  "kill_on_invalid_dependency": true,
+  "node": "nlp-l40-1",
+  "gpu_count": 4,
+  "remote_root": "[cluster-home]/llada-tsp20-fresh1000-lrcompare-20261026-4ddd84",
+  "test_only": "passed",
+  "wall_limit": "12:00:00"
+}

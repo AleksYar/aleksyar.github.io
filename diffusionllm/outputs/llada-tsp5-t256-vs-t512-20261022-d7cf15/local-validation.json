@@ -1,0 +1,14 @@
+{
+  "paired_dataset_and_references_identical": true,
+  "instances": 20,
+  "exact_optima_independently_verified": 20,
+  "single_block_per_arm": true,
+  "steps_per_arm": 128,
+  "full_output_positions": [
+    256,
+    512
+  ],
+  "max_prompt_tokens_from_verified_identical_dataset": 174,
+  "maximum_total_tokens_512": 686,
+  "model_context_limit": 4096
+}

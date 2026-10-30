@@ -1,0 +1,54 @@
+{
+  "status": "complete",
+  "step": 12,
+  "training_examples_seen": 192,
+  "fingerprint": "8be723edbaa042bc1fe4f445d4fbfb1fee48971596650e5e70cf4964417cb859",
+  "replica_hashes": [
+    "ffb29daf2dcd344987ea0588e73c7e27876f5bbc45176e3b2cdf037333e49f86",
+    "ffb29daf2dcd344987ea0588e73c7e27876f5bbc45176e3b2cdf037333e49f86",
+    "ffb29daf2dcd344987ea0588e73c7e27876f5bbc45176e3b2cdf037333e49f86",
+    "ffb29daf2dcd344987ea0588e73c7e27876f5bbc45176e3b2cdf037333e49f86"
+  ],
+  "frozen_base_sample_unchanged": true,
+  "adapter_reload_exact": true,
+  "per_rank_memory": [
+    {
+      "rank": 0,
+      "peak_allocated_gib": 27.738044261932373,
+      "peak_reserved_gib": 34.595703125,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 1,
+      "peak_allocated_gib": 26.577606678009033,
+      "peak_reserved_gib": 33.931640625,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 2,
+      "peak_allocated_gib": 26.56641912460327,
+      "peak_reserved_gib": 33.916015625,
+      "capacity_gib": 47.50946044921875
+    },
+    {
+      "rank": 3,
+      "peak_allocated_gib": 26.56372833251953,
+      "peak_reserved_gib": 33.923828125,
+      "capacity_gib": 47.50946044921875
+    }
+  ],
+  "steady_seconds_per_update": 1.1237683437066153,
+  "resume_state_restored_exactly": true,
+  "resume_replay_close": true,
+  "resume_validation": {
+    "checkpoint_state_restored_exactly": true,
+    "next_update_numerically_close": true,
+    "next_update_bitwise_exact": false,
+    "max_parameter_absolute_error": 1.6996636986732483e-08,
+    "differing_parameter_tensors": 436,
+    "parameter_absolute_tolerance": 1e-07,
+    "gradient_norm_relative_tolerance": 0.001,
+    "loss_relative_tolerance": 1e-05,
+    "metric_absolute_tolerance": 1e-07
+  }
+}

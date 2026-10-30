@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>TSP5 LoRA results</title><style>body{font:16px/1.55 system-ui;background:#f3f6fa;color:#182b43;margin:0}main{max-width:1150px;margin:auto;padding:32px}table{border-collapse:collapse;width:100%;background:white}td,th{padding:12px;text-align:left;border-bottom:1px solid #d9e1e9}h1{font-size:32px}details,.card{background:white;padding:16px;margin:14px 0;border-radius:10px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}a{color:#125cb0}.scroll{overflow:auto}summary{cursor:pointer}small{color:#4d617a}</style><style>.public-nav{display:flex;flex-wrap:wrap;gap:18px;padding:12px 20px;background:#eaf0e5;color:#245b42;font:12px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;border-bottom:1px solid #d6dfd2}.public-nav a{color:#245b42;text-decoration:none}.public-nav a:hover{text-decoration:underline}.local-artifact{color:#70756f!important;cursor:default}.local-artifact small{font-size:.8em;font-weight:400}body>.public-nav{position:relative;z-index:2}@media(min-width:651px){body:has(>.sidebar)>.public-nav{margin-left:224px}}@media(min-width:651px) and (max-width:1180px){body:has(>.sidebar)>.public-nav{margin-left:198px}}@media(min-width:651px) and (max-width:920px){body:has(>.sidebar)>.public-nav{margin-left:176px}}</style><nav class="public-nav" aria-label="Experiment library"><a href="../../../../index.html">← All experiments</a><a href="../../../../about.html">About these results</a></nav><main><small>LLADA-8B-INSTRUCT · ONE A40 · INDEPENDENT ADAPTER</small><h1>TSP5 LoRA experiment</h1><p><b>Status: complete</b> · phase profile · update 4/625</p><p>10,000 training examples; 100 fixed validation cases. One epoch, LoRA rank 16, learning rate 0.0001. Identical before/after decoding: 512 output positions, 128 steps, temperature 0.</p><div class="card">Complete tours count every city exactly once and close the cycle. Gap is computed only for complete tours, using coordinate distances. Invalid answers have no gap. Strict validity also requires the requested bracketed format and start at zero. These are validation results, not an untouched final test.</div><div class="scroll"><table><thead><tr><th>Condition</th><th>Answers</th><th>Complete</th><th>Optimal</th><th>Within 1%</th><th>Mean valid gap %</th><th>Strict valid</th></tr></thead><tbody><tr><td>profile</td><td>1/1</td><td>1</td><td>1</td><td>1</td><td>0.00</td><td>0</td></tr><tr><td>nearest_neighbor</td><td>100</td><td>100</td><td>50</td><td>58</td><td>3.68</td><td>—</td></tr><tr><td>nearest_neighbor_2opt</td><td>100</td><td>100</td><td>100</td><td>100</td><td>0.00</td><td>—</td></tr></tbody></table></div><p><a href="all-answers.txt">All prompts and answers</a> · <a href="answers.jsonl">Answers and full token arrays</a> · <a href="summary.json">Metrics</a> · <span class="local-artifact" title="Retained in the research workspace; not included in this public export">Training history <small>(local file)</small></span> · <a href="runtime.json">Provenance</a></p><div class="card"><h2>Training loss</h2><p>Stochastic masked-token loss; route quality is measured separately above.</p><svg viewBox="0 0 980 210" role="img" aria-label="Training loss by optimizer update"><path d="M40 20V175H950" fill="none" stroke="#8091a2"/><polyline points="41.44,47.40 42.88,47.25 44.32,30.00 45.76,40.21" fill="none" stroke="#216eb0" stroke-width="2"/><text x="40" y="202">0</text><text x="900" y="202">625 updates</text><text x="4" y="25">0.9</text></svg></div><h2>Every saved answer</h2><details><summary>profile · tsp5-validation-00000 · valid · gap 0.00%</summary><p><b>Prompt</b></p><pre>### Instruction
+Find a minimum-distance closed tour through the 5 cities below. Start at city 0, visit each other city once, and finish at city 0. Coordinates and two nearest neighbors with distances are supplied. Use Euclidean distance. Return a bracketed route and its total distance, rounded to three decimals, in the form Route: [...], Objective: ... .
+
+### Input
+Node 0, coordinates: [222, 416], neighbors: [2: 236.0, 3: 268.2];
+Node 1, coordinates: [393, 720], neighbors: [4: 194.6, 0: 348.8];
+Node 2, coordinates: [154, 190], neighbors: [3: 43.4, 0: 236.0];
+Node 3, coordinates: [175, 152], neighbors: [2: 43.4, 0: 268.2];
+Node 4, coordinates: [278, 877], neighbors: [1: 194.6, 0: 464.4];</pre><p><b>Model answer</b></p><pre>To find the minimum-distance closed tour through the 5 cities, we can use a heuristic algorithm algorithm like the A* algorithm. The A* algorithm is a popular choice for finding the shortest path in a graph, and it can a adapted to find the minimum distance closed tour.
+
+Here is a step-by-step approach to solve the problem:
+
+1. **Initialize the A* Algorithm**:
+   - Start at city 0.
+   - Define the heuristic function (h) distance as the Euclidean distance from the current city to the target city.
+   - Use a priority queue to explore the path to the target city.
+
+2. **Run the A* Algorithm**:
+   - For the city 0, calculate the heuristic to each other city (2, 3, 1, 4).
+   - Select the city with the lowest heuristic ( (2) ), mark the city visited, and add it to the priority queue.
+   - For the city 2, calculate the heuristic to each other city (3, 1, 4).
+   - Select the city with the lowest heuristic, mark the city visited, and add it to the priority queue.
+   - Continue this process until all cities are visited, and return to city 0.
+
+After running the A* algorithm, the final route and the total distance is:
+
+- Start at city 0, visit city 2, city 3, city 1, city 4, and return to the 0.
+
+After running the A* algorithm, the final route and the total distance is:
+
+- Start at city 0, visit city 2, city 3, city 1, city 4, and return to city 0.
+
+After running the A* algorithm, the final route and the total distance is:
+
+- Start at city 0, visit city 2, city 3, city 1, city 4, and return to city 0.
+
+After running the A* algorithm, the final route and the total distance is:
+
+- Start at city 0, visit city 2, city 3, city 1, city 4, and return to city 0.
+
+### Output::
+```
+Route: [0, 2, 3, 1, 4, 0], Objective: 1000.00
+```</pre><p><b>Exact reference</b></p><pre>Route: [0, 2, 3, 1, 4, 0], Objective: 1546.824</pre><pre>{
+  &quot;route&quot;: [
+    0,
+    2,
+    3,
+    1,
+    4,
+    0
+  ],
+  &quot;complete&quot;: true,
+  &quot;reason&quot;: &quot;valid&quot;,
+  &quot;bracketed_route&quot;: true,
+  &quot;strict_format&quot;: false,
+  &quot;strict_valid&quot;: false,
+  &quot;missing_cities&quot;: [],
+  &quot;repeated_cities&quot;: [],
+  &quot;starts_at_zero&quot;: true,
+  &quot;computed_length&quot;: 1546.824238290599,
+  &quot;gap_pct&quot;: 0.0,
+  &quot;optimal&quot;: true,
+  &quot;within_1pct&quot;: true,
+  &quot;reported_objective&quot;: 1000.0,
+  &quot;objective_consistent&quot;: false
+}</pre></details></main></html>

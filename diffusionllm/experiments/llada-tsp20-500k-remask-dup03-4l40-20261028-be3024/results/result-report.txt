@@ -1,0 +1,97 @@
+Completed LLaDA TSP20 masking experiment — 29 October 2026
+
+Training and the one authorized 100-case evaluation both completed successfully.
+All results below are from the same historical 100 geometries. No additional model
+inference was run when collecting and auditing these results.
+
+RESULTS
+                                      Original 200k    New, initial    New, final
+Valid complete tours                      95/100           94/100         100/100
+Optimal tours                             39/100           44/100          51/100
+Within 1% of optimal                      65/100           72/100          80/100
+Average gap, valid tours only             1.345%           0.938%          0.657%
+
+The original 200k column is historical, with different prompting and decoding.
+It is useful context, not a controlled measurement of the prediction head alone.
+The initial and final columns are stages of the same saved evaluation trajectories.
+They do not represent two separate evaluation runs. Invalid initial tours are
+excluded from the initial average gap. On the same 94 initially valid cases, mean
+gap decreased from 0.938% to 0.604% after remasking.
+
+WHAT REMASKING DID
+- Repaired all six initially invalid tours.
+- Shortened eleven initially valid tours.
+- Changed seventeen distinct cases in total; made no valid incumbent worse.
+- Increased optimal answers from 44 to 51, and within-1% answers from 72 to 80.
+- Proposed 1,226 revisions and accepted 24 (1.96%). Some cases improved repeatedly.
+- Produced 48 invalid intermediate proposals, all rejected by the acceptance rule.
+- Used 99.58 model forward calls per case on average, including selector calls;
+  the maximum was the authorized limit of 128. Initial construction used 16 calls.
+
+Interpretation: the learned selection-and-refill process helped on this benchmark,
+but proposal efficiency is low. The final 100/100 validity result belongs to the
+whole inference pipeline, including retaining the best valid tour. It does not
+mean every model proposal was valid, or guarantee validity on future instances.
+This run did not compare learned selection with random or confidence selection.
+
+OBJECTIVE AUDIT
+Independently recomputed all initial and final scores and checked every revision
+using original coordinates and unrounded Euclidean distances, including the closing
+edge back to city 0. Final and initial stored objectives had zero discrepancy from
+the independent calculation. Valid routes contain each of the 20 cities exactly
+once before the closing zero. Rejected invalid routes have no scored objective.
+Reference-route lengths, all acceptance decisions, unmasked-slot preservation,
+case IDs, source hashes, checkpoint component metadata and forward-call accounting
+also passed. Existing MILP optimality certificates were retained, not re-solved.
+Tiny negative or positive optimality gaps at floating-point precision are numerical
+roundoff, not solutions below the certified optimum.
+
+The objective is calculated by code from the generated route. This evaluation does
+not demonstrate that LLaDA learned to generate accurate numeric objective text.
+Fixed city fields also supply the output structure externally.
+
+TRAINING COMPLETED
+Start: original 200k duplicate-loss checkpoint, excluding 10-epoch continuations.
+Base: GSAI-ML/LLaDA-8B-Instruct. Existing rank-64 LoRA continued with a new prediction
+head; no second LoRA was stacked. Frozen base weights remained unchanged.
+Data: 500,000 fresh geometries, comprising 200,000 clean records and 300,000
+correction/KEEP records. Exactly 500,000 distinct record indices were consumed once
+in 31,250 optimizer updates. Effective batch size was 16.
+Loss: masked reconstruction + 0.3 duplicate loss + 0.1 selector loss.
+LoRA and head both changed; final trainable-parameter hashes matched on all four
+GPU workers. The initial adapter matched the requested parent checkpoint exactly.
+
+ACTUAL COMPUTE
+Training job 1467020: COMPLETED, exit 0:0, 19 hours 45 minutes 34 seconds.
+Evaluation job 1467021: COMPLETED, exit 0:0, 6 minutes 4 seconds for all 100 cases.
+Hardware: four NVIDIA L40S GPUs on nlp-l40-2, for each job.
+Combined allocated GPU time: 79.44 GPU-hours. This excludes earlier quick profiles,
+dataset generation, queue time and this local audit.
+Per-case inference latency averaged 11.85 seconds, with cases distributed over
+four GPUs. This latency is distinct from total evaluation wall time.
+Training updates averaged 2.1798 seconds; their measured durations summed to
+18 hours 55 minutes 18 seconds. The remaining 50 minutes 16 seconds of training
+job wall time includes work outside those update timers; no full breakdown was
+measured. The earlier quick-profile estimate was 18.46 hours of update compute,
+excluding overhead. It underestimated measured update time by approximately 2.5%.
+The full evaluation finished within the previously stated 10–15 minute allowance.
+
+SCOPE AND ARTIFACTS
+One final checkpoint, one learned-selection policy, threshold 0.05, seed 42,
+one 100-case evaluation, at most 128 model calls per case. No additional holdout,
+policy sweep, 256-call run, or general-question evaluation was performed.
+Results are limited to this historical benchmark. General-question ability with
+all trained components enabled remains unevaluated.
+
+Final checkpoint on Newton:
+[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250
+
+Local evidence (relative to this experiment directory):
+results/evaluation-audit.json                  Reproducible audit and per-case changes
+results/audit_saved_results.py                 Audit script; no model inference
+results/summary.json                           Full training record
+results/slurm-accounting.txt                   Actual scheduler durations and exit codes
+evaluation/checkpoint-031250-benchmark100-learned-128-threshold0.05/
+                                              All 100 answers, revisions and run manifest
+
+Local concise and detailed dashboards updated on 29 October 2026 at the user's request.

@@ -1,0 +1,5 @@
+index, name, uuid, memory.total [MiB], power.limit [W], temperature.gpu, clocks.current.sm [MHz], driver_version
+0, NVIDIA L40S, GPU-d18f4be0-956f-3e7b-b322-4c1078d59fca, 49140 MiB, 350.00 W, 22, 210 MHz, 535.309.01
+1, NVIDIA L40S, GPU-b30bd2ef-28ba-a23a-7c2d-d51ccfec04a5, 49140 MiB, 350.00 W, 23, 210 MHz, 535.309.01
+2, NVIDIA L40S, GPU-b8788dff-e3ba-a75d-09cd-3e95046e3f7d, 49140 MiB, 350.00 W, 20, 210 MHz, 535.309.01
+3, NVIDIA L40S, GPU-f68ec4ba-7ed0-3409-5ce3-e2d4bc5c1475, 49140 MiB, 350.00 W, 24, 210 MHz, 535.309.01

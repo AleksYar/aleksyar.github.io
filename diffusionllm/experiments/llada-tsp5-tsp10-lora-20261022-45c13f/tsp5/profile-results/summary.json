@@ -1,0 +1,45 @@
+{
+  "task": "TSP5",
+  "status": {
+    "status": "complete",
+    "phase": "profile",
+    "step": 4,
+    "task": "tsp5",
+    "job_id": "1458427",
+    "examples_seen": 64,
+    "seconds_per_update_recent": 4.6571901692514075,
+    "peak_allocated_gib": 16.14963388442993
+  },
+  "phases": {
+    "profile": {
+      "requested": 1,
+      "answers_saved": 1,
+      "complete": 1,
+      "strict_valid": 0,
+      "strict_format": 0,
+      "optimal": 1,
+      "within_1pct": 1,
+      "mean_gap_pct_complete": 0.0,
+      "objective_consistent": 0,
+      "mean_visible_tokens": 510,
+      "mean_seconds": 27.217275808972772,
+      "distinct_city_sequences": 1
+    }
+  },
+  "cpu_baselines": {
+    "nearest_neighbor": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 50,
+      "within_1pct": 58,
+      "mean_gap_pct_complete": 3.6766292004341277
+    },
+    "nearest_neighbor_2opt": {
+      "cases": 100,
+      "complete": 100,
+      "optimal": 100,
+      "within_1pct": 100,
+      "mean_gap_pct_complete": 1.9984014443252818e-15
+    }
+  }
+}

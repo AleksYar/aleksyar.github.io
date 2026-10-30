@@ -1,0 +1,46 @@
+{
+  "task": "tsp20",
+  "files": {
+    "train.jsonl": "6ac525908cff04e9b71313ed7c180ae2788a6c3dc54ba364e74e01127cf46172",
+    "validation.jsonl": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+    "tokenized.json": "a748ae0f5aed5a17d5cea8faa50120c7f60160bef5f5bee79818be8d3456aa0f",
+    "config.json": "c1bf6713061484dcdb7d7719cddd9ddd3b2a9ef9f2949be94ff6d4650407c986"
+  },
+  "token_statistics": {
+    "train": {
+      "count": 200000,
+      "min_tokens": 949,
+      "max_tokens": 995,
+      "mean_tokens": 975.945025,
+      "max_prompt_tokens": 908,
+      "truncated": 0
+    },
+    "validation": {
+      "count": 100,
+      "min_tokens": 966,
+      "max_tokens": 985,
+      "mean_tokens": 976.2,
+      "max_prompt_tokens": 898,
+      "truncated": 0
+    }
+  },
+  "duplicate_geometries": 0,
+  "validation_origin": "[workspace]/experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/validation.jsonl",
+  "reused_train_source": null,
+  "reused_train_examples": 0,
+  "excluded_previous_train_geometries": 160000,
+  "overlap_with_previous_train": 0,
+  "reused_train_sha256": null,
+  "new_train_examples": 200000,
+  "source_fingerprint": "c8f452babe1c0137d22d72ccfd7907f9496b9a271a6c2387ca45a46eec7a8a25",
+  "host": "Mac.cs.technion.ac.il",
+  "job_id": null,
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "4.38.2",
+    "peft": "0.10.0",
+    "scipy": "1.15.3",
+    "tokenizers": "0.15.2"
+  },
+  "preparation_this_attempt_seconds": 402.4455645830021
+}

@@ -1,0 +1,113 @@
+{
+  "status": "verified",
+  "collected_utc": "2026-10-30T15:12:20.193001+00:00",
+  "remote_root": "[cluster-home]/llada-tsp20-300k-mask5to8-4l40s-20261030-508fc3",
+  "checkpoint_path": "[cluster-home]/llada-tsp20-300k-mask5to8-4l40s-20261030-508fc3/results/checkpoint-018750",
+  "job_id": "1468567",
+  "checkpoint_files_verified": {
+    "adapter/adapter_model.safetensors": {
+      "sha256": "73586037254056b308511dcda73b66a939da9430e549dbb8aeddee1fe3fc7009",
+      "bytes": 671151016
+    },
+    "prediction_head.safetensors": {
+      "sha256": "c0de6cddc94c67f1f911e7adfdb2b19c4d5aa04021db3c41df4d808b831b1c95",
+      "bytes": 5283976
+    },
+    "training-state.pt": {
+      "sha256": "bc7749a62a58c13f49b669987746a4b8e9bb4b4d02efd3e1570cbcd2492fb01d",
+      "bytes": 1353173990
+    }
+  },
+  "checkpoint_complete": {
+    "step": 18750,
+    "fingerprint": "a21485f5d1d202fc997870fcce52855735114804b0938e895810e5a5b14129c5",
+    "head_sha256": "c0de6cddc94c67f1f911e7adfdb2b19c4d5aa04021db3c41df4d808b831b1c95",
+    "adapter_sha256": "73586037254056b308511dcda73b66a939da9430e549dbb8aeddee1fe3fc7009",
+    "training_state_sha256": "bc7749a62a58c13f49b669987746a4b8e9bb4b4d02efd3e1570cbcd2492fb01d"
+  },
+  "weights_location": "Newton only; checkpoint weights are not in this evidence archive",
+  "scheduler_query_timezone": "UTC",
+  "scheduler_fields": [
+    "JobID",
+    "JobName",
+    "State",
+    "ExitCode",
+    "Start",
+    "End",
+    "Elapsed",
+    "ElapsedRaw",
+    "AllocTRES",
+    "NodeList",
+    "Submit"
+  ],
+  "scheduler_values": [
+    "1468567",
+    "tsp300k-mask5-508fc3",
+    "COMPLETED",
+    "0:0",
+    "2026-10-30T00:09:40",
+    "2026-10-30T13:21:41",
+    "13:12:01",
+    "47521",
+    "billing=56,cpu=16,gres/gpu=4,node=1",
+    "nlp-l40-2",
+    "2026-10-30T00:09:13"
+  ],
+  "scheduler_raw": "1468567|tsp300k-mask5-508fc3|COMPLETED|0:0|2026-10-30T00:09:40|2026-10-30T13:21:41|13:12:01|47521|billing=56,cpu=16,gres/gpu=4,node=1|nlp-l40-2|2026-10-30T00:09:13\n",
+  "config_sha256": "55099e947cf469180208e636d197a8ef67f01e89c74134abdb5c61126156db58",
+  "dataset_manifest_sha256": "d9cfa4712e7f9570d9b3cbdf6c85021c83dde26e7f2f216c04c2d94360979d98",
+  "evidence_files": {
+    "results/summary.json": {
+      "bytes": 18415384,
+      "sha256": "e32b2a7fc830c1203733fa01d6786cc38990268c1afa164995a01515d42f11f7"
+    },
+    "results/events.rank0.jsonl": {
+      "bytes": 15573639,
+      "sha256": "1d5fc5bc86008e6d2e06ff13a434908eef5cccb0a13052ca9731a225d5994f27"
+    },
+    "results/latest-checkpoint.json": {
+      "bytes": 136,
+      "sha256": "4d19c17e9e099bcc8f2c524f0d021b0bd8a238ac5871ee7c698137e647fe9eb8"
+    },
+    "results/checkpoint-018750/complete.json": {
+      "bytes": 373,
+      "sha256": "d5468a224b159b18be26a5da509ed33b73dd99020b59c67376afa7731bfaa885"
+    },
+    "results/checkpoint-018750/adapter/adapter_config.json": {
+      "bytes": 964,
+      "sha256": "6636a014616a51ea66e5a71d2d0ea63a080f223be55c70196b921875cd604504"
+    },
+    "profile/repeat1.json": {
+      "bytes": 20129,
+      "sha256": "dace9d7d8d3ef05512ead73884bf11a56475bd8de6567fae11b32f3743fb9f29"
+    },
+    "profile/repeat2.json": {
+      "bytes": 20126,
+      "sha256": "3776b883e11c8a0e9f1f3bd017030b0f9c45dc93837bb6851b888d40681b215f"
+    },
+    "profile/estimate.json": {
+      "bytes": 2593,
+      "sha256": "45d166f65bc42ac9ce15e01f811f989669377544bacbafcd188d23b398aefbe2"
+    },
+    "profile/hardware.csv": {
+      "bytes": 370,
+      "sha256": "d90ab522ba1b1d95ca6dccdd3fb242e61f91789d4534a848bb305f75dc6f8924"
+    },
+    "profile/topology.txt": {
+      "bytes": 754,
+      "sha256": "760408cb20c2c8a0f90f6f92fdfc10982313b011749bcd9a366a9a6238ebc7fc"
+    },
+    "logs/repeat1.log": {
+      "bytes": 11603,
+      "sha256": "f3d61f3fa1cdb43bba965feea63d93bda2d006ce8d5b8cfd0a58d2ce360d121f"
+    },
+    "logs/repeat2.log": {
+      "bytes": 11605,
+      "sha256": "d79e2b1b0a19f809caf17753315cf0d8bf2d71bc7c590bf36e32be2798bb0f63"
+    },
+    "logs/tsp300k-mask5-508fc3-1468567.out": {
+      "bytes": 13632386,
+      "sha256": "c310d4fdc08cd6b206fe455dae9157e6f1c9c375c09a35f34b7799a9ee119018"
+    }
+  }
+}

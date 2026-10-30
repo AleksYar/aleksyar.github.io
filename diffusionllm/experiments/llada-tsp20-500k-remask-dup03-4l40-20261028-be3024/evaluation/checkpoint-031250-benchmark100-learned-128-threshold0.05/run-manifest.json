@@ -1,0 +1,17 @@
+{
+  "checkpoint": "[cluster-home]/llada-tsp20-500k-remask-dup03-4l40-20261028-be3024/results/checkpoint-031250",
+  "adapter_sha256": "74f044ff674751f6792ee9110016fbe33b602eb34e70a5e496cc805a8a829389",
+  "prediction_head_sha256": "01e7775bea0b1aba44f16e9fda9f68737d79745d8832c3b43cf8532f6da725b9",
+  "split": "benchmark100",
+  "policy": "learned",
+  "budget": 128,
+  "threshold": 0.05,
+  "dataset_sha256": "3c826125ced83ed2d0be899e5f266d3b4d73463ac399810ddd131a800c7d5adf",
+  "source_sha256": {
+    "config.json": "6450d2a693bd422cad33730c56e6bcd87978e2009cbc3c315fb6169815d43b92",
+    "evaluate.py": "66690845cb63c6117dc351b9244263c1c61489ad2fcb89f94ee7552ed1665087",
+    "inference.py": "561622df8dc20728cb9b12ad4b159e589c0da7d66cad4d442fcb23bc6a4664d9",
+    "data_core.py": "ceb5ed39b5c09e20b09992caa7dea426703fd3abddc1c136ed14ffb21da9fd41",
+    "model.py": "5d21470a2b994818a872e922f125785804c761ca502ceb6782b1b958574b6efd"
+  }
+}

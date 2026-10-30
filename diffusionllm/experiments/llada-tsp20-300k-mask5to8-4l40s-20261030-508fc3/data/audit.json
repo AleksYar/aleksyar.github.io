@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "counts": {
+    "train": 300000,
+    "improvement": 216736,
+    "feasibility_repair": 30000,
+    "zero_gain_control": 53264
+  },
+  "mask_city_counts": {
+    "5": 74068,
+    "6": 74101,
+    "8": 77117,
+    "7": 74714
+  },
+  "unique_geometries": 300000,
+  "overlap_with_previous_data": 0,
+  "conditional_teacher_rechecks": 2700,
+  "all_reference_and_target_objectives_recomputed": true,
+  "all_repair_targets_preserve_unmasked_positions": true,
+  "all_selected_and_assessed_masks_cover_5_to_8_cities": true,
+  "manifest_sha256": "d9cfa4712e7f9570d9b3cbdf6c85021c83dde26e7f2f216c04c2d94360979d98",
+  "elapsed_seconds": 11.356625207990874
+}

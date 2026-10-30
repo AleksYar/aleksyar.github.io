@@ -1,0 +1,260 @@
+[
+  {
+    "label": "environment",
+    "machine": "arm64",
+    "mlx": "0.32.3",
+    "device": "Device(gpu, 0)",
+    "metal": {
+      "device_name": "Apple M4 Pro",
+      "max_recommended_working_set_size": 17179885568,
+      "memory_size": 25769803776,
+      "architecture": "applegpu_g16s",
+      "max_buffer_length": 12884901888,
+      "resource_limit": 499000
+    },
+    "swap": "total = 22528.00M  used = 20923.25M  free = 1604.75M  (encrypted)"
+  },
+  {
+    "label": "full_forward",
+    "median_s": 0.9431518329656683,
+    "samples_s": [
+      0.9431518329656683,
+      0.9409956660238095,
+      0.9743726670276374
+    ],
+    "shape": [
+      1,
+      154,
+      126464
+    ],
+    "dtype": "mlx.core.float16",
+    "vm_delta_pages": {
+      "Swapins": 7698,
+      "Swapouts": 0,
+      "Pageins": 3710,
+      "Pageouts": 82,
+      "Compressions": 59238,
+      "Decompressions": 130886
+    }
+  },
+  {
+    "label": "transformer_without_head",
+    "median_s": 0.8873996250331402,
+    "samples_s": [
+      0.9120799999800511,
+      0.875518542015925,
+      0.8873996250331402
+    ],
+    "shape": [
+      1,
+      154,
+      4096
+    ],
+    "dtype": "mlx.core.float16",
+    "vm_delta_pages": {
+      "Swapins": 1020,
+      "Swapouts": 0,
+      "Pageins": 1150,
+      "Pageouts": 11,
+      "Compressions": 37239,
+      "Decompressions": 33601
+    }
+  },
+  {
+    "label": "full_vocab_head_all_positions",
+    "median_s": 0.05672495800536126,
+    "samples_s": [
+      0.05672495800536126,
+      0.05989966698689386,
+      0.053458290989510715
+    ],
+    "shape": [
+      1,
+      154,
+      126464
+    ],
+    "dtype": "mlx.core.float16",
+    "vm_delta_pages": {
+      "Swapins": 36,
+      "Swapouts": 0,
+      "Pageins": 76,
+      "Pageouts": 0,
+      "Compressions": 2381,
+      "Decompressions": 769
+    }
+  },
+  {
+    "label": "full_vocab_head_current_32_positions",
+    "median_s": 0.01149687496945262,
+    "samples_s": [
+      0.01149687496945262,
+      0.012810832995455712,
+      0.009154333965852857
+    ],
+    "shape": [
+      1,
+      32,
+      126464
+    ],
+    "dtype": "mlx.core.float16",
+    "vm_delta_pages": {
+      "Swapins": 0,
+      "Swapouts": 0,
+      "Pageins": 5,
+      "Pageouts": 0,
+      "Compressions": 581,
+      "Decompressions": 21
+    }
+  },
+  {
+    "label": "sampler_softmax_all_positions",
+    "median_s": 0.008981999999377877,
+    "samples_s": [
+      0.008981999999377877,
+      0.0020594579982571304,
+      0.01754958397941664
+    ],
+    "shape": [
+      1,
+      154,
+      126464
+    ],
+    "dtype": "mlx.core.float32",
+    "vm_delta_pages": {
+      "Swapins": 0,
+      "Swapouts": 0,
+      "Pageins": 1,
+      "Pageouts": 0,
+      "Compressions": 7402,
+      "Decompressions": 20
+    }
+  },
+  {
+    "label": "adaptive_128",
+    "prompt": "short",
+    "prompt_tokens": 26,
+    "canvas": 128,
+    "elapsed_s": 4.944927958014887,
+    "forwards": 5,
+    "answer_tokens": 7,
+    "text": "The capital of France is Paris.",
+    "peak_gib": 4.536252629011869,
+    "vm_delta_pages": {
+      "Swapins": 3566,
+      "Swapouts": 0,
+      "Pageins": 2310,
+      "Pageouts": 173,
+      "Compressions": 0,
+      "Decompressions": 47911
+    }
+  },
+  {
+    "label": "adaptive_64",
+    "prompt": "short",
+    "prompt_tokens": 26,
+    "canvas": 64,
+    "elapsed_s": 1.8660597919952124,
+    "forwards": 3,
+    "answer_tokens": 7,
+    "text": "The capital of France is Paris.",
+    "peak_gib": 4.536252629011869,
+    "vm_delta_pages": {
+      "Swapins": 2797,
+      "Swapouts": 0,
+      "Pageins": 534,
+      "Pageouts": 2,
+      "Compressions": 0,
+      "Decompressions": 19747
+    }
+  },
+  {
+    "label": "adaptive_128_dual_cache",
+    "prompt": "short",
+    "prompt_tokens": 26,
+    "canvas": 128,
+    "elapsed_s": 4.3374627089942805,
+    "forwards": 5,
+    "answer_tokens": 7,
+    "text": "The capital of France is Paris.",
+    "peak_gib": 4.583250369876623,
+    "vm_delta_pages": {
+      "Swapins": 2247,
+      "Swapouts": 0,
+      "Pageins": 437,
+      "Pageouts": 14,
+      "Compressions": 90915,
+      "Decompressions": 50389
+    }
+  },
+  {
+    "label": "adaptive_128",
+    "prompt": "explanation",
+    "prompt_tokens": 23,
+    "canvas": 128,
+    "elapsed_s": 50.978593790961895,
+    "forwards": 52,
+    "answer_tokens": 40,
+    "text": "Ice floats on water because water molecules form a hexagonal lattice structure when it freezes, which is less dense than liquid water. This difference in density causes the ice to rise to the surface of the water.",
+    "peak_gib": 4.583250369876623,
+    "vm_delta_pages": {
+      "Swapins": 569984,
+      "Swapouts": 571280,
+      "Pageins": 87464,
+      "Pageouts": 1077,
+      "Compressions": 7188196,
+      "Decompressions": 6928044
+    }
+  },
+  {
+    "label": "adaptive_64",
+    "prompt": "explanation",
+    "prompt_tokens": 23,
+    "canvas": 64,
+    "elapsed_s": 37.245049457997084,
+    "forwards": 60,
+    "answer_tokens": 43,
+    "text": "Ice floats on water because it is less dense than water due to the formation of hydrogen bonds between water molecules, which causes ice to expand as it freezes. This expansion allows ice to float on top of the water.",
+    "peak_gib": 4.583250369876623,
+    "vm_delta_pages": {
+      "Swapins": 179165,
+      "Swapouts": 191748,
+      "Pageins": 20070,
+      "Pageouts": 680,
+      "Compressions": 1324580,
+      "Decompressions": 1286448
+    }
+  },
+  {
+    "label": "adaptive_128_dual_cache",
+    "prompt": "explanation",
+    "prompt_tokens": 23,
+    "canvas": 128,
+    "elapsed_s": 24.657910374982748,
+    "forwards": 59,
+    "answer_tokens": 33,
+    "text": "Ice floats on water because it is less dense than water due to the arrangement of its molecules, which creates a hexagonal lattice structure that occupies more space than water molecules.",
+    "peak_gib": 4.61294386908412,
+    "vm_delta_pages": {
+      "Swapins": 258438,
+      "Swapouts": 331244,
+      "Pageins": 30634,
+      "Pageouts": 351,
+      "Compressions": 2660091,
+      "Decompressions": 2531500
+    }
+  },
+  {
+    "label": "final_memory",
+    "swap": "total = 25600.00M  used = 25097.56M  free = 502.44M  (encrypted)"
+  },
+  {
+    "label": "interpretation_limits",
+    "notes": [
+      "Another llada_chat.py process with no command-line options was present throughout the diagnostic; it was not terminated.",
+      "Memory pressure was elevated and swap-in/out counters are system-wide, not attributable solely to this model.",
+      "One generation per prompt/configuration; timings are diagnostic, not a controlled throughput benchmark.",
+      "Generation variants may produce different text. Dual caching is approximate.",
+      "The installed chat defaults and model files were not changed."
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+{
+  "created_on": "2026-10-24",
+  "task": "H200 LoRA training throughput and memory selection for LLaDA TSP20",
+  "gpu": "one NVIDIA H200 on galileo4",
+  "ranks": [
+    16,
+    64
+  ],
+  "alpha_by_rank": {
+    "16": 32,
+    "64": 64
+  },
+  "primary_effective_batch": 16,
+  "microbatches": [
+    1,
+    2,
+    4,
+    8,
+    16
+  ],
+  "primary_screen": [
+    [
+      2,
+      "none"
+    ],
+    [
+      4,
+      "none"
+    ],
+    [
+      8,
+      "none"
+    ],
+    [
+      16,
+      "none"
+    ],
+    [
+      1,
+      "none"
+    ],
+    [
+      2,
+      "all"
+    ],
+    [
+      8,
+      "quarter"
+    ],
+    [
+      16,
+      "quarter"
+    ],
+    [
+      16,
+      "half"
+    ],
+    [
+      16,
+      "all"
+    ]
+  ],
+  "screening": {
+    "warmup_updates": 3,
+    "timed_updates": 7,
+    "fresh_process_per_trial": true
+  },
+  "confirmation": {
+    "warmup_updates": 3,
+    "timed_updates": 24,
+    "selection": "Baseline mb2/none once plus the fastest two safe primary configurations, each in two independent processes in alternating order. Duplicate baseline is not repeated outside selected top two."
+  },
+  "capacity_extension": {
+    "rank": 64,
+    "effective_batches": [
+      32,
+      64
+    ],
+    "microbatch_equals_effective_batch": true,
+    "checkpointing": [
+      "none",
+      "quarter",
+      "half",
+      "all"
+    ],
+    "warmup_updates": 2,
+    "timed_updates": 5,
+    "skip": "Skip a larger microbatch after a measured OOM at the same rank/checkpointing; record as projected infeasible, never measured OOM.",
+    "meaning": "Separate throughput-only exploration; effective batch and optimizer update count change. Do not deploy without validation."
+  },
+  "stress": {
+    "warmup_updates": 2,
+    "timed_updates": 8,
+    "data": "longest examples in the same 512-example sample",
+    "selection": "best safe confirmed primary configuration per rank"
+  },
+  "memory_headroom_rule": "max(6 GiB, 5% of CUDA-visible total), based on peak reserved memory",
+  "hard_limit_minutes": 45,
+  "soft_limit_minutes": 40,
+  "per_trial_timeout_seconds": 300,
+  "same_as_l40s": [
+    "source code hashes",
+    "model revision",
+    "512-example sample hash",
+    "BF16 frozen base",
+    "FP32 adapters",
+    "masked-response objective",
+    "AdamW",
+    "learning rate 1e-4",
+    "weight decay 0.01",
+    "dropout 0.05",
+    "RNG seeds",
+    "automatic existing SDPA dispatch"
+  ],
+  "changing_effective_batch_note": "Capacity trials adjust scheduler total steps for one epoch of the same 100k source examples. Same learning rate, no accuracy inference.",
+  "scope": "Optimize execution among tested settings. No full training, no final quality claims, no changes to existing jobs or adapters.",
+  "comparison_run": "llada-l40s-training-speed-20261024-169c6d"
+}

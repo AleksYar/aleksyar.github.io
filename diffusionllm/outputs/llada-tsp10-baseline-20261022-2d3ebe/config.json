@@ -1,0 +1,14 @@
+{
+  "python": "[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python",
+  "cache_dir": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache",
+  "dataset": "data/dataset.json",
+  "references": "data/references.json",
+  "output": "results",
+  "dtype": "bf16",
+  "max_tokens": 128,
+  "steps": 64,
+  "block_length": 128,
+  "temperature": 0.0,
+  "seed": 42,
+  "max_seconds": 780
+}

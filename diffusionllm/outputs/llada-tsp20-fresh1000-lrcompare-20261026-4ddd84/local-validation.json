@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-26T20:56:52.840857+00:00",
+  "tests": 5,
+  "checks": [
+    "fixed selection rule and incomplete-validation rejection",
+    "final and selected checkpoint deduplication",
+    "checkpoint file hash verification",
+    "rescoring tolerance and corrupted-route rejection",
+    "paired counts and valid-only gaps",
+    "MILP matches independent dynamic-programming solution",
+    "all Python files compile",
+    "four saved original-checkpoint smoke cases"
+  ],
+  "fresh_data_ready": "verified"
+}

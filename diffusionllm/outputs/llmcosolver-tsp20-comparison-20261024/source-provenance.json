@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/Summer142857/LLMCoSolver",
+  "commit": "f6388991d243c0aa91d9ee7e2fa18ed1c9e72477",
+  "files": [
+    {
+      "path": "upstream/utils.py",
+      "github_blob_sha": "42da65936b35a3b2f79faab60460b2f813512bcb",
+      "source_url": "https://github.com/Summer142857/LLMCoSolver/blob/main/utils.py"
+    },
+    {
+      "path": "upstream/main_train.py",
+      "github_blob_sha": "4db7ca29f6a6c2f42f3228c5b14814bc038e3eba",
+      "source_url": "https://github.com/Summer142857/LLMCoSolver/blob/main/main_train.py"
+    },
+    {
+      "path": "upstream/Envs/TSPEnv/TSPEnv.py",
+      "github_blob_sha": "1c6bda31294790359a41e802edb8ccd3c6726b49",
+      "source_url": "https://github.com/Summer142857/LLMCoSolver/blob/main/Envs/TSPEnv/TSPEnv.py"
+    },
+    {
+      "path": "upstream/eval.py",
+      "github_blob_sha": "ca3498ec8e56d3d4c1be6a3d2900373763f6c775",
+      "source_url": "https://github.com/Summer142857/LLMCoSolver/blob/f6388991d243c0aa91d9ee7e2fa18ed1c9e72477/eval.py"
+    },
+    {
+      "path": "upstream/LICENSE",
+      "github_blob_sha": "d02053724fa7ce60f53fdc83e5304190a450bb92",
+      "source_url": "https://github.com/Summer142857/LLMCoSolver/blob/f6388991d243c0aa91d9ee7e2fa18ed1c9e72477/LICENSE"
+    }
+  ],
+  "retrieved_at_client_date": "2026-10-24",
+  "checkpoint_access": {
+    "status": "expired_link",
+    "url": "https://tuenl-my.sharepoint.com/:f:/g/personal/x_jiang1_tue_nl/IgCVB_bi5EUfSJeuPl3FQtuUATBf8kn2skwXhBXpOgCsSdE?e=88VYIc",
+    "observed_text": "Sorry, the link has expired.",
+    "issue_urls": [
+      "https://github.com/Summer142857/LLMCoSolver/issues/2",
+      "https://github.com/Summer142857/LLMCoSolver/issues/4",
+      "https://github.com/Summer142857/LLMCoSolver/issues/5",
+      "https://github.com/Summer142857/LLMCoSolver/issues/6"
+    ],
+    "warning": "Issue #2 reports an adapter configured for unsloth/Meta-Llama-3.1-8B; do not assume Qwen2.5-7B or TSP SFT-only availability."
+  }
+}

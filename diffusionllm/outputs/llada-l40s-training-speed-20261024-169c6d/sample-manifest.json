@@ -1,0 +1,14 @@
+{
+  "source": "[cluster-home]/llada-tsp-100k-l40s-20261023-224c60/tsp20/train.jsonl",
+  "source_sha256": "2890e002fb0b67a141c6e27e16dc2a5c9db922062a8b0ea5596269b0bc7d007f",
+  "source_rows": 100000,
+  "sampling": "Reservoir sample of 512 existing training examples; seed 20261024; shuffled once.",
+  "sample_sha256": "981a839b0ce9c95d91f6f35fe82f55b31fc2fb758474ab1e73648aa7600bc498",
+  "count": 512,
+  "mean_tokens": 975.525390625,
+  "min_tokens": 959,
+  "max_tokens": 991,
+  "validation_used": false,
+  "truncation": false,
+  "data_preparation": "Generated on Newton CPU from the existing completed-run dataset; no training data uploaded."
+}

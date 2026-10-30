@@ -1,0 +1,99 @@
+{
+  "experiment_id": "llada-tsp20-fresh1000-lrcompare-20261026-4ddd84",
+  "validation_examples": 1000,
+  "seed": 2610202601,
+  "dataset": "data/validation.jsonl",
+  "prompt_tokens": "data/prompt-tokens.json",
+  "output": "results",
+  "model_id": "GSAI-ML/LLaDA-8B-Instruct",
+  "model_revision": "08b83a6feb34df1a6011b80c3c00c7563e963b07",
+  "precision": "bf16",
+  "lora": {
+    "rank": 64,
+    "alpha": 64,
+    "dropout": 0.05,
+    "bias": "none",
+    "train_embeddings": false,
+    "train_output_head": false,
+    "target_module_families": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "attn_out",
+      "ff_proj",
+      "up_proj",
+      "ff_out"
+    ],
+    "target_modules_regex": ".*transformer\\.blocks\\.\\d+\\.(q_proj|k_proj|v_proj|attn_out|ff_proj|up_proj|ff_out)",
+    "target_validation": "Match only linear modules inside transformer blocks. Assert the embedding and vocabulary output head are frozen; the output head also has the suffix ff_out."
+  },
+  "runtime": {
+    "cache_dir": "[cluster-home]/llada-tsp20-baseline-20261021/model-cache",
+    "python": "[cluster-home]/llada-tsp20-baseline-20261021/venv/bin/python",
+    "sampler_revision": "9182493720ed723ef8031210d85959364e51cbe0",
+    "peft_version": "0.10.0"
+  },
+  "gpu_count": 4,
+  "node": "nlp-l40-1",
+  "evaluation": {
+    "max_output_tokens": 512,
+    "diffusion_steps": 128,
+    "block_length": 512,
+    "temperature": 0.0,
+    "seed": 42,
+    "attempts_per_instance": 1,
+    "repair": false
+  },
+  "fixed_models": [
+    {
+      "id": "original-200k",
+      "label": "Original 200k checkpoint",
+      "adapter": "[cluster-home]/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/checkpoints/update-012500-fafcda5b/adapter",
+      "sha256": "de18758f0286c6beaeaa820aba4a73528110419537b96ef60b21001efba18224"
+    },
+    {
+      "id": "lr1e4-epoch8",
+      "label": "LR 1e-4 \u00b7 epoch 8",
+      "adapter": "[cluster-home]/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/checkpoints/update-010000-3047fa4e/adapter",
+      "sha256": "0013c55ab96dff9ad416785149a388eaf46e83e50794480468528d279f17bc98"
+    },
+    {
+      "id": "lr1e4-epoch10",
+      "label": "LR 1e-4 \u00b7 epoch 10",
+      "adapter": "[cluster-home]/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/checkpoints/update-012500-d801f610/adapter",
+      "sha256": "f64cbe63f69f6520a5617b89096075e0d0980705fe570609577ff6946fd9f9a3"
+    }
+  ],
+  "new_training_root": "[cluster-home]/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84",
+  "new_training_root_local": "[workspace]/experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84",
+  "new_checkpoint_selection": {
+    "data": "existing 100-case validation only",
+    "order": [
+      "highest optimal count",
+      "highest complete count",
+      "lowest mean gap among complete tours",
+      "earliest epoch"
+    ],
+    "include_final": true,
+    "include_selected_if_distinct": true
+  },
+  "maximum_models": 5,
+  "wall_limit_hours": 12,
+  "resume": "atomic per-case answers; skip verified completed cases after requeue",
+  "primary_metric": "optimal tours / 1000",
+  "secondary_metrics": [
+    "complete tours / 1000",
+    "strict-valid tours / 1000",
+    "within 1% / 1000",
+    "mean and median gap on complete tours",
+    "paired metric differences and paired tour-length differences"
+  ],
+  "holdout_role": "Fresh confirmatory comparison, not used for checkpoint selection",
+  "excluded_datasets_local": [
+    "[workspace]/experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/train.jsonl",
+    "[workspace]/experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/train.jsonl",
+    "[workspace]/experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/train.jsonl",
+    "[workspace]/experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/validation.jsonl"
+  ],
+  "new_training_config_sha256": "fcdcbcb5b2a6bd2064a20b175635c1ef7bc9e6e73b617e60781ab21aea6b81c6"
+}

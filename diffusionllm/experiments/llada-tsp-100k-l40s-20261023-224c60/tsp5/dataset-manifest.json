@@ -1,0 +1,40 @@
+{
+  "task": "tsp5",
+  "files": {
+    "train.jsonl": "93a032f2db9ebd34ce97fce20c7e09d83e43458d4db88abc7d0e3dc03e15dd76",
+    "validation.jsonl": "31f6ea487441bbb5d7e86bf2e432af73786ce94d01545957c9a4d59de733052e",
+    "tokenized.json": "d9c794d63bb88c8b9d1c5513d2edf826701c47051185d05831f1dfaf19d4d7b4",
+    "config.json": "2fa8c7b97e76a827e7e5bce38c1b9f612bf6a6339c02e2c207d77cae470e5a7c"
+  },
+  "token_statistics": {
+    "train": {
+      "count": 100000,
+      "min_tokens": 307,
+      "max_tokens": 321,
+      "mean_tokens": 318.31684,
+      "max_prompt_tokens": 289,
+      "truncated": 0
+    },
+    "validation": {
+      "count": 100,
+      "min_tokens": 314,
+      "max_tokens": 320,
+      "mean_tokens": 318.37,
+      "max_prompt_tokens": 288,
+      "truncated": 0
+    }
+  },
+  "duplicate_geometries": 0,
+  "validation_origin": "[workspace]/experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp5/validation.jsonl",
+  "source_fingerprint": "4df9e0c77cd96cb8326300e20570f49e4dcaa6d5b3cefc23d461bfeba6d0c519",
+  "host": "Mac.cs.technion.ac.il",
+  "job_id": null,
+  "versions": {
+    "torch": "2.6.0",
+    "transformers": "4.38.2",
+    "peft": "0.10.0",
+    "scipy": "1.15.3",
+    "tokenizers": "0.15.2"
+  },
+  "preparation_this_attempt_seconds": 43.19823379199079
+}

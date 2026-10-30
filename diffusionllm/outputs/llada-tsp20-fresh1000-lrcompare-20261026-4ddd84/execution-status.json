@@ -1,0 +1,13 @@
+{
+  "job_id": "1463120",
+  "state": "CANCELLED",
+  "scheduler_state_raw": "CANCELLED by 243326586",
+  "exit_code": "0:0",
+  "elapsed": "00:00:00",
+  "node": null,
+  "collected_at": "2026-10-26T21:04:19Z",
+  "reason": "Cancelled at user request before starting",
+  "training_job_id": "1463107",
+  "training_state_after_cancellation": "RUNNING",
+  "training_step_after_cancellation": 765
+}
