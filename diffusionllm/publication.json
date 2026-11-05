@@ -1,32 +1,32 @@
 {
   "schema_version": 1,
-  "snapshot_at": "2026-10-30T21:02:38.229779+02:00",
-  "exported_at": "2026-10-30T22:25:27.255600+02:00",
-  "experiment_count": 38,
-  "primary_report_count": 51,
+  "snapshot_at": "2026-11-06T01:06:56.176035+02:00",
+  "exported_at": "2026-11-06T01:08:52.277748+02:00",
+  "experiment_count": 44,
+  "primary_report_count": 64,
   "status_counts": {
-    "completed": 31,
+    "completed": 37,
     "analysis": 2,
     "cancelled": 2,
     "failed": 1,
     "estimate": 1,
     "prepared": 1
   },
-  "html_pages": 66,
-  "verified_links": 1858,
-  "bytes": 266340893,
+  "html_pages": 79,
+  "verified_links": 2336,
+  "bytes": 267167349,
   "files": [
     {
       "path": "dashboard-simple.html",
-      "bytes": 72415,
-      "sha256": "2a469891f6424a7fb5c4d8ae46ecb94f6320a18e1fb19cd991a6e82430ea8404",
-      "source_sha256": "2085f6d4a127c6af6a2955f62f7436d20ba6bb29df2157e79d1c860c10557ed2"
+      "bytes": 82915,
+      "sha256": "1bca3ce031edea3b315364ec510cba4a336738e1ed73f589c7c32830f00eeae3",
+      "source_sha256": "09f998c256336c2458b96b78dbd4d7e836d0da1e81d9cab74bef909fd7135c00"
     },
     {
       "path": "dashboard.html",
-      "bytes": 298059,
-      "sha256": "5d27c80cb337ff9117569101192988060da4859542420238cdf3f2f49103574b",
-      "source_sha256": "940eb9dfc6dd2773f9d6788898511bcf06e07c0a72e27755028b3ce6ab267abc"
+      "bytes": 347864,
+      "sha256": "c38c1dee246898d25f8954149a0c4ce22c737716af41bffe7f76406803a1cbca",
+      "source_sha256": "bb53bcf880b0938ff2a775126e681a1042d01b55b7e41258e9dd89b87dbdc5a5"
     },
     {
       "path": "diagnostics/2026-10-07-mac-diagnostic.json",
@@ -1715,6 +1715,78 @@
       "source_sha256": "e3b7626c2f32670abf8bd1a56a421c082bb8ed41ae2f5b1df8acb8bcaa5e38c2"
     },
     {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/report.html",
+      "bytes": 2645,
+      "sha256": "42828d5c4cc090a82d5aad46b800d01036c56ee108d3aef5067c3ae419b177b2",
+      "source_sha256": "470308120e82941c1c635d194de2fc23f5bbbf4aceae23f84db97589de99170d"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/report.html",
+      "bytes": 22214,
+      "sha256": "88feee9398191cc61ef6665f59ae730bb255ce2bb8944df1fb493d6536b9e78c",
+      "source_sha256": "af3a65767e6902be7c805e3e428d7888479006c46d3486e73a397af91455fa91"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/report.html",
+      "bytes": 43245,
+      "sha256": "8892f930e1fe1162691022064dcaa7384e87a04192005b7a912f676a38b16b15",
+      "source_sha256": "731aa5f328a99b6cf35eec2bf0bf465961ee33093a4c7bee9e2ec9288e39ffef"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/report.html",
+      "bytes": 22438,
+      "sha256": "10c70527c93de7cbc5b1b2b2e44cfaa853df7c634c731ef1fc61a4d86e45f81b",
+      "source_sha256": "f537b36784e87680197cb9d5803298998ba7d231f267ee6e0f8a5cbd2ebdbd34"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/report.html",
+      "bytes": 2392,
+      "sha256": "d2383fb0fd4db9ce5a2b22b6673af86447c0ad9b48cc33c11c7613a62e783c88",
+      "source_sha256": "d5cc3cb16e6e829b5618b68f78ea3dd07d10434d23b8f3259c3fb05d176f3e43"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/report.html",
+      "bytes": 22122,
+      "sha256": "d3b133c4d30ce67b4b189fbce2113eb7587c5b695fc52b3d9bcd24a937773270",
+      "source_sha256": "30b3069c3e123773a26fb21c8da14531189930349c9c42c12b1f51635aca8fab"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/report.html",
+      "bytes": 54799,
+      "sha256": "26065c567f81cf571647dc8d86c9190c08d601685791e213feb11efd47ef71cf",
+      "source_sha256": "6671933347130ccf255c777734e5a11785ab853a0ca2071039f2699a5a9ac575"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/report.html",
+      "bytes": 3358,
+      "sha256": "e631305aa60dd21839bce27b846694bd47d8d2eee373876d70a8ffcd41efdaa9",
+      "source_sha256": "b4492de518dcb20d8d4ed41bee6e4cfd932db9bd1a2ec07f11727f33b2f3aa12"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/report.html",
+      "bytes": 93257,
+      "sha256": "cf037d6581f683624bfd90be8365565284a158de0fa97f7caded5cfd47610ee3",
+      "source_sha256": "b648a17ce9eacadc626d2672b8614f5bccaeb925422ce12b644e0546d7bb1074"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/diagnostics/20261101/report.html",
+      "bytes": 3454,
+      "sha256": "5e87ade99367d76be01f27b61e3de82156ea64f5701c63553fd85a3c5fd58d5f",
+      "source_sha256": "e460e1a84b693c47aca437d4ecf010620de409329237b226693bba9bb5f7e081"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/report.html",
+      "bytes": 51213,
+      "sha256": "e337a03f26343148607fede02b0bd82404a3dac9d215b67a8ab0a09f572f9718",
+      "source_sha256": "7c18d3727111d38d2f46a71faf04cafa1447b1cf3d7faa703916d58996d656c1"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/report.html",
+      "bytes": 441014,
+      "sha256": "37b6ff2bfd2ebee57e188facfe3cf45ce2897a865cba8dc7e0ce3b0eb24df135",
+      "source_sha256": "3ce015c723761388bc9dfcb4dd6b05ce847b65b5e7dc55ec2f42ac622638de09"
+    },
+    {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/LAUNCH.txt",
       "bytes": 675,
       "sha256": "8929b7dc44da14a402f25d067db711a3d5d7bd93f786eb2dfa8ffe2367b78471",
@@ -2199,6 +2271,12 @@
       "bytes": 265,
       "sha256": "b353e2ca60720893e35ba218efef3b5c8f559924994c6160e055dc00b3d0c4e9",
       "source_sha256": "b353e2ca60720893e35ba218efef3b5c8f559924994c6160e055dc00b3d0c4e9"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/report.html",
+      "bytes": 4000,
+      "sha256": "5067bb69f02716e8b77414a515a9229848893dc499c122a7c5971c539292d5ad",
+      "source_sha256": "4b78ad0d3f9e14130b958ad0bc4adec5235b49167557a918f30f46153be83924"
     },
     {
       "path": "outputs/llada-tsp10-baseline-20261022-2d3ebe/config.json",
@@ -5810,11 +5888,11 @@
   "excluded": [
     {
       "path": "README.md",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "SOURCES.md",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "about.html",
@@ -5822,279 +5900,699 @@
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp10/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp10/results/adapter/adapter_model.safetensors",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp10/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp10/train.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/adapter/adapter_model.safetensors",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp20/train.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp5/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp5/results/adapter/adapter_model.safetensors",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp5/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp-100k-l40s-20261023-224c60/tsp5/train.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/logs/local-preparation.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-160k-r64-l40s-20261024-3dcbf6/tsp20/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-lr1e5-20kx10-4l40s-20261026-4ddd84/tsp20/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/check.sh",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/fetch.sh",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-plus20k-10ep-4l40s-20261026-7169ba/tsp20/resume-diagnostic/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/logs/local-preparation.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-200k-r64-dup-h200-20261025-392809/tsp20/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp20-300k-mask5to8-4l40s-20261030-508fc3/results/events.rank0.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/comparison-reference.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/submission.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/config.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/all-answers.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/answers.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/baseline-reuse.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/complete.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/runtime.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/summary.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/results/training-history.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-allproj20k-4h200-20261031-01a182/tsp20/validation.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/actual-compute.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/final-adapter.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/measured-timing.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/results-audit.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/config.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/all-answers.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/answers.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/baseline-reuse.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/complete.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/runtime.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/summary.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/results/training-history.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-attention20k-4h200-20261031-01a182/tsp20/validation.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/comparison-reference.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/submission.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/config.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/all-answers.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/answers.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/baseline-reuse.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/complete.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/runtime.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/summary.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/results/training-history.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-qkv20k-4h200-20261031-01a182/tsp20/validation.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/ada-20261101/observed-compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/ada-20261101/recovery.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/ada-20261101/startup-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-20261101/attempt-result.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/cpu-checks/restore-correctness.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/cpu-checks/uneven-correctness.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/final-files-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/final-timing-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/live-timing-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/recovery.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/recovery/newton2-3gpu-20261101/startup-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/results-audit.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/accounting.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/environment-freeze.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/plan.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/result.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/source-bundle.tar.gz",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/smoke-pro6000/submission.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/startup-check.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/submission.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/config.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/data-ready.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/all-answers.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/answers.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/baseline-reuse.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/complete.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/final-bundle.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/historical-100k-comparison.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/paired-decoder-analysis.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/runtime.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/summary.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/results/training-history.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality100k-eos512-4gpu-20261101-01a182/tsp20/validation.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/diagnostics/20261101/analysis.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/recovery/l40-20261101/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/recovery/l40-20261101/measured-compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/submission.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/config.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/data-ready.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/dataset-manifest.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/preparation-status.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/all-answers.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/answers.jsonl",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/baseline-reuse.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/complete.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/final-bundle.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/runtime.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/summary.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/results/training-history.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "experiments/llada-tsp20-quality500k-4h200-20261031-01a182/tsp20/validation.jsonl",
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp10/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp10/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp10/train.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp5/profile-results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp5/results/training-history.json",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "experiments/llada-tsp5-tsp10-lora-20261022-45c13f/tsp5/train.jsonl",
-      "reason": "training dataset or operational log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "newton/README.md",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "newton/basic-test.sbatch",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "newton/chat-latest-checkpoints.command",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "newton/results/basic-test-1455428.png",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "output/pdf/llada_lora_adapters.pdf",
-      "reason": "local operational resource"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-inference-audit-20261022-1bbcb8.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-inference-audit-20261022-1bbcb8/slurm-1458371.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/README.txt",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/collection-status.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/comparison.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/compute-estimate.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/execution-plan.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/status-report.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/submissions.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/transfer-supervisor.json",
+      "reason": "supporting file retained locally"
+    },
+    {
+      "path": "outputs/llada-overnight-suite-20261031-01a182/upload-failure.json",
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-baseline-20261022-2d3ebe.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-baseline-20261022-2d3ebe/slurm-1458324.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-remask256-fresh-20261029-3092aa/logs/tsp10-fresh-3092aa-1468498.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-remask256-fresh-20261029-3092aa/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-t256-s128-20261022-9ded8b.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp10-t256-s128-20261022-9ded8b/slurm-1458351.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-baseline-20261021.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-20261024-8af2ee/logs/tsp20-b8-8af2ee-1460442.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-20261024-8af2ee/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/tsp20-b8-4gpu-eb5c66-1460477.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-0-1460477.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-1-1460477.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-2-1460477.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/logs/worker-3-1460477.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-bestof8-50cases-4l40s-20261024-eb5c66/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/logs/tsp-mask5-eval-5ce141-1469253.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-mask5to8-remask256-20261030-5ce141/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-qlora-a40-20261021.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-qlora-a40-20261021/adapter/adapter_model.safetensors",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/logs/tsp-raw256-839410-1468418.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp20-remask256-unfiltered-20261029-839410/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/logs/tsp40-fresh-3092aa-1468499.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp40-remask256-fresh-20261029-3092aa/run.sbatch",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp5-baseline-20261022-f58552.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp5-baseline-20261022-f58552/slurm-1458378.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp5-t256-vs-t512-20261022-d7cf15.zip",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp5-t256-vs-t512-20261022-d7cf15/t256/slurm-1458386.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llada-tsp5-t256-vs-t512-20261022-d7cf15/t512/slurm-1458387.out",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     },
     {
       "path": "outputs/llmcosolver-tsp20-comparison-20261024/run_baseline.py",
-      "reason": "model, archive, script or log"
+      "reason": "supporting file retained locally"
     }
   ]
 }
